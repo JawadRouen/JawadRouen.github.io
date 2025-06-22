@@ -2,18 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Personal Website</title>
-    <link>https://jawad.dev/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Personal Website</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 May 2025 17:51:22 +0200</lastBuildDate>
-    <atom:link href="https://jawad.dev/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Gen AI</title>
-      <link>https://jawad.dev/posts/mon-premier-article/</link>
-      <pubDate>Sat, 03 May 2025 16:52:03 +0200</pubDate>
-      <guid>https://jawad.dev/posts/mon-premier-article/</guid>
-      <description>&lt;p&gt;Gen AI shift&lt;/p&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

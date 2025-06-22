@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on Personal Website</title>
+    <link>https://jawad.dev/tags/ai/</link>
+    <description>Recent content in AI on Personal Website</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Jun 2025 16:50:13 +0200</lastBuildDate>
+    <atom:link href="https://jawad.dev/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From PoC to Production</title>
+      <link>https://jawad.dev/blog/multiagents_lessons/</link>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/blog/multiagents_lessons/</guid>
+      <description>&lt;p&gt;Between May and June 2025, I wrote a series of posts on LinkedIn about the reality of designing, evaluating, and scaling multi-agent AI systems. This article is a direct regrouping and rephrasing of those posts, with no added or removed content — only organized for clarity.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-table-of-contents&#34; class=link_owner&gt;&#xA;  📌 Table of Contents&#xA;  &lt;a href=&#34;#-table-of-contents&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://jawad.dev/blog/multiagents_lessons/#1-evaluation-is-your-main-driver&#34;&gt;Evaluation is your main driver&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://jawad.dev/blog/multiagents_lessons/#2-the-real-battle-begins-in-production&#34;&gt;The real battle begins in Production&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://jawad.dev/blog/multiagents_lessons/#3-regression-testing-and-guardrails-the-hidden-heroes&#34;&gt;Regression Testing and Guardrails: The Hidden Heroes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://jawad.dev/blog/multiagents_lessons/#4-evaluation-inside-the-agentic-loop&#34;&gt;Evaluation inside the Agentic Loop&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://jawad.dev/blog/multiagents_lessons/#5-building-for-scale-and-automation&#34;&gt;Building for Scale and Automation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;1-evaluation-is-your-main-driver&#34; class=link_owner&gt;&#xA;  1. Evaluation is your main driver&#xA;  &lt;a href=&#34;#1-evaluation-is-your-main-driver&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;most-tech-teams-have-been-missing-a-key-point-when-evaluating-ai-systems&#34; class=link_owner&gt;&#xA;  Most tech teams have been missing a key point when evaluating AI systems&#xA;  &lt;a href=&#34;#most-tech-teams-have-been-missing-a-key-point-when-evaluating-ai-systems&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;It&#39;s not new. Even back in the classical ML days, I noticed this pattern:&lt;br&gt;&#xA;we stuck to abstract, generic metrics (accuracy, F1-score, etc.) instead of designing domain-specific ones that truly reflect business value.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

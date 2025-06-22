@@ -32,7 +32,7 @@ Prerequisites !! Obviously you ought to have a github account. This is where you
 Let&#39;s sync your site with Tina CMS.
 Prerequisites !! Obviously you ought to have a github account. This is where your website source will live. Basically, Tina will read from github and write (commit) to your github repo.">
 
-<link rel="stylesheet" href="https://jawad.dev/css/styles.fe11e66b0b5ec7ff4275f5b5a494a5e2196e5f4f51517bb8bbf90112d71d43219a1d3b4c0837c37344507d06df90210a0134cc80bfabd376999839a5ad711d0e.css" integrity="sha512-/hHmawtex/9CdfW1pJSl4hluX09RUXu4u/kBEtcdQyGaHTtMCDfDc0RQfQbfkCEKATTMgL&#43;r03aZmDmlrXEdDg==">
+<link rel="stylesheet" href="https://jawad.dev/css/styles.637eb5ddc22709c16c58281c821bcb90b6c2009d875141e88575a45265ba95e86f9fd97596ebbd9b7327fce9f86e303e95d3fca227e9d558b5a15d9230814ac9.css" integrity="sha512-Y3613cInCcFsWCgcghvLkLbCAJ2HUUHohXWkUmW6lehvn9l1luu9m3Mn/On4bjA&#43;ldP8oifp1Vi1oV2SMIFKyQ==">
 <meta name="description" content="Do you prefer managing your site using a CMS? Or would you like to make it easier for someone (a non-techie, perhaps) in your team to make edits easily? If interested, follow along. Else, skip to the next section
 Let&#39;s sync your site with Tina CMS.
 Prerequisites !! Obviously you ought to have a github account. This is where your website source will live. Basically, Tina will read from github and write (commit) to your github repo.
@@ -62,6 +62,9 @@ Prerequisites !! Obviously you ought to have a github account. This is where you
     <input type="search" class="search_field  standardize-input" placeholder="Search docs" id="find" autocomplete="off" data-scope='docs'>
     <div class="search_results results"></div>
   </div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://jawad.dev/blog/"><span>Blog</span></a>
 		</li>
 		<li class="nav-item nav_repo">
 			<a class="nav-link" href="https://github.com/jawadrouen" target="_blank">
@@ -239,112 +242,6 @@ Prerequisites !! Obviously you ought to have a github account. This is where you
   <ul>
     <li><a href="#aws-ci">AWS CI</a></li>
     <li><a href="#algolia-ci">Algolia CI</a></li>
-  </ul>
-</nav>
-      </section>
-  </section>
-  <section class="section aside_inner">
-    <h2 class="section_title"><a  href="https://jawad.dev/docs/clarity/" class="group">Clarity Docs</a></h2>
-      <section class="" id="docs-clarity-docs">
-        <h3 class="section_link"><a id="docs-getting-started" href="https://jawad.dev/docs/clarity/getting-started/">Getting started</a></h3>
-        <nav id="toc-getting-started">
-  <ul>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#getting-up-and-running">Getting up and running</a>
-      <ul>
-        <li><a href="#option-1-recommended">Option 1 (recommended)</a></li>
-        <li><a href="#option-2-great-for-testing-quickly">Option 2 (Great for testing quickly)</a></li>
-        <li><a href="#option-3-the-new-most-fun--painless-approach">Option 3 (The new, most fun &amp; painless approach)</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        <h3 class="section_link"><a id="docs-features" href="https://jawad.dev/docs/clarity/features/">Features</a></h3>
-        <nav id="toc-features"></nav>
-        <h3 class="section_link"><a id="docs-customization" href="https://jawad.dev/docs/clarity/customize/">Customization</a></h3>
-        <nav id="toc-customization">
-  <ul>
-    <li><a href="#configuration">Configuration</a>
-      <ul>
-        <li><a href="#global-parameters">Global Parameters</a></li>
-        <li><a href="#page-parameters">Page Parameters</a></li>
-        <li><a href="#modify-links-menu">Modify links menu</a></li>
-        <li><a href="#social-media">Social media</a></li>
-        <li><a href="#search-engine">Search engine</a></li>
-        <li><a href="#forcing-light-or-dark-mode">Forcing light or dark mode</a></li>
-        <li><a href="#i18n">I18N</a></li>
-        <li><a href="#comments">Comments</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        <h3 class="section_link"><a id="docs-manipulating-images" href="https://jawad.dev/docs/clarity/images/">Manipulating Images</a></h3>
-        <nav id="toc-manipulating-images">
-  <ul>
-    <li><a href="#images">Images</a>
-      <ul>
-        <li><a href="#image-figure-captions">Image figure captions</a></li>
-        <li><a href="#image-figure-captions-example">Image figure captions example</a></li>
-        <li><a href="#inline-images">Inline images</a></li>
-        <li><a href="#inline-images-example">Inline images example</a></li>
-        <li><a href="#float-images-to-the-left">Float images to the left</a></li>
-        <li><a href="#float-images-left-example">Float images left example</a></li>
-        <li><a href="#add-classes-to-images">Add classes to images</a></li>
-        <li><a href="#image-class-example">Image class example</a></li>
-        <li><a href="#article-thumbnail-image">Article thumbnail image</a></li>
-        <li><a href="#article-featured-image">Article featured image</a></li>
-        <li><a href="#share-image">Share Image</a></li>
-        <li><a href="#align-logo">Align logo</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        <h3 class="section_link"><a id="docs-blogging" href="https://jawad.dev/docs/clarity/blogging/">Blogging</a></h3>
-        <nav id="toc-blogging">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#blog-directory">Blog directory</a></li>
-        <li><a href="#mobile-menu-positioning">Mobile menu positioning</a></li>
-        <li><a href="#tags-and-taxonomies">Tags and Taxonomies</a>
-          <ul>
-            <li><a href="#show-number-of-tags">Show number of tags</a></li>
-            <li><a href="#number-of-tags-example">Number of tags example</a></li>
-          </ul>
-        </li>
-        <li><a href="#table-of-contents">Table of contents</a>
-          <ul>
-            <li><a href="#table-of-contents-toc-example">Table of contents (TOC) example</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        <h3 class="section_link"><a id="docs-syntax-highlighting" href="https://jawad.dev/docs/clarity/syntax-highlighting/">Syntax Highlighting</a></h3>
-        <nav id="toc-syntax-highlighting">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#code">Code</a>
-          <ul>
-            <li><a href="#display-line-numbers">Display line numbers</a></li>
-            <li><a href="#limit-code-block-height">Limit code block height</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        <h3 class="section_link"><a id="docs-theme-overrides" href="https://jawad.dev/docs/clarity/theme-overrides/">Theme Overrides</a></h3>
-        <nav id="toc-theme-overrides">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#custom-css-and-js">Custom CSS and JS</a></li>
-        <li><a href="#hooks">Hooks</a></li>
-      </ul>
-    </li>
   </ul>
 </nav>
       </section>
