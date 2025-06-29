@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Personal Website</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Jun 2025 16:50:13 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jun 2025 21:26:18 +0200</lastBuildDate>
     <atom:link href="https://jawad.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
@@ -27,6 +27,20 @@
       <link>https://jawad.dev/tags/production/</link>
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://jawad.dev/tags/production/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Entrepreneurship</title>
+      <link>https://jawad.dev/tags/entrepreneurship/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/tags/entrepreneurship/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PersonalGrowth</title>
+      <link>https://jawad.dev/tags/personalgrowth/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/tags/personalgrowth/</guid>
       <description></description>
     </item>
   </channel>
