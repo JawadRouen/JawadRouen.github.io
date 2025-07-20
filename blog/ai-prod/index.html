@@ -24,13 +24,13 @@
   <meta itemprop="description" content="Lessons learned from deploying and maintaining Multi agent systems">
   <meta itemprop="datePublished" content="2025-05-10T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-05-10T12:25:02+02:00">
-  <meta itemprop="wordCount" content="580">
+  <meta itemprop="wordCount" content="291">
   <meta itemprop="keywords" content="AI">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AI system in production">
   <meta name="twitter:description" content="Lessons learned from deploying and maintaining Multi agent systems">
 
-<link rel="stylesheet" href="http://localhost:1313/css/styles.61318fa8d4068907114d9bbfae62deae42693160601ab68e60570e73882c62fa30fbd6a3725a12eb0f034e19c399844ec982378d94468118bd7be6ff40ffba80.css" integrity="sha512-YTGPqNQGiQcRTZu/rmLerkJpMWBgGraOYFcOc4gsYvow&#43;9ajcloS6w8DThnDmYROyYI3jZRGgRi9e&#43;b/QP&#43;6gA==">
+<link rel="stylesheet" href="http://localhost:1313/css/styles.1058146193ddb1d77962c800e11e8d6c85a44ea1c931c634df675a161da093048cb62a25b5bf4ce84e9bb8b0271fda6f508dabba616a65a422ebfa3c48820ce1.css" integrity="sha512-EFgUYZPdsdd5YsgA4R6NbIWkTqHJMcY032daFh2gkwSMtioltb9M6E6buLAnH9pvUI2rumFqZaQi6/o8SIIM4Q==">
 <meta name="description" content="Lessons learned from deploying and maintaining Multi agent systems">
 
 </head>
@@ -176,87 +176,7 @@
 </span></span><span class="line"><span class="ln">25</span><span class="cl">  <span class="kd">var</span> <span class="nv">address</span><span class="p">:</span> <span class="n">Address</span><span class="p">?</span>
 </span></span><span class="line"><span class="ln">26</span><span class="cl">
 </span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><pre tabindex="0"><code>---
-config:
-  layout: fixed
----
-flowchart LR
- subgraph Classification[&#34;Classification&#34;]
-    direction TB
-        textData{&#34;Text Data?&#34;}
-        classSamples{&#34;&amp;lt;100K samples?&#34;}
-        sgdClassifier[&#34;SGD Classifier&#34;]
-        naiveBayes[&#34;Naive Bayes&#34;]
-        linearSVC[&#34;Linear SVC&#34;]
-        knn[&#34;KNeighbors Classifier&#34;]
-        ensembleClassifiers[&#34;SVC\nEnsemble Classifiers&#34;]
-        kernelApprox[&#34;Kernel Approximation&#34;]
-  end
- subgraph Regression[&#34;Regression&#34;]
-    direction TB
-        fewFeatures{&#34;Few features should be important?&#34;}
-        regSamples{&#34;&amp;lt;100K samples?&#34;}
-        sgdRegressor[&#34;SGD Regressor&#34;]
-        lasso[&#34;Lasso\nElasticNet&#34;]
-        ridge@{ label: &#34;Ridge Regression\\nSVR(kernel=&#39;linear&#39;)&#34; }
-        ensembleRegressors@{ label: &#34;SVR(kernel=&#39;rbf&#39;)\\nEnsemble Regressors&#34; }
-  end
- subgraph Clustering[&#34;Clustering&#34;]
-    direction TB
-        numCategories{&#34;Number of categories known?&#34;}
-        clusterSamples{&#34;&amp;lt;10K samples?&#34;}
-        miniBatchKM[&#34;MiniBatch KMeans&#34;]
-        kmeans[&#34;KMeans&#34;]
-        meanShift[&#34;MeanShift\nVBGMM&#34;]
-        spectral[&#34;Spectral Clustering\nGMM&#34;]
-  end
- subgraph subGraph3[&#34;Dimensionality Reduction&#34;]
-    direction TB
-        drSamples{&#34;&amp;lt;10K samples?&#34;}
-        randomizedPCA[/&#34;Randomized PCA&#34;/]
-        isoSpec[&#34;Isomap\nSpectral Embedding&#34;]
-        kernelApproxDR[&#34;Kernel Approximation&#34;]
-        lle[&#34;LLE&#34;]
-  end
-    start((&#34;START&#34;)) --&gt; moreSamples{&#34;&gt;50 samples?&#34;}
-    moreSamples -- yes --&gt; cat{&#34;Predicting a category?&#34;}
-    moreSamples -- no --&gt; getData[/&#34;Get more data&#34;/]
-    getData --&gt; moreSamples
-    cat -- yes --&gt; labeled{&#34;Do you have labeled data?&#34;}
-    cat -- no --&gt; quant{&#34;Predicting a quantity?&#34;}
-    labeled -- yes --&gt; classSamples
-    labeled -- no --&gt; clusterSamples
-    quant -- yes --&gt; regSamples
-    quant -- no --&gt; looking{&#34;Just looking?&#34;}
-    looking -- yes --&gt; randomizedPCA
-    looking -- no --&gt; structure{&#34;Predicting structure?&#34;}
-    structure -- yes --&gt; looking
-    structure -- no --&gt; tough((&#34;Tough luck&#34;))
-    classSamples -- yes --&gt; textData
-    classSamples -- no --&gt; sgdClassifier
-    textData -- yes --&gt; naiveBayes
-    textData -- no --&gt; linearSVC
-    linearSVC -- Try next --&gt; knn
-    knn -- Try next --&gt; ensembleClassifiers
-    sgdClassifier -- Try next --&gt; kernelApprox
-    kernelApprox -- Try next --&gt; knn
-    regSamples -- yes --&gt; fewFeatures
-    regSamples -- no --&gt; sgdRegressor
-    fewFeatures -- yes --&gt; lasso
-    fewFeatures -- no --&gt; ridge
-    ridge -- Try next --&gt; ensembleRegressors
-    clusterSamples -- yes --&gt; numCategories
-    clusterSamples -- no --&gt; miniBatchKM
-    numCategories -- yes --&gt; kmeans
-    numCategories -- no --&gt; meanShift
-    kmeans -- Try next --&gt; spectral
-    randomizedPCA -- Try next --&gt; drSamples
-    drSamples -- yes --&gt; isoSpec
-    drSamples -- no --&gt; kernelApproxDR
-    isoSpec -- Try next --&gt; lle
-    ridge@{ shape: rect}
-    ensembleRegressors@{ shape: rect}
-</code></pre>
+</span></span></code></pre></div>
         </div>
         <div class="post_extra mb-2">
 <div class="copy" data-before="" data-after="">
