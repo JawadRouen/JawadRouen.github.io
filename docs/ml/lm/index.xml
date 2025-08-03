@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linear modeling on Personal Website</title>
+    <link>https://jawad.dev/docs/ml/lm/</link>
+    <description>Recent content in Linear modeling on Personal Website</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://jawad.dev/docs/ml/lm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction &amp; Background</title>
+      <link>https://jawad.dev/docs/ml/lm/1_introduction_and_background/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/docs/ml/lm/1_introduction_and_background/</guid>
+      <description>&lt;h2 id=&#34;overview&#34; class=link_owner&gt;&#xA;  Overview&#xA;  &lt;a href=&#34;#overview&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to &lt;strong&gt;Modeling with Linear &amp;amp; Generalized Linear Models&lt;/strong&gt;!  In this first module we will:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Review the &lt;strong&gt;notation&lt;/strong&gt; and &lt;strong&gt;basic statistical concepts&lt;/strong&gt; that will recur throughout the course.&lt;/li&gt;&#xA;&lt;li&gt;Introduce our running &lt;strong&gt;motivating example&lt;/strong&gt;: predicting house prices using regression.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;By the end of this lesson you should feel comfortable with symbols like \(y\), \(\mathbf{x}\), \(\boldsymbol\beta\), and be ready to formulate and fit your first linear model.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
