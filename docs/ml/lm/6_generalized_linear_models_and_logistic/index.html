@@ -1,41 +1,33 @@
 <!doctype html>
 <html lang=en data-mode=auto itemscope itemtype=http://schema.org/WebPage>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.147.1">
-<link rel="apple-touch-icon" sizes="180x180" href='http://localhost:1313/favicons/apple-touch-icon.png'>
-<link rel="icon" type="image/png" sizes="32x32" href='http://localhost:1313/favicons/favicon-32x32.png'>
-<link rel="icon" type="image/png" sizes="16x16" href='http://localhost:1313/favicons/favicon-16x16.png'>
-<link rel="manifest" href='http://localhost:1313/favicons/site.webmanifest'>
-<link rel="mask-icon" href='http://localhost:1313/favicons/safari-pinned-tab.svg' color="#004750">
-<link rel="shortcut icon" href='http://localhost:1313/favicons/favicon.ico'>
-<meta name="msapplication-config" content='http://localhost:1313/favicons/browserconfig.xml'>
-<title>Generalized Linear Model (GLM) | Personal Website</title><meta property="og:url" content="http://localhost:1313/docs/ml/lm/6_generalized_linear_models_and_logistic/">
-  <meta property="og:site_name" content="Personal Website">
-  <meta property="og:title" content="Generalized Linear Model (GLM)">
-  <meta property="og:description" content="Generalized Linear Model (GLM)">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2025-07-20T23:25:19+02:00">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.155.1">
+<link rel="apple-touch-icon" sizes="180x180" href='https://jawad.dev/favicons/apple-touch-icon.png'>
+<link rel="icon" type="image/png" sizes="32x32" href='https://jawad.dev/favicons/favicon-32x32.png'>
+<link rel="icon" type="image/png" sizes="16x16" href='https://jawad.dev/favicons/favicon-16x16.png'>
+<link rel="manifest" href='https://jawad.dev/favicons/site.webmanifest'>
+<link rel="mask-icon" href='https://jawad.dev/favicons/safari-pinned-tab.svg' color="#004750">
+<link rel="shortcut icon" href='https://jawad.dev/favicons/favicon.ico'>
+<meta name="msapplication-config" content='https://jawad.dev/favicons/browserconfig.xml'>
+<title>Generalized Linear Models (GLM) and Logistic Regression | Personal Website</title><meta property="og:title" content="Generalized Linear Models (GLM) and Logistic Regression" />
+<meta property="og:description" content="Generalized Linear Models (GLM) and Logistic Regression" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jawad.dev/docs/ml/lm/6_generalized_linear_models_and_logistic/" />
 
-  <meta itemprop="name" content="Generalized Linear Model (GLM)">
-  <meta itemprop="description" content="Generalized Linear Model (GLM)">
-  <meta itemprop="dateModified" content="2025-07-20T23:25:19+02:00">
-  <meta itemprop="wordCount" content="119">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Generalized Linear Model (GLM)">
-  <meta name="twitter:description" content="Generalized Linear Model (GLM)">
 
-<link rel="stylesheet" href="http://localhost:1313/css/styles.1058146193ddb1d77962c800e11e8d6c85a44ea1c931c634df675a161da093048cb62a25b5bf4ce84e9bb8b0271fda6f508dabba616a65a422ebfa3c48820ce1.css" integrity="sha512-EFgUYZPdsdd5YsgA4R6NbIWkTqHJMcY032daFh2gkwSMtioltb9M6E6buLAnH9pvUI2rumFqZaQi6/o8SIIM4Q==">
-<meta name="description" content="Generalized Linear Model (GLM)">
+
+<meta property="og:site_name" content="Personal Website" />
+
+<link rel="stylesheet" href="https://jawad.dev/css/styles.637eb5ddc22709c16c58281c821bcb90b6c2009d875141e88575a45265ba95e86f9fd97596ebbd9b7327fce9f86e303e95d3fca227e9d558b5a15d9230814ac9.css" integrity="sha512-Y3613cInCcFsWCgcghvLkLbCAJ2HUUHohXWkUmW6lehvn9l1luu9m3Mn/On4bjA&#43;ldP8oifp1Vi1oV2SMIFKyQ==">
+<meta name="description" content="Generalized Linear Models (GLM) and Logistic Regression">
 
 </head>
 <body class="page-page" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu">
-	<a href='http://localhost:1313/' class="nav_brand">
-		<picture data-lit="http://localhost:1313/images/jawad_dev_logo.svg" data-dark="http://localhost:1313/images/jawad_dev_logo_darkmode.svg">
-			<img src="http://localhost:1313/images/jawad_dev_logo.svg" alt="Personal Website Logo">
+	<a href='https://jawad.dev/' class="nav_brand">
+		<picture data-lit="https://jawad.dev/images/jawad_dev_logo.svg" data-dark="https://jawad.dev/images/jawad_dev_logo_darkmode.svg">
+			<img src="https://jawad.dev/images/jawad_dev_logo.svg" alt="Personal Website Logo">
 		</picture>
 		<div class="nav_toggle toggle" title='Site Menu'><svg class="icon icon_harmburger">
   <use href="#harmburger"></use>
@@ -46,15 +38,15 @@
 		<li class="nav-item">
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="http://localhost:1313/docs/"><span>Teaching</span></a>
+			<a class="nav-link" href="https://jawad.dev/docs/"><span>Teaching</span></a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="http://localhost:1313/blog/"><span>Blog</span></a>
+			<a class="nav-link" href="https://jawad.dev/blog/"><span>Blog</span></a>
 		</li>
 		<li class="nav-item nav_repo">
 			<a class="nav-link" href="https://github.com/jawadrouen" target="_blank">
-					<picture data-lit="http://localhost:1313/images/GitHubMarkLight.svg" data-dark="http://localhost:1313/images/GitHubMarkDark.svg">
-						<img src="http://localhost:1313/images/GitHubMarkLight.svg" alt="GitHub Repo">
+					<picture data-lit="https://jawad.dev/images/GitHubMarkLight.svg" data-dark="https://jawad.dev/images/GitHubMarkDark.svg">
+						<img src="https://jawad.dev/images/GitHubMarkLight.svg" alt="GitHub Repo">
 					</picture>
 			</a>
 		</li>
@@ -74,15 +66,15 @@
 </svg></label>
   </div>
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/" class="group">Teaching Docs</a></h2>
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/" class="group">Teaching Docs</a></h2>
       <section class="" id="docs-teaching-docs">
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/ml/" class="group">Maching Learning</a></h2>
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/ml/" class="group">Maching Learning</a></h2>
       <section class="" id="docs-maching-learning">
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/ml/lm/" class="group">Linear modeling</a></h2>
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/ml/lm/" class="group">Linear modeling</a></h2>
       <section class="" id="docs-linear-modeling">
-        <h3 class="section_link"><a id="docs-introduction--background" href="http://localhost:1313/docs/ml/lm/1_introduction_and_background/">Introduction &amp; Background</a></h3>
+        <h3 class="section_link"><a id="docs-introduction--background" href="https://jawad.dev/docs/ml/lm/1_introduction_and_background/">Introduction &amp; Background</a></h3>
         <nav id="toc-introduction-background">
   <ul>
     <li><a href="#overview">Overview</a></li>
@@ -93,23 +85,282 @@
     <li><a href="#motivating-example-house-price-prediction">Motivating Example: House Price Prediction</a></li>
   </ul>
 </nav>
-        <h3 class="section_link"><a id="docs-simple-linear-regression" href="http://localhost:1313/docs/ml/lm/2_simple_linear_regression/">Simple Linear Regression</a></h3>
+        <h3 class="section_link"><a id="docs-simple-linear-regression" href="https://jawad.dev/docs/ml/lm/2_simple_linear_regression/">Simple Linear Regression</a></h3>
         <nav id="toc-simple-linear-regression">
   <ul>
-    <li><a href="#practical-example-preview">Practical Example Preview</a></li>
+    <li><a href="#what-is-linear-regression">What is Linear Regression?</a>
+      <ul>
+        <li><a href="#the-gaussmarkov-theorem">The Gauss–Markov Theorem</a></li>
+      </ul>
+    </li>
+    <li><a href="#ordinary-least-squares-ols">Ordinary Least Squares (OLS)</a>
+      <ul>
+        <li><a href="#objective-function">Objective Function</a></li>
+        <li><a href="#solution">Solution</a></li>
+      </ul>
+    </li>
+    <li><a href="#covariance-and-correlation">Covariance and Correlation</a>
+      <ul>
+        <li><a href="#empirical-covariance">Empirical Covariance</a></li>
+        <li><a href="#correlation">Correlation</a></li>
+      </ul>
+    </li>
+    <li><a href="#errors-and-residuals">Errors and Residuals</a>
+      <ul>
+        <li><a href="#statistical-error-disturbance">Statistical Error (Disturbance)</a></li>
+        <li><a href="#residual">Residual</a></li>
+      </ul>
+    </li>
+    <li><a href="#visualizing-ols-fit">Visualizing OLS Fit</a></li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
-        <h3 class="section_link"><a id="docs-inference--diagnostic" href="http://localhost:1313/docs/ml/lm/3_inference_and_diagnostics/">Inference &amp; Diagnostic</a></h3>
-        <nav id="toc-inference-diagnostic"></nav>
-        <h3 class="section_link"><a id="docs-multiple-regresion-and-feature-engineering" href="http://localhost:1313/docs/ml/lm/4_multiple_regression_and_feature_engineering/">Multiple Regresion and Feature Engineering</a></h3>
-        <nav id="toc-multiple-regresion-and-feature-engineering"></nav>
-        <h3 class="section_link"><a id="docs-model-selection" href="http://localhost:1313/docs/ml/lm/5_model_selection_and_regularization/">Model Selection</a></h3>
-        <nav id="toc-model-selection"></nav>
-        <h3 class="section_link active"><a id="docs-generalized-linear-model-glm" href="http://localhost:1313/docs/ml/lm/6_generalized_linear_models_and_logistic/">Generalized Linear Model (GLM)</a></h3>
-        <nav id="toc-generalized-linear-model-glm">
+        <h3 class="section_link"><a id="docs-inference--diagnostic" href="https://jawad.dev/docs/ml/lm/3_inference_and_diagnostics/">Inference &amp; Diagnostic</a></h3>
+        <nav id="toc-inference-diagnostic">
   <ul>
-    <li><a href="#aws-ci">AWS CI</a></li>
-    <li><a href="#algolia-ci">Algolia CI</a></li>
+    <li><a href="#residual-analysis">Residual Analysis</a>
+      <ul>
+        <li><a href="#types-of-residual-plots">Types of Residual Plots</a>
+          <ul>
+            <li><a href="#1-residuals-vs-fitted-values">1. Residuals vs Fitted Values</a></li>
+            <li><a href="#key-insights-from-residual-plots">Key Insights from Residual Plots</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#studentized-residuals">Studentized Residuals</a>
+      <ul>
+        <li><a href="#outlier-detection">Outlier Detection</a></li>
+      </ul>
+    </li>
+    <li><a href="#target-transformation">Target Transformation</a>
+      <ul>
+        <li><a href="#common-transformations">Common Transformations</a></li>
+      </ul>
+    </li>
+    <li><a href="#diagnostic-plots">Diagnostic Plots</a>
+      <ul>
+        <li><a href="#1-residuals-vs-fitted">1. Residuals vs Fitted</a></li>
+        <li><a href="#2-normal-q-q-plot">2. Normal Q-Q Plot</a></li>
+        <li><a href="#3-scale-location-plot">3. Scale-Location Plot</a></li>
+        <li><a href="#4-residuals-vs-leverage">4. Residuals vs Leverage</a></li>
+      </ul>
+    </li>
+    <li><a href="#influential-observations">Influential Observations</a>
+      <ul>
+        <li><a href="#cooks-distance">Cook's Distance</a></li>
+        <li><a href="#dffits">DFFITS</a></li>
+      </ul>
+    </li>
+    <li><a href="#coefficient-of-determination-r">Coefficient of Determination (R²)</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-multiple-regression-and-feature-engineering" href="https://jawad.dev/docs/ml/lm/4_multiple_regression_and_feature_engineering/">Multiple Regression and Feature Engineering</a></h3>
+        <nav id="toc-multiple-regression-and-feature-engineering">
+  <ul>
+    <li><a href="#multiple-regression">Multiple Regression</a></li>
+    <li><a href="#matrix-notation">Matrix Notation</a>
+      <ul>
+        <li><a href="#the-design-matrix">The Design Matrix</a></li>
+      </ul>
+    </li>
+    <li><a href="#matrix-operations-review">Matrix Operations Review</a>
+      <ul>
+        <li><a href="#matrix-multiplication">Matrix Multiplication</a></li>
+        <li><a href="#matrix-transpose">Matrix Transpose</a></li>
+        <li><a href="#matrix-inverse">Matrix Inverse</a></li>
+      </ul>
+    </li>
+    <li><a href="#norm-of-a-vector">Norm of a Vector</a></li>
+    <li><a href="#ordinary-least-squares-ols-in-matrix-form">Ordinary Least Squares (OLS) in Matrix Form</a></li>
+    <li><a href="#normal-equation">Normal Equation</a>
+      <ul>
+        <li><a href="#when-normal-equation-fails">When Normal Equation Fails</a></li>
+      </ul>
+    </li>
+    <li><a href="#binary-and-categorical-variables">Binary and Categorical Variables</a>
+      <ul>
+        <li><a href="#dummy-variables">Dummy Variables</a></li>
+        <li><a href="#encoding-categorical-variables">Encoding Categorical Variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#predictor-transformations-and-interactions">Predictor Transformations and Interactions</a>
+      <ul>
+        <li><a href="#common-transformations">Common Transformations</a></li>
+        <li><a href="#interaction-terms">Interaction Terms</a></li>
+      </ul>
+    </li>
+    <li><a href="#polynomial-regression">Polynomial Regression</a>
+      <ul>
+        <li><a href="#example-quadratic-fit">Example: Quadratic Fit</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-model-selection-and-regularization" href="https://jawad.dev/docs/ml/lm/5_model_selection_and_regularization/">Model Selection and Regularization</a></h3>
+        <nav id="toc-model-selection-and-regularization">
+  <ul>
+    <li><a href="#inference-in-regression">Inference in Regression</a>
+      <ul>
+        <li><a href="#distribution-of-coefficient-estimators">Distribution of Coefficient Estimators</a></li>
+        <li><a href="#estimating-the-error-variance">Estimating the Error Variance</a></li>
+      </ul>
+    </li>
+    <li><a href="#statistical-tests-for-coefficients">Statistical Tests for Coefficients</a>
+      <ul>
+        <li><a href="#hypothesis-test-for-individual-coefficients">Hypothesis Test for Individual Coefficients</a></li>
+      </ul>
+    </li>
+    <li><a href="#confidence-intervals">Confidence Intervals</a>
+      <ul>
+        <li><a href="#confidence-interval-for-coefficients">Confidence Interval for Coefficients</a></li>
+        <li><a href="#confidence-interval-for-predictions">Confidence Interval for Predictions</a></li>
+      </ul>
+    </li>
+    <li><a href="#adjusted-r">Adjusted R²</a>
+      <ul>
+        <li><a href="#the-problem-with-r">The Problem with R²</a></li>
+        <li><a href="#adjusted-r-1">Adjusted R²</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-f-distribution">The F-Distribution</a></li>
+    <li><a href="#the-f-test-for-regression">The F-Test for Regression</a>
+      <ul>
+        <li><a href="#overall-significance-test-simple-regression">Overall Significance Test (Simple Regression)</a></li>
+        <li><a href="#relationship-to-r">Relationship to R²</a></li>
+      </ul>
+    </li>
+    <li><a href="#f-test-for-nested-models">F-Test for Nested Models</a>
+      <ul>
+        <li><a href="#comparing-two-models">Comparing Two Models</a></li>
+      </ul>
+    </li>
+    <li><a href="#model-selection-methods">Model Selection Methods</a>
+      <ul>
+        <li><a href="#1-backward-elimination">1. Backward Elimination</a></li>
+        <li><a href="#2-forward-selection">2. Forward Selection</a></li>
+        <li><a href="#3-stepwise-regression">3. Stepwise Regression</a></li>
+      </ul>
+    </li>
+    <li><a href="#information-criteria">Information Criteria</a>
+      <ul>
+        <li><a href="#akaike-information-criterion-aic">Akaike Information Criterion (AIC)</a></li>
+        <li><a href="#bayesian-information-criterion-bic">Bayesian Information Criterion (BIC)</a></li>
+      </ul>
+    </li>
+    <li><a href="#dealing-with-collinearity">Dealing with Collinearity</a>
+      <ul>
+        <li><a href="#what-is-collinearity">What is Collinearity?</a></li>
+        <li><a href="#detecting-collinearity">Detecting Collinearity</a></li>
+        <li><a href="#solutions-to-collinearity">Solutions to Collinearity</a></li>
+      </ul>
+    </li>
+    <li><a href="#regularization-ridge-and-lasso">Regularization: Ridge and Lasso</a>
+      <ul>
+        <li><a href="#ridge-regression">Ridge Regression</a></li>
+        <li><a href="#lasso-regression">Lasso Regression</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link active"><a id="docs-generalized-linear-models-glm-and-logistic-regression" href="https://jawad.dev/docs/ml/lm/6_generalized_linear_models_and_logistic/">Generalized Linear Models (GLM) and Logistic Regression</a></h3>
+        <nav id="toc-generalized-linear-models-glm-and-logistic-regression">
+  <ul>
+    <li><a href="#generalized-linear-models-glm">Generalized Linear Models (GLM)</a>
+      <ul>
+        <li><a href="#the-three-components-of-a-glm">The Three Components of a GLM</a>
+          <ul>
+            <li><a href="#1-exponential-family-of-probability-distributions">1. Exponential Family of Probability Distributions</a></li>
+            <li><a href="#2-linear-predictor">2. Linear Predictor</a></li>
+            <li><a href="#3-link-function">3. Link Function</a></li>
+          </ul>
+        </li>
+        <li><a href="#glm-formula">GLM Formula</a></li>
+      </ul>
+    </li>
+    <li><a href="#common-link-functions">Common Link Functions</a></li>
+    <li><a href="#parameter-estimation-maximum-likelihood">Parameter Estimation: Maximum Likelihood</a></li>
+    <li><a href="#logistic-regression">Logistic Regression</a>
+      <ul>
+        <li><a href="#binary-response-distribution">Binary Response Distribution</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-logit-link-function">The Logit Link Function</a>
+      <ul>
+        <li><a href="#inverse-link-the-logistic-function">Inverse Link: The Logistic Function</a></li>
+      </ul>
+    </li>
+    <li><a href="#logistic-regression-model">Logistic Regression Model</a></li>
+    <li><a href="#maximum-likelihood-for-logistic-regression">Maximum Likelihood for Logistic Regression</a>
+      <ul>
+        <li><a href="#likelihood-function">Likelihood Function</a></li>
+        <li><a href="#log-likelihood">Log-Likelihood</a></li>
+        <li><a href="#negative-log-likelihood-loss-function">Negative Log-Likelihood (Loss Function)</a></li>
+      </ul>
+    </li>
+    <li><a href="#interpretation-and-decision-boundary">Interpretation and Decision Boundary</a>
+      <ul>
+        <li><a href="#odds-and-odds-ratio">Odds and Odds Ratio</a></li>
+        <li><a href="#decision-boundary">Decision Boundary</a></li>
+      </ul>
+    </li>
+    <li><a href="#model-evaluation-for-logistic-regression">Model Evaluation for Logistic Regression</a>
+      <ul>
+        <li><a href="#deviance">Deviance</a></li>
+        <li><a href="#confusion-matrix-and-metrics">Confusion Matrix and Metrics</a></li>
+        <li><a href="#roc-curve-and-auc">ROC Curve and AUC</a></li>
+      </ul>
+    </li>
+    <li><a href="#regularization-for-logistic-regression">Regularization for Logistic Regression</a>
+      <ul>
+        <li><a href="#l2-regularization-ridge">L2 Regularization (Ridge)</a></li>
+        <li><a href="#l1-regularization-lasso">L1 Regularization (Lasso)</a></li>
+      </ul>
+    </li>
+    <li><a href="#multiclass-logistic-regression">Multiclass Logistic Regression</a></li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#further-reading">Further Reading</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-mathematical-annexes" href="https://jawad.dev/docs/ml/lm/7_mathematical_annexes/">Mathematical Annexes</a></h3>
+        <nav id="toc-mathematical-annexes">
+  <ul>
+    <li><a href="#annex-a-ols-solution-for-simple-linear-regression">Annex A: OLS Solution for Simple Linear Regression</a>
+      <ul>
+        <li><a href="#problem-statement">Problem Statement</a></li>
+        <li><a href="#derivation">Derivation</a></li>
+      </ul>
+    </li>
+    <li><a href="#annex-b-normal-equation-for-multiple-regression">Annex B: Normal Equation for Multiple Regression</a>
+      <ul>
+        <li><a href="#problem-statement-1">Problem Statement</a></li>
+        <li><a href="#derivation-1">Derivation</a></li>
+        <li><a href="#properties-of-the-normal-equation">Properties of the Normal Equation</a></li>
+      </ul>
+    </li>
+    <li><a href="#annex-c-maximum-likelihood-for-logistic-regression">Annex C: Maximum Likelihood for Logistic Regression</a>
+      <ul>
+        <li><a href="#problem-statement-2">Problem Statement</a></li>
+        <li><a href="#likelihood-function">Likelihood Function</a></li>
+        <li><a href="#log-likelihood">Log-Likelihood</a></li>
+        <li><a href="#negative-log-likelihood-loss-function">Negative Log-Likelihood (Loss Function)</a></li>
+        <li><a href="#gradient-of-the-negative-log-likelihood">Gradient of the Negative Log-Likelihood</a></li>
+        <li><a href="#hessian-second-derivative-matrix">Hessian (Second Derivative Matrix)</a></li>
+        <li><a href="#newton-raphson-update">Newton-Raphson Update</a></li>
+      </ul>
+    </li>
+    <li><a href="#annex-d-derivation-of-coefficient-variance">Annex D: Derivation of Coefficient Variance</a>
+      <ul>
+        <li><a href="#distribution-of-the-estimator">Distribution of the Estimator</a></li>
+        <li><a href="#expected-value">Expected Value</a></li>
+        <li><a href="#variance-covariance-matrix">Variance-Covariance Matrix</a></li>
+        <li><a href="#distribution-under-normality">Distribution Under Normality</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
       </section>
@@ -121,48 +372,543 @@
 </aside>
 
   <main class="content">
-    <h1>Generalized Linear Model (GLM)</h1><p>This theme ships with 2 github actions inside the exampleSite folder:</p>
-$$
-g(\mu_i) = \eta_i = \log\left( \frac{\mu_i}{1 - \mu_i} \right).
-$$<ol>
-<li>AWS CI</li>
-<li>Algolia CI</li>
+    <h1>Generalized Linear Models (GLM) and Logistic Regression</h1><h2 id="generalized-linear-models-glm" class=link_owner>
+  Generalized Linear Models (GLM)
+  <a href="#generalized-linear-models-glm" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>The <strong>generalized linear model (GLM)</strong> is a generalization of ordinary linear regression that allows the response variable to have distributions other than the normal distribution.</p>
+<h3 id="the-three-components-of-a-glm" class=link_owner>
+  The Three Components of a GLM
+  <a href="#the-three-components-of-a-glm" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>A GLM consists of <strong>three elements</strong>:</p>
+<h4 id="1-exponential-family-of-probability-distributions" class=link_owner>
+  1. Exponential Family of Probability Distributions
+  <a href="#1-exponential-family-of-probability-distributions" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h4>
+<p>The response variable \(Y\) follows a distribution from the <strong>exponential family</strong>:</p>
+<ul>
+<li><strong>Normal</strong> distribution (ordinary linear regression)</li>
+<li><strong>Bernoulli</strong> distribution (logistic regression)</li>
+<li><strong>Poisson</strong> distribution (count data)</li>
+<li><strong>Exponential</strong> distribution (survival/time-to-event data)</li>
+<li><strong>Gamma</strong> distribution (positive continuous data with skewness)</li>
+</ul>
+<h4 id="2-linear-predictor" class=link_owner>
+  2. Linear Predictor
+  <a href="#2-linear-predictor" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h4>
+\[
+\eta = Xa = a_0 + a_1 X_1 + a_2 X_2 + \ldots + a_p X_p
+\]<p>This is the same linear combination of predictors as in ordinary regression.</p>
+<h4 id="3-link-function" class=link_owner>
+  3. Link Function
+  <a href="#3-link-function" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h4>
+<p>A <strong>link function</strong> \(g\) connects the expected value \(\mu = E(Y)\) to the linear predictor:</p>
+\[
+g(\mu) = \eta
+\]<p>or equivalently:</p>
+\[
+E(Y) = \mu = g^{-1}(\eta)
+\]<h3 id="glm-formula" class=link_owner>
+  GLM Formula
+  <a href="#glm-formula" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>The generalized linear model is defined by:</p>
+\[
+E(Y) = g^{-1}(Xa)
+\]<p><strong>For ordinary linear regression:</strong></p>
+<ul>
+<li>Distribution: Normal</li>
+<li>Link function: \(g(x) = x\) (identity link)</li>
+<li>Result: \(E(Y) = Xa\)</li>
+</ul>
+<hr>
+<h2 id="common-link-functions" class=link_owner>
+  Common Link Functions
+  <a href="#common-link-functions" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>Different response distributions have corresponding <strong>canonical link functions</strong>:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Distribution</th>
+          <th>Support</th>
+          <th>Link Function \(g(\mu)\)</th>
+          <th>Inverse Link \(g^{-1}(\eta)\)</th>
+          <th>Use Case</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Normal</strong></td>
+          <td>\(\mathbb{R}\)</td>
+          <td>\(\mu\) (identity)</td>
+          <td>\(\eta\)</td>
+          <td>Continuous responses</td>
+      </tr>
+      <tr>
+          <td><strong>Bernoulli</strong></td>
+          <td>\(\{0, 1\}\)</td>
+          <td>\(\log\left(\frac{\mu}{1-\mu}\right)\) (logit)</td>
+          <td>\(\frac{e^\eta}{1+e^\eta}\)</td>
+          <td>Binary classification</td>
+      </tr>
+      <tr>
+          <td><strong>Poisson</strong></td>
+          <td>\(\mathbb{N}\)</td>
+          <td>\(\log(\mu)\)</td>
+          <td>\(e^\eta\)</td>
+          <td>Count data</td>
+      </tr>
+      <tr>
+          <td><strong>Gamma</strong></td>
+          <td>\(\mathbb{R}^+\)</td>
+          <td>\(\frac{1}{\mu}\) (inverse)</td>
+          <td>\(\frac{1}{\eta}\)</td>
+          <td>Positive continuous (e.g., insurance claims)</td>
+      </tr>
+  </tbody>
+</table>
+
+<picture class="nav_logo" data-lit="https://jawad.dev/images/link_functions.png" data-dark="https://jawad.dev/images/Visualization%20of%20common%20link%20functions">
+  <img src="https://jawad.dev/images/link_functions.png" alt="">
+</picture>
+
+<hr>
+<h2 id="parameter-estimation-maximum-likelihood" class=link_owner>
+  Parameter Estimation: Maximum Likelihood
+  <a href="#parameter-estimation-maximum-likelihood" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>In GLMs, the unknown parameters \(a\) are typically estimated using <strong>maximum likelihood estimation (MLE)</strong>:</p>
+\[
+\hat{a} = \arg\max_a \, L(a \mid Y, X) = \arg\max_a \sum_{i=1}^{n} \log p(y_i \mid x_i, a)
+\]<p>Unlike ordinary regression (which has a closed-form solution), GLMs generally require <strong>iterative optimization algorithms</strong>:</p>
+<ul>
+<li><strong>Newton-Raphson</strong> method</li>
+<li><strong>Iteratively Reweighted Least Squares (IRLS)</strong></li>
+</ul>
+<hr>
+<h2 id="logistic-regression" class=link_owner>
+  Logistic Regression
+  <a href="#logistic-regression" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p><strong>Logistic regression</strong> is used when the response variable \(Y\) is <strong>binary</strong> (taking values 0 or 1).</p>
+<h3 id="binary-response-distribution" class=link_owner>
+  Binary Response Distribution
+  <a href="#binary-response-distribution" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>When \(Y_i \in \{0, 1\}\), we model it as a <strong>Bernoulli</strong> random variable:</p>
+\[
+Y_i \sim \text{Bernoulli}(p_i)
+\]<p>where \(p_i = P(Y_i = 1)\) is the probability of &quot;success&quot; for observation \(i\).</p>
+<p>The expected value is:</p>
+\[
+E(Y_i) = \mu_i = p_i
+\]<hr>
+<h2 id="the-logit-link-function" class=link_owner>
+  The Logit Link Function
+  <a href="#the-logit-link-function" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>The <strong>logit</strong> (log-odds) link function is the canonical link for logistic regression:</p>
+\[
+g(\mu) = \log\left(\frac{\mu}{1 - \mu}\right) = \log\left(\frac{p}{1 - p}\right)
+\]<p>This maps probabilities from \([0, 1]\) to the entire real line \((-\infty, +\infty)\).</p>
+<h3 id="inverse-link-the-logistic-function" class=link_owner>
+  Inverse Link: The Logistic Function
+  <a href="#inverse-link-the-logistic-function" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>Inverting the logit gives the <strong>logistic function</strong> (sigmoid):</p>
+\[
+\mu = g^{-1}(\eta) = \frac{\exp(\eta)}{1 + \exp(\eta)} = \frac{1}{1 + \exp(-\eta)}
+\]<p>This maps the linear predictor \(\eta\) back to a probability in \([0, 1]\).</p>
+
+<picture class="nav_logo" data-lit="https://jawad.dev/images/logistic_function.png" data-dark="https://jawad.dev/images/The%20sigmoid/logistic%20curve">
+  <img src="https://jawad.dev/images/logistic_function.png" alt="">
+</picture>
+
+<hr>
+<h2 id="logistic-regression-model" class=link_owner>
+  Logistic Regression Model
+  <a href="#logistic-regression-model" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>For a binary response, the logistic regression model is:</p>
+\[
+\log\left(\frac{p_i}{1 - p_i}\right) = a_0 + a_1 X_{i1} + a_2 X_{i2} + \ldots + a_p X_{ip}
+\]<p>Equivalently:</p>
+\[
+p_i = P(Y_i = 1 \mid X_i) = \frac{\exp(a_0 + a_1 X_{i1} + \ldots + a_p X_{ip})}{1 + \exp(a_0 + a_1 X_{i1} + \ldots + a_p X_{ip})}
+\]<p><strong>Interpretation of coefficients:</strong></p>
+<ul>
+<li>\(a_j > 0\): Increasing \(X_j\) increases the <strong>log-odds</strong> (and thus the probability) of \(Y = 1\)</li>
+<li>\(a_j < 0\): Increasing \(X_j\) decreases the <strong>log-odds</strong> of \(Y = 1\)</li>
+<li>\(\exp(a_j)\): The <strong>odds ratio</strong> associated with a one-unit increase in \(X_j\)</li>
+</ul>
+
+<picture class="nav_logo" data-lit="https://jawad.dev/images/logistic_regression_fit.png" data-dark="https://jawad.dev/images/Logistic%20regression%20fit%20to%20binary%20data">
+  <img src="https://jawad.dev/images/logistic_regression_fit.png" alt="">
+</picture>
+
+<hr>
+<h2 id="maximum-likelihood-for-logistic-regression" class=link_owner>
+  Maximum Likelihood for Logistic Regression
+  <a href="#maximum-likelihood-for-logistic-regression" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<h3 id="likelihood-function" class=link_owner>
+  Likelihood Function
+  <a href="#likelihood-function" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>For binary data, the likelihood is:</p>
+\[
+L(a) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
+\]<h3 id="log-likelihood" class=link_owner>
+  Log-Likelihood
+  <a href="#log-likelihood" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>Taking the logarithm:</p>
+\[
+\ell(a) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
+\]<p>Substituting \(p_i = \frac{\exp(\eta_i)}{1 + \exp(\eta_i)}\) where \(\eta_i = x_i^T a\):</p>
+\[
+\ell(a) = \sum_{i=1}^{n} \left[ y_i \eta_i - \log(1 + \exp(\eta_i)) \right]
+\]<h3 id="negative-log-likelihood-loss-function" class=link_owner>
+  Negative Log-Likelihood (Loss Function)
+  <a href="#negative-log-likelihood-loss-function" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>In practice, we minimize the <strong>negative log-likelihood</strong>:</p>
+\[
+\text{NLL}(a) = -\ell(a) = -\sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
+\]<p>This is also known as the <strong>binary cross-entropy loss</strong>.</p>
+<p><strong>Optimization:</strong>
+There is <strong>no closed-form solution</strong>. We use iterative algorithms:</p>
+<ul>
+<li><strong>Gradient descent</strong></li>
+<li><strong>Newton-Raphson</strong></li>
+<li><strong>IRLS</strong> (Iteratively Reweighted Least Squares)</li>
+</ul>
+<hr>
+<h2 id="interpretation-and-decision-boundary" class=link_owner>
+  Interpretation and Decision Boundary
+  <a href="#interpretation-and-decision-boundary" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<h3 id="odds-and-odds-ratio" class=link_owner>
+  Odds and Odds Ratio
+  <a href="#odds-and-odds-ratio" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>The <strong>odds</strong> of \(Y = 1\) are:</p>
+\[
+\text{Odds} = \frac{p}{1 - p} = \exp(\eta) = \exp(a_0 + a_1 X_1 + \ldots + a_p X_p)
+\]<p>For a one-unit increase in \(X_j\):</p>
+\[
+\text{Odds Ratio} = \exp(a_j)
+\]<p><strong>Example:</strong>
+If \(\exp(a_1) = 2.5\), then a one-unit increase in \(X_1\) <strong>multiplies the odds</strong> of \(Y = 1\) by 2.5.</p>
+<h3 id="decision-boundary" class=link_owner>
+  Decision Boundary
+  <a href="#decision-boundary" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>To classify a new observation, we typically use a threshold (e.g., \(p = 0.5\)):</p>
+\[
+\hat{Y} = \begin{cases}
+1 & \text{if } p > 0.5 \\
+0 & \text{otherwise}
+\end{cases}
+\]<p>The <strong>decision boundary</strong> is where \(p = 0.5\), which occurs when:</p>
+\[
+\eta = a_0 + a_1 X_1 + \ldots + a_p X_p = 0
+\]<p>For two predictors, this defines a <strong>line</strong> in the feature space.</p>
+
+<picture class="nav_logo" data-lit="https://jawad.dev/images/decision_boundary.png" data-dark="https://jawad.dev/images/Logistic%20regression%20decision%20boundary">
+  <img src="https://jawad.dev/images/decision_boundary.png" alt="">
+</picture>
+
+<hr>
+<h2 id="model-evaluation-for-logistic-regression" class=link_owner>
+  Model Evaluation for Logistic Regression
+  <a href="#model-evaluation-for-logistic-regression" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<h3 id="deviance" class=link_owner>
+  Deviance
+  <a href="#deviance" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>The <strong>deviance</strong> is a measure of model fit:</p>
+\[
+D = -2 \ell(a)
+\]<p>Lower deviance indicates better fit.</p>
+<h3 id="confusion-matrix-and-metrics" class=link_owner>
+  Confusion Matrix and Metrics
+  <a href="#confusion-matrix-and-metrics" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>For classification tasks, we use:</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th><strong>Predicted 0</strong></th>
+          <th><strong>Predicted 1</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Actual 0</strong></td>
+          <td>TN (True Neg)</td>
+          <td>FP (False Pos)</td>
+      </tr>
+      <tr>
+          <td><strong>Actual 1</strong></td>
+          <td>FN (False Neg)</td>
+          <td>TP (True Pos)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Metrics:</strong></p>
+<ul>
+<li><strong>Accuracy</strong>: \(\frac{TP + TN}{TP + TN + FP + FN}\)</li>
+<li><strong>Precision</strong>: \(\frac{TP}{TP + FP}\)</li>
+<li><strong>Recall (Sensitivity)</strong>: \(\frac{TP}{TP + FN}\)</li>
+<li><strong>Specificity</strong>: \(\frac{TN}{TN + FP}\)</li>
+<li><strong>F1-Score</strong>: Harmonic mean of precision and recall</li>
+</ul>
+
+<picture class="nav_logo" data-lit="https://jawad.dev/images/confusion_matrix.png" data-dark="https://jawad.dev/images/Confusion%20matrix%20and%20derived%20metrics">
+  <img src="https://jawad.dev/images/confusion_matrix.png" alt="">
+</picture>
+
+<h3 id="roc-curve-and-auc" class=link_owner>
+  ROC Curve and AUC
+  <a href="#roc-curve-and-auc" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>The <strong>ROC curve</strong> (Receiver Operating Characteristic) plots <strong>True Positive Rate</strong> vs <strong>False Positive Rate</strong> at various threshold settings.</p>
+<p><strong>AUC</strong> (Area Under the Curve):</p>
+<ul>
+<li>\(AUC = 1\): Perfect classifier</li>
+<li>\(AUC = 0.5\): Random classifier</li>
+<li>\(AUC > 0.8\): Generally considered good</li>
+</ul>
+
+<picture class="nav_logo" data-lit="https://jawad.dev/images/roc_curve.png" data-dark="https://jawad.dev/images/ROC%20curve%20and%20AUC">
+  <img src="https://jawad.dev/images/roc_curve.png" alt="">
+</picture>
+
+<hr>
+<h2 id="regularization-for-logistic-regression" class=link_owner>
+  Regularization for Logistic Regression
+  <a href="#regularization-for-logistic-regression" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>Like linear regression, logistic regression can benefit from regularization when dealing with many predictors or collinearity.</p>
+<h3 id="l2-regularization-ridge" class=link_owner>
+  L2 Regularization (Ridge)
+  <a href="#l2-regularization-ridge" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+\[
+\text{NLL}(a) + \lambda \sum_{j=1}^{p} a_j^2
+\]<h3 id="l1-regularization-lasso" class=link_owner>
+  L1 Regularization (Lasso)
+  <a href="#l1-regularization-lasso" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+\[
+\text{NLL}(a) + \lambda \sum_{j=1}^{p} |a_j|
+\]<p><strong>Benefits:</strong></p>
+<ul>
+<li>Prevents overfitting</li>
+<li>Can perform variable selection (Lasso)</li>
+<li>Improves generalization to new data</li>
+</ul>
+
+<picture class="nav_logo" data-lit="https://jawad.dev/images/regularized_logistic.png" data-dark="https://jawad.dev/images/Effect%20of%20regularization%20on%20decision%20boundary">
+  <img src="https://jawad.dev/images/regularized_logistic.png" alt="">
+</picture>
+
+<hr>
+<h2 id="multiclass-logistic-regression" class=link_owner>
+  Multiclass Logistic Regression
+  <a href="#multiclass-logistic-regression" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>For \(K > 2\) classes, we use <strong>softmax regression</strong> (multinomial logistic regression).</p>
+<p>The probability that observation \(i\) belongs to class \(k\) is:</p>
+\[
+p_{ik} = P(Y_i = k \mid X_i) = \frac{\exp(\eta_{ik})}{\sum_{j=1}^{K} \exp(\eta_{ij})}
+\]<p>where \(\eta_{ik} = a_k^T X_i\) for each class \(k\).</p>
+<p><strong>Training:</strong>
+Minimize the <strong>categorical cross-entropy loss</strong>:</p>
+\[
+\text{Loss} = -\sum_{i=1}^{n} \sum_{k=1}^{K} \mathbb{1}(y_i = k) \log(p_{ik})
+\]<hr>
+<h2 id="summary" class=link_owner>
+  Summary
+  <a href="#summary" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>In this lesson we covered:</p>
+<ol>
+<li>✅ <strong>Generalized Linear Models (GLM)</strong>: extending beyond normal distributions</li>
+<li>✅ <strong>Three components</strong> of a GLM: distribution, linear predictor, link function</li>
+<li>✅ <strong>Logistic regression</strong>: binary classification using the logit link</li>
+<li>✅ <strong>Maximum likelihood estimation</strong>: solving the negative log-likelihood</li>
+<li>✅ <strong>Interpretation</strong>: odds, odds ratios, decision boundaries</li>
+<li>✅ <strong>Model evaluation</strong>: confusion matrix, accuracy, precision, recall, ROC/AUC</li>
+<li>✅ <strong>Regularization</strong>: Ridge and Lasso for logistic regression</li>
+<li>✅ <strong>Multiclass extension</strong>: softmax regression</li>
 </ol>
-<h2 id="aws-ci" class=link_owner>
-  AWS CI
-  <a href="#aws-ci" class="link icon">
+<p><strong>This completes the linear models series!</strong> You now have a solid foundation in:</p>
+<ul>
+<li>Simple and multiple linear regression</li>
+<li>Inference and diagnostics</li>
+<li>Feature engineering and polynomial regression</li>
+<li>Model selection and regularization</li>
+<li>GLMs and logistic regression for classification</li>
+</ul>
+<hr>
+<h2 id="further-reading" class=link_owner>
+  Further Reading
+  <a href="#further-reading" class="link icon">
     <svg>
       <use xlink:href="#anchor-link"></use>
     </svg>
   </a>
 </h2>
-<p>This helps you to autodeploy your hugo website from github to an AWS s3 bucket. Set the secrets in the action accordingly and voila.</p>
-<h2 id="algolia-ci" class=link_owner>
-  Algolia CI
-  <a href="#algolia-ci" class="link icon">
-    <svg>
-      <use xlink:href="#anchor-link"></use>
-    </svg>
-  </a>
-</h2>
-<p>This action will automatically update your algolia search index. No extra npm manual setup will be needed.</p>
-<p>These actions are customizable to fire off under your specified set of circumstances.</p>
-<p>By default, the actions will be off, so be sure to turn them on, and set the github actions secrets appropriately.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">name: Update Algolia Search Index
-</span></span><span class="line"><span class="ln">2</span><span class="cl">
-</span></span><span class="line"><span class="ln">3</span><span class="cl">off: <span class="c1"># change to `on:` to turn on</span>
-</span></span></code></pre></div>
+<ul>
+<li><strong>Generalized Additive Models (GAMs)</strong>: Non-parametric extensions of GLMs</li>
+<li><strong>Survival Analysis</strong>: Cox proportional hazards model</li>
+<li><strong>Count Data</strong>: Poisson and negative binomial regression</li>
+<li><strong>Hierarchical/Mixed Effects Models</strong>: Accounting for grouped/nested data structure</li>
+</ul>
+
     <div class="pager">
   
     
     <div class="pager_item prev">
-      <a href="http://localhost:1313/docs/ml/lm/5_model_selection_and_regularization/" class="pager_link button" title="Model Selection" rel="prev">
-        <span class="pager_label">Model Selection</span>
+      <a href="https://jawad.dev/docs/ml/lm/5_model_selection_and_regularization/" class="pager_link button" title="Model Selection and Regularization" rel="prev">
+        <span class="pager_label">Model Selection and Regularization</span>
       </a>
     </div>
     
   
 
+  
+    
+    <div class="pager_item next">
+      <a href="https://jawad.dev/docs/ml/lm/7_mathematical_annexes/" class="pager_link button" title="Mathematical Annexes" rel="next">
+        <span class="pager_label">Mathematical Annexes</span>
+      </a>
+    </div>
+    
   
 </div>
   </main>
@@ -184,7 +930,7 @@ const no_matches_found = 'No matches found';
 <footer class="pt-2 pb-2">
   <div class="wrap">
     <p>
-      &copy; <span class="year">2025</span>
+      &copy; <span class="year">2026</span>
     </p>
     <a href="#pagetop" id="toTop" title=Back&#32;to&#32;top></a>
   </div>
@@ -282,7 +1028,7 @@ const no_matches_found = 'No matches found';
 </svg>
 
 <script>
-  "use strict";const doc=document.documentElement,toggle_id="toggle",show_id="show",menu="menu",active="active";let site_title=`personal-website`,root_url="/";root_url=root_url.startsWith("http")?root_url:window.location.origin;const go_back_class="button_back",line_class=".line",code_block_config=JSON.parse('{"maximum":10,"show":false}'),iconsPath=`icons/`,shell_based=["sh","shell","zsh","bash"],body=elem("body"),max_lines=code_block_config.maximum,show_lines=code_block_config.show,copy_id="panel_copy",wrap_id="panel_wrap",lines_id="panel_lines",panel_expand="panel_expand",panel_expanded="panel_expanded",panel_box="panel_box",panel_hide="panel_hide",panel_from="panel_from",full_height="initial",highlight="highlight",highlight_wrap="highlight_wrap",hash="#",light="light",dark="dark",storageKey=`${site_title}-color-mode`,mermaidThemeKey=`${site_title}-mermaid`,key="--color-mode",mode_data="data-mode",bank=window.localStorage;function isObj(e){return!!(e&&typeof e=="object"&&e!==null)}function createEl(e="div"){return document.createElement(e)}function emptyEl(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function elem(e,t=document){let n=!!isObj(t)&&t.querySelector(e);return n||!1}function elems(e,t=document){return isObj(t)?t.querySelectorAll(e):[]}function pushClass(e,t){if(isObj(e)&&t){let n=e.classList;!n.contains(t)&&n.add(t)}}function deleteClass(e,t){if(isObj(e)&&t){let n=e.classList;!!n.contains(t)&&n.remove(t)}}function modifyClass(e,t){if(isObj(e)&&t){const n=e.classList;n.contains(t)?n.remove(t):n.add(t)}}function containsClass(e,t){if(isObj(e)&&t&&e!==document)return!!e.classList.contains(t)}function isChild(e,t){let n=isObj(e)&&t&&typeof t=="string";return!!(n&&e.closest(t))}function elemAttribute(e,t,n=null){if(n)e.setAttribute(t,n);else return n=e.getAttribute(t),n||!1}function deleteChars(e,t){let n=e;if(Array.isArray(t))for(let e=0;e<t.length;e++)n=n.replace(t[e],"");else n=n.replace(t,"");return n}function isBlank(e){return!e||e.trim().length===0}function isMatch(e,t){if(isObj(e)){if(t.isArray){let n=t.map(function(t){return e.matches(t)});return n.includes(!0)}return e.matches(t)}}function closestInt(e,t){return t.reduce(function(t,n){return Math.abs(n-e)<Math.abs(t-e)?n:t})}function hasClasses(e){if(isObj(e)){const t=e.classList;return t.length}}function wrapEl(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)}function wrapText(e,t,n="mark"){let s=`<${n}>`,o=`</${n}>`,r=`%3C${n}%3E`,c=`%3C/${n}%3E`;function i(t){let n=t.innerHTML,a=new RegExp(e,"gi"),i=e.length?n.match(a):null;if(i){i.forEach(function(e){n=n.replaceAll(e,`${s}${e}${o}`),t.innerHTML=n});const e=elems("img",t);e&&e.forEach(e=>{e.src=e.src.replaceAll(s,"").replaceAll(o,"").replaceAll(r,"").replaceAll(c,"")})}}const l=["h1","h2","h3","h4","h5","h6","p","code","td"];l.forEach(function(e){const n=elems(e,t);n.length&&n.forEach(function(e){e.children.length>=1?(Array.from(e.children).forEach(function(e){i(e)}),i(e)):i(e)})});const a=elems("a");a&&a.forEach(function(e){e.href=e.href.replaceAll(encodeURI(s),"").replaceAll(encodeURI(o),"")})}function parseBoolean(e=""){switch(e=e.trim().toLowerCase(),e){case"true":return!0;case"false":return!1;default:return void 0}}function loadSvg(e,t){t.innerHTML=`
+  "use strict";const doc=document.documentElement,toggle_id="toggle",show_id="show",menu="menu",active="active";let site_title=`personal-website`,root_url="/";root_url=root_url.startsWith("http")?root_url:window.location.origin;const go_back_class="button_back",line_class=".line",code_block_config=JSON.parse('{"maximum":10,"show":false}'),iconsPath=`icons/`,shell_based=["sh","shell","zsh","bash"],body=elem("body"),max_lines=code_block_config.maximum,show_lines=code_block_config.show,copy_id="panel_copy",wrap_id="panel_wrap",lines_id="panel_lines",panel_expand="panel_expand",panel_expanded="panel_expanded",panel_box="panel_box",panel_hide="panel_hide",panel_from="panel_from",full_height="initial",highlight="highlight",highlight_wrap="highlight_wrap",hash="#",light="light",dark="dark",storageKey=`${site_title}-color-mode`,mermaidThemeKey=`${site_title}-mermaid`,key="--color-mode",mode_data="data-mode",bank=window.localStorage;function isObj(e){return!!(e&&typeof e=="object"&&e!==null)}function createEl(e="div"){return document.createElement(e)}function emptyEl(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function elem(e,t=document){let n=!!isObj(t)&&t.querySelector(e);return n}function elems(e,t=document){return isObj(t)?t.querySelectorAll(e):[]}function pushClass(e,t){if(isObj(e)&&t){let n=e.classList;!n.contains(t)&&n.add(t)}}function deleteClass(e,t){if(isObj(e)&&t){let n=e.classList;!!n.contains(t)&&n.remove(t)}}function modifyClass(e,t){if(isObj(e)&&t){const n=e.classList;n.contains(t)?n.remove(t):n.add(t)}}function containsClass(e,t){if(isObj(e)&&t&&e!==document)return!!e.classList.contains(t)}function isChild(e,t){let n=isObj(e)&&t&&typeof t=="string";return!!(n&&e.closest(t))}function elemAttribute(e,t,n=null){if(n)e.setAttribute(t,n);else return n=e.getAttribute(t),n}function deleteChars(e,t){let n=e;if(Array.isArray(t))for(let e=0;e<t.length;e++)n=n.replace(t[e],"");else n=n.replace(t,"");return n}function isBlank(e){return!e||e.trim().length===0}function isMatch(e,t){if(isObj(e)){if(t.isArray){let n=t.map(function(t){return e.matches(t)});return n.includes(!0)}return e.matches(t)}}function closestInt(e,t){return t.reduce(function(t,n){return Math.abs(n-e)<Math.abs(t-e)?n:t})}function hasClasses(e){if(isObj(e)){const t=e.classList;return t.length}}function wrapEl(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)}function wrapText(e,t,n="mark"){let s=`<${n}>`,o=`</${n}>`,r=`%3C${n}%3E`,c=`%3C/${n}%3E`;function i(t){let n=t.innerHTML,a=new RegExp(e,"gi"),i=e.length?n.match(a):null;if(i){i.forEach(function(e){n=n.replaceAll(e,`${s}${e}${o}`),t.innerHTML=n});const e=elems("img",t);e&&e.forEach(e=>{e.src=e.src.replaceAll(s,"").replaceAll(o,"").replaceAll(r,"").replaceAll(c,"")})}}const l=["h1","h2","h3","h4","h5","h6","p","code","td"];l.forEach(function(e){const n=elems(e,t);n.length&&n.forEach(function(e){e.children.length>=1?(Array.from(e.children).forEach(function(e){i(e)}),i(e)):i(e)})});const a=elems("a");a&&a.forEach(function(e){e.href=e.href.replaceAll(encodeURI(s),"").replaceAll(encodeURI(o),"")})}function parseBoolean(e=""){switch(e=e.trim().toLowerCase(),e){case"true":return!0;case"false":return!1;default:return 0[0]}}function loadSvg(e,t){t.innerHTML=`
   <svg class="icon_${e}">
     <use xlink:href="#${e}"></use>
   </svg>`}function copyToClipboard(e){let t,n,s;t=createEl("textarea"),t.value=e,t.setAttribute("readonly",""),t.style.position="absolute",t.style.left="-9999px",n=document.getSelection(),doc.appendChild(t),s=n.rangeCount>0&&n.getRangeAt(0),t.select(),document.execCommand("copy"),doc.removeChild(t),s&&(n.removeAllRanges(),n.addRange(s))}const snippet_actions=[{icon:"copy",id:"copy",title:copy_text,show:!0},{icon:"order",id:"lines",title:toggle_line_numbers_text,show:!0},{icon:"carly",id:"wrap",title:toggle_line_wrap_text,show:!1},{icon:"expand",id:"expand",title:resize_snippet,show:!1}];function addLines(e){let t=e.textContent;const n=[];t.includes(`
@@ -291,7 +1037,7 @@ const no_matches_found = 'No matches found';
         <span class="line line-flex">
           <span class="ln">${s+1}</span>
           <span class="cl">${t.trim()}</span>
-        </span>`.trim();n.push(o),e.closest("pre").className="chroma",pushClass(e,"language-unknown"),e.dataset.lang=not_set}}),e.innerHTML=n.join("").trim(" "))}function wrapOrphanedPreElements(){const e=elems("pre");Array.from(e).forEach(function(e){const t=e.parentNode,n=!containsClass(t,highlight);if(n){const t=createEl();t.className=highlight;const n=createEl();n.className=highlight_wrap,wrapEl(e,t),wrapEl(t,n)}})}wrapOrphanedPreElements();function codeBlocks(){const e=elems("code"),t=Array.from(e).filter(function(e){return addLines(e),e.closest("pre")&&!Array.from(e.classList).includes("noClass")}).map(function(e){return e});return t}function codeBlockFits(e){const t=e.offsetWidth,n=e.closest(`.${highlight}`).offsetWidth;return t<=n}function maxHeightIsSet(e){let t=e.style.maxHeight;return t.includes("px")}function restrainCodeBlockHeight(e){const n=e[max_lines-1];let t=full_height;if(n){const s=n.offsetTop;if(s!==0){t=`${s}px`;const n=e[0].parentNode,o=n.closest(`.${highlight}`),i=containsClass(o,panel_expanded);i||(n.dataset.height=t,n.style.maxHeight=t)}}}const blocks=codeBlocks();function collapseCodeBlock(e){const t=elems(line_class,e),n=t.length;if(n>max_lines){const n=createEl();pushClass(n,panel_expand),pushClass(n,panel_from),n.title="Toggle snippet",n.textContent="...";const s=e.closest(".highlight");window.setTimeout(function(){const e=s.nextElementSibling.lastElementChild;deleteClass(e,panel_hide)},150),restrainCodeBlockHeight(t);const o=e.parentNode.parentNode;o.appendChild(n)}}blocks.forEach(function(e){collapseCodeBlock(e)});function actionPanel(){const e=createEl();return e.className=panel_box,snippet_actions.forEach(function(t){const n=createEl("a");n.href="#",n.title=t.title,n.className=`icon panel_icon panel_${t.id}`,!t.show&&pushClass(n,panel_hide),loadSvg(t.icon,n),e.appendChild(n)}),e}function toggleLineNumbers(e){e&&(e.forEach(e=>modifyClass(e,"pre_nolines")),restrainCodeBlockHeight(e))}function toggleLineWrap(e){modifyClass(e,"pre_wrap");const t=elems(".ln",e);restrainCodeBlockHeight(t)}function copyCode(e){const t=e.parentNode.parentNode.querySelector(`.${copy_id}`),s=t.title;loadSvg("check",t),t.title=copied_text,e=e.cloneNode(!0);const n=elems(".ln",e);!!n.length&&n.forEach(e=>e.remove());let o=elems("span",e);o.forEach(e=>{const t=e.textContent.trim(" ");t.indexOf("$")===0&&(e.textContent=e.textContent.replace("$ ",""))});const i=e.textContent.trim(" ");copyToClipboard(i),setTimeout(function(){t.title=s,loadSvg("copy",t)},2250)}(function(){const n=highlight_wrap;blocks.forEach(function(e){show_lines===!1&&toggleLineNumbers(elems(".ln",e));const o=e.parentNode.parentNode,t=createEl();t.className=n,wrapEl(o,t);const s=actionPanel(),i=elem(`.${wrap_id}`,s);!codeBlockFits(e)&&deleteClass(i,panel_hide),t.appendChild(s)});function t(e,t){return e.matches(`.${t}`)||e.closest(`.${t}`)}function s(e,t){const n=e.matches(`.${t}`)?e:e.closest(`.${t}`);deleteClass(n,active),setTimeout(function(){modifyClass(n,active)},50)}doc.addEventListener("click",function(e){const o=e.target,i=t(o,copy_id),a=t(o,wrap_id),r=t(o,lines_id),c=t(o,panel_expand),l=i||a||r||c;if(l){e.preventDefault(),s(o,"icon");const t=o.closest(`.${n}`).firstElementChild.firstElementChild;let l=elems(".ln",t);if(!!a&&toggleLineWrap(t),!!r&&toggleLineNumbers(l),c){let e=t.firstElementChild;const n=e.closest(".highlight");maxHeightIsSet(e)?(e.style.maxHeight=full_height,pushClass(n,panel_expanded)):(e.style.maxHeight=e.dataset.height,deleteClass(n,panel_expanded))}!!i&&copyCode(t)}}),function(){blocks.forEach(e=>{let t=e.dataset.lang;const n=shell_based.includes(t);if(n){const t=elems(line_class,e);Array.from(t).forEach(e=>{e=e.lastElementChild;let t=e.textContent.trim(" ");!!(t.indexOf("$")!==0&&t.trim(" ").length)&&pushClass(e,"shell")})}if(t=t==="sh"?"shell":t,t!=="fallback"){const n=createEl();n.textContent=t,pushClass(n,"lang"),e.closest(`.${highlight_wrap}`).appendChild(n)}})}()})();function prefersColor(e){return`(prefers-color-scheme: ${e})`}function systemMode(){return window.matchMedia&&window.matchMedia(prefersColor(dark)).matches?dark:light}function currentMode(){let e=light+dark;e=[...e];let t=getComputedStyle(doc).getPropertyValue(key).replace(/"/g,"").trim();return[...t].filter(t=>e.includes(t)).join("")}function changeMode(e){e?(bank.setItem(storageKey,light),elemAttribute(doc,mode_data,light)):(bank.setItem(storageKey,dark),elemAttribute(doc,mode_data,dark))}function pickModePicture(e){elems("picture").forEach(function(t){let o=t.firstElementChild;const n=t.dataset,s=[n.lit,n.dark];o.src=e=="dark"?s[1]:s[0]})}function setMermaidTheme(e){bank.setItem(mermaidThemeKey,e);let t=elem(".color_choice");t.value=e}function setUserColorMode(e=!1){const n=currentMode()==dark,s=bank.getItem(storageKey),o=systemMode();s?e?changeMode(n):elemAttribute(doc,mode_data,s):changeMode(e===!0?n:o!==dark);const t=doc.dataset.mode;doc.dataset.systemmode=o,!!t&&pickModePicture(t),setMermaidTheme(t)}setUserColorMode(),function(){return elem(".nav_header").offsetHeight+25}();function toggleMenu(e){const t=e.target,o=t.matches(`.${toggle_id}`),n=t.closest(`.${toggle_id}`),i=elems(`.${show_id}`)?Array.from(elems(`.${show_id}`)):[],a=t.closest(`.${menu}`);function s(e,t=!1){i.forEach(function(n){!t&&deleteClass(n,show_id),n!==e.closest(`.${menu}`)&&deleteClass(n,show_id)})}if(o||n){const s=n?n.parentNode.parentNode:t.parentNode.parentNode;e.preventDefault(),modifyClass(s,show_id)}else a?s(t,!0):s(t)}(function(){const t=elems("code");t&&t.forEach(function(e){hasClasses(e)||!e.children.length&&pushClass(e,"noClass")})})();function featureHeading(){const t="section_link",n="section_title",e=elem(".aside");if(e){let s=elem(`.${t}.${active}`);s=s||elem(`.${n}.${active}`),e.scroll({top:s.offsetTop,left:0})}}function activeHeading(e,t){let n=Object.create(null);n.active=t.filter(function(e){return containsClass(e,active)})[0],n.new=t[e],n.active!=n.new&&(!!n.active&&deleteClass(n.active,active),pushClass(n.new,active))}setTimeout(()=>{featureHeading()},50);function updateDate(){const t=new Date,e=t.getFullYear().toString,n=elem(".year");!!n&&(e.textContent=e)}function customizeSidebar(){const e="toc_active",n=elem("aside"),t=elems("nav",n);if(t){t.forEach(function(t){if(t.id="",pushClass(t,"toc"),t.children.length>=1){const n=Array.from(t.children[0].children),s=t.previousElementSibling;!!s.matches(`.${active}`)&&pushClass(t,e),n.forEach(function(e){pushClass(e,"toc_item"),pushClass(e.firstElementChild,"toc_link")})}});const n=elem(`.${e}`);if(n){const e=Array.from(elems("a",n)),t=e.map(function(e){return document.getElementById(decodeURIComponent(e.hash.replace("#","")))});window.addEventListener("scroll",function(){let o=window.scrollY+window.innerHeight/2,s=0;for(const[n,e]of t.entries())e.offsetTop<o&&e.offsetTop>t[s].offsetTop&&(s=n);activeHeading(s,e)})}}elems("p").forEach(function(e){const t=elems(".button",e);t.length>1&&pushClass(e,"button_grid")})}function markExternalLinks(){let e=elems("a");e&&Array.from(e).forEach(function(e){let n,o,i,s,a,r,t,c;t=new URL(e.href),c=t.host!==location.host||t.protocol!==location.protocol||t.port!==location.port,c&&(n="target",o="rel",i="_blank",s="noopener",a=elemAttribute(e,n),r=elemAttribute(e,s),!a&&elemAttribute(e,n,i),!r&&elemAttribute(e,o,s))})}function sanitizeURL(e){const t=e.indexOf(hash);if(t>-1){const n=e.substr(t,e.length-1);e=e.replace(n,"")}return e}function copyFeedback(e){const t=document.createElement("div"),n="link_yanked";if(t.classList.add(n),t.innerText=copied_text,!elem(`.${n}`,e)){const n=e.getElementsByTagName("svg")[0],s=n.src;n.src="http://localhost:1313/icons/check.svg",e.appendChild(t),setTimeout(function(){e.removeChild(t),n.src=s},2250)}}function copyHeadingLink(){let t,n,s,o,e;t="link",n=elems(`.${t}`),n&&document.addEventListener("click",function(n){e=n.target,o=e.parentNode,(e&&containsClass(e,t)||containsClass(o,t))&&(n.preventDefault(),s=e.href!=void 0?e.href:e.parentNode.href,copyToClipboard(s),copyFeedback(e.href!=void 0?e:e.parentNode))})}function makeTablesResponsive(){const e=elems("table");e&&e.forEach(function(e){const t=createEl();pushClass(t,"scrollable"),wrapEl(e,t)})}function backToTop(){const e=elem("#toTop");window.addEventListener("scroll",()=>{const t=window.scrollY;t>=200?(e.style.display="flex",pushClass(e,active)):deleteClass(e,active)})}function lazyLoadMedia(e=[]){e.forEach(e=>{let t=elems(e);t&&Array.from(t).forEach(function(e){e.loading="lazy"})})}function loadActions(){updateDate(),customizeSidebar(),markExternalLinks(),copyHeadingLink(),makeTablesResponsive(),backToTop(),lazyLoadMedia(["iframe","img"]),doc.addEventListener("click",e=>{let t=e.target,n="color_choice",s=containsClass(t,n);!!s&&setUserColorMode(!0),toggleMenu(e)})}window.addEventListener("load",loadActions())
+        </span>`.trim();n.push(o),e.closest("pre").className="chroma",pushClass(e,"language-unknown"),e.dataset.lang=not_set}}),e.innerHTML=n.join("").trim(" "))}function wrapOrphanedPreElements(){const e=elems("pre");Array.from(e).forEach(function(e){const t=e.parentNode,n=!containsClass(t,highlight);if(n){const t=createEl();t.className=highlight;const n=createEl();n.className=highlight_wrap,wrapEl(e,t),wrapEl(t,n)}})}wrapOrphanedPreElements();function codeBlocks(){const e=elems("code"),t=Array.from(e).filter(function(e){return addLines(e),e.closest("pre")&&!Array.from(e.classList).includes("noClass")}).map(function(e){return e});return t}function codeBlockFits(e){const t=e.offsetWidth,n=e.closest(`.${highlight}`).offsetWidth;return t<=n}function maxHeightIsSet(e){let t=e.style.maxHeight;return t.includes("px")}function restrainCodeBlockHeight(e){const n=e[max_lines-1];let t=full_height;if(n){const s=n.offsetTop;if(s!==0){t=`${s}px`;const n=e[0].parentNode,o=n.closest(`.${highlight}`),i=containsClass(o,panel_expanded);i||(n.dataset.height=t,n.style.maxHeight=t)}}}const blocks=codeBlocks();function collapseCodeBlock(e){const t=elems(line_class,e),n=t.length;if(n>max_lines){const n=createEl();pushClass(n,panel_expand),pushClass(n,panel_from),n.title="Toggle snippet",n.textContent="...";const s=e.closest(".highlight");window.setTimeout(function(){const e=s.nextElementSibling.lastElementChild;deleteClass(e,panel_hide)},150),restrainCodeBlockHeight(t);const o=e.parentNode.parentNode;o.appendChild(n)}}blocks.forEach(function(e){collapseCodeBlock(e)});function actionPanel(){const e=createEl();return e.className=panel_box,snippet_actions.forEach(function(t){const n=createEl("a");n.href="#",n.title=t.title,n.className=`icon panel_icon panel_${t.id}`,!t.show&&pushClass(n,panel_hide),loadSvg(t.icon,n),e.appendChild(n)}),e}function toggleLineNumbers(e){e&&(e.forEach(e=>modifyClass(e,"pre_nolines")),restrainCodeBlockHeight(e))}function toggleLineWrap(e){modifyClass(e,"pre_wrap");const t=elems(".ln",e);restrainCodeBlockHeight(t)}function copyCode(e){const t=e.parentNode.parentNode.querySelector(`.${copy_id}`),s=t.title;loadSvg("check",t),t.title=copied_text,e=e.cloneNode(!0);const n=elems(".ln",e);!!n.length&&n.forEach(e=>e.remove());let o=elems("span",e);o.forEach(e=>{const t=e.textContent.trim(" ");t.indexOf("$")===0&&(e.textContent=e.textContent.replace("$ ",""))});const i=e.textContent.trim(" ");copyToClipboard(i),setTimeout(function(){t.title=s,loadSvg("copy",t)},2250)}(function(){const n=highlight_wrap;blocks.forEach(function(e){show_lines===!1&&toggleLineNumbers(elems(".ln",e));const o=e.parentNode.parentNode,t=createEl();t.className=n,wrapEl(o,t);const s=actionPanel(),i=elem(`.${wrap_id}`,s);!codeBlockFits(e)&&deleteClass(i,panel_hide),t.appendChild(s)});function t(e,t){return e.matches(`.${t}`)||e.closest(`.${t}`)}function s(e,t){const n=e.matches(`.${t}`)?e:e.closest(`.${t}`);deleteClass(n,active),setTimeout(function(){modifyClass(n,active)},50)}doc.addEventListener("click",function(e){const o=e.target,i=t(o,copy_id),a=t(o,wrap_id),r=t(o,lines_id),c=t(o,panel_expand),l=i||a||r||c;if(l){e.preventDefault(),s(o,"icon");const t=o.closest(`.${n}`).firstElementChild.firstElementChild;let l=elems(".ln",t);if(!!a&&toggleLineWrap(t),!!r&&toggleLineNumbers(l),c){let e=t.firstElementChild;const n=e.closest(".highlight");maxHeightIsSet(e)?(e.style.maxHeight=full_height,pushClass(n,panel_expanded)):(e.style.maxHeight=e.dataset.height,deleteClass(n,panel_expanded))}!!i&&copyCode(t)}}),function(){blocks.forEach(e=>{let t=e.dataset.lang;const n=shell_based.includes(t);if(n){const t=elems(line_class,e);Array.from(t).forEach(e=>{e=e.lastElementChild;let t=e.textContent.trim(" ");!!(t.indexOf("$")!==0&&t.trim(" ").length)&&pushClass(e,"shell")})}if(t=t==="sh"?"shell":t,t!=="fallback"){const n=createEl();n.textContent=t,pushClass(n,"lang"),e.closest(`.${highlight_wrap}`).appendChild(n)}})}()})();function prefersColor(e){return`(prefers-color-scheme: ${e})`}function systemMode(){return window.matchMedia&&window.matchMedia(prefersColor(dark)).matches?dark:light}function currentMode(){let e=light+dark;e=[...e];let t=getComputedStyle(doc).getPropertyValue(key).replace(/"/g,"").trim();return[...t].filter(t=>e.includes(t)).join("")}function changeMode(e){e?(bank.setItem(storageKey,light),elemAttribute(doc,mode_data,light)):(bank.setItem(storageKey,dark),elemAttribute(doc,mode_data,dark))}function pickModePicture(e){elems("picture").forEach(function(t){let o=t.firstElementChild;const n=t.dataset,s=[n.lit,n.dark];o.src=e=="dark"?s[1]:s[0]})}function setMermaidTheme(e){bank.setItem(mermaidThemeKey,e);let t=elem(".color_choice");t.value=e}function setUserColorMode(e=!1){const n=currentMode()==dark,s=bank.getItem(storageKey),o=systemMode();s?e?changeMode(n):elemAttribute(doc,mode_data,s):changeMode(e===!0?n:o!==dark);const t=doc.dataset.mode;doc.dataset.systemmode=o,!!t&&pickModePicture(t),setMermaidTheme(t)}setUserColorMode(),function(){return elem(".nav_header").offsetHeight+25}();function toggleMenu(e){const t=e.target,o=t.matches(`.${toggle_id}`),n=t.closest(`.${toggle_id}`),i=elems(`.${show_id}`)?Array.from(elems(`.${show_id}`)):[],a=t.closest(`.${menu}`);function s(e,t=!1){i.forEach(function(n){!t&&deleteClass(n,show_id),n!==e.closest(`.${menu}`)&&deleteClass(n,show_id)})}if(o||n){const s=n?n.parentNode.parentNode:t.parentNode.parentNode;e.preventDefault(),modifyClass(s,show_id)}else a?s(t,!0):s(t)}(function(){const t=elems("code");t&&t.forEach(function(e){hasClasses(e)||!e.children.length&&pushClass(e,"noClass")})})();function featureHeading(){const t="section_link",n="section_title",e=elem(".aside");if(e){let s=elem(`.${t}.${active}`);s=s||elem(`.${n}.${active}`),e.scroll({top:s.offsetTop,left:0})}}function activeHeading(e,t){let n=Object.create(null);n.active=t.filter(function(e){return containsClass(e,active)})[0],n.new=t[e],n.active!=n.new&&(!!n.active&&deleteClass(n.active,active),pushClass(n.new,active))}setTimeout(()=>{featureHeading()},50);function updateDate(){const t=new Date,e=t.getFullYear().toString,n=elem(".year");!!n&&(e.textContent=e)}function customizeSidebar(){const e="toc_active",n=elem("aside"),t=elems("nav",n);if(t){t.forEach(function(t){if(t.id="",pushClass(t,"toc"),t.children.length>=1){const n=Array.from(t.children[0].children),s=t.previousElementSibling;!!s.matches(`.${active}`)&&pushClass(t,e),n.forEach(function(e){pushClass(e,"toc_item"),pushClass(e.firstElementChild,"toc_link")})}});const n=elem(`.${e}`);if(n){const e=Array.from(elems("a",n)),t=e.map(function(e){return document.getElementById(decodeURIComponent(e.hash.replace("#","")))});window.addEventListener("scroll",function(){let o=window.scrollY+window.innerHeight/2,s=0;for(const[n,e]of t.entries())e.offsetTop<o&&e.offsetTop>t[s].offsetTop&&(s=n);activeHeading(s,e)})}}elems("p").forEach(function(e){const t=elems(".button",e);t.length>1&&pushClass(e,"button_grid")})}function markExternalLinks(){let e=elems("a");e&&Array.from(e).forEach(function(e){let n,o,i,s,a,r,t,c;t=new URL(e.href),c=t.host!==location.host||t.protocol!==location.protocol||t.port!==location.port,c&&(n="target",o="rel",i="_blank",s="noopener",a=elemAttribute(e,n),r=elemAttribute(e,s),!a&&elemAttribute(e,n,i),!r&&elemAttribute(e,o,s))})}function sanitizeURL(e){const t=e.indexOf(hash);if(t>-1){const n=e.substr(t,e.length-1);e=e.replace(n,"")}return e}function copyFeedback(e){const t=document.createElement("div"),n="link_yanked";if(t.classList.add(n),t.innerText=copied_text,!elem(`.${n}`,e)){const n=e.getElementsByTagName("svg")[0],s=n.src;n.src="https://jawad.dev/icons/check.svg",e.appendChild(t),setTimeout(function(){e.removeChild(t),n.src=s},2250)}}function copyHeadingLink(){let t,n,s,o,e;t="link",n=elems(`.${t}`),n&&document.addEventListener("click",function(n){e=n.target,o=e.parentNode,(e&&containsClass(e,t)||containsClass(o,t))&&(n.preventDefault(),s=e.href!=0[0]?e.href:e.parentNode.href,copyToClipboard(s),copyFeedback(e.href!=0[0]?e:e.parentNode))})}function makeTablesResponsive(){const e=elems("table");e&&e.forEach(function(e){const t=createEl();pushClass(t,"scrollable"),wrapEl(e,t)})}function backToTop(){const e=elem("#toTop");window.addEventListener("scroll",()=>{const t=window.scrollY;t>=200?(e.style.display="flex",pushClass(e,active)):deleteClass(e,active)})}function lazyLoadMedia(e=[]){e.forEach(e=>{let t=elems(e);t&&Array.from(t).forEach(function(e){e.loading="lazy"})})}function loadActions(){updateDate(),customizeSidebar(),markExternalLinks(),copyHeadingLink(),makeTablesResponsive(),backToTop(),lazyLoadMedia(["iframe","img"]),doc.addEventListener("click",e=>{let t=e.target,n="color_choice",s=containsClass(t,n);!!s&&setUserColorMode(!0),toggleMenu(e)})}window.addEventListener("load",loadActions())
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </body>

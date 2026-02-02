@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jawad.dev/docs/ml/lm/</loc>
-    <lastmod>2025-08-03T18:46:37+02:00</lastmod>
+    <lastmod>2026-02-01T21:19:29+01:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/</loc>
     <lastmod>2025-08-03T18:46:37+02:00</lastmod>
@@ -27,7 +27,25 @@
     <lastmod>2025-07-20T19:06:18+02:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/lm/1_introduction_and_background/</loc>
-    <lastmod>2025-08-03T18:46:37+02:00</lastmod>
+    <lastmod>2026-02-02T07:58:41+01:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/lm/2_simple_linear_regression/</loc>
+    <lastmod>2026-02-01T21:05:26+01:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/lm/3_inference_and_diagnostics/</loc>
+    <lastmod>2026-02-02T07:58:41+01:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/lm/4_multiple_regression_and_feature_engineering/</loc>
+    <lastmod>2026-02-02T07:58:41+01:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/lm/5_model_selection_and_regularization/</loc>
+    <lastmod>2026-02-01T21:05:26+01:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/lm/6_generalized_linear_models_and_logistic/</loc>
+    <lastmod>2026-02-01T21:05:26+01:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/lm/7_mathematical_annexes/</loc>
+    <lastmod>2026-02-01T21:05:26+01:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/tags/ai/</loc>
     <lastmod>2025-06-22T16:50:13+02:00</lastmod>

@@ -1,40 +1,33 @@
 <!doctype html>
 <html lang=en data-mode=auto itemscope itemtype=http://schema.org/WebPage>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.147.1">
-<link rel="apple-touch-icon" sizes="180x180" href='http://localhost:1313/favicons/apple-touch-icon.png'>
-<link rel="icon" type="image/png" sizes="32x32" href='http://localhost:1313/favicons/favicon-32x32.png'>
-<link rel="icon" type="image/png" sizes="16x16" href='http://localhost:1313/favicons/favicon-16x16.png'>
-<link rel="manifest" href='http://localhost:1313/favicons/site.webmanifest'>
-<link rel="mask-icon" href='http://localhost:1313/favicons/safari-pinned-tab.svg' color="#004750">
-<link rel="shortcut icon" href='http://localhost:1313/favicons/favicon.ico'>
-<meta name="msapplication-config" content='http://localhost:1313/favicons/browserconfig.xml'>
-<title>Inference &amp; Diagnostic | Personal Website</title><meta property="og:url" content="http://localhost:1313/docs/ml/lm/3_inference_and_diagnostics/">
-  <meta property="og:site_name" content="Personal Website">
-  <meta property="og:title" content="Inference & Diagnostic">
-  <meta property="og:description" content="Inference &amp; Diagnostic">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2025-07-20T23:25:19+02:00">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.155.1">
+<link rel="apple-touch-icon" sizes="180x180" href='https://jawad.dev/favicons/apple-touch-icon.png'>
+<link rel="icon" type="image/png" sizes="32x32" href='https://jawad.dev/favicons/favicon-32x32.png'>
+<link rel="icon" type="image/png" sizes="16x16" href='https://jawad.dev/favicons/favicon-16x16.png'>
+<link rel="manifest" href='https://jawad.dev/favicons/site.webmanifest'>
+<link rel="mask-icon" href='https://jawad.dev/favicons/safari-pinned-tab.svg' color="#004750">
+<link rel="shortcut icon" href='https://jawad.dev/favicons/favicon.ico'>
+<meta name="msapplication-config" content='https://jawad.dev/favicons/browserconfig.xml'>
+<title>Inference &amp; Diagnostic | Personal Website</title><meta property="og:title" content="Inference &amp; Diagnostic" />
+<meta property="og:description" content="Inference &amp; Diagnostic" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jawad.dev/docs/ml/lm/3_inference_and_diagnostics/" />
 
-  <meta itemprop="name" content="Inference & Diagnostic">
-  <meta itemprop="description" content="Inference &amp; Diagnostic">
-  <meta itemprop="dateModified" content="2025-07-20T23:25:19+02:00">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Inference & Diagnostic">
-  <meta name="twitter:description" content="Inference &amp; Diagnostic">
 
-<link rel="stylesheet" href="http://localhost:1313/css/styles.1058146193ddb1d77962c800e11e8d6c85a44ea1c931c634df675a161da093048cb62a25b5bf4ce84e9bb8b0271fda6f508dabba616a65a422ebfa3c48820ce1.css" integrity="sha512-EFgUYZPdsdd5YsgA4R6NbIWkTqHJMcY032daFh2gkwSMtioltb9M6E6buLAnH9pvUI2rumFqZaQi6/o8SIIM4Q==">
+
+<meta property="og:site_name" content="Personal Website" />
+
+<link rel="stylesheet" href="https://jawad.dev/css/styles.637eb5ddc22709c16c58281c821bcb90b6c2009d875141e88575a45265ba95e86f9fd97596ebbd9b7327fce9f86e303e95d3fca227e9d558b5a15d9230814ac9.css" integrity="sha512-Y3613cInCcFsWCgcghvLkLbCAJ2HUUHohXWkUmW6lehvn9l1luu9m3Mn/On4bjA&#43;ldP8oifp1Vi1oV2SMIFKyQ==">
 <meta name="description" content="Inference &amp; Diagnostic">
 
 </head>
 <body class="page-page" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu">
-	<a href='http://localhost:1313/' class="nav_brand">
-		<picture data-lit="http://localhost:1313/images/jawad_dev_logo.svg" data-dark="http://localhost:1313/images/jawad_dev_logo_darkmode.svg">
-			<img src="http://localhost:1313/images/jawad_dev_logo.svg" alt="Personal Website Logo">
+	<a href='https://jawad.dev/' class="nav_brand">
+		<picture data-lit="https://jawad.dev/images/jawad_dev_logo.svg" data-dark="https://jawad.dev/images/jawad_dev_logo_darkmode.svg">
+			<img src="https://jawad.dev/images/jawad_dev_logo.svg" alt="Personal Website Logo">
 		</picture>
 		<div class="nav_toggle toggle" title='Site Menu'><svg class="icon icon_harmburger">
   <use href="#harmburger"></use>
@@ -45,15 +38,15 @@
 		<li class="nav-item">
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="http://localhost:1313/docs/"><span>Teaching</span></a>
+			<a class="nav-link" href="https://jawad.dev/docs/"><span>Teaching</span></a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="http://localhost:1313/blog/"><span>Blog</span></a>
+			<a class="nav-link" href="https://jawad.dev/blog/"><span>Blog</span></a>
 		</li>
 		<li class="nav-item nav_repo">
 			<a class="nav-link" href="https://github.com/jawadrouen" target="_blank">
-					<picture data-lit="http://localhost:1313/images/GitHubMarkLight.svg" data-dark="http://localhost:1313/images/GitHubMarkDark.svg">
-						<img src="http://localhost:1313/images/GitHubMarkLight.svg" alt="GitHub Repo">
+					<picture data-lit="https://jawad.dev/images/GitHubMarkLight.svg" data-dark="https://jawad.dev/images/GitHubMarkDark.svg">
+						<img src="https://jawad.dev/images/GitHubMarkLight.svg" alt="GitHub Repo">
 					</picture>
 			</a>
 		</li>
@@ -73,15 +66,15 @@
 </svg></label>
   </div>
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/" class="group">Teaching Docs</a></h2>
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/" class="group">Teaching Docs</a></h2>
       <section class="" id="docs-teaching-docs">
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/ml/" class="group">Maching Learning</a></h2>
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/ml/" class="group">Maching Learning</a></h2>
       <section class="" id="docs-maching-learning">
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/ml/lm/" class="group">Linear modeling</a></h2>
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/ml/lm/" class="group">Linear modeling</a></h2>
       <section class="" id="docs-linear-modeling">
-        <h3 class="section_link"><a id="docs-introduction--background" href="http://localhost:1313/docs/ml/lm/1_introduction_and_background/">Introduction &amp; Background</a></h3>
+        <h3 class="section_link"><a id="docs-introduction--background" href="https://jawad.dev/docs/ml/lm/1_introduction_and_background/">Introduction &amp; Background</a></h3>
         <nav id="toc-introduction-background">
   <ul>
     <li><a href="#overview">Overview</a></li>
@@ -92,14 +85,284 @@
     <li><a href="#motivating-example-house-price-prediction">Motivating Example: House Price Prediction</a></li>
   </ul>
 </nav>
-        <h3 class="section_link"><a id="docs-simple-linear-regression" href="http://localhost:1313/docs/ml/lm/2_simple_linear_regression/">Simple Linear Regression</a></h3>
+        <h3 class="section_link"><a id="docs-simple-linear-regression" href="https://jawad.dev/docs/ml/lm/2_simple_linear_regression/">Simple Linear Regression</a></h3>
         <nav id="toc-simple-linear-regression">
   <ul>
-    <li><a href="#practical-example-preview">Practical Example Preview</a></li>
+    <li><a href="#what-is-linear-regression">What is Linear Regression?</a>
+      <ul>
+        <li><a href="#the-gaussmarkov-theorem">The Gauss–Markov Theorem</a></li>
+      </ul>
+    </li>
+    <li><a href="#ordinary-least-squares-ols">Ordinary Least Squares (OLS)</a>
+      <ul>
+        <li><a href="#objective-function">Objective Function</a></li>
+        <li><a href="#solution">Solution</a></li>
+      </ul>
+    </li>
+    <li><a href="#covariance-and-correlation">Covariance and Correlation</a>
+      <ul>
+        <li><a href="#empirical-covariance">Empirical Covariance</a></li>
+        <li><a href="#correlation">Correlation</a></li>
+      </ul>
+    </li>
+    <li><a href="#errors-and-residuals">Errors and Residuals</a>
+      <ul>
+        <li><a href="#statistical-error-disturbance">Statistical Error (Disturbance)</a></li>
+        <li><a href="#residual">Residual</a></li>
+      </ul>
+    </li>
+    <li><a href="#visualizing-ols-fit">Visualizing OLS Fit</a></li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
-        <h3 class="section_link active"><a id="docs-inference--diagnostic" href="http://localhost:1313/docs/ml/lm/3_inference_and_diagnostics/">Inference &amp; Diagnostic</a></h3>
-        <nav id="toc-inference-diagnostic"></nav>
+        <h3 class="section_link active"><a id="docs-inference--diagnostic" href="https://jawad.dev/docs/ml/lm/3_inference_and_diagnostics/">Inference &amp; Diagnostic</a></h3>
+        <nav id="toc-inference-diagnostic">
+  <ul>
+    <li><a href="#residual-analysis">Residual Analysis</a>
+      <ul>
+        <li><a href="#types-of-residual-plots">Types of Residual Plots</a>
+          <ul>
+            <li><a href="#1-residuals-vs-fitted-values">1. Residuals vs Fitted Values</a></li>
+            <li><a href="#key-insights-from-residual-plots">Key Insights from Residual Plots</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#studentized-residuals">Studentized Residuals</a>
+      <ul>
+        <li><a href="#outlier-detection">Outlier Detection</a></li>
+      </ul>
+    </li>
+    <li><a href="#target-transformation">Target Transformation</a>
+      <ul>
+        <li><a href="#common-transformations">Common Transformations</a></li>
+      </ul>
+    </li>
+    <li><a href="#diagnostic-plots">Diagnostic Plots</a>
+      <ul>
+        <li><a href="#1-residuals-vs-fitted">1. Residuals vs Fitted</a></li>
+        <li><a href="#2-normal-q-q-plot">2. Normal Q-Q Plot</a></li>
+        <li><a href="#3-scale-location-plot">3. Scale-Location Plot</a></li>
+        <li><a href="#4-residuals-vs-leverage">4. Residuals vs Leverage</a></li>
+      </ul>
+    </li>
+    <li><a href="#influential-observations">Influential Observations</a>
+      <ul>
+        <li><a href="#cooks-distance">Cook's Distance</a></li>
+        <li><a href="#dffits">DFFITS</a></li>
+      </ul>
+    </li>
+    <li><a href="#coefficient-of-determination-r">Coefficient of Determination (R²)</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-multiple-regression-and-feature-engineering" href="https://jawad.dev/docs/ml/lm/4_multiple_regression_and_feature_engineering/">Multiple Regression and Feature Engineering</a></h3>
+        <nav id="toc-multiple-regression-and-feature-engineering">
+  <ul>
+    <li><a href="#multiple-regression">Multiple Regression</a></li>
+    <li><a href="#matrix-notation">Matrix Notation</a>
+      <ul>
+        <li><a href="#the-design-matrix">The Design Matrix</a></li>
+      </ul>
+    </li>
+    <li><a href="#matrix-operations-review">Matrix Operations Review</a>
+      <ul>
+        <li><a href="#matrix-multiplication">Matrix Multiplication</a></li>
+        <li><a href="#matrix-transpose">Matrix Transpose</a></li>
+        <li><a href="#matrix-inverse">Matrix Inverse</a></li>
+      </ul>
+    </li>
+    <li><a href="#norm-of-a-vector">Norm of a Vector</a></li>
+    <li><a href="#ordinary-least-squares-ols-in-matrix-form">Ordinary Least Squares (OLS) in Matrix Form</a></li>
+    <li><a href="#normal-equation">Normal Equation</a>
+      <ul>
+        <li><a href="#when-normal-equation-fails">When Normal Equation Fails</a></li>
+      </ul>
+    </li>
+    <li><a href="#binary-and-categorical-variables">Binary and Categorical Variables</a>
+      <ul>
+        <li><a href="#dummy-variables">Dummy Variables</a></li>
+        <li><a href="#encoding-categorical-variables">Encoding Categorical Variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#predictor-transformations-and-interactions">Predictor Transformations and Interactions</a>
+      <ul>
+        <li><a href="#common-transformations">Common Transformations</a></li>
+        <li><a href="#interaction-terms">Interaction Terms</a></li>
+      </ul>
+    </li>
+    <li><a href="#polynomial-regression">Polynomial Regression</a>
+      <ul>
+        <li><a href="#example-quadratic-fit">Example: Quadratic Fit</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-model-selection-and-regularization" href="https://jawad.dev/docs/ml/lm/5_model_selection_and_regularization/">Model Selection and Regularization</a></h3>
+        <nav id="toc-model-selection-and-regularization">
+  <ul>
+    <li><a href="#inference-in-regression">Inference in Regression</a>
+      <ul>
+        <li><a href="#distribution-of-coefficient-estimators">Distribution of Coefficient Estimators</a></li>
+        <li><a href="#estimating-the-error-variance">Estimating the Error Variance</a></li>
+      </ul>
+    </li>
+    <li><a href="#statistical-tests-for-coefficients">Statistical Tests for Coefficients</a>
+      <ul>
+        <li><a href="#hypothesis-test-for-individual-coefficients">Hypothesis Test for Individual Coefficients</a></li>
+      </ul>
+    </li>
+    <li><a href="#confidence-intervals">Confidence Intervals</a>
+      <ul>
+        <li><a href="#confidence-interval-for-coefficients">Confidence Interval for Coefficients</a></li>
+        <li><a href="#confidence-interval-for-predictions">Confidence Interval for Predictions</a></li>
+      </ul>
+    </li>
+    <li><a href="#adjusted-r">Adjusted R²</a>
+      <ul>
+        <li><a href="#the-problem-with-r">The Problem with R²</a></li>
+        <li><a href="#adjusted-r-1">Adjusted R²</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-f-distribution">The F-Distribution</a></li>
+    <li><a href="#the-f-test-for-regression">The F-Test for Regression</a>
+      <ul>
+        <li><a href="#overall-significance-test-simple-regression">Overall Significance Test (Simple Regression)</a></li>
+        <li><a href="#relationship-to-r">Relationship to R²</a></li>
+      </ul>
+    </li>
+    <li><a href="#f-test-for-nested-models">F-Test for Nested Models</a>
+      <ul>
+        <li><a href="#comparing-two-models">Comparing Two Models</a></li>
+      </ul>
+    </li>
+    <li><a href="#model-selection-methods">Model Selection Methods</a>
+      <ul>
+        <li><a href="#1-backward-elimination">1. Backward Elimination</a></li>
+        <li><a href="#2-forward-selection">2. Forward Selection</a></li>
+        <li><a href="#3-stepwise-regression">3. Stepwise Regression</a></li>
+      </ul>
+    </li>
+    <li><a href="#information-criteria">Information Criteria</a>
+      <ul>
+        <li><a href="#akaike-information-criterion-aic">Akaike Information Criterion (AIC)</a></li>
+        <li><a href="#bayesian-information-criterion-bic">Bayesian Information Criterion (BIC)</a></li>
+      </ul>
+    </li>
+    <li><a href="#dealing-with-collinearity">Dealing with Collinearity</a>
+      <ul>
+        <li><a href="#what-is-collinearity">What is Collinearity?</a></li>
+        <li><a href="#detecting-collinearity">Detecting Collinearity</a></li>
+        <li><a href="#solutions-to-collinearity">Solutions to Collinearity</a></li>
+      </ul>
+    </li>
+    <li><a href="#regularization-ridge-and-lasso">Regularization: Ridge and Lasso</a>
+      <ul>
+        <li><a href="#ridge-regression">Ridge Regression</a></li>
+        <li><a href="#lasso-regression">Lasso Regression</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-generalized-linear-models-glm-and-logistic-regression" href="https://jawad.dev/docs/ml/lm/6_generalized_linear_models_and_logistic/">Generalized Linear Models (GLM) and Logistic Regression</a></h3>
+        <nav id="toc-generalized-linear-models-glm-and-logistic-regression">
+  <ul>
+    <li><a href="#generalized-linear-models-glm">Generalized Linear Models (GLM)</a>
+      <ul>
+        <li><a href="#the-three-components-of-a-glm">The Three Components of a GLM</a>
+          <ul>
+            <li><a href="#1-exponential-family-of-probability-distributions">1. Exponential Family of Probability Distributions</a></li>
+            <li><a href="#2-linear-predictor">2. Linear Predictor</a></li>
+            <li><a href="#3-link-function">3. Link Function</a></li>
+          </ul>
+        </li>
+        <li><a href="#glm-formula">GLM Formula</a></li>
+      </ul>
+    </li>
+    <li><a href="#common-link-functions">Common Link Functions</a></li>
+    <li><a href="#parameter-estimation-maximum-likelihood">Parameter Estimation: Maximum Likelihood</a></li>
+    <li><a href="#logistic-regression">Logistic Regression</a>
+      <ul>
+        <li><a href="#binary-response-distribution">Binary Response Distribution</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-logit-link-function">The Logit Link Function</a>
+      <ul>
+        <li><a href="#inverse-link-the-logistic-function">Inverse Link: The Logistic Function</a></li>
+      </ul>
+    </li>
+    <li><a href="#logistic-regression-model">Logistic Regression Model</a></li>
+    <li><a href="#maximum-likelihood-for-logistic-regression">Maximum Likelihood for Logistic Regression</a>
+      <ul>
+        <li><a href="#likelihood-function">Likelihood Function</a></li>
+        <li><a href="#log-likelihood">Log-Likelihood</a></li>
+        <li><a href="#negative-log-likelihood-loss-function">Negative Log-Likelihood (Loss Function)</a></li>
+      </ul>
+    </li>
+    <li><a href="#interpretation-and-decision-boundary">Interpretation and Decision Boundary</a>
+      <ul>
+        <li><a href="#odds-and-odds-ratio">Odds and Odds Ratio</a></li>
+        <li><a href="#decision-boundary">Decision Boundary</a></li>
+      </ul>
+    </li>
+    <li><a href="#model-evaluation-for-logistic-regression">Model Evaluation for Logistic Regression</a>
+      <ul>
+        <li><a href="#deviance">Deviance</a></li>
+        <li><a href="#confusion-matrix-and-metrics">Confusion Matrix and Metrics</a></li>
+        <li><a href="#roc-curve-and-auc">ROC Curve and AUC</a></li>
+      </ul>
+    </li>
+    <li><a href="#regularization-for-logistic-regression">Regularization for Logistic Regression</a>
+      <ul>
+        <li><a href="#l2-regularization-ridge">L2 Regularization (Ridge)</a></li>
+        <li><a href="#l1-regularization-lasso">L1 Regularization (Lasso)</a></li>
+      </ul>
+    </li>
+    <li><a href="#multiclass-logistic-regression">Multiclass Logistic Regression</a></li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#further-reading">Further Reading</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-mathematical-annexes" href="https://jawad.dev/docs/ml/lm/7_mathematical_annexes/">Mathematical Annexes</a></h3>
+        <nav id="toc-mathematical-annexes">
+  <ul>
+    <li><a href="#annex-a-ols-solution-for-simple-linear-regression">Annex A: OLS Solution for Simple Linear Regression</a>
+      <ul>
+        <li><a href="#problem-statement">Problem Statement</a></li>
+        <li><a href="#derivation">Derivation</a></li>
+      </ul>
+    </li>
+    <li><a href="#annex-b-normal-equation-for-multiple-regression">Annex B: Normal Equation for Multiple Regression</a>
+      <ul>
+        <li><a href="#problem-statement-1">Problem Statement</a></li>
+        <li><a href="#derivation-1">Derivation</a></li>
+        <li><a href="#properties-of-the-normal-equation">Properties of the Normal Equation</a></li>
+      </ul>
+    </li>
+    <li><a href="#annex-c-maximum-likelihood-for-logistic-regression">Annex C: Maximum Likelihood for Logistic Regression</a>
+      <ul>
+        <li><a href="#problem-statement-2">Problem Statement</a></li>
+        <li><a href="#likelihood-function">Likelihood Function</a></li>
+        <li><a href="#log-likelihood">Log-Likelihood</a></li>
+        <li><a href="#negative-log-likelihood-loss-function">Negative Log-Likelihood (Loss Function)</a></li>
+        <li><a href="#gradient-of-the-negative-log-likelihood">Gradient of the Negative Log-Likelihood</a></li>
+        <li><a href="#hessian-second-derivative-matrix">Hessian (Second Derivative Matrix)</a></li>
+        <li><a href="#newton-raphson-update">Newton-Raphson Update</a></li>
+      </ul>
+    </li>
+    <li><a href="#annex-d-derivation-of-coefficient-variance">Annex D: Derivation of Coefficient Variance</a>
+      <ul>
+        <li><a href="#distribution-of-the-estimator">Distribution of the Estimator</a></li>
+        <li><a href="#expected-value">Expected Value</a></li>
+        <li><a href="#variance-covariance-matrix">Variance-Covariance Matrix</a></li>
+        <li><a href="#distribution-under-normality">Distribution Under Normality</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
       </section>
   </section>
       </section>
@@ -109,18 +372,329 @@
 </aside>
 
   <main class="content">
-    <h1>Inference &amp; Diagnostic</h1>
+    <h1>Inference &amp; Diagnostic</h1><h2 id="residual-analysis" class=link_owner>
+  Residual Analysis
+  <a href="#residual-analysis" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>Residual analysis is critical for validating our regression assumptions and identifying potential problems.</p>
+<h3 id="types-of-residual-plots" class=link_owner>
+  Types of Residual Plots
+  <a href="#types-of-residual-plots" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<h4 id="1-residuals-vs-fitted-values" class=link_owner>
+  1. Residuals vs Fitted Values
+  <a href="#1-residuals-vs-fitted-values" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h4>
+<p>A plot of residuals against fitted values should show <strong>no pattern</strong>. If a pattern is observed, there may be issues:</p>
+
+<picture class="nav_logo" data-lit="https://jawad.dev/images/residuals_patterns.png" data-dark="https://jawad.dev/images/Common%20patterns%20in%20residual%20plots">
+  <img src="https://jawad.dev/images/residuals_patterns.png" alt="">
+</picture>
+
+<ul>
+<li><strong>No problem</strong>: Random scatter around zero</li>
+<li><strong>Heteroscedasticity</strong>: Variance increases with fitted values</li>
+<li><strong>Nonlinear</strong>: Curved pattern suggests missing nonlinear terms</li>
+</ul>
+<h4 id="key-insights-from-residual-plots" class=link_owner>
+  Key Insights from Residual Plots
+  <a href="#key-insights-from-residual-plots" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h4>
+<ul>
+<li>
+<p><strong>Heteroscedasticity</strong>: The variance of residuals is not constant → violates Gauss–Markov assumptions</p>
+<ul>
+<li><strong>Solution</strong>: Transform the target variable (logarithm, square root)</li>
+</ul>
+</li>
+<li>
+<p><strong>Nonlinearity</strong>: Scatterplots of residuals vs predictors show patterns</p>
+<ul>
+<li><strong>Solution</strong>: Add polynomial terms or other transformations</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="studentized-residuals" class=link_owner>
+  Studentized Residuals
+  <a href="#studentized-residuals" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>To identify outliers, we standardize residuals. Under the assumption of normality of errors:</p>
+\[
+t_i = \frac{\hat{\varepsilon}_i}{\hat{\sigma}\sqrt{1 - h_{ii}}}
+\]<p>where:</p>
+<ul>
+<li>
+<p>\(\hat{\sigma}\) is the estimated standard deviation of residuals:
+</p>
+\[
+  \hat{\sigma} = \sqrt{\frac{1}{n-2}\sum_{j=1}^{n}\hat{\varepsilon}_j^2}
+  \]</li>
+<li>
+<p>\(h_{ii}\) is the <strong>leverage</strong> (diagonal element of the hat matrix):
+</p>
+\[
+  h_{ii} = \frac{1}{n} + \frac{(X_i - \bar{X})^2}{\sum_{j=1}^{n}(X_j - \bar{X})^2}
+  \]</li>
+</ul>
+<p>Under the null hypothesis, \(t_i\) follows a <strong>Student's t-distribution</strong> with \(n-2\) degrees of freedom.</p>
+<h3 id="outlier-detection" class=link_owner>
+  Outlier Detection
+  <a href="#outlier-detection" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p><strong>Studentized residuals</strong> help identify observations that don't fit the model:</p>
+<ul>
+<li>Points with \(|t_i| > 2\) or \(|t_i| > 3\) are potential outliers</li>
+<li>
+<picture class="nav_logo" data-lit="https://jawad.dev/images/outliers_detection.png" data-dark="https://jawad.dev/images/Example%20showing%20outlier%20detection%20using%20studentized%20residuals">
+  <img src="https://jawad.dev/images/outliers_detection.png" alt="">
+</picture>
+</li>
+</ul>
+<hr>
+<h2 id="target-transformation" class=link_owner>
+  Target Transformation
+  <a href="#target-transformation" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p><strong>When to transform?</strong>
+Target transformation is necessary to cope with <strong>heteroscedasticity</strong>, which is often linked to the <strong>skewness</strong> of the target distribution.</p>
+<h3 id="common-transformations" class=link_owner>
+  Common Transformations
+  <a href="#common-transformations" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Problem</th>
+          <th>Transformation</th>
+          <th>Effect</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Right-skewed target</td>
+          <td>\(\log(Y)\)</td>
+          <td>Reduces skewness, stabilizes variance</td>
+      </tr>
+      <tr>
+          <td>Variance increases with Y</td>
+          <td>\(\sqrt{Y}\)</td>
+          <td>Moderate stabilization</td>
+      </tr>
+      <tr>
+          <td>Count data</td>
+          <td>\(\log(Y+1)\)</td>
+          <td>Handles zeros</td>
+      </tr>
+  </tbody>
+</table>
+
+<picture class="nav_logo" data-lit="https://jawad.dev/images/target_transformation.png" data-dark="https://jawad.dev/images/Before%20and%20after%20transformation%20of%20house%20prices">
+  <img src="https://jawad.dev/images/target_transformation.png" alt="">
+</picture>
+
+<p><strong>Example:</strong> Housing prices are often right-skewed. After log transformation, the distribution becomes more symmetric and residual variance is more constant.</p>
+<hr>
+<h2 id="diagnostic-plots" class=link_owner>
+  Diagnostic Plots
+  <a href="#diagnostic-plots" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>Modern statistical software provides multiple diagnostic plots. Here's what each reveals:</p>
+<h3 id="1-residuals-vs-fitted" class=link_owner>
+  1. Residuals vs Fitted
+  <a href="#1-residuals-vs-fitted" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p><strong>Purpose</strong>: Detect non-linearity and heteroscedasticity
+<strong>Ideal</strong>: Random scatter with no pattern</p>
+<h3 id="2-normal-q-q-plot" class=link_owner>
+  2. Normal Q-Q Plot
+  <a href="#2-normal-q-q-plot" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p><strong>Purpose</strong>: Check normality of residuals
+<strong>Ideal</strong>: Points lie on the diagonal line</p>
+
+<picture class="nav_logo" data-lit="https://jawad.dev/images/qq_plot.png" data-dark="https://jawad.dev/images/Q-Q%20plot%20for%20residuals">
+  <img src="https://jawad.dev/images/qq_plot.png" alt="">
+</picture>
+
+<p>If residuals deviate from the line:</p>
+<ul>
+<li><strong>Heavy tails</strong>: Points curve away at extremes</li>
+<li><strong>Skewness</strong>: Systematic deviation on one side</li>
+</ul>
+<h3 id="3-scale-location-plot" class=link_owner>
+  3. Scale-Location Plot
+  <a href="#3-scale-location-plot" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p><strong>Purpose</strong>: Check homoscedasticity (equal variance)
+<strong>Ideal</strong>: Horizontal line with evenly spread points</p>
+<h3 id="4-residuals-vs-leverage" class=link_owner>
+  4. Residuals vs Leverage
+  <a href="#4-residuals-vs-leverage" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p><strong>Purpose</strong>: Identify influential observations
+<strong>Uses</strong>: Cook's distance</p>
+<hr>
+<h2 id="influential-observations" class=link_owner>
+  Influential Observations
+  <a href="#influential-observations" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<h3 id="cooks-distance" class=link_owner>
+  Cook's Distance
+  <a href="#cooks-distance" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>Cook's distance \(D_i\) measures how much the regression coefficients change when observation \(i\) is removed:</p>
+\[
+D_i = \frac{\sum_{j=1}^{n}(\hat{y}_j - \hat{y}_{j(i)})^2}{p\hat{\sigma}^2}
+\]<p>where \(\hat{y}_{j(i)}\) is the fitted value when observation \(i\) is excluded.</p>
+<p><strong>Rule of thumb:</strong></p>
+<ul>
+<li>\(D_i > 0.5\): Potentially influential</li>
+<li>\(D_i > 1\): Highly influential</li>
+</ul>
+<h3 id="dffits" class=link_owner>
+  DFFITS
+  <a href="#dffits" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<p>DFFITS (Difference in Fits) is a scaled measure of change in the predicted value:</p>
+\[
+\text{DFFITS}_i = t_i \sqrt{\frac{h_{ii}}{1 - h_{ii}}}
+\]<p><strong>Cutoff</strong> (Belsley, Kuh, and Welsch):
+</p>
+\[
+2\sqrt{\frac{p}{n}}
+\]
+<picture class="nav_logo" data-lit="https://jawad.dev/images/dffits.png" data-dark="https://jawad.dev/images/DFFITS%20plot%20showing%20influential%20observations">
+  <img src="https://jawad.dev/images/dffits.png" alt="">
+</picture>
+
+<hr>
+<h2 id="coefficient-of-determination-r" class=link_owner>
+  Coefficient of Determination (R²)
+  <a href="#coefficient-of-determination-r" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>\(R^2\) measures the <strong>proportion of variance</strong> in \(Y\) explained by \(X\):</p>
+\[
+R^2 = \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\text{SSE}}{\text{SST}} = 1 - \frac{\sum(Y_i - \hat{Y}_i)^2}{\sum(Y_i - \bar{Y})^2}
+\]<p>where:</p>
+<ul>
+<li><strong>SST</strong> (Total Sum of Squares) = \(\sum(Y_i - \bar{Y})^2\)</li>
+<li><strong>SSR</strong> (Regression Sum of Squares) = \(\sum(\hat{Y}_i - \bar{Y})^2\)</li>
+<li><strong>SSE</strong> (Error Sum of Squares) = \(\sum(Y_i - \hat{Y}_i)^2\)</li>
+</ul>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li>\(R^2 = 0\): Model explains no variance (no better than the mean)</li>
+<li>\(R^2 = 1\): Perfect fit (all variance explained)</li>
+<li>For simple linear regression: \(R^2 = \text{Cor}(Y, \hat{Y})^2\)</li>
+</ul>
+<hr>
+<h2 id="summary" class=link_owner>
+  Summary
+  <a href="#summary" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>In this lesson we covered:</p>
+<ol>
+<li>✅ <strong>Residual analysis</strong> to detect violations of assumptions</li>
+<li>✅ <strong>Studentized residuals</strong> for outlier detection</li>
+<li>✅ <strong>Target transformations</strong> to handle heteroscedasticity</li>
+<li>✅ <strong>Diagnostic plots</strong> (Q-Q, scale-location, leverage)</li>
+<li>✅ <strong>Influential observations</strong> (Cook's distance, DFFITS)</li>
+<li>✅ <strong>R²</strong> as a measure of model fit</li>
+</ol>
+<p><strong>Next:</strong> We'll extend to <strong>multiple regression</strong> with several predictors, learning matrix notation and the normal equation.</p>
+
     <div class="pager">
   
     
     <div class="pager_item prev">
-      <a href="http://localhost:1313/docs/ml/lm/2_simple_linear_regression/" class="pager_link button" title="Simple Linear Regression" rel="prev">
+      <a href="https://jawad.dev/docs/ml/lm/2_simple_linear_regression/" class="pager_link button" title="Simple Linear Regression" rel="prev">
         <span class="pager_label">Simple Linear Regression</span>
       </a>
     </div>
     
   
 
+  
+    
+    <div class="pager_item next">
+      <a href="https://jawad.dev/docs/ml/lm/4_multiple_regression_and_feature_engineering/" class="pager_link button" title="Multiple Regression and Feature Engineering" rel="next">
+        <span class="pager_label">Multiple Regression and Feature Engineering</span>
+      </a>
+    </div>
+    
   
 </div>
   </main>
@@ -142,7 +716,7 @@ const no_matches_found = 'No matches found';
 <footer class="pt-2 pb-2">
   <div class="wrap">
     <p>
-      &copy; <span class="year">2025</span>
+      &copy; <span class="year">2026</span>
     </p>
     <a href="#pagetop" id="toTop" title=Back&#32;to&#32;top></a>
   </div>
@@ -240,7 +814,7 @@ const no_matches_found = 'No matches found';
 </svg>
 
 <script>
-  "use strict";const doc=document.documentElement,toggle_id="toggle",show_id="show",menu="menu",active="active";let site_title=`personal-website`,root_url="/";root_url=root_url.startsWith("http")?root_url:window.location.origin;const go_back_class="button_back",line_class=".line",code_block_config=JSON.parse('{"maximum":10,"show":false}'),iconsPath=`icons/`,shell_based=["sh","shell","zsh","bash"],body=elem("body"),max_lines=code_block_config.maximum,show_lines=code_block_config.show,copy_id="panel_copy",wrap_id="panel_wrap",lines_id="panel_lines",panel_expand="panel_expand",panel_expanded="panel_expanded",panel_box="panel_box",panel_hide="panel_hide",panel_from="panel_from",full_height="initial",highlight="highlight",highlight_wrap="highlight_wrap",hash="#",light="light",dark="dark",storageKey=`${site_title}-color-mode`,mermaidThemeKey=`${site_title}-mermaid`,key="--color-mode",mode_data="data-mode",bank=window.localStorage;function isObj(e){return!!(e&&typeof e=="object"&&e!==null)}function createEl(e="div"){return document.createElement(e)}function emptyEl(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function elem(e,t=document){let n=!!isObj(t)&&t.querySelector(e);return n||!1}function elems(e,t=document){return isObj(t)?t.querySelectorAll(e):[]}function pushClass(e,t){if(isObj(e)&&t){let n=e.classList;!n.contains(t)&&n.add(t)}}function deleteClass(e,t){if(isObj(e)&&t){let n=e.classList;!!n.contains(t)&&n.remove(t)}}function modifyClass(e,t){if(isObj(e)&&t){const n=e.classList;n.contains(t)?n.remove(t):n.add(t)}}function containsClass(e,t){if(isObj(e)&&t&&e!==document)return!!e.classList.contains(t)}function isChild(e,t){let n=isObj(e)&&t&&typeof t=="string";return!!(n&&e.closest(t))}function elemAttribute(e,t,n=null){if(n)e.setAttribute(t,n);else return n=e.getAttribute(t),n||!1}function deleteChars(e,t){let n=e;if(Array.isArray(t))for(let e=0;e<t.length;e++)n=n.replace(t[e],"");else n=n.replace(t,"");return n}function isBlank(e){return!e||e.trim().length===0}function isMatch(e,t){if(isObj(e)){if(t.isArray){let n=t.map(function(t){return e.matches(t)});return n.includes(!0)}return e.matches(t)}}function closestInt(e,t){return t.reduce(function(t,n){return Math.abs(n-e)<Math.abs(t-e)?n:t})}function hasClasses(e){if(isObj(e)){const t=e.classList;return t.length}}function wrapEl(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)}function wrapText(e,t,n="mark"){let s=`<${n}>`,o=`</${n}>`,r=`%3C${n}%3E`,c=`%3C/${n}%3E`;function i(t){let n=t.innerHTML,a=new RegExp(e,"gi"),i=e.length?n.match(a):null;if(i){i.forEach(function(e){n=n.replaceAll(e,`${s}${e}${o}`),t.innerHTML=n});const e=elems("img",t);e&&e.forEach(e=>{e.src=e.src.replaceAll(s,"").replaceAll(o,"").replaceAll(r,"").replaceAll(c,"")})}}const l=["h1","h2","h3","h4","h5","h6","p","code","td"];l.forEach(function(e){const n=elems(e,t);n.length&&n.forEach(function(e){e.children.length>=1?(Array.from(e.children).forEach(function(e){i(e)}),i(e)):i(e)})});const a=elems("a");a&&a.forEach(function(e){e.href=e.href.replaceAll(encodeURI(s),"").replaceAll(encodeURI(o),"")})}function parseBoolean(e=""){switch(e=e.trim().toLowerCase(),e){case"true":return!0;case"false":return!1;default:return void 0}}function loadSvg(e,t){t.innerHTML=`
+  "use strict";const doc=document.documentElement,toggle_id="toggle",show_id="show",menu="menu",active="active";let site_title=`personal-website`,root_url="/";root_url=root_url.startsWith("http")?root_url:window.location.origin;const go_back_class="button_back",line_class=".line",code_block_config=JSON.parse('{"maximum":10,"show":false}'),iconsPath=`icons/`,shell_based=["sh","shell","zsh","bash"],body=elem("body"),max_lines=code_block_config.maximum,show_lines=code_block_config.show,copy_id="panel_copy",wrap_id="panel_wrap",lines_id="panel_lines",panel_expand="panel_expand",panel_expanded="panel_expanded",panel_box="panel_box",panel_hide="panel_hide",panel_from="panel_from",full_height="initial",highlight="highlight",highlight_wrap="highlight_wrap",hash="#",light="light",dark="dark",storageKey=`${site_title}-color-mode`,mermaidThemeKey=`${site_title}-mermaid`,key="--color-mode",mode_data="data-mode",bank=window.localStorage;function isObj(e){return!!(e&&typeof e=="object"&&e!==null)}function createEl(e="div"){return document.createElement(e)}function emptyEl(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function elem(e,t=document){let n=!!isObj(t)&&t.querySelector(e);return n}function elems(e,t=document){return isObj(t)?t.querySelectorAll(e):[]}function pushClass(e,t){if(isObj(e)&&t){let n=e.classList;!n.contains(t)&&n.add(t)}}function deleteClass(e,t){if(isObj(e)&&t){let n=e.classList;!!n.contains(t)&&n.remove(t)}}function modifyClass(e,t){if(isObj(e)&&t){const n=e.classList;n.contains(t)?n.remove(t):n.add(t)}}function containsClass(e,t){if(isObj(e)&&t&&e!==document)return!!e.classList.contains(t)}function isChild(e,t){let n=isObj(e)&&t&&typeof t=="string";return!!(n&&e.closest(t))}function elemAttribute(e,t,n=null){if(n)e.setAttribute(t,n);else return n=e.getAttribute(t),n}function deleteChars(e,t){let n=e;if(Array.isArray(t))for(let e=0;e<t.length;e++)n=n.replace(t[e],"");else n=n.replace(t,"");return n}function isBlank(e){return!e||e.trim().length===0}function isMatch(e,t){if(isObj(e)){if(t.isArray){let n=t.map(function(t){return e.matches(t)});return n.includes(!0)}return e.matches(t)}}function closestInt(e,t){return t.reduce(function(t,n){return Math.abs(n-e)<Math.abs(t-e)?n:t})}function hasClasses(e){if(isObj(e)){const t=e.classList;return t.length}}function wrapEl(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)}function wrapText(e,t,n="mark"){let s=`<${n}>`,o=`</${n}>`,r=`%3C${n}%3E`,c=`%3C/${n}%3E`;function i(t){let n=t.innerHTML,a=new RegExp(e,"gi"),i=e.length?n.match(a):null;if(i){i.forEach(function(e){n=n.replaceAll(e,`${s}${e}${o}`),t.innerHTML=n});const e=elems("img",t);e&&e.forEach(e=>{e.src=e.src.replaceAll(s,"").replaceAll(o,"").replaceAll(r,"").replaceAll(c,"")})}}const l=["h1","h2","h3","h4","h5","h6","p","code","td"];l.forEach(function(e){const n=elems(e,t);n.length&&n.forEach(function(e){e.children.length>=1?(Array.from(e.children).forEach(function(e){i(e)}),i(e)):i(e)})});const a=elems("a");a&&a.forEach(function(e){e.href=e.href.replaceAll(encodeURI(s),"").replaceAll(encodeURI(o),"")})}function parseBoolean(e=""){switch(e=e.trim().toLowerCase(),e){case"true":return!0;case"false":return!1;default:return 0[0]}}function loadSvg(e,t){t.innerHTML=`
   <svg class="icon_${e}">
     <use xlink:href="#${e}"></use>
   </svg>`}function copyToClipboard(e){let t,n,s;t=createEl("textarea"),t.value=e,t.setAttribute("readonly",""),t.style.position="absolute",t.style.left="-9999px",n=document.getSelection(),doc.appendChild(t),s=n.rangeCount>0&&n.getRangeAt(0),t.select(),document.execCommand("copy"),doc.removeChild(t),s&&(n.removeAllRanges(),n.addRange(s))}const snippet_actions=[{icon:"copy",id:"copy",title:copy_text,show:!0},{icon:"order",id:"lines",title:toggle_line_numbers_text,show:!0},{icon:"carly",id:"wrap",title:toggle_line_wrap_text,show:!1},{icon:"expand",id:"expand",title:resize_snippet,show:!1}];function addLines(e){let t=e.textContent;const n=[];t.includes(`
@@ -249,7 +823,7 @@ const no_matches_found = 'No matches found';
         <span class="line line-flex">
           <span class="ln">${s+1}</span>
           <span class="cl">${t.trim()}</span>
-        </span>`.trim();n.push(o),e.closest("pre").className="chroma",pushClass(e,"language-unknown"),e.dataset.lang=not_set}}),e.innerHTML=n.join("").trim(" "))}function wrapOrphanedPreElements(){const e=elems("pre");Array.from(e).forEach(function(e){const t=e.parentNode,n=!containsClass(t,highlight);if(n){const t=createEl();t.className=highlight;const n=createEl();n.className=highlight_wrap,wrapEl(e,t),wrapEl(t,n)}})}wrapOrphanedPreElements();function codeBlocks(){const e=elems("code"),t=Array.from(e).filter(function(e){return addLines(e),e.closest("pre")&&!Array.from(e.classList).includes("noClass")}).map(function(e){return e});return t}function codeBlockFits(e){const t=e.offsetWidth,n=e.closest(`.${highlight}`).offsetWidth;return t<=n}function maxHeightIsSet(e){let t=e.style.maxHeight;return t.includes("px")}function restrainCodeBlockHeight(e){const n=e[max_lines-1];let t=full_height;if(n){const s=n.offsetTop;if(s!==0){t=`${s}px`;const n=e[0].parentNode,o=n.closest(`.${highlight}`),i=containsClass(o,panel_expanded);i||(n.dataset.height=t,n.style.maxHeight=t)}}}const blocks=codeBlocks();function collapseCodeBlock(e){const t=elems(line_class,e),n=t.length;if(n>max_lines){const n=createEl();pushClass(n,panel_expand),pushClass(n,panel_from),n.title="Toggle snippet",n.textContent="...";const s=e.closest(".highlight");window.setTimeout(function(){const e=s.nextElementSibling.lastElementChild;deleteClass(e,panel_hide)},150),restrainCodeBlockHeight(t);const o=e.parentNode.parentNode;o.appendChild(n)}}blocks.forEach(function(e){collapseCodeBlock(e)});function actionPanel(){const e=createEl();return e.className=panel_box,snippet_actions.forEach(function(t){const n=createEl("a");n.href="#",n.title=t.title,n.className=`icon panel_icon panel_${t.id}`,!t.show&&pushClass(n,panel_hide),loadSvg(t.icon,n),e.appendChild(n)}),e}function toggleLineNumbers(e){e&&(e.forEach(e=>modifyClass(e,"pre_nolines")),restrainCodeBlockHeight(e))}function toggleLineWrap(e){modifyClass(e,"pre_wrap");const t=elems(".ln",e);restrainCodeBlockHeight(t)}function copyCode(e){const t=e.parentNode.parentNode.querySelector(`.${copy_id}`),s=t.title;loadSvg("check",t),t.title=copied_text,e=e.cloneNode(!0);const n=elems(".ln",e);!!n.length&&n.forEach(e=>e.remove());let o=elems("span",e);o.forEach(e=>{const t=e.textContent.trim(" ");t.indexOf("$")===0&&(e.textContent=e.textContent.replace("$ ",""))});const i=e.textContent.trim(" ");copyToClipboard(i),setTimeout(function(){t.title=s,loadSvg("copy",t)},2250)}(function(){const n=highlight_wrap;blocks.forEach(function(e){show_lines===!1&&toggleLineNumbers(elems(".ln",e));const o=e.parentNode.parentNode,t=createEl();t.className=n,wrapEl(o,t);const s=actionPanel(),i=elem(`.${wrap_id}`,s);!codeBlockFits(e)&&deleteClass(i,panel_hide),t.appendChild(s)});function t(e,t){return e.matches(`.${t}`)||e.closest(`.${t}`)}function s(e,t){const n=e.matches(`.${t}`)?e:e.closest(`.${t}`);deleteClass(n,active),setTimeout(function(){modifyClass(n,active)},50)}doc.addEventListener("click",function(e){const o=e.target,i=t(o,copy_id),a=t(o,wrap_id),r=t(o,lines_id),c=t(o,panel_expand),l=i||a||r||c;if(l){e.preventDefault(),s(o,"icon");const t=o.closest(`.${n}`).firstElementChild.firstElementChild;let l=elems(".ln",t);if(!!a&&toggleLineWrap(t),!!r&&toggleLineNumbers(l),c){let e=t.firstElementChild;const n=e.closest(".highlight");maxHeightIsSet(e)?(e.style.maxHeight=full_height,pushClass(n,panel_expanded)):(e.style.maxHeight=e.dataset.height,deleteClass(n,panel_expanded))}!!i&&copyCode(t)}}),function(){blocks.forEach(e=>{let t=e.dataset.lang;const n=shell_based.includes(t);if(n){const t=elems(line_class,e);Array.from(t).forEach(e=>{e=e.lastElementChild;let t=e.textContent.trim(" ");!!(t.indexOf("$")!==0&&t.trim(" ").length)&&pushClass(e,"shell")})}if(t=t==="sh"?"shell":t,t!=="fallback"){const n=createEl();n.textContent=t,pushClass(n,"lang"),e.closest(`.${highlight_wrap}`).appendChild(n)}})}()})();function prefersColor(e){return`(prefers-color-scheme: ${e})`}function systemMode(){return window.matchMedia&&window.matchMedia(prefersColor(dark)).matches?dark:light}function currentMode(){let e=light+dark;e=[...e];let t=getComputedStyle(doc).getPropertyValue(key).replace(/"/g,"").trim();return[...t].filter(t=>e.includes(t)).join("")}function changeMode(e){e?(bank.setItem(storageKey,light),elemAttribute(doc,mode_data,light)):(bank.setItem(storageKey,dark),elemAttribute(doc,mode_data,dark))}function pickModePicture(e){elems("picture").forEach(function(t){let o=t.firstElementChild;const n=t.dataset,s=[n.lit,n.dark];o.src=e=="dark"?s[1]:s[0]})}function setMermaidTheme(e){bank.setItem(mermaidThemeKey,e);let t=elem(".color_choice");t.value=e}function setUserColorMode(e=!1){const n=currentMode()==dark,s=bank.getItem(storageKey),o=systemMode();s?e?changeMode(n):elemAttribute(doc,mode_data,s):changeMode(e===!0?n:o!==dark);const t=doc.dataset.mode;doc.dataset.systemmode=o,!!t&&pickModePicture(t),setMermaidTheme(t)}setUserColorMode(),function(){return elem(".nav_header").offsetHeight+25}();function toggleMenu(e){const t=e.target,o=t.matches(`.${toggle_id}`),n=t.closest(`.${toggle_id}`),i=elems(`.${show_id}`)?Array.from(elems(`.${show_id}`)):[],a=t.closest(`.${menu}`);function s(e,t=!1){i.forEach(function(n){!t&&deleteClass(n,show_id),n!==e.closest(`.${menu}`)&&deleteClass(n,show_id)})}if(o||n){const s=n?n.parentNode.parentNode:t.parentNode.parentNode;e.preventDefault(),modifyClass(s,show_id)}else a?s(t,!0):s(t)}(function(){const t=elems("code");t&&t.forEach(function(e){hasClasses(e)||!e.children.length&&pushClass(e,"noClass")})})();function featureHeading(){const t="section_link",n="section_title",e=elem(".aside");if(e){let s=elem(`.${t}.${active}`);s=s||elem(`.${n}.${active}`),e.scroll({top:s.offsetTop,left:0})}}function activeHeading(e,t){let n=Object.create(null);n.active=t.filter(function(e){return containsClass(e,active)})[0],n.new=t[e],n.active!=n.new&&(!!n.active&&deleteClass(n.active,active),pushClass(n.new,active))}setTimeout(()=>{featureHeading()},50);function updateDate(){const t=new Date,e=t.getFullYear().toString,n=elem(".year");!!n&&(e.textContent=e)}function customizeSidebar(){const e="toc_active",n=elem("aside"),t=elems("nav",n);if(t){t.forEach(function(t){if(t.id="",pushClass(t,"toc"),t.children.length>=1){const n=Array.from(t.children[0].children),s=t.previousElementSibling;!!s.matches(`.${active}`)&&pushClass(t,e),n.forEach(function(e){pushClass(e,"toc_item"),pushClass(e.firstElementChild,"toc_link")})}});const n=elem(`.${e}`);if(n){const e=Array.from(elems("a",n)),t=e.map(function(e){return document.getElementById(decodeURIComponent(e.hash.replace("#","")))});window.addEventListener("scroll",function(){let o=window.scrollY+window.innerHeight/2,s=0;for(const[n,e]of t.entries())e.offsetTop<o&&e.offsetTop>t[s].offsetTop&&(s=n);activeHeading(s,e)})}}elems("p").forEach(function(e){const t=elems(".button",e);t.length>1&&pushClass(e,"button_grid")})}function markExternalLinks(){let e=elems("a");e&&Array.from(e).forEach(function(e){let n,o,i,s,a,r,t,c;t=new URL(e.href),c=t.host!==location.host||t.protocol!==location.protocol||t.port!==location.port,c&&(n="target",o="rel",i="_blank",s="noopener",a=elemAttribute(e,n),r=elemAttribute(e,s),!a&&elemAttribute(e,n,i),!r&&elemAttribute(e,o,s))})}function sanitizeURL(e){const t=e.indexOf(hash);if(t>-1){const n=e.substr(t,e.length-1);e=e.replace(n,"")}return e}function copyFeedback(e){const t=document.createElement("div"),n="link_yanked";if(t.classList.add(n),t.innerText=copied_text,!elem(`.${n}`,e)){const n=e.getElementsByTagName("svg")[0],s=n.src;n.src="http://localhost:1313/icons/check.svg",e.appendChild(t),setTimeout(function(){e.removeChild(t),n.src=s},2250)}}function copyHeadingLink(){let t,n,s,o,e;t="link",n=elems(`.${t}`),n&&document.addEventListener("click",function(n){e=n.target,o=e.parentNode,(e&&containsClass(e,t)||containsClass(o,t))&&(n.preventDefault(),s=e.href!=void 0?e.href:e.parentNode.href,copyToClipboard(s),copyFeedback(e.href!=void 0?e:e.parentNode))})}function makeTablesResponsive(){const e=elems("table");e&&e.forEach(function(e){const t=createEl();pushClass(t,"scrollable"),wrapEl(e,t)})}function backToTop(){const e=elem("#toTop");window.addEventListener("scroll",()=>{const t=window.scrollY;t>=200?(e.style.display="flex",pushClass(e,active)):deleteClass(e,active)})}function lazyLoadMedia(e=[]){e.forEach(e=>{let t=elems(e);t&&Array.from(t).forEach(function(e){e.loading="lazy"})})}function loadActions(){updateDate(),customizeSidebar(),markExternalLinks(),copyHeadingLink(),makeTablesResponsive(),backToTop(),lazyLoadMedia(["iframe","img"]),doc.addEventListener("click",e=>{let t=e.target,n="color_choice",s=containsClass(t,n);!!s&&setUserColorMode(!0),toggleMenu(e)})}window.addEventListener("load",loadActions())
+        </span>`.trim();n.push(o),e.closest("pre").className="chroma",pushClass(e,"language-unknown"),e.dataset.lang=not_set}}),e.innerHTML=n.join("").trim(" "))}function wrapOrphanedPreElements(){const e=elems("pre");Array.from(e).forEach(function(e){const t=e.parentNode,n=!containsClass(t,highlight);if(n){const t=createEl();t.className=highlight;const n=createEl();n.className=highlight_wrap,wrapEl(e,t),wrapEl(t,n)}})}wrapOrphanedPreElements();function codeBlocks(){const e=elems("code"),t=Array.from(e).filter(function(e){return addLines(e),e.closest("pre")&&!Array.from(e.classList).includes("noClass")}).map(function(e){return e});return t}function codeBlockFits(e){const t=e.offsetWidth,n=e.closest(`.${highlight}`).offsetWidth;return t<=n}function maxHeightIsSet(e){let t=e.style.maxHeight;return t.includes("px")}function restrainCodeBlockHeight(e){const n=e[max_lines-1];let t=full_height;if(n){const s=n.offsetTop;if(s!==0){t=`${s}px`;const n=e[0].parentNode,o=n.closest(`.${highlight}`),i=containsClass(o,panel_expanded);i||(n.dataset.height=t,n.style.maxHeight=t)}}}const blocks=codeBlocks();function collapseCodeBlock(e){const t=elems(line_class,e),n=t.length;if(n>max_lines){const n=createEl();pushClass(n,panel_expand),pushClass(n,panel_from),n.title="Toggle snippet",n.textContent="...";const s=e.closest(".highlight");window.setTimeout(function(){const e=s.nextElementSibling.lastElementChild;deleteClass(e,panel_hide)},150),restrainCodeBlockHeight(t);const o=e.parentNode.parentNode;o.appendChild(n)}}blocks.forEach(function(e){collapseCodeBlock(e)});function actionPanel(){const e=createEl();return e.className=panel_box,snippet_actions.forEach(function(t){const n=createEl("a");n.href="#",n.title=t.title,n.className=`icon panel_icon panel_${t.id}`,!t.show&&pushClass(n,panel_hide),loadSvg(t.icon,n),e.appendChild(n)}),e}function toggleLineNumbers(e){e&&(e.forEach(e=>modifyClass(e,"pre_nolines")),restrainCodeBlockHeight(e))}function toggleLineWrap(e){modifyClass(e,"pre_wrap");const t=elems(".ln",e);restrainCodeBlockHeight(t)}function copyCode(e){const t=e.parentNode.parentNode.querySelector(`.${copy_id}`),s=t.title;loadSvg("check",t),t.title=copied_text,e=e.cloneNode(!0);const n=elems(".ln",e);!!n.length&&n.forEach(e=>e.remove());let o=elems("span",e);o.forEach(e=>{const t=e.textContent.trim(" ");t.indexOf("$")===0&&(e.textContent=e.textContent.replace("$ ",""))});const i=e.textContent.trim(" ");copyToClipboard(i),setTimeout(function(){t.title=s,loadSvg("copy",t)},2250)}(function(){const n=highlight_wrap;blocks.forEach(function(e){show_lines===!1&&toggleLineNumbers(elems(".ln",e));const o=e.parentNode.parentNode,t=createEl();t.className=n,wrapEl(o,t);const s=actionPanel(),i=elem(`.${wrap_id}`,s);!codeBlockFits(e)&&deleteClass(i,panel_hide),t.appendChild(s)});function t(e,t){return e.matches(`.${t}`)||e.closest(`.${t}`)}function s(e,t){const n=e.matches(`.${t}`)?e:e.closest(`.${t}`);deleteClass(n,active),setTimeout(function(){modifyClass(n,active)},50)}doc.addEventListener("click",function(e){const o=e.target,i=t(o,copy_id),a=t(o,wrap_id),r=t(o,lines_id),c=t(o,panel_expand),l=i||a||r||c;if(l){e.preventDefault(),s(o,"icon");const t=o.closest(`.${n}`).firstElementChild.firstElementChild;let l=elems(".ln",t);if(!!a&&toggleLineWrap(t),!!r&&toggleLineNumbers(l),c){let e=t.firstElementChild;const n=e.closest(".highlight");maxHeightIsSet(e)?(e.style.maxHeight=full_height,pushClass(n,panel_expanded)):(e.style.maxHeight=e.dataset.height,deleteClass(n,panel_expanded))}!!i&&copyCode(t)}}),function(){blocks.forEach(e=>{let t=e.dataset.lang;const n=shell_based.includes(t);if(n){const t=elems(line_class,e);Array.from(t).forEach(e=>{e=e.lastElementChild;let t=e.textContent.trim(" ");!!(t.indexOf("$")!==0&&t.trim(" ").length)&&pushClass(e,"shell")})}if(t=t==="sh"?"shell":t,t!=="fallback"){const n=createEl();n.textContent=t,pushClass(n,"lang"),e.closest(`.${highlight_wrap}`).appendChild(n)}})}()})();function prefersColor(e){return`(prefers-color-scheme: ${e})`}function systemMode(){return window.matchMedia&&window.matchMedia(prefersColor(dark)).matches?dark:light}function currentMode(){let e=light+dark;e=[...e];let t=getComputedStyle(doc).getPropertyValue(key).replace(/"/g,"").trim();return[...t].filter(t=>e.includes(t)).join("")}function changeMode(e){e?(bank.setItem(storageKey,light),elemAttribute(doc,mode_data,light)):(bank.setItem(storageKey,dark),elemAttribute(doc,mode_data,dark))}function pickModePicture(e){elems("picture").forEach(function(t){let o=t.firstElementChild;const n=t.dataset,s=[n.lit,n.dark];o.src=e=="dark"?s[1]:s[0]})}function setMermaidTheme(e){bank.setItem(mermaidThemeKey,e);let t=elem(".color_choice");t.value=e}function setUserColorMode(e=!1){const n=currentMode()==dark,s=bank.getItem(storageKey),o=systemMode();s?e?changeMode(n):elemAttribute(doc,mode_data,s):changeMode(e===!0?n:o!==dark);const t=doc.dataset.mode;doc.dataset.systemmode=o,!!t&&pickModePicture(t),setMermaidTheme(t)}setUserColorMode(),function(){return elem(".nav_header").offsetHeight+25}();function toggleMenu(e){const t=e.target,o=t.matches(`.${toggle_id}`),n=t.closest(`.${toggle_id}`),i=elems(`.${show_id}`)?Array.from(elems(`.${show_id}`)):[],a=t.closest(`.${menu}`);function s(e,t=!1){i.forEach(function(n){!t&&deleteClass(n,show_id),n!==e.closest(`.${menu}`)&&deleteClass(n,show_id)})}if(o||n){const s=n?n.parentNode.parentNode:t.parentNode.parentNode;e.preventDefault(),modifyClass(s,show_id)}else a?s(t,!0):s(t)}(function(){const t=elems("code");t&&t.forEach(function(e){hasClasses(e)||!e.children.length&&pushClass(e,"noClass")})})();function featureHeading(){const t="section_link",n="section_title",e=elem(".aside");if(e){let s=elem(`.${t}.${active}`);s=s||elem(`.${n}.${active}`),e.scroll({top:s.offsetTop,left:0})}}function activeHeading(e,t){let n=Object.create(null);n.active=t.filter(function(e){return containsClass(e,active)})[0],n.new=t[e],n.active!=n.new&&(!!n.active&&deleteClass(n.active,active),pushClass(n.new,active))}setTimeout(()=>{featureHeading()},50);function updateDate(){const t=new Date,e=t.getFullYear().toString,n=elem(".year");!!n&&(e.textContent=e)}function customizeSidebar(){const e="toc_active",n=elem("aside"),t=elems("nav",n);if(t){t.forEach(function(t){if(t.id="",pushClass(t,"toc"),t.children.length>=1){const n=Array.from(t.children[0].children),s=t.previousElementSibling;!!s.matches(`.${active}`)&&pushClass(t,e),n.forEach(function(e){pushClass(e,"toc_item"),pushClass(e.firstElementChild,"toc_link")})}});const n=elem(`.${e}`);if(n){const e=Array.from(elems("a",n)),t=e.map(function(e){return document.getElementById(decodeURIComponent(e.hash.replace("#","")))});window.addEventListener("scroll",function(){let o=window.scrollY+window.innerHeight/2,s=0;for(const[n,e]of t.entries())e.offsetTop<o&&e.offsetTop>t[s].offsetTop&&(s=n);activeHeading(s,e)})}}elems("p").forEach(function(e){const t=elems(".button",e);t.length>1&&pushClass(e,"button_grid")})}function markExternalLinks(){let e=elems("a");e&&Array.from(e).forEach(function(e){let n,o,i,s,a,r,t,c;t=new URL(e.href),c=t.host!==location.host||t.protocol!==location.protocol||t.port!==location.port,c&&(n="target",o="rel",i="_blank",s="noopener",a=elemAttribute(e,n),r=elemAttribute(e,s),!a&&elemAttribute(e,n,i),!r&&elemAttribute(e,o,s))})}function sanitizeURL(e){const t=e.indexOf(hash);if(t>-1){const n=e.substr(t,e.length-1);e=e.replace(n,"")}return e}function copyFeedback(e){const t=document.createElement("div"),n="link_yanked";if(t.classList.add(n),t.innerText=copied_text,!elem(`.${n}`,e)){const n=e.getElementsByTagName("svg")[0],s=n.src;n.src="https://jawad.dev/icons/check.svg",e.appendChild(t),setTimeout(function(){e.removeChild(t),n.src=s},2250)}}function copyHeadingLink(){let t,n,s,o,e;t="link",n=elems(`.${t}`),n&&document.addEventListener("click",function(n){e=n.target,o=e.parentNode,(e&&containsClass(e,t)||containsClass(o,t))&&(n.preventDefault(),s=e.href!=0[0]?e.href:e.parentNode.href,copyToClipboard(s),copyFeedback(e.href!=0[0]?e:e.parentNode))})}function makeTablesResponsive(){const e=elems("table");e&&e.forEach(function(e){const t=createEl();pushClass(t,"scrollable"),wrapEl(e,t)})}function backToTop(){const e=elem("#toTop");window.addEventListener("scroll",()=>{const t=window.scrollY;t>=200?(e.style.display="flex",pushClass(e,active)):deleteClass(e,active)})}function lazyLoadMedia(e=[]){e.forEach(e=>{let t=elems(e);t&&Array.from(t).forEach(function(e){e.loading="lazy"})})}function loadActions(){updateDate(),customizeSidebar(),markExternalLinks(),copyHeadingLink(),makeTablesResponsive(),backToTop(),lazyLoadMedia(["iframe","img"]),doc.addEventListener("click",e=>{let t=e.target,n="color_choice",s=containsClass(t,n);!!s&&setUserColorMode(!0),toggleMenu(e)})}window.addEventListener("load",loadActions())
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </body>

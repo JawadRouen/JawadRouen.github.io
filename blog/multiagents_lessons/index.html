@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang=en data-mode=auto itemscope itemtype=http://schema.org/WebPage>
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.147.1">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.155.1">
 <link rel="apple-touch-icon" sizes="180x180" href='https://jawad.dev/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://jawad.dev/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://jawad.dev/favicons/favicon-16x16.png'>
@@ -9,28 +9,14 @@
 <link rel="mask-icon" href='https://jawad.dev/favicons/safari-pinned-tab.svg' color="#004750">
 <link rel="shortcut icon" href='https://jawad.dev/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://jawad.dev/favicons/browserconfig.xml'>
-<title>From PoC to Production | Personal Website</title><meta property="og:url" content="https://jawad.dev/blog/multiagents_lessons/">
-  <meta property="og:site_name" content="Personal Website">
-  <meta property="og:title" content="From PoC to Production">
-  <meta property="og:description" content="Hard-Earned Lessons in Building Real AI Systems">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="blog">
-    <meta property="article:published_time" content="2025-06-21T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-06-22T16:50:13+02:00">
-    <meta property="article:tag" content="AI">
-    <meta property="article:tag" content="Production">
-    <meta property="article:tag" content="Evaluation">
+<title>From PoC to Production | Personal Website</title><meta property="og:title" content="From PoC to Production" />
+<meta property="og:description" content="Hard-Earned Lessons in Building Real AI Systems" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jawad.dev/blog/multiagents_lessons/" />
 
-  <meta itemprop="name" content="From PoC to Production">
-  <meta itemprop="description" content="Hard-Earned Lessons in Building Real AI Systems">
-  <meta itemprop="datePublished" content="2025-06-21T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-06-22T16:50:13+02:00">
-  <meta itemprop="wordCount" content="2356">
-  <meta itemprop="keywords" content="AI,Production,Evaluation">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="From PoC to Production">
-  <meta name="twitter:description" content="Hard-Earned Lessons in Building Real AI Systems">
+
+
+<meta property="og:site_name" content="Personal Website" />
 
 <link rel="stylesheet" href="https://jawad.dev/css/styles.637eb5ddc22709c16c58281c821bcb90b6c2009d875141e88575a45265ba95e86f9fd97596ebbd9b7327fce9f86e303e95d3fca227e9d558b5a15d9230814ac9.css" integrity="sha512-Y3613cInCcFsWCgcghvLkLbCAJ2HUUHohXWkUmW6lehvn9l1luu9m3Mn/On4bjA&#43;ldP8oifp1Vi1oV2SMIFKyQ==">
 <meta name="description" content="Hard-Earned Lessons in Building Real AI Systems">
@@ -110,16 +96,16 @@
     </svg>
   </a>
 </h3>
-<p>It&rsquo;s not new. Even back in the classical ML days, I noticed this pattern:<br>
+<p>It's not new. Even back in the classical ML days, I noticed this pattern:<br>
 we stuck to abstract, generic metrics (accuracy, F1-score, etc.) instead of designing domain-specific ones that truly reflect business value.</p>
-<p>Today, I&rsquo;ll go even further:<br>
-👉 𝗕𝘂𝗶𝗹𝗱 𝗰𝗹𝗶𝗲𝗻𝘁-𝘀𝗽𝗲𝗰𝗶𝗳𝗶𝗰 𝗺𝗲𝘁𝗿𝗶𝗰𝘀: metrics that align exactly with your client&rsquo;s goals and values.</p>
+<p>Today, I'll go even further:<br>
+👉 𝗕𝘂𝗶𝗹𝗱 𝗰𝗹𝗶𝗲𝗻𝘁-𝘀𝗽𝗲𝗰𝗶𝗳𝗶𝗰 𝗺𝗲𝘁𝗿𝗶𝗰𝘀: metrics that align exactly with your client's goals and values.</p>
 <p>Spoiler: <code>𝘁𝗵𝗲𝘀𝗲 𝗼𝗳𝘁𝗲𝗻 𝗯𝗼𝗶𝗹 𝗱𝗼𝘄𝗻 𝘁𝗼 𝗺𝗼𝗻𝗲𝘆 💲 𝗥𝗢𝗜</code>.</p>
 <img src="/images/multiagent_metrics.jpg" alt="metrics meme" style="width: 500px;">
-<p>Concrete example. 𝗔𝘀𝗸 𝗯𝘂𝘀𝗶𝗻𝗲𝘀𝘀 𝗼𝘄𝗻𝗲𝗿𝘀 𝘄𝗵𝗶𝗰𝗵 𝘀𝗰𝗲𝗻𝗮𝗿𝗶𝗼 𝘁𝗵𝗲𝘆&rsquo;𝗱 𝗰𝗵𝗼𝗼𝘀𝗲:<br>
+<p>Concrete example. 𝗔𝘀𝗸 𝗯𝘂𝘀𝗶𝗻𝗲𝘀𝘀 𝗼𝘄𝗻𝗲𝗿𝘀 𝘄𝗵𝗶𝗰𝗵 𝘀𝗰𝗲𝗻𝗮𝗿𝗶𝗼 𝘁𝗵𝗲𝘆'𝗱 𝗰𝗵𝗼𝗼𝘀𝗲:<br>
 1️⃣ A sales AI that hallucinates 10% of the time, but closes 20% of deals<br>
 2️⃣ A sales AI that hallucinates 1%, but only closes 1%</p>
-<p>The answer isn&rsquo;t obvious right ? it&rsquo;s not that easy since you do not know the real impact in terme of costs and revenues for each scenario&hellip;</p>
+<p>The answer isn't obvious right ? it's not that easy since you do not know the real impact in terme of costs and revenues for each scenario...</p>
 <h3 id="can-llm-as-a-judge-be-considered-a-form-of-evaluation" class=link_owner>
   Can LLM-as-a-judge be considered a form of evaluation?
   <a href="#can-llm-as-a-judge-be-considered-a-form-of-evaluation" class="link icon">
@@ -129,20 +115,20 @@ we stuck to abstract, generic metrics (accuracy, F1-score, etc.) instead of desi
   </a>
 </h3>
 <p>As a data scientist, my answer is NO. at least, not in the strict sense of the word.</p>
-<p>Here&rsquo;s why:<br>
+<p>Here's why:<br>
 Evaluation without a gold standard is just another opinion.<br>
-Or if you prefer: it&rsquo;s more of an 𝗮𝗻𝗮𝗹𝘆𝘀𝗶𝘀 𝘁𝗵𝗮𝗻 𝗮𝗻 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻.</p>
-<p>Don&rsquo;t get me wrong! I&rsquo;m not saying LLM-as-a-judge is useless. It can provide useful signals to improve your system, 𝗲𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗹𝘆 𝘄𝗵𝗲𝗻 𝗵𝘂𝗺𝗮𝗻 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻𝘀 𝗮𝗿𝗲𝗻&rsquo;𝘁 𝘀𝗰𝗮𝗹𝗮𝗯𝗹𝗲.</p>
+Or if you prefer: it's more of an 𝗮𝗻𝗮𝗹𝘆𝘀𝗶𝘀 𝘁𝗵𝗮𝗻 𝗮𝗻 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻.</p>
+<p>Don't get me wrong! I'm not saying LLM-as-a-judge is useless. It can provide useful signals to improve your system, 𝗲𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗹𝘆 𝘄𝗵𝗲𝗻 𝗵𝘂𝗺𝗮𝗻 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻𝘀 𝗮𝗿𝗲𝗻'𝘁 𝘀𝗰𝗮𝗹𝗮𝗯𝗹𝗲.</p>
 <img src="/images/multiagent_llm_judge.jpg" alt="llm judge meme" style="width: 450px;">
-<p>But calling it evaluation is misleading, because you&rsquo;re 𝗻𝗼𝘁 𝗰𝗼𝗺𝗽𝗮𝗿𝗶𝗻𝗴 𝘁𝗼 𝗮 𝘀𝗼𝘂𝗿𝗰𝗲 𝗼𝗳 𝘁𝗿𝘂𝘁𝗵.</p>
-<p>As a data scientist, I&rsquo;ve already seen this kind of confusion, especially when discussing unsupervised learning evaluation.</p>
-<p>If you&rsquo;ve worked in data science, you know:<br>
+<p>But calling it evaluation is misleading, because you're 𝗻𝗼𝘁 𝗰𝗼𝗺𝗽𝗮𝗿𝗶𝗻𝗴 𝘁𝗼 𝗮 𝘀𝗼𝘂𝗿𝗰𝗲 𝗼𝗳 𝘁𝗿𝘂𝘁𝗵.</p>
+<p>As a data scientist, I've already seen this kind of confusion, especially when discussing unsupervised learning evaluation.</p>
+<p>If you've worked in data science, you know:<br>
 Evaluation in unsupervised learning is tricky. You often have to 𝘁𝗶𝗲 𝗶𝘁 𝗯𝗮𝗰𝗸 𝘁𝗼 𝗮 𝘀𝘂𝗽𝗲𝗿𝘃𝗶𝘀𝗲𝗱 𝘁𝗮𝘀𝗸 𝗼𝗿 𝗮 𝗯𝘂𝘀𝗶𝗻𝗲𝘀𝘀 𝗼𝘂𝘁𝗰𝗼𝗺𝗲 𝘁𝗼 𝗮𝘀𝘀𝗲𝘀𝘀 𝗶𝘁𝘀 𝘃𝗮𝗹𝘂𝗲.</p>
 <p>Same goes for evaluating text generation.</p>
 <p>𝗦𝗼 𝗵𝗼𝘄 𝗱𝗼 𝘄𝗲 𝗵𝗮𝗻𝗱𝗹𝗲 𝘁𝗵𝗶𝘀 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆?<br>
 ✅ Define expected outputs at the data point level so you can apply real metrics.<br>
-✅ Don&rsquo;t ask the LLM to reason, ask it to compare your system&rsquo;s output against a reference.<br>
-✅ Let them help you understand why an output deviated, not just whether it&rsquo;s good or bad.<br>
+✅ Don't ask the LLM to reason, ask it to compare your system's output against a reference.<br>
+✅ Let them help you understand why an output deviated, not just whether it's good or bad.<br>
 ✅ Instead of relying on end-to-end judgment, look at what each agent or tool is doing in your system.</p>
 <h3 id="what-does-it-mean-to-evaluate-rag-is-it-worth-doing" class=link_owner>
   What does it mean to evaluate RAG? Is it worth doing?
@@ -152,16 +138,16 @@ Evaluation in unsupervised learning is tricky. You often have to 𝘁𝗶𝗲 �
     </svg>
   </a>
 </h3>
-<p>How do we break it down into multiple steps, and what&rsquo;s the most critical part?</p>
-<p>First, understand that <code>𝗥𝗔𝗚 𝗶𝘀𝗻'𝘁 𝗷𝘂𝘀𝘁 𝗮 𝘁𝗲𝘅𝘁-𝗯𝗮𝘀𝗲𝗱 𝘀𝘆𝘀𝘁𝗲𝗺</code>. It can involve various data types and formats integrated into the LLM&rsquo;s context.<br>
+<p>How do we break it down into multiple steps, and what's the most critical part?</p>
+<p>First, understand that <code>𝗥𝗔𝗚 𝗶𝘀𝗻'𝘁 𝗷𝘂𝘀𝘁 𝗮 𝘁𝗲𝘅𝘁-𝗯𝗮𝘀𝗲𝗱 𝘀𝘆𝘀𝘁𝗲𝗺</code>. It can involve various data types and formats integrated into the LLM's context.<br>
 RAG can cover API calls, SQL databases, web searches, and of course vector databases.</p>
-<p>To control your agent&rsquo;s output quality, you must ensure quality at every process step.</p>
+<p>To control your agent's output quality, you must ensure quality at every process step.</p>
 <p>𝗜𝗻 𝘁𝗵𝗲 𝗮𝗴𝗲𝗻𝘁 𝘀𝗽𝗮𝗰𝗲, 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹 𝗶𝘀 𝗰𝗿𝗶𝘁𝗶𝗰𝗮𝗹, because it involves multiple sub-steps:</p>
 <ul>
-<li>The agent builds the query itself. You need to assess whether it&rsquo;s doing this correctly. ex: not misusing database tools or accessing unauthorized data.</li>
+<li>The agent builds the query itself. You need to assess whether it's doing this correctly. ex: not misusing database tools or accessing unauthorized data.</li>
 <li>Evaluate the real targets (entities, lines, documents, or chunks) that should be retrieved and used as context. Then compute metrics like false positives and false negatives.</li>
 <li>Problems can also come from your knowledge base. You need clean, curated data, especially during the building and testing phases.</li>
-<li>And ensure you&rsquo;re building efficient context retrieval! If the data you&rsquo;re feeding the LLM is too big (and isn&rsquo;t focused on what needs to be shown to the user) you&rsquo;ll lose your LLM&rsquo;s attention, even with models that support large contexts.</li>
+<li>And ensure you're building efficient context retrieval! If the data you're feeding the LLM is too big (and isn't focused on what needs to be shown to the user) you'll lose your LLM's attention, even with models that support large contexts.</li>
 </ul>
 <p>𝗧𝗵𝗲𝗻, 𝗮𝘀𝘀𝗲𝘀𝘀 𝘁𝗵𝗲 𝗴𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 𝗽𝗮𝗿𝘁. 3 key points to evaluate:</p>
 <ul>
@@ -170,7 +156,7 @@ RAG can cover API calls, SQL databases, web searches, and of course vector datab
 <li>𝗘𝘅𝗵𝗮𝘂𝘀𝘁𝗶𝘃𝗶𝘁𝘆: Is the generated text exhaustive? Be cautious, some filters in the prompt might deliberately exclude parts of the retrieved data.</li>
 </ul>
 <img src="/images/multiagent_RAG.jpg" alt="llm judge meme" style="width: 450px;">
-<p>𝗥𝗔𝗚 𝗶𝘀 𝘁𝗵𝗲 𝗺𝗼𝘀𝘁 𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝘁 𝗽𝗮𝗿𝘁 𝘁𝗼 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗲 𝗶𝗻 𝘆𝗼𝘂𝗿 𝘀𝘆𝘀𝘁𝗲𝗺. It&rsquo;s where most issues originate. Break it down and evaluate each part carefully.<br>
+<p>𝗥𝗔𝗚 𝗶𝘀 𝘁𝗵𝗲 𝗺𝗼𝘀𝘁 𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝘁 𝗽𝗮𝗿𝘁 𝘁𝗼 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗲 𝗶𝗻 𝘆𝗼𝘂𝗿 𝘀𝘆𝘀𝘁𝗲𝗺. It's where most issues originate. Break it down and evaluate each part carefully.<br>
 ✅ Study your errors and keep track of them in neat and well-defined automated tests.<br>
 ✅ Build a robust test framework with a diverse query set and reference answers.<br>
 ✅ Use metrics like precision, recall, and context relevance for retrieval.<br>
@@ -196,44 +182,44 @@ RAG can cover API calls, SQL databases, web searches, and of course vector datab
   </a>
 </h3>
 <p>Congratulations! 🎊</p>
-<p>You&rsquo;ve shipped your wonderful AI platform to prod, and it&rsquo;s working pretty well for a first version.</p>
-<p>And now comes the hard part: 𝗬𝗼𝘂 𝗻𝗲𝗲𝗱 𝘁𝗼 𝗮𝗱𝗱 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝘁𝗵𝗮𝘁 𝘄𝗲𝗿𝗲𝗻&rsquo;𝘁 𝗶𝗻 𝘆𝗼𝘂𝗿 𝗠𝗩𝗣, the ones that are crucial to keeping your AI services ahead of the competition.</p>
-<p>And guess what? It&rsquo;s not going to be a small iteration.</p>
+<p>You've shipped your wonderful AI platform to prod, and it's working pretty well for a first version.</p>
+<p>And now comes the hard part: 𝗬𝗼𝘂 𝗻𝗲𝗲𝗱 𝘁𝗼 𝗮𝗱𝗱 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝘁𝗵𝗮𝘁 𝘄𝗲𝗿𝗲𝗻'𝘁 𝗶𝗻 𝘆𝗼𝘂𝗿 𝗠𝗩𝗣, the ones that are crucial to keeping your AI services ahead of the competition.</p>
+<p>And guess what? It's not going to be a small iteration.</p>
 <p>𝗧𝗵𝗲𝘀𝗲 𝗻𝗲𝘄 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝘄𝗶𝗹𝗹 𝗹𝗶𝗸𝗲𝗹𝘆 𝗿𝗲𝗾𝘂𝗶𝗿𝗲 𝗮 𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗮𝗹 𝗿𝗲𝘃𝗶𝗲𝘄 of your agent orchestration, and even a rethink of your entire multi-agent system architecture (Yes, there are multiple architectures with new ones introduced every week.)</p>
 <p>𝗪𝗲 𝗰𝗮𝗻 𝘀𝗮𝘆 𝗶𝘁:<br>
 𝗬𝗼𝘂𝗿 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗶𝘀 𝗹𝗲𝗴𝗮𝗰𝘆 𝗶𝗻 𝗹𝗲𝘀𝘀 𝘁𝗵𝗮𝗻 3 𝗺𝗼𝗻𝘁𝗵𝘀. 😅</p>
-<p>This isn&rsquo;t entirely new…<br>
+<p>This isn't entirely new…<br>
 But two things are probably different from your usual tech stack:<br>
 1- 𝗟𝗲𝗴𝗮𝗰𝘆 𝗵𝗮𝗽𝗽𝗲𝗻𝘀 𝗳𝗮𝘀𝘁 𝗶𝗻 𝗔𝗜.<br>
 Some projects become legacy before even hitting production.<br>
-We&rsquo;ve experienced this ourselves. When a framework we were using got a major upgrade, we had no choice but to migrate if we wanted to keep building new features.<br>
+We've experienced this ourselves. When a framework we were using got a major upgrade, we had no choice but to migrate if we wanted to keep building new features.<br>
 2- 𝗠𝗶𝗴𝗿𝗮𝘁𝗶𝗼𝗻 𝗶𝘀 𝗿𝗶𝘀𝗸𝗶𝗲𝗿.<br>
 You have less control over your AI platform than with a deterministic system.<br>
 Which means even small changes can lead to unexpected behaviors.</p>
 <p>𝗔𝗻𝗱 𝗵𝗲𝗿𝗲 𝗰𝗼𝗺𝗲𝘀 𝗿𝗲𝗴𝗿𝗲𝘀𝘀𝗶𝗼𝗻 𝘁𝗲𝘀𝘁𝗶𝗻𝗴.<br>
-Regression tests are your best ally to make sure refactors or architecture changes don&rsquo;t break critical production features.<br>
+Regression tests are your best ally to make sure refactors or architecture changes don't break critical production features.<br>
 ✅ Create and maintain <code>dedicated regression scenarios</code>.<br>
-✅ Define metrics that qualify outputs: since you&rsquo;re working with AI, pass/fail isn&rsquo;t enough.<br>
+✅ Define metrics that qualify outputs: since you're working with AI, pass/fail isn't enough.<br>
 ✅ Automate these tests or every release 𝘄𝗶𝗹𝗹 𝘁𝘂𝗿𝗻 𝗶𝗻𝘁𝗼 𝗱𝗮𝘆𝘀 𝗼𝗳 𝗺𝗮𝗻𝘂𝗮𝗹 𝗤𝗔 𝗮𝗻𝗱 𝗿𝗲𝘁𝗲𝘀𝘁𝗶𝗻𝗴.</p>
-<p>If you&rsquo;re a startup moving fast in AI with users already rely on your first product:</p>
+<p>If you're a startup moving fast in AI with users already rely on your first product:</p>
 <p><code>𝗶𝗻𝘃𝗲𝘀𝘁 𝗶𝗻 𝗿𝗲𝗴𝗿𝗲𝘀𝘀𝗶𝗼𝗻 𝘁𝗲𝘀𝘁𝗶𝗻𝗴 𝗻𝗼𝘄!</code></p>
 <p>Otherwise, your roadmap will slow down before it even picks up speed.</p>
 <h3 id="improving-your-ai-system-isnt-just-about-development-time" class=link_owner>
-  Improving your AI system isn&rsquo;t just about development time.
+  Improving your AI system isn't just about development time.
   <a href="#improving-your-ai-system-isnt-just-about-development-time" class="link icon">
     <svg>
       <use xlink:href="#anchor-link"></use>
     </svg>
   </a>
 </h3>
-<p>It&rsquo;s far more correlated with the number of real cases processed in production.</p>
+<p>It's far more correlated with the number of real cases processed in production.</p>
 <p>Why?</p>
-<p>Because evaluation isn&rsquo;t meaningful until your system has faced a wide range of inputs&hellip; and even then, some edge cases won&rsquo;t appear until you&rsquo;re operating at scale.</p>
-<p>Here&rsquo;s what we&rsquo;ve observed again and again:</p>
+<p>Because evaluation isn't meaningful until your system has faced a wide range of inputs... and even then, some edge cases won't appear until you're operating at scale.</p>
+<p>Here's what we've observed again and again:</p>
 <p>✅ Complex agent tasks can perform flawlessly in dev, but start breaking down under production load or when inputs deviate even slightly from the original distribution.<br>
 ✅ Free text input is unpredictable. No matter how creative your dev team is, users will always surprise you.<br>
-✅ It&rsquo;s not just LLMs : rate limits, data quality issues, and fragile pipelines will all show up once the volume kicks in.<br>
-✅ Even your data pipelines need to be stress tested at scale. You&rsquo;ll spot performance cliffs and resilience gaps only under pressure.</p>
+✅ It's not just LLMs : rate limits, data quality issues, and fragile pipelines will all show up once the volume kicks in.<br>
+✅ Even your data pipelines need to be stress tested at scale. You'll spot performance cliffs and resilience gaps only under pressure.</p>
 <p>Scaling to production gives your team real signals:</p>
 <ul>
 <li>What breaks?</li>
@@ -241,10 +227,10 @@ Regression tests are your best ally to make sure refactors or architecture chang
 <li>What improvements would make the most users happy?</li>
 </ul>
 <p>With enough volume, your team gets the feedback it needs to iterate faster and with higher confidence.</p>
-<p>Scaling isn&rsquo;t a nice-to-have.<br>
-It&rsquo;s the prerequisite for building reliable and evolving AI systems.</p>
+<p>Scaling isn't a nice-to-have.<br>
+It's the prerequisite for building reliable and evolving AI systems.</p>
 <h3 id="production-support-and-online-evaluation-are-not-just-ops-tasks-theyre-strategic-levers-for-your-team" class=link_owner>
-  Production support and online evaluation are not just ops tasks, they&rsquo;re strategic levers for your team.
+  Production support and online evaluation are not just ops tasks, they're strategic levers for your team.
   <a href="#production-support-and-online-evaluation-are-not-just-ops-tasks-theyre-strategic-levers-for-your-team" class="link icon">
     <svg>
       <use xlink:href="#anchor-link"></use>
@@ -255,12 +241,12 @@ It&rsquo;s the prerequisite for building reliable and evolving AI systems.</p>
 𝗣𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗶𝘀 𝘄𝗵𝗲𝗿𝗲 𝘆𝗼𝘂 𝗯𝘂𝗶𝗹𝗱 𝗿𝗲𝗮𝗹 𝗶𝗻𝘁𝘂𝗶𝘁𝗶𝗼𝗻 𝗳𝗼𝗿 𝘆𝗼𝘂𝗿 𝗻𝗲𝘅𝘁 𝘃𝗲𝗿𝘀𝗶𝗼𝗻.</p>
 <img src="/images/multiagent_production_day.gif" alt="metrics meme" style="width: 500px;">
 <p>Evaluation before prod is critical, but watching real user interactions is what sharpens your instincts and helps prioritize what matters.</p>
-<p>Here&rsquo;s how we 𝘁𝘂𝗿𝗻 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗺𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 𝗶𝗻𝘁𝗼 𝗮 𝘀𝘂𝗽𝗲𝗿𝗽𝗼𝘄𝗲𝗿:</p>
+<p>Here's how we 𝘁𝘂𝗿𝗻 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗺𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 𝗶𝗻𝘁𝗼 𝗮 𝘀𝘂𝗽𝗲𝗿𝗽𝗼𝘄𝗲𝗿:</p>
 <p>🔁 Make it a team-wide habit: Everyone in the team should get 𝗮 𝘁𝗮𝘀𝘁𝗲 𝗼𝗳 𝗿𝗲𝗮𝗹 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗱𝗮𝘁𝗮. It fuels both creativity and clarity.</p>
-<p>📈 Use it to tune priorities: Support helps reveal what truly matters for the business and what&rsquo;s just &ldquo;nice to have.&rdquo;<br>
-𝗪𝗵𝗲𝗻 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗳𝗮𝘀𝘁, 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁 𝘁𝗼 𝗱𝗲𝗹𝗶𝘃𝗲𝗿 𝘄𝗵𝗮𝘁&rsquo;𝘀 𝗲𝘀𝘀𝗲𝗻𝘁𝗶𝗮𝗹, and hold off on the rest, especially since priorities often shift between project and production phases.</p>
+<p>📈 Use it to tune priorities: Support helps reveal what truly matters for the business and what's just &quot;nice to have.&quot;<br>
+𝗪𝗵𝗲𝗻 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗳𝗮𝘀𝘁, 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁 𝘁𝗼 𝗱𝗲𝗹𝗶𝘃𝗲𝗿 𝘄𝗵𝗮𝘁'𝘀 𝗲𝘀𝘀𝗲𝗻𝘁𝗶𝗮𝗹, and hold off on the rest, especially since priorities often shift between project and production phases.</p>
 <p>💡 Help your team develop good trade-offs: Not every issue needs an immediate fix.<br>
-But sometimes a 𝗾𝘂𝗶𝗰𝗸 𝗽𝗮𝘁𝗰𝗵 𝗰𝗮𝗻 𝗮𝘃𝗼𝗶𝗱 𝘂𝘀𝗲𝗿 𝗳𝗿𝘂𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻, even if it&rsquo;s not perfect.</p>
+But sometimes a 𝗾𝘂𝗶𝗰𝗸 𝗽𝗮𝘁𝗰𝗵 𝗰𝗮𝗻 𝗮𝘃𝗼𝗶𝗱 𝘂𝘀𝗲𝗿 𝗳𝗿𝘂𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻, even if it's not perfect.</p>
 <p>📊 Quantify issues: Log incident frequency and business impact. This data will sharpen priorities and guide improvements, 𝗲𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗹𝘆 𝗳𝗼𝗿 𝘆𝗼𝘂𝗿 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹, the most critical component of your system.</p>
 <hr>
 <h2 id="3-regression-testing-and-guardrails-the-hidden-heroes" class=link_owner>
@@ -272,31 +258,31 @@ But sometimes a 𝗾𝘂𝗶𝗰𝗸 𝗽𝗮𝘁𝗰𝗵 𝗰𝗮𝗻 𝗮𝘃�
   </a>
 </h2>
 <h3 id="your-𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹-is-the-𝗺𝗼𝘀𝘁-𝗰𝗿𝗶𝘁𝗶𝗰𝗮𝗹-𝗽𝗮𝗿𝘁-of-your-multi-agent-system-its-your-systems-gateway-𝗬𝗼𝘂𝗿-𝗳𝗶𝗿𝘀𝘁-𝗮𝗻𝗱-𝗹𝗮𝘀𝘁-𝗹𝗶𝗻𝗲-𝗼𝗳-𝗱𝗲𝗳𝗲𝗻𝘀𝗲" class=link_owner>
-  Your 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹 is the 𝗺𝗼𝘀𝘁 𝗰𝗿𝗶𝘁𝗶𝗰𝗮𝗹 𝗽𝗮𝗿𝘁 of your multi-agent system. It&rsquo;s your system&rsquo;s gateway. 𝗬𝗼𝘂𝗿 𝗳𝗶𝗿𝘀𝘁 𝗮𝗻𝗱 𝗹𝗮𝘀𝘁 𝗹𝗶𝗻𝗲 𝗼𝗳 𝗱𝗲𝗳𝗲𝗻𝘀𝗲.
+  Your 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹 is the 𝗺𝗼𝘀𝘁 𝗰𝗿𝗶𝘁𝗶𝗰𝗮𝗹 𝗽𝗮𝗿𝘁 of your multi-agent system. It's your system's gateway. 𝗬𝗼𝘂𝗿 𝗳𝗶𝗿𝘀𝘁 𝗮𝗻𝗱 𝗹𝗮𝘀𝘁 𝗹𝗶𝗻𝗲 𝗼𝗳 𝗱𝗲𝗳𝗲𝗻𝘀𝗲.
   <a href="#your-%f0%9d%97%b4%f0%9d%98%82%f0%9d%97%ae%f0%9d%97%bf%f0%9d%97%b1%f0%9d%97%bf%f0%9d%97%ae%f0%9d%97%b6%f0%9d%97%b9-is-the-%f0%9d%97%ba%f0%9d%97%bc%f0%9d%98%80%f0%9d%98%81-%f0%9d%97%b0%f0%9d%97%bf%f0%9d%97%b6%f0%9d%98%81%f0%9d%97%b6%f0%9d%97%b0%f0%9d%97%ae%f0%9d%97%b9-%f0%9d%97%bd%f0%9d%97%ae%f0%9d%97%bf%f0%9d%98%81-of-your-multi-agent-system-its-your-systems-gateway-%f0%9d%97%ac%f0%9d%97%bc%f0%9d%98%82%f0%9d%97%bf-%f0%9d%97%b3%f0%9d%97%b6%f0%9d%97%bf%f0%9d%98%80%f0%9d%98%81-%f0%9d%97%ae%f0%9d%97%bb%f0%9d%97%b1-%f0%9d%97%b9%f0%9d%97%ae%f0%9d%98%80%f0%9d%98%81-%f0%9d%97%b9%f0%9d%97%b6%f0%9d%97%bb%f0%9d%97%b2-%f0%9d%97%bc%f0%9d%97%b3-%f0%9d%97%b1%f0%9d%97%b2%f0%9d%97%b3%f0%9d%97%b2%f0%9d%97%bb%f0%9d%98%80%f0%9d%97%b2" class="link icon">
     <svg>
       <use xlink:href="#anchor-link"></use>
     </svg>
   </a>
 </h3>
-<p>𝗙𝗶𝗿𝘀𝘁 𝗹𝗶𝗻𝗲 (keeps the chaos out) when it&rsquo;s the input guardrail:</p>
+<p>𝗙𝗶𝗿𝘀𝘁 𝗹𝗶𝗻𝗲 (keeps the chaos out) when it's the input guardrail:</p>
 <ul>
-<li>helps you catch out of scope/unexpected inputs (things your workflows weren&rsquo;t designed to handle). With these kinds of input, you&rsquo;re almost guaranteed to get unreliable, unpredictable results.</li>
-<li>It&rsquo;s also your security guard: detecting jailbreaks, prompt injections, and malicious inputs.</li>
+<li>helps you catch out of scope/unexpected inputs (things your workflows weren't designed to handle). With these kinds of input, you're almost guaranteed to get unreliable, unpredictable results.</li>
+<li>It's also your security guard: detecting jailbreaks, prompt injections, and malicious inputs.</li>
 </ul>
-<p>𝗟𝗮𝘀𝘁 𝗹𝗶𝗻𝗲 (keeps the chaos in) when it&rsquo;s the output guardrail:</p>
+<p>𝗟𝗮𝘀𝘁 𝗹𝗶𝗻𝗲 (keeps the chaos in) when it's the output guardrail:</p>
 <ul>
 <li>It helps drastically reduce hallucinations.</li>
 <li>It can flag out-of-scope topics that slipped past the input guardrail.</li>
 <li>It should also enforce brand moderation, keeping responses aligned with company image and policies.</li>
 </ul>
-<p>Think of building a 𝗿𝗲𝗹𝗶𝗮𝗯𝗹𝗲 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹 as a hard 𝗰𝗹𝗮𝘀𝘀𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗽𝗿𝗼𝗯𝗹𝗲𝗺. Like any classification task, you&rsquo;re tuning the threshold between false positives (blocking good inputs) and false negatives (letting bad ones through).</p>
+<p>Think of building a 𝗿𝗲𝗹𝗶𝗮𝗯𝗹𝗲 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹 as a hard 𝗰𝗹𝗮𝘀𝘀𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗽𝗿𝗼𝗯𝗹𝗲𝗺. Like any classification task, you're tuning the threshold between false positives (blocking good inputs) and false negatives (letting bad ones through).</p>
 <p>𝗧𝗵𝗲 𝗰𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲?<br>
-Your input and output is human language: open-ended, messy, context-dependent. The distribution is huge, and the ambiguity is real. There&rsquo;s no perfect line.</p>
-<p>𝗛𝗲𝗿𝗲 𝗮𝗿𝗲 𝘀𝗼𝗺𝗲 𝘁𝗶𝗽𝘀 𝗶𝗳 𝘆𝗼𝘂&rsquo;𝗿𝗲 𝘁𝗮𝗰𝗸𝗹𝗶𝗻𝗴 𝘁𝗵𝗶𝘀 𝗽𝗿𝗼𝗯𝗹𝗲𝗺:<br>
+Your input and output is human language: open-ended, messy, context-dependent. The distribution is huge, and the ambiguity is real. There's no perfect line.</p>
+<p>𝗛𝗲𝗿𝗲 𝗮𝗿𝗲 𝘀𝗼𝗺𝗲 𝘁𝗶𝗽𝘀 𝗶𝗳 𝘆𝗼𝘂'𝗿𝗲 𝘁𝗮𝗰𝗸𝗹𝗶𝗻𝗴 𝘁𝗵𝗶𝘀 𝗽𝗿𝗼𝗯𝗹𝗲𝗺:<br>
 ✅ Define clear and concise policies: Set strong guidelines for how your guardrail should behave.<br>
 ✅ Inject necessary information: Feed the guardrail only with data needed to make the right decision.<br>
-✅ Define good and bad examples: Help it learn what should be let through - and what shouldn&rsquo;t.<br>
+✅ Define good and bad examples: Help it learn what should be let through - and what shouldn't.<br>
 ✅ Test different LLM models: Your guardrail is your most important agent. Pay the necessary price to have best quality.<br>
 ✅ Evaluate performance: Use metrics like accuracy, recall, and precision. Better yet, build custom metrics tied to business impact.</p>
 <img src="/images/multiagent_guardrail.jpg" alt="metrics meme" style="width: 600px;">
@@ -318,16 +304,16 @@ Your input and output is human language: open-ended, messy, context-dependent. T
     </svg>
   </a>
 </h3>
-<p>When building an agentic system, it&rsquo;s important to have data points 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝗰𝗵𝗲𝗰𝗸𝗲𝗱 𝗮𝘁 𝘁𝗵𝗲 𝗵𝗲𝗮𝗿𝘁 𝗼𝗳 𝘆𝗼𝘂𝗿 𝗽𝗿𝗼𝗰𝗲𝘀𝘀 𝘁𝗼 𝗲𝗻𝘀𝘂𝗿𝗲 𝘆𝗼𝘂&rsquo;𝗿𝗲 𝗼𝗻 𝘁𝗵𝗲 𝗿𝗶𝗴𝗵𝘁 𝗽𝗮𝘁𝗵.</p>
-<p>Think of these as intermediary milestones, deliverables you&rsquo;re asking your multi-agent system to produce on its way to the ultimate objective.</p>
+<p>When building an agentic system, it's important to have data points 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝗰𝗵𝗲𝗰𝗸𝗲𝗱 𝗮𝘁 𝘁𝗵𝗲 𝗵𝗲𝗮𝗿𝘁 𝗼𝗳 𝘆𝗼𝘂𝗿 𝗽𝗿𝗼𝗰𝗲𝘀𝘀 𝘁𝗼 𝗲𝗻𝘀𝘂𝗿𝗲 𝘆𝗼𝘂'𝗿𝗲 𝗼𝗻 𝘁𝗵𝗲 𝗿𝗶𝗴𝗵𝘁 𝗽𝗮𝘁𝗵.</p>
+<p>Think of these as intermediary milestones, deliverables you're asking your multi-agent system to produce on its way to the ultimate objective.</p>
 <p>These checkpoints serve a dual purpose:</p>
 <ul>
-<li>𝗧𝗮𝗻𝗴𝗶𝗯𝗹𝗲 𝗠𝗲𝗮𝘀𝘂𝗿𝗲𝗺𝗲𝗻𝘁𝘀: They provide clear metrics that simplify system monitoring and facilitate the evaluation of each agent&rsquo;s performance.</li>
+<li>𝗧𝗮𝗻𝗴𝗶𝗯𝗹𝗲 𝗠𝗲𝗮𝘀𝘂𝗿𝗲𝗺𝗲𝗻𝘁𝘀: They provide clear metrics that simplify system monitoring and facilitate the evaluation of each agent's performance.</li>
 <li>𝗣𝗿𝗼𝗰𝗲𝘀𝘀 𝗜𝗻𝘀𝗶𝗴𝗵𝘁𝘀: They offer valuable data that can enrich your understanding of the automated process and even serve as a source of structured knowledge about your users.</li>
 </ul>
 <img src="/images/multiagent_evaluation_extraction.jpg" alt="metrics meme" style="width: 500px;">
 <p>Moreover, these data points should be used to establish hard controls, dictating actions that agents must or must not take based on the extracted information.</p>
-<p>Additionally, this metadata functions as a form of memory. Ensuring that agents get this information at critical steps of the process and that it&rsquo;s never lost.</p>
+<p>Additionally, this metadata functions as a form of memory. Ensuring that agents get this information at critical steps of the process and that it's never lost.</p>
 <p>𝗪𝗮𝗻𝘁 𝗺𝗼𝗿𝗲 𝗿𝗲𝗹𝗶𝗮𝗯𝗹𝗲 𝗮𝗴𝗲𝗻𝘁𝘀?<br>
 𝗦𝘁𝗮𝗿𝘁 𝗱𝗲𝘀𝗶𝗴𝗻𝗶𝗻𝗴 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲𝘀𝗲 𝗶𝗻𝘁𝗲𝗿𝗻𝗮𝗹 𝗰𝗵𝗲𝗰𝗸𝗽𝗼𝗶𝗻𝘁𝘀 𝗶𝗻 𝗺𝗶𝗻𝗱.</p>
 <hr>
@@ -347,7 +333,7 @@ Your input and output is human language: open-ended, messy, context-dependent. T
     </svg>
   </a>
 </h3>
-<p>If you want to bring cutting-edge AI systems to production, you&rsquo;ll need to build an R&amp;D mindset into your team and invest in experimentation.</p>
+<p>If you want to bring cutting-edge AI systems to production, you'll need to build an R&amp;D mindset into your team and invest in experimentation.</p>
 <p>The challenge?<br>
 Keep experimentation 𝗳𝗮𝘀𝘁 𝗮𝗻𝗱 𝗮𝗳𝗳𝗼𝗿𝗱𝗮𝗯𝗹𝗲.<br>
 You want feedback in 𝗱𝗮𝘆𝘀, 𝗻𝗼𝘁 𝘄𝗲𝗲𝗸𝘀.</p>
@@ -357,7 +343,7 @@ As your production matures and your agent tasks become more complex, your tools 
 So, we built something.</p>
 <p>𝗔 𝘁𝗼𝗼𝗹 𝘁𝗼 𝘁𝗲𝘀𝘁 𝗔𝗜 𝗮𝗴𝗲𝗻𝘁𝘀 𝗲𝗻𝗱 𝘁𝗼 𝗲𝗻𝗱, 𝗮𝘁 𝘀𝗰𝗮𝗹𝗲.<br>
 It started as an internal utility.<br>
-Today, it&rsquo;s a full platform for teams who need to control agent quality over time and evaluate changes across versions efficiently.</p>
+Today, it's a full platform for teams who need to control agent quality over time and evaluate changes across versions efficiently.</p>
 <h3 id="you-want-reliable-and-efficient-ai" class=link_owner>
   You want reliable and efficient AI?
   <a href="#you-want-reliable-and-efficient-ai" class="link icon">
@@ -372,13 +358,13 @@ Today, it&rsquo;s a full platform for teams who need to control agent quality ov
 <ul>
 <li>Your input is challenging to control and fully cover.</li>
 <li>LLMs are everywhere in your pipeline, each bringing potential variance to your process.</li>
-<li>Many steps rely on structured outputs from LLMs, which aren&rsquo;t always easy to obtain systematically.</li>
-<li>Agents may access external sources you don&rsquo;t fully control.</li>
-<li>Outputs vary widely: generated text, finite decision spaces, data extraction&hellip;</li>
+<li>Many steps rely on structured outputs from LLMs, which aren't always easy to obtain systematically.</li>
+<li>Agents may access external sources you don't fully control.</li>
+<li>Outputs vary widely: generated text, finite decision spaces, data extraction...</li>
 <li>AI frameworks themselves are still evolving quickly and might introduce instabilities or deprecate parts of your code overnight.</li>
 </ul>
 <p>For all these reasons, developers often struggle to build new features while maintaining high production quality and stability.</p>
-<p>𝗗𝗼𝗻&rsquo;𝘁 𝗼𝘃𝗲𝗿-𝗽𝗹𝗮𝗻, 𝘀𝘁𝗮𝗿𝘁 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗻𝗴 𝘁𝗲𝘀𝘁𝘀 𝗻𝗼𝘄 𝘁𝗼 𝗿𝗲𝗹𝗶𝗲𝘃𝗲 𝘆𝗼𝘂𝗿 𝗱𝗲𝘃 𝘁𝗲𝗮𝗺.</p>
+<p>𝗗𝗼𝗻'𝘁 𝗼𝘃𝗲𝗿-𝗽𝗹𝗮𝗻, 𝘀𝘁𝗮𝗿𝘁 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗻𝗴 𝘁𝗲𝘀𝘁𝘀 𝗻𝗼𝘄 𝘁𝗼 𝗿𝗲𝗹𝗶𝗲𝘃𝗲 𝘆𝗼𝘂𝗿 𝗱𝗲𝘃 𝘁𝗲𝗮𝗺.</p>
 <p>Anything that reduces developer workload is worth pursuing. For example:</p>
 <ul>
 <li>Begin with a simple script that automatically runs tests and saves results to an accessible folder.</li>
@@ -427,7 +413,7 @@ const no_matches_found = 'No matches found';
 <footer class="pt-2 pb-2">
   <div class="wrap">
     <p>
-      &copy; <span class="year">2025</span>
+      &copy; <span class="year">2026</span>
     </p>
     <a href="#pagetop" id="toTop" title=Back&#32;to&#32;top></a>
   </div>
@@ -525,7 +511,7 @@ const no_matches_found = 'No matches found';
 </svg>
 
 <script>
-  "use strict";const doc=document.documentElement,toggle_id="toggle",show_id="show",menu="menu",active="active";let site_title=`personal-website`,root_url="/";root_url=root_url.startsWith("http")?root_url:window.location.origin;const go_back_class="button_back",line_class=".line",code_block_config=JSON.parse('{"maximum":10,"show":false}'),iconsPath=`icons/`,shell_based=["sh","shell","zsh","bash"],body=elem("body"),max_lines=code_block_config.maximum,show_lines=code_block_config.show,copy_id="panel_copy",wrap_id="panel_wrap",lines_id="panel_lines",panel_expand="panel_expand",panel_expanded="panel_expanded",panel_box="panel_box",panel_hide="panel_hide",panel_from="panel_from",full_height="initial",highlight="highlight",highlight_wrap="highlight_wrap",hash="#",light="light",dark="dark",storageKey=`${site_title}-color-mode`,mermaidThemeKey=`${site_title}-mermaid`,key="--color-mode",mode_data="data-mode",bank=window.localStorage;function isObj(e){return!!(e&&typeof e=="object"&&e!==null)}function createEl(e="div"){return document.createElement(e)}function emptyEl(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function elem(e,t=document){let n=!!isObj(t)&&t.querySelector(e);return n||!1}function elems(e,t=document){return isObj(t)?t.querySelectorAll(e):[]}function pushClass(e,t){if(isObj(e)&&t){let n=e.classList;!n.contains(t)&&n.add(t)}}function deleteClass(e,t){if(isObj(e)&&t){let n=e.classList;!!n.contains(t)&&n.remove(t)}}function modifyClass(e,t){if(isObj(e)&&t){const n=e.classList;n.contains(t)?n.remove(t):n.add(t)}}function containsClass(e,t){if(isObj(e)&&t&&e!==document)return!!e.classList.contains(t)}function isChild(e,t){let n=isObj(e)&&t&&typeof t=="string";return!!(n&&e.closest(t))}function elemAttribute(e,t,n=null){if(n)e.setAttribute(t,n);else return n=e.getAttribute(t),n||!1}function deleteChars(e,t){let n=e;if(Array.isArray(t))for(let e=0;e<t.length;e++)n=n.replace(t[e],"");else n=n.replace(t,"");return n}function isBlank(e){return!e||e.trim().length===0}function isMatch(e,t){if(isObj(e)){if(t.isArray){let n=t.map(function(t){return e.matches(t)});return n.includes(!0)}return e.matches(t)}}function closestInt(e,t){return t.reduce(function(t,n){return Math.abs(n-e)<Math.abs(t-e)?n:t})}function hasClasses(e){if(isObj(e)){const t=e.classList;return t.length}}function wrapEl(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)}function wrapText(e,t,n="mark"){let s=`<${n}>`,o=`</${n}>`,r=`%3C${n}%3E`,c=`%3C/${n}%3E`;function i(t){let n=t.innerHTML,a=new RegExp(e,"gi"),i=e.length?n.match(a):null;if(i){i.forEach(function(e){n=n.replaceAll(e,`${s}${e}${o}`),t.innerHTML=n});const e=elems("img",t);e&&e.forEach(e=>{e.src=e.src.replaceAll(s,"").replaceAll(o,"").replaceAll(r,"").replaceAll(c,"")})}}const l=["h1","h2","h3","h4","h5","h6","p","code","td"];l.forEach(function(e){const n=elems(e,t);n.length&&n.forEach(function(e){e.children.length>=1?(Array.from(e.children).forEach(function(e){i(e)}),i(e)):i(e)})});const a=elems("a");a&&a.forEach(function(e){e.href=e.href.replaceAll(encodeURI(s),"").replaceAll(encodeURI(o),"")})}function parseBoolean(e=""){switch(e=e.trim().toLowerCase(),e){case"true":return!0;case"false":return!1;default:return void 0}}function loadSvg(e,t){t.innerHTML=`
+  "use strict";const doc=document.documentElement,toggle_id="toggle",show_id="show",menu="menu",active="active";let site_title=`personal-website`,root_url="/";root_url=root_url.startsWith("http")?root_url:window.location.origin;const go_back_class="button_back",line_class=".line",code_block_config=JSON.parse('{"maximum":10,"show":false}'),iconsPath=`icons/`,shell_based=["sh","shell","zsh","bash"],body=elem("body"),max_lines=code_block_config.maximum,show_lines=code_block_config.show,copy_id="panel_copy",wrap_id="panel_wrap",lines_id="panel_lines",panel_expand="panel_expand",panel_expanded="panel_expanded",panel_box="panel_box",panel_hide="panel_hide",panel_from="panel_from",full_height="initial",highlight="highlight",highlight_wrap="highlight_wrap",hash="#",light="light",dark="dark",storageKey=`${site_title}-color-mode`,mermaidThemeKey=`${site_title}-mermaid`,key="--color-mode",mode_data="data-mode",bank=window.localStorage;function isObj(e){return!!(e&&typeof e=="object"&&e!==null)}function createEl(e="div"){return document.createElement(e)}function emptyEl(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function elem(e,t=document){let n=!!isObj(t)&&t.querySelector(e);return n}function elems(e,t=document){return isObj(t)?t.querySelectorAll(e):[]}function pushClass(e,t){if(isObj(e)&&t){let n=e.classList;!n.contains(t)&&n.add(t)}}function deleteClass(e,t){if(isObj(e)&&t){let n=e.classList;!!n.contains(t)&&n.remove(t)}}function modifyClass(e,t){if(isObj(e)&&t){const n=e.classList;n.contains(t)?n.remove(t):n.add(t)}}function containsClass(e,t){if(isObj(e)&&t&&e!==document)return!!e.classList.contains(t)}function isChild(e,t){let n=isObj(e)&&t&&typeof t=="string";return!!(n&&e.closest(t))}function elemAttribute(e,t,n=null){if(n)e.setAttribute(t,n);else return n=e.getAttribute(t),n}function deleteChars(e,t){let n=e;if(Array.isArray(t))for(let e=0;e<t.length;e++)n=n.replace(t[e],"");else n=n.replace(t,"");return n}function isBlank(e){return!e||e.trim().length===0}function isMatch(e,t){if(isObj(e)){if(t.isArray){let n=t.map(function(t){return e.matches(t)});return n.includes(!0)}return e.matches(t)}}function closestInt(e,t){return t.reduce(function(t,n){return Math.abs(n-e)<Math.abs(t-e)?n:t})}function hasClasses(e){if(isObj(e)){const t=e.classList;return t.length}}function wrapEl(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)}function wrapText(e,t,n="mark"){let s=`<${n}>`,o=`</${n}>`,r=`%3C${n}%3E`,c=`%3C/${n}%3E`;function i(t){let n=t.innerHTML,a=new RegExp(e,"gi"),i=e.length?n.match(a):null;if(i){i.forEach(function(e){n=n.replaceAll(e,`${s}${e}${o}`),t.innerHTML=n});const e=elems("img",t);e&&e.forEach(e=>{e.src=e.src.replaceAll(s,"").replaceAll(o,"").replaceAll(r,"").replaceAll(c,"")})}}const l=["h1","h2","h3","h4","h5","h6","p","code","td"];l.forEach(function(e){const n=elems(e,t);n.length&&n.forEach(function(e){e.children.length>=1?(Array.from(e.children).forEach(function(e){i(e)}),i(e)):i(e)})});const a=elems("a");a&&a.forEach(function(e){e.href=e.href.replaceAll(encodeURI(s),"").replaceAll(encodeURI(o),"")})}function parseBoolean(e=""){switch(e=e.trim().toLowerCase(),e){case"true":return!0;case"false":return!1;default:return 0[0]}}function loadSvg(e,t){t.innerHTML=`
   <svg class="icon_${e}">
     <use xlink:href="#${e}"></use>
   </svg>`}function copyToClipboard(e){let t,n,s;t=createEl("textarea"),t.value=e,t.setAttribute("readonly",""),t.style.position="absolute",t.style.left="-9999px",n=document.getSelection(),doc.appendChild(t),s=n.rangeCount>0&&n.getRangeAt(0),t.select(),document.execCommand("copy"),doc.removeChild(t),s&&(n.removeAllRanges(),n.addRange(s))}const snippet_actions=[{icon:"copy",id:"copy",title:copy_text,show:!0},{icon:"order",id:"lines",title:toggle_line_numbers_text,show:!0},{icon:"carly",id:"wrap",title:toggle_line_wrap_text,show:!1},{icon:"expand",id:"expand",title:resize_snippet,show:!1}];function addLines(e){let t=e.textContent;const n=[];t.includes(`
@@ -534,7 +520,7 @@ const no_matches_found = 'No matches found';
         <span class="line line-flex">
           <span class="ln">${s+1}</span>
           <span class="cl">${t.trim()}</span>
-        </span>`.trim();n.push(o),e.closest("pre").className="chroma",pushClass(e,"language-unknown"),e.dataset.lang=not_set}}),e.innerHTML=n.join("").trim(" "))}function wrapOrphanedPreElements(){const e=elems("pre");Array.from(e).forEach(function(e){const t=e.parentNode,n=!containsClass(t,highlight);if(n){const t=createEl();t.className=highlight;const n=createEl();n.className=highlight_wrap,wrapEl(e,t),wrapEl(t,n)}})}wrapOrphanedPreElements();function codeBlocks(){const e=elems("code"),t=Array.from(e).filter(function(e){return addLines(e),e.closest("pre")&&!Array.from(e.classList).includes("noClass")}).map(function(e){return e});return t}function codeBlockFits(e){const t=e.offsetWidth,n=e.closest(`.${highlight}`).offsetWidth;return t<=n}function maxHeightIsSet(e){let t=e.style.maxHeight;return t.includes("px")}function restrainCodeBlockHeight(e){const n=e[max_lines-1];let t=full_height;if(n){const s=n.offsetTop;if(s!==0){t=`${s}px`;const n=e[0].parentNode,o=n.closest(`.${highlight}`),i=containsClass(o,panel_expanded);i||(n.dataset.height=t,n.style.maxHeight=t)}}}const blocks=codeBlocks();function collapseCodeBlock(e){const t=elems(line_class,e),n=t.length;if(n>max_lines){const n=createEl();pushClass(n,panel_expand),pushClass(n,panel_from),n.title="Toggle snippet",n.textContent="...";const s=e.closest(".highlight");window.setTimeout(function(){const e=s.nextElementSibling.lastElementChild;deleteClass(e,panel_hide)},150),restrainCodeBlockHeight(t);const o=e.parentNode.parentNode;o.appendChild(n)}}blocks.forEach(function(e){collapseCodeBlock(e)});function actionPanel(){const e=createEl();return e.className=panel_box,snippet_actions.forEach(function(t){const n=createEl("a");n.href="#",n.title=t.title,n.className=`icon panel_icon panel_${t.id}`,!t.show&&pushClass(n,panel_hide),loadSvg(t.icon,n),e.appendChild(n)}),e}function toggleLineNumbers(e){e&&(e.forEach(e=>modifyClass(e,"pre_nolines")),restrainCodeBlockHeight(e))}function toggleLineWrap(e){modifyClass(e,"pre_wrap");const t=elems(".ln",e);restrainCodeBlockHeight(t)}function copyCode(e){const t=e.parentNode.parentNode.querySelector(`.${copy_id}`),s=t.title;loadSvg("check",t),t.title=copied_text,e=e.cloneNode(!0);const n=elems(".ln",e);!!n.length&&n.forEach(e=>e.remove());let o=elems("span",e);o.forEach(e=>{const t=e.textContent.trim(" ");t.indexOf("$")===0&&(e.textContent=e.textContent.replace("$ ",""))});const i=e.textContent.trim(" ");copyToClipboard(i),setTimeout(function(){t.title=s,loadSvg("copy",t)},2250)}(function(){const n=highlight_wrap;blocks.forEach(function(e){show_lines===!1&&toggleLineNumbers(elems(".ln",e));const o=e.parentNode.parentNode,t=createEl();t.className=n,wrapEl(o,t);const s=actionPanel(),i=elem(`.${wrap_id}`,s);!codeBlockFits(e)&&deleteClass(i,panel_hide),t.appendChild(s)});function t(e,t){return e.matches(`.${t}`)||e.closest(`.${t}`)}function s(e,t){const n=e.matches(`.${t}`)?e:e.closest(`.${t}`);deleteClass(n,active),setTimeout(function(){modifyClass(n,active)},50)}doc.addEventListener("click",function(e){const o=e.target,i=t(o,copy_id),a=t(o,wrap_id),r=t(o,lines_id),c=t(o,panel_expand),l=i||a||r||c;if(l){e.preventDefault(),s(o,"icon");const t=o.closest(`.${n}`).firstElementChild.firstElementChild;let l=elems(".ln",t);if(!!a&&toggleLineWrap(t),!!r&&toggleLineNumbers(l),c){let e=t.firstElementChild;const n=e.closest(".highlight");maxHeightIsSet(e)?(e.style.maxHeight=full_height,pushClass(n,panel_expanded)):(e.style.maxHeight=e.dataset.height,deleteClass(n,panel_expanded))}!!i&&copyCode(t)}}),function(){blocks.forEach(e=>{let t=e.dataset.lang;const n=shell_based.includes(t);if(n){const t=elems(line_class,e);Array.from(t).forEach(e=>{e=e.lastElementChild;let t=e.textContent.trim(" ");!!(t.indexOf("$")!==0&&t.trim(" ").length)&&pushClass(e,"shell")})}if(t=t==="sh"?"shell":t,t!=="fallback"){const n=createEl();n.textContent=t,pushClass(n,"lang"),e.closest(`.${highlight_wrap}`).appendChild(n)}})}()})();function prefersColor(e){return`(prefers-color-scheme: ${e})`}function systemMode(){return window.matchMedia&&window.matchMedia(prefersColor(dark)).matches?dark:light}function currentMode(){let e=light+dark;e=[...e];let t=getComputedStyle(doc).getPropertyValue(key).replace(/"/g,"").trim();return[...t].filter(t=>e.includes(t)).join("")}function changeMode(e){e?(bank.setItem(storageKey,light),elemAttribute(doc,mode_data,light)):(bank.setItem(storageKey,dark),elemAttribute(doc,mode_data,dark))}function pickModePicture(e){elems("picture").forEach(function(t){let o=t.firstElementChild;const n=t.dataset,s=[n.lit,n.dark];o.src=e=="dark"?s[1]:s[0]})}function setMermaidTheme(e){bank.setItem(mermaidThemeKey,e);let t=elem(".color_choice");t.value=e}function setUserColorMode(e=!1){const n=currentMode()==dark,s=bank.getItem(storageKey),o=systemMode();s?e?changeMode(n):elemAttribute(doc,mode_data,s):changeMode(e===!0?n:o!==dark);const t=doc.dataset.mode;doc.dataset.systemmode=o,!!t&&pickModePicture(t),setMermaidTheme(t)}setUserColorMode(),function(){return elem(".nav_header").offsetHeight+25}();function toggleMenu(e){const t=e.target,o=t.matches(`.${toggle_id}`),n=t.closest(`.${toggle_id}`),i=elems(`.${show_id}`)?Array.from(elems(`.${show_id}`)):[],a=t.closest(`.${menu}`);function s(e,t=!1){i.forEach(function(n){!t&&deleteClass(n,show_id),n!==e.closest(`.${menu}`)&&deleteClass(n,show_id)})}if(o||n){const s=n?n.parentNode.parentNode:t.parentNode.parentNode;e.preventDefault(),modifyClass(s,show_id)}else a?s(t,!0):s(t)}(function(){const t=elems("code");t&&t.forEach(function(e){hasClasses(e)||!e.children.length&&pushClass(e,"noClass")})})();function featureHeading(){const t="section_link",n="section_title",e=elem(".aside");if(e){let s=elem(`.${t}.${active}`);s=s||elem(`.${n}.${active}`),e.scroll({top:s.offsetTop,left:0})}}function activeHeading(e,t){let n=Object.create(null);n.active=t.filter(function(e){return containsClass(e,active)})[0],n.new=t[e],n.active!=n.new&&(!!n.active&&deleteClass(n.active,active),pushClass(n.new,active))}setTimeout(()=>{featureHeading()},50);function updateDate(){const t=new Date,e=t.getFullYear().toString,n=elem(".year");!!n&&(e.textContent=e)}function customizeSidebar(){const e="toc_active",n=elem("aside"),t=elems("nav",n);if(t){t.forEach(function(t){if(t.id="",pushClass(t,"toc"),t.children.length>=1){const n=Array.from(t.children[0].children),s=t.previousElementSibling;!!s.matches(`.${active}`)&&pushClass(t,e),n.forEach(function(e){pushClass(e,"toc_item"),pushClass(e.firstElementChild,"toc_link")})}});const n=elem(`.${e}`);if(n){const e=Array.from(elems("a",n)),t=e.map(function(e){return document.getElementById(decodeURIComponent(e.hash.replace("#","")))});window.addEventListener("scroll",function(){let o=window.scrollY+window.innerHeight/2,s=0;for(const[n,e]of t.entries())e.offsetTop<o&&e.offsetTop>t[s].offsetTop&&(s=n);activeHeading(s,e)})}}elems("p").forEach(function(e){const t=elems(".button",e);t.length>1&&pushClass(e,"button_grid")})}function markExternalLinks(){let e=elems("a");e&&Array.from(e).forEach(function(e){let n,o,i,s,a,r,t,c;t=new URL(e.href),c=t.host!==location.host||t.protocol!==location.protocol||t.port!==location.port,c&&(n="target",o="rel",i="_blank",s="noopener",a=elemAttribute(e,n),r=elemAttribute(e,s),!a&&elemAttribute(e,n,i),!r&&elemAttribute(e,o,s))})}function sanitizeURL(e){const t=e.indexOf(hash);if(t>-1){const n=e.substr(t,e.length-1);e=e.replace(n,"")}return e}function copyFeedback(e){const t=document.createElement("div"),n="link_yanked";if(t.classList.add(n),t.innerText=copied_text,!elem(`.${n}`,e)){const n=e.getElementsByTagName("svg")[0],s=n.src;n.src="https://jawad.dev/icons/check.svg",e.appendChild(t),setTimeout(function(){e.removeChild(t),n.src=s},2250)}}function copyHeadingLink(){let t,n,s,o,e;t="link",n=elems(`.${t}`),n&&document.addEventListener("click",function(n){e=n.target,o=e.parentNode,(e&&containsClass(e,t)||containsClass(o,t))&&(n.preventDefault(),s=e.href!=void 0?e.href:e.parentNode.href,copyToClipboard(s),copyFeedback(e.href!=void 0?e:e.parentNode))})}function makeTablesResponsive(){const e=elems("table");e&&e.forEach(function(e){const t=createEl();pushClass(t,"scrollable"),wrapEl(e,t)})}function backToTop(){const e=elem("#toTop");window.addEventListener("scroll",()=>{const t=window.scrollY;t>=200?(e.style.display="flex",pushClass(e,active)):deleteClass(e,active)})}function lazyLoadMedia(e=[]){e.forEach(e=>{let t=elems(e);t&&Array.from(t).forEach(function(e){e.loading="lazy"})})}function loadActions(){updateDate(),customizeSidebar(),markExternalLinks(),copyHeadingLink(),makeTablesResponsive(),backToTop(),lazyLoadMedia(["iframe","img"]),doc.addEventListener("click",e=>{let t=e.target,n="color_choice",s=containsClass(t,n);!!s&&setUserColorMode(!0),toggleMenu(e)})}window.addEventListener("load",loadActions())
+        </span>`.trim();n.push(o),e.closest("pre").className="chroma",pushClass(e,"language-unknown"),e.dataset.lang=not_set}}),e.innerHTML=n.join("").trim(" "))}function wrapOrphanedPreElements(){const e=elems("pre");Array.from(e).forEach(function(e){const t=e.parentNode,n=!containsClass(t,highlight);if(n){const t=createEl();t.className=highlight;const n=createEl();n.className=highlight_wrap,wrapEl(e,t),wrapEl(t,n)}})}wrapOrphanedPreElements();function codeBlocks(){const e=elems("code"),t=Array.from(e).filter(function(e){return addLines(e),e.closest("pre")&&!Array.from(e.classList).includes("noClass")}).map(function(e){return e});return t}function codeBlockFits(e){const t=e.offsetWidth,n=e.closest(`.${highlight}`).offsetWidth;return t<=n}function maxHeightIsSet(e){let t=e.style.maxHeight;return t.includes("px")}function restrainCodeBlockHeight(e){const n=e[max_lines-1];let t=full_height;if(n){const s=n.offsetTop;if(s!==0){t=`${s}px`;const n=e[0].parentNode,o=n.closest(`.${highlight}`),i=containsClass(o,panel_expanded);i||(n.dataset.height=t,n.style.maxHeight=t)}}}const blocks=codeBlocks();function collapseCodeBlock(e){const t=elems(line_class,e),n=t.length;if(n>max_lines){const n=createEl();pushClass(n,panel_expand),pushClass(n,panel_from),n.title="Toggle snippet",n.textContent="...";const s=e.closest(".highlight");window.setTimeout(function(){const e=s.nextElementSibling.lastElementChild;deleteClass(e,panel_hide)},150),restrainCodeBlockHeight(t);const o=e.parentNode.parentNode;o.appendChild(n)}}blocks.forEach(function(e){collapseCodeBlock(e)});function actionPanel(){const e=createEl();return e.className=panel_box,snippet_actions.forEach(function(t){const n=createEl("a");n.href="#",n.title=t.title,n.className=`icon panel_icon panel_${t.id}`,!t.show&&pushClass(n,panel_hide),loadSvg(t.icon,n),e.appendChild(n)}),e}function toggleLineNumbers(e){e&&(e.forEach(e=>modifyClass(e,"pre_nolines")),restrainCodeBlockHeight(e))}function toggleLineWrap(e){modifyClass(e,"pre_wrap");const t=elems(".ln",e);restrainCodeBlockHeight(t)}function copyCode(e){const t=e.parentNode.parentNode.querySelector(`.${copy_id}`),s=t.title;loadSvg("check",t),t.title=copied_text,e=e.cloneNode(!0);const n=elems(".ln",e);!!n.length&&n.forEach(e=>e.remove());let o=elems("span",e);o.forEach(e=>{const t=e.textContent.trim(" ");t.indexOf("$")===0&&(e.textContent=e.textContent.replace("$ ",""))});const i=e.textContent.trim(" ");copyToClipboard(i),setTimeout(function(){t.title=s,loadSvg("copy",t)},2250)}(function(){const n=highlight_wrap;blocks.forEach(function(e){show_lines===!1&&toggleLineNumbers(elems(".ln",e));const o=e.parentNode.parentNode,t=createEl();t.className=n,wrapEl(o,t);const s=actionPanel(),i=elem(`.${wrap_id}`,s);!codeBlockFits(e)&&deleteClass(i,panel_hide),t.appendChild(s)});function t(e,t){return e.matches(`.${t}`)||e.closest(`.${t}`)}function s(e,t){const n=e.matches(`.${t}`)?e:e.closest(`.${t}`);deleteClass(n,active),setTimeout(function(){modifyClass(n,active)},50)}doc.addEventListener("click",function(e){const o=e.target,i=t(o,copy_id),a=t(o,wrap_id),r=t(o,lines_id),c=t(o,panel_expand),l=i||a||r||c;if(l){e.preventDefault(),s(o,"icon");const t=o.closest(`.${n}`).firstElementChild.firstElementChild;let l=elems(".ln",t);if(!!a&&toggleLineWrap(t),!!r&&toggleLineNumbers(l),c){let e=t.firstElementChild;const n=e.closest(".highlight");maxHeightIsSet(e)?(e.style.maxHeight=full_height,pushClass(n,panel_expanded)):(e.style.maxHeight=e.dataset.height,deleteClass(n,panel_expanded))}!!i&&copyCode(t)}}),function(){blocks.forEach(e=>{let t=e.dataset.lang;const n=shell_based.includes(t);if(n){const t=elems(line_class,e);Array.from(t).forEach(e=>{e=e.lastElementChild;let t=e.textContent.trim(" ");!!(t.indexOf("$")!==0&&t.trim(" ").length)&&pushClass(e,"shell")})}if(t=t==="sh"?"shell":t,t!=="fallback"){const n=createEl();n.textContent=t,pushClass(n,"lang"),e.closest(`.${highlight_wrap}`).appendChild(n)}})}()})();function prefersColor(e){return`(prefers-color-scheme: ${e})`}function systemMode(){return window.matchMedia&&window.matchMedia(prefersColor(dark)).matches?dark:light}function currentMode(){let e=light+dark;e=[...e];let t=getComputedStyle(doc).getPropertyValue(key).replace(/"/g,"").trim();return[...t].filter(t=>e.includes(t)).join("")}function changeMode(e){e?(bank.setItem(storageKey,light),elemAttribute(doc,mode_data,light)):(bank.setItem(storageKey,dark),elemAttribute(doc,mode_data,dark))}function pickModePicture(e){elems("picture").forEach(function(t){let o=t.firstElementChild;const n=t.dataset,s=[n.lit,n.dark];o.src=e=="dark"?s[1]:s[0]})}function setMermaidTheme(e){bank.setItem(mermaidThemeKey,e);let t=elem(".color_choice");t.value=e}function setUserColorMode(e=!1){const n=currentMode()==dark,s=bank.getItem(storageKey),o=systemMode();s?e?changeMode(n):elemAttribute(doc,mode_data,s):changeMode(e===!0?n:o!==dark);const t=doc.dataset.mode;doc.dataset.systemmode=o,!!t&&pickModePicture(t),setMermaidTheme(t)}setUserColorMode(),function(){return elem(".nav_header").offsetHeight+25}();function toggleMenu(e){const t=e.target,o=t.matches(`.${toggle_id}`),n=t.closest(`.${toggle_id}`),i=elems(`.${show_id}`)?Array.from(elems(`.${show_id}`)):[],a=t.closest(`.${menu}`);function s(e,t=!1){i.forEach(function(n){!t&&deleteClass(n,show_id),n!==e.closest(`.${menu}`)&&deleteClass(n,show_id)})}if(o||n){const s=n?n.parentNode.parentNode:t.parentNode.parentNode;e.preventDefault(),modifyClass(s,show_id)}else a?s(t,!0):s(t)}(function(){const t=elems("code");t&&t.forEach(function(e){hasClasses(e)||!e.children.length&&pushClass(e,"noClass")})})();function featureHeading(){const t="section_link",n="section_title",e=elem(".aside");if(e){let s=elem(`.${t}.${active}`);s=s||elem(`.${n}.${active}`),e.scroll({top:s.offsetTop,left:0})}}function activeHeading(e,t){let n=Object.create(null);n.active=t.filter(function(e){return containsClass(e,active)})[0],n.new=t[e],n.active!=n.new&&(!!n.active&&deleteClass(n.active,active),pushClass(n.new,active))}setTimeout(()=>{featureHeading()},50);function updateDate(){const t=new Date,e=t.getFullYear().toString,n=elem(".year");!!n&&(e.textContent=e)}function customizeSidebar(){const e="toc_active",n=elem("aside"),t=elems("nav",n);if(t){t.forEach(function(t){if(t.id="",pushClass(t,"toc"),t.children.length>=1){const n=Array.from(t.children[0].children),s=t.previousElementSibling;!!s.matches(`.${active}`)&&pushClass(t,e),n.forEach(function(e){pushClass(e,"toc_item"),pushClass(e.firstElementChild,"toc_link")})}});const n=elem(`.${e}`);if(n){const e=Array.from(elems("a",n)),t=e.map(function(e){return document.getElementById(decodeURIComponent(e.hash.replace("#","")))});window.addEventListener("scroll",function(){let o=window.scrollY+window.innerHeight/2,s=0;for(const[n,e]of t.entries())e.offsetTop<o&&e.offsetTop>t[s].offsetTop&&(s=n);activeHeading(s,e)})}}elems("p").forEach(function(e){const t=elems(".button",e);t.length>1&&pushClass(e,"button_grid")})}function markExternalLinks(){let e=elems("a");e&&Array.from(e).forEach(function(e){let n,o,i,s,a,r,t,c;t=new URL(e.href),c=t.host!==location.host||t.protocol!==location.protocol||t.port!==location.port,c&&(n="target",o="rel",i="_blank",s="noopener",a=elemAttribute(e,n),r=elemAttribute(e,s),!a&&elemAttribute(e,n,i),!r&&elemAttribute(e,o,s))})}function sanitizeURL(e){const t=e.indexOf(hash);if(t>-1){const n=e.substr(t,e.length-1);e=e.replace(n,"")}return e}function copyFeedback(e){const t=document.createElement("div"),n="link_yanked";if(t.classList.add(n),t.innerText=copied_text,!elem(`.${n}`,e)){const n=e.getElementsByTagName("svg")[0],s=n.src;n.src="https://jawad.dev/icons/check.svg",e.appendChild(t),setTimeout(function(){e.removeChild(t),n.src=s},2250)}}function copyHeadingLink(){let t,n,s,o,e;t="link",n=elems(`.${t}`),n&&document.addEventListener("click",function(n){e=n.target,o=e.parentNode,(e&&containsClass(e,t)||containsClass(o,t))&&(n.preventDefault(),s=e.href!=0[0]?e.href:e.parentNode.href,copyToClipboard(s),copyFeedback(e.href!=0[0]?e:e.parentNode))})}function makeTablesResponsive(){const e=elems("table");e&&e.forEach(function(e){const t=createEl();pushClass(t,"scrollable"),wrapEl(e,t)})}function backToTop(){const e=elem("#toTop");window.addEventListener("scroll",()=>{const t=window.scrollY;t>=200?(e.style.display="flex",pushClass(e,active)):deleteClass(e,active)})}function lazyLoadMedia(e=[]){e.forEach(e=>{let t=elems(e);t&&Array.from(t).forEach(function(e){e.loading="lazy"})})}function loadActions(){updateDate(),customizeSidebar(),markExternalLinks(),copyHeadingLink(),makeTablesResponsive(),backToTop(),lazyLoadMedia(["iframe","img"]),doc.addEventListener("click",e=>{let t=e.target,n="color_choice",s=containsClass(t,n);!!s&&setUserColorMode(!0),toggleMenu(e)})}window.addEventListener("load",loadActions())
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </body>
