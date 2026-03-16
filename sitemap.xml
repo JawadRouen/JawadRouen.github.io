@@ -6,43 +6,124 @@
     <lastmod>2026-02-01T21:19:29+01:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/</loc>
-    <lastmod>2025-08-03T18:46:37+02:00</lastmod>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/</loc>
-    <lastmod>2025-08-03T18:46:37+02:00</lastmod>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
-    <loc>https://jawad.dev/docs/dl/use-tina-cms/</loc>
-    <lastmod>2025-07-20T19:06:18+02:00</lastmod>
+    <loc>https://jawad.dev/docs/ml/tree/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
-    <loc>https://jawad.dev/docs/xai/organize-content/</loc>
-    <lastmod>2025-07-20T19:06:18+02:00</lastmod>
+    <loc>https://jawad.dev/docs/dl/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
-    <loc>https://jawad.dev/docs/dl/shortcodes/</loc>
-    <lastmod>2025-07-20T19:06:18+02:00</lastmod>
+    <loc>https://jawad.dev/docs/xai/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
-    <loc>https://jawad.dev/docs/xai/search/</loc>
-    <lastmod>2025-07-20T19:06:18+02:00</lastmod>
+    <loc>https://jawad.dev/docs/ml/evaluation/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
-    <loc>https://jawad.dev/docs/xai/customize/</loc>
-    <lastmod>2025-07-20T19:06:18+02:00</lastmod>
+    <loc>https://jawad.dev/docs/ml/clustering/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/evaluation/1_foundations_of_model_evaluation/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/lm/1_introduction_and_background/</loc>
     <lastmod>2026-02-02T07:58:41+01:00</lastmod>
   </url><url>
+    <loc>https://jawad.dev/docs/ml/clustering/1_introduction_and_hierarchical_clustering/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/dl/1_introduction_and_history/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/xai/1_introduction_and_motivations/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/tree/1_introduction_and_partitioning/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/clustering/2_kmeans_and_kmedoids/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/evaluation/2_metrics_for_regression_and_classification/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
     <loc>https://jawad.dev/docs/ml/lm/2_simple_linear_regression/</loc>
     <lastmod>2026-02-01T21:05:26+01:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/dl/2_single_neuron_and_loss/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/tree/2_splitting_criteria_and_best_split/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/xai/2_taxonomy_of_explainability_methods/</loc>
+    <lastmod>2026-03-16T18:03:52-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/xai/3_ante_hoc_explainability/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/evaluation/3_cross_validation_strategies/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/dl/3_forward_backpropagation_and_activation_functions/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/clustering/3_gaussian_mixtures_and_em/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/tree/3_growth_control_and_pruning/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/lm/3_inference_and_diagnostics/</loc>
     <lastmod>2026-02-02T07:58:41+01:00</lastmod>
   </url><url>
+    <loc>https://jawad.dev/docs/dl/4_deep_networks_and_optimization/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/clustering/4_density_based_clustering_and_practical_guidance/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/evaluation/4_feature_selection_and_preprocessing/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/xai/4_global_post_hoc_methods/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
     <loc>https://jawad.dev/docs/ml/lm/4_multiple_regression_and_feature_engineering/</loc>
     <lastmod>2026-02-02T07:58:41+01:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/evaluation/5_hyperparameter_tuning_and_early_stopping/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/xai/5_local_post_hoc_methods/</loc>
+    <lastmod>2026-03-16T18:03:52-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/lm/5_model_selection_and_regularization/</loc>
     <lastmod>2026-02-01T21:05:26+01:00</lastmod>
   </url><url>
+    <loc>https://jawad.dev/docs/dl/5_regularization_batch_norm_and_multiclass/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/dl/6_cnn_fundamentals/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
     <loc>https://jawad.dev/docs/ml/lm/6_generalized_linear_models_and_logistic/</loc>
     <lastmod>2026-02-01T21:05:26+01:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/ml/evaluation/6_imbalanced_data_and_threshold_selection/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/xai/6_model_specific_explainability/</loc>
+    <lastmod>2026-03-16T18:03:52-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/dl/7_classic_cnn_architectures/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/docs/xai/7_credit_risk_case_study/</loc>
+    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/lm/7_mathematical_annexes/</loc>
     <lastmod>2026-02-01T21:05:26+01:00</lastmod>

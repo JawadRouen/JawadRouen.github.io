@@ -1,41 +1,32 @@
 <!doctype html>
 <html lang=en data-mode=auto itemscope itemtype=http://schema.org/WebPage>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.147.1">
-<link rel="apple-touch-icon" sizes="180x180" href='http://localhost:1313/favicons/apple-touch-icon.png'>
-<link rel="icon" type="image/png" sizes="32x32" href='http://localhost:1313/favicons/favicon-32x32.png'>
-<link rel="icon" type="image/png" sizes="16x16" href='http://localhost:1313/favicons/favicon-16x16.png'>
-<link rel="manifest" href='http://localhost:1313/favicons/site.webmanifest'>
-<link rel="mask-icon" href='http://localhost:1313/favicons/safari-pinned-tab.svg' color="#004750">
-<link rel="shortcut icon" href='http://localhost:1313/favicons/favicon.ico'>
-<meta name="msapplication-config" content='http://localhost:1313/favicons/browserconfig.xml'>
-<title>Decision Trees | Personal Website</title><meta property="og:url" content="http://localhost:1313/docs/ml/tree/">
-  <meta property="og:site_name" content="Personal Website">
-  <meta property="og:title" content="Decision Trees">
-  <meta property="og:description" content="This course provides a comprehensive introduction to Machine Learning, covering both theoretical foundations and practical applications. It introduces students to supervised and unsupervised learning, focusing on model evaluation, feature selection, clustering, decision trees, and regression techniques.
-Students will develop hands-on expertise in building, tuning, and evaluating models while understanding the mathematical principles behind them. The course emphasizes best practices in data preprocessing, model selection, and performance optimization, equipping students with the necessary tools to apply Machine Learning in real-world scenarios across various industries.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.155.1">
+<link rel="apple-touch-icon" sizes="180x180" href='https://jawad.dev/favicons/apple-touch-icon.png'>
+<link rel="icon" type="image/png" sizes="32x32" href='https://jawad.dev/favicons/favicon-32x32.png'>
+<link rel="icon" type="image/png" sizes="16x16" href='https://jawad.dev/favicons/favicon-16x16.png'>
+<link rel="manifest" href='https://jawad.dev/favicons/site.webmanifest'>
+<link rel="mask-icon" href='https://jawad.dev/favicons/safari-pinned-tab.svg' color="#004750">
+<link rel="shortcut icon" href='https://jawad.dev/favicons/favicon.ico'>
+<meta name="msapplication-config" content='https://jawad.dev/favicons/browserconfig.xml'>
+<title>Decision Trees | Personal Website</title><meta property="og:title" content="Decision Trees" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jawad.dev/docs/ml/tree/" />
 
-  <meta itemprop="name" content="Decision Trees">
-  <meta itemprop="description" content="This course provides a comprehensive introduction to Machine Learning, covering both theoretical foundations and practical applications. It introduces students to supervised and unsupervised learning, focusing on model evaluation, feature selection, clustering, decision trees, and regression techniques.
-Students will develop hands-on expertise in building, tuning, and evaluating models while understanding the mathematical principles behind them. The course emphasizes best practices in data preprocessing, model selection, and performance optimization, equipping students with the necessary tools to apply Machine Learning in real-world scenarios across various industries.">
-  <meta itemprop="dateModified" content="2025-07-20T23:25:19+02:00">
-  <meta itemprop="wordCount" content="219">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Decision Trees">
-  <meta name="twitter:description" content="This course provides a comprehensive introduction to Machine Learning, covering both theoretical foundations and practical applications. It introduces students to supervised and unsupervised learning, focusing on model evaluation, feature selection, clustering, decision trees, and regression techniques.
-Students will develop hands-on expertise in building, tuning, and evaluating models while understanding the mathematical principles behind them. The course emphasizes best practices in data preprocessing, model selection, and performance optimization, equipping students with the necessary tools to apply Machine Learning in real-world scenarios across various industries.">
 
-<link rel="stylesheet" href="http://localhost:1313/css/styles.1058146193ddb1d77962c800e11e8d6c85a44ea1c931c634df675a161da093048cb62a25b5bf4ce84e9bb8b0271fda6f508dabba616a65a422ebfa3c48820ce1.css" integrity="sha512-EFgUYZPdsdd5YsgA4R6NbIWkTqHJMcY032daFh2gkwSMtioltb9M6E6buLAnH9pvUI2rumFqZaQi6/o8SIIM4Q==">
+
+<meta property="og:site_name" content="Personal Website" />
+
+<link rel="stylesheet" href="https://jawad.dev/css/styles.8ca46c9aa0c678bd6944bc5979590dba8d7f3a69410eadec1dd5a62c96fa8eacb15ee5f4b484b90585c47db47b471fdd3fa5b0525b5ffc6daba906fe0b48e29a.css" integrity="sha512-jKRsmqDGeL1pRLxZeVkNuo1/OmlBDq3sHdWmLJb6jqyxXuX0tIS5BYXEfbR7Rx/dP6WwUltf/G2rqQb&#43;C0jimg==">
 
 </head>
 <body class="page-section" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu">
-	<a href='http://localhost:1313/' class="nav_brand">
-		<picture data-lit="http://localhost:1313/images/jawad_dev_logo.svg" data-dark="http://localhost:1313/images/jawad_dev_logo_darkmode.svg">
-			<img src="http://localhost:1313/images/jawad_dev_logo.svg" alt="Personal Website Logo">
+	<a href='https://jawad.dev/' class="nav_brand">
+		<picture data-lit="https://jawad.dev/images/jawad_dev_logo.svg" data-dark="https://jawad.dev/images/jawad_dev_logo_darkmode.svg">
+			<img src="https://jawad.dev/images/jawad_dev_logo.svg" alt="Personal Website Logo">
 		</picture>
 		<div class="nav_toggle toggle" title='Site Menu'><svg class="icon icon_harmburger">
   <use href="#harmburger"></use>
@@ -46,15 +37,15 @@ Students will develop hands-on expertise in building, tuning, and evaluating mod
 		<li class="nav-item">
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="http://localhost:1313/docs/"><span>Teaching</span></a>
+			<a class="nav-link" href="https://jawad.dev/docs/"><span>Teaching</span></a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="http://localhost:1313/blog/"><span>Blog</span></a>
+			<a class="nav-link" href="https://jawad.dev/blog/"><span>Blog</span></a>
 		</li>
 		<li class="nav-item nav_repo">
 			<a class="nav-link" href="https://github.com/jawadrouen" target="_blank">
-					<picture data-lit="http://localhost:1313/images/GitHubMarkLight.svg" data-dark="http://localhost:1313/images/GitHubMarkDark.svg">
-						<img src="http://localhost:1313/images/GitHubMarkLight.svg" alt="GitHub Repo">
+					<picture data-lit="https://jawad.dev/images/GitHubMarkLight.svg" data-dark="https://jawad.dev/images/GitHubMarkDark.svg">
+						<img src="https://jawad.dev/images/GitHubMarkLight.svg" alt="GitHub Repo">
 					</picture>
 			</a>
 		</li>
@@ -74,150 +65,643 @@ Students will develop hands-on expertise in building, tuning, and evaluating mod
 </svg></label>
   </div>
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/" class="group">Teaching Docs</a></h2>
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/" class="group">Teaching Docs</a></h2>
       <section class="" id="docs-teaching-docs">
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/ml/" class="group">Maching Learning</a></h2>
-      <section class="" id="docs-maching-learning">
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/ml/" class="group">Machine Learning</a></h2>
+      <section class="" id="docs-machine-learning">
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/ml/lm/" class="group">Linear modeling</a></h2>
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/ml/lm/" class="group">Linear modeling</a></h2>
       <section class="" id="docs-linear-modeling">
-        <h3 class="section_link"><a id="docs-introduction--background" href="http://localhost:1313/docs/ml/lm/1_introduction_and_background/">Introduction &amp; Background</a></h3>
+        <h3 class="section_link"><a id="docs-introduction--background" href="https://jawad.dev/docs/ml/lm/1_introduction_and_background/">Introduction &amp; Background</a></h3>
         <nav id="toc-introduction-background">
   <ul>
-    <li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#notation">Notation</a></li>
+    <li><a href="#random-variables--expectations">Random Variables &amp; Expectations</a></li>
+    <li><a href="#sampling--estimation">Sampling &amp; Estimation</a></li>
+    <li><a href="#covariance--correlation">Covariance &amp; Correlation</a></li>
+    <li><a href="#motivating-example-house-price-prediction">Motivating Example: House Price Prediction</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-simple-linear-regression" href="https://jawad.dev/docs/ml/lm/2_simple_linear_regression/">Simple Linear Regression</a></h3>
+        <nav id="toc-simple-linear-regression">
+  <ul>
+    <li><a href="#what-is-linear-regression">What is Linear Regression?</a>
       <ul>
-        <li><a href="#sequence-diagrams">Sequence Diagrams</a></li>
-        <li><a href="#flow-charts">Flow Charts</a></li>
-        <li><a href="#graphs">Graphs</a></li>
-        <li><a href="#class-diagram">Class Diagram</a></li>
-        <li><a href="#state-diagram">State Diagram</a></li>
-        <li><a href="#relationship-diagrams">Relationship Diagrams</a></li>
-        <li><a href="#user-journey">User Journey</a></li>
-        <li><a href="#gantt">Gantt</a></li>
-        <li><a href="#pie-chart">Pie Chart</a></li>
-        <li><a href="#mindmap">Mindmap</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#gitgraph">Gitgraph</a></li>
-        <li><a href="#requirement-diagram">Requirement Diagram</a></li>
-        <li><a href="#c4c-diagram">C4C Diagram</a></li>
+        <li><a href="#the-gaussmarkov-theorem">The Gauss–Markov Theorem</a></li>
       </ul>
     </li>
+    <li><a href="#ordinary-least-squares-ols">Ordinary Least Squares (OLS)</a>
+      <ul>
+        <li><a href="#objective-function">Objective Function</a></li>
+        <li><a href="#solution">Solution</a></li>
+      </ul>
+    </li>
+    <li><a href="#covariance-and-correlation">Covariance and Correlation</a>
+      <ul>
+        <li><a href="#empirical-covariance">Empirical Covariance</a></li>
+        <li><a href="#correlation">Correlation</a></li>
+      </ul>
+    </li>
+    <li><a href="#errors-and-residuals">Errors and Residuals</a>
+      <ul>
+        <li><a href="#statistical-error-disturbance">Statistical Error (Disturbance)</a></li>
+        <li><a href="#residual">Residual</a></li>
+      </ul>
+    </li>
+    <li><a href="#visualizing-ols-fit">Visualizing OLS Fit</a></li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
-        <h3 class="section_link"><a id="docs-simple-linear-regression" href="http://localhost:1313/docs/ml/lm/2_simple_linear_regression/">Simple Linear Regression</a></h3>
-        <nav id="toc-simple-linear-regression"></nav>
-        <h3 class="section_link"><a id="docs-inference--diagnostic" href="http://localhost:1313/docs/ml/lm/3_inference_and_diagnostics/">Inference &amp; Diagnostic</a></h3>
-        <nav id="toc-inference-diagnostic"></nav>
-        <h3 class="section_link"><a id="docs-multiple-regresion-and-feature-engineering" href="http://localhost:1313/docs/ml/lm/4_multiple_regression_and_feature_engineering/">Multiple Regresion and Feature Engineering</a></h3>
-        <nav id="toc-multiple-regresion-and-feature-engineering"></nav>
-        <h3 class="section_link"><a id="docs-model-selection" href="http://localhost:1313/docs/ml/lm/5_model_selection_and_regularization/">Model Selection</a></h3>
-        <nav id="toc-model-selection"></nav>
-        <h3 class="section_link"><a id="docs-generalized-linear-model-glm" href="http://localhost:1313/docs/ml/lm/6_generalized_linear_models_and_logistic/">Generalized Linear Model (GLM)</a></h3>
-        <nav id="toc-generalized-linear-model-glm">
+        <h3 class="section_link"><a id="docs-inference--diagnostic" href="https://jawad.dev/docs/ml/lm/3_inference_and_diagnostics/">Inference &amp; Diagnostic</a></h3>
+        <nav id="toc-inference-diagnostic">
   <ul>
-    <li><a href="#aws-ci">AWS CI</a></li>
-    <li><a href="#algolia-ci">Algolia CI</a></li>
+    <li><a href="#residual-analysis">Residual Analysis</a>
+      <ul>
+        <li><a href="#types-of-residual-plots">Types of Residual Plots</a>
+          <ul>
+            <li><a href="#1-residuals-vs-fitted-values">1. Residuals vs Fitted Values</a></li>
+            <li><a href="#key-insights-from-residual-plots">Key Insights from Residual Plots</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#studentized-residuals">Studentized Residuals</a>
+      <ul>
+        <li><a href="#outlier-detection">Outlier Detection</a></li>
+      </ul>
+    </li>
+    <li><a href="#target-transformation">Target Transformation</a>
+      <ul>
+        <li><a href="#common-transformations">Common Transformations</a></li>
+      </ul>
+    </li>
+    <li><a href="#diagnostic-plots">Diagnostic Plots</a>
+      <ul>
+        <li><a href="#1-residuals-vs-fitted">1. Residuals vs Fitted</a></li>
+        <li><a href="#2-normal-q-q-plot">2. Normal Q-Q Plot</a></li>
+        <li><a href="#3-scale-location-plot">3. Scale-Location Plot</a></li>
+        <li><a href="#4-residuals-vs-leverage">4. Residuals vs Leverage</a></li>
+      </ul>
+    </li>
+    <li><a href="#influential-observations">Influential Observations</a>
+      <ul>
+        <li><a href="#cooks-distance">Cook's Distance</a></li>
+        <li><a href="#dffits">DFFITS</a></li>
+      </ul>
+    </li>
+    <li><a href="#coefficient-of-determination-r">Coefficient of Determination (R²)</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-multiple-regression-and-feature-engineering" href="https://jawad.dev/docs/ml/lm/4_multiple_regression_and_feature_engineering/">Multiple Regression and Feature Engineering</a></h3>
+        <nav id="toc-multiple-regression-and-feature-engineering">
+  <ul>
+    <li><a href="#multiple-regression">Multiple Regression</a></li>
+    <li><a href="#matrix-notation">Matrix Notation</a>
+      <ul>
+        <li><a href="#the-design-matrix">The Design Matrix</a></li>
+      </ul>
+    </li>
+    <li><a href="#matrix-operations-review">Matrix Operations Review</a>
+      <ul>
+        <li><a href="#matrix-multiplication">Matrix Multiplication</a></li>
+        <li><a href="#matrix-transpose">Matrix Transpose</a></li>
+        <li><a href="#matrix-inverse">Matrix Inverse</a></li>
+      </ul>
+    </li>
+    <li><a href="#norm-of-a-vector">Norm of a Vector</a></li>
+    <li><a href="#ordinary-least-squares-ols-in-matrix-form">Ordinary Least Squares (OLS) in Matrix Form</a></li>
+    <li><a href="#normal-equation">Normal Equation</a>
+      <ul>
+        <li><a href="#when-normal-equation-fails">When Normal Equation Fails</a></li>
+      </ul>
+    </li>
+    <li><a href="#binary-and-categorical-variables">Binary and Categorical Variables</a>
+      <ul>
+        <li><a href="#dummy-variables">Dummy Variables</a></li>
+        <li><a href="#encoding-categorical-variables">Encoding Categorical Variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#predictor-transformations-and-interactions">Predictor Transformations and Interactions</a>
+      <ul>
+        <li><a href="#common-transformations">Common Transformations</a></li>
+        <li><a href="#interaction-terms">Interaction Terms</a></li>
+      </ul>
+    </li>
+    <li><a href="#polynomial-regression">Polynomial Regression</a>
+      <ul>
+        <li><a href="#example-quadratic-fit">Example: Quadratic Fit</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-model-selection-and-regularization" href="https://jawad.dev/docs/ml/lm/5_model_selection_and_regularization/">Model Selection and Regularization</a></h3>
+        <nav id="toc-model-selection-and-regularization">
+  <ul>
+    <li><a href="#inference-in-regression">Inference in Regression</a>
+      <ul>
+        <li><a href="#distribution-of-coefficient-estimators">Distribution of Coefficient Estimators</a></li>
+        <li><a href="#estimating-the-error-variance">Estimating the Error Variance</a></li>
+      </ul>
+    </li>
+    <li><a href="#statistical-tests-for-coefficients">Statistical Tests for Coefficients</a>
+      <ul>
+        <li><a href="#hypothesis-test-for-individual-coefficients">Hypothesis Test for Individual Coefficients</a></li>
+      </ul>
+    </li>
+    <li><a href="#confidence-intervals">Confidence Intervals</a>
+      <ul>
+        <li><a href="#confidence-interval-for-coefficients">Confidence Interval for Coefficients</a></li>
+        <li><a href="#confidence-interval-for-predictions">Confidence Interval for Predictions</a></li>
+      </ul>
+    </li>
+    <li><a href="#adjusted-r">Adjusted R²</a>
+      <ul>
+        <li><a href="#the-problem-with-r">The Problem with R²</a></li>
+        <li><a href="#adjusted-r-1">Adjusted R²</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-f-distribution">The F-Distribution</a></li>
+    <li><a href="#the-f-test-for-regression">The F-Test for Regression</a>
+      <ul>
+        <li><a href="#overall-significance-test-simple-regression">Overall Significance Test (Simple Regression)</a></li>
+        <li><a href="#relationship-to-r">Relationship to R²</a></li>
+      </ul>
+    </li>
+    <li><a href="#f-test-for-nested-models">F-Test for Nested Models</a>
+      <ul>
+        <li><a href="#comparing-two-models">Comparing Two Models</a></li>
+      </ul>
+    </li>
+    <li><a href="#model-selection-methods">Model Selection Methods</a>
+      <ul>
+        <li><a href="#1-backward-elimination">1. Backward Elimination</a></li>
+        <li><a href="#2-forward-selection">2. Forward Selection</a></li>
+        <li><a href="#3-stepwise-regression">3. Stepwise Regression</a></li>
+      </ul>
+    </li>
+    <li><a href="#information-criteria">Information Criteria</a>
+      <ul>
+        <li><a href="#akaike-information-criterion-aic">Akaike Information Criterion (AIC)</a></li>
+        <li><a href="#bayesian-information-criterion-bic">Bayesian Information Criterion (BIC)</a></li>
+      </ul>
+    </li>
+    <li><a href="#dealing-with-collinearity">Dealing with Collinearity</a>
+      <ul>
+        <li><a href="#what-is-collinearity">What is Collinearity?</a></li>
+        <li><a href="#detecting-collinearity">Detecting Collinearity</a></li>
+        <li><a href="#solutions-to-collinearity">Solutions to Collinearity</a></li>
+      </ul>
+    </li>
+    <li><a href="#regularization-ridge-and-lasso">Regularization: Ridge and Lasso</a>
+      <ul>
+        <li><a href="#ridge-regression">Ridge Regression</a></li>
+        <li><a href="#lasso-regression">Lasso Regression</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-generalized-linear-models-glm-and-logistic-regression" href="https://jawad.dev/docs/ml/lm/6_generalized_linear_models_and_logistic/">Generalized Linear Models (GLM) and Logistic Regression</a></h3>
+        <nav id="toc-generalized-linear-models-glm-and-logistic-regression">
+  <ul>
+    <li><a href="#generalized-linear-models-glm">Generalized Linear Models (GLM)</a>
+      <ul>
+        <li><a href="#the-three-components-of-a-glm">The Three Components of a GLM</a>
+          <ul>
+            <li><a href="#1-exponential-family-of-probability-distributions">1. Exponential Family of Probability Distributions</a></li>
+            <li><a href="#2-linear-predictor">2. Linear Predictor</a></li>
+            <li><a href="#3-link-function">3. Link Function</a></li>
+          </ul>
+        </li>
+        <li><a href="#glm-formula">GLM Formula</a></li>
+      </ul>
+    </li>
+    <li><a href="#common-link-functions">Common Link Functions</a></li>
+    <li><a href="#parameter-estimation-maximum-likelihood">Parameter Estimation: Maximum Likelihood</a></li>
+    <li><a href="#logistic-regression">Logistic Regression</a>
+      <ul>
+        <li><a href="#binary-response-distribution">Binary Response Distribution</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-logit-link-function">The Logit Link Function</a>
+      <ul>
+        <li><a href="#inverse-link-the-logistic-function">Inverse Link: The Logistic Function</a></li>
+      </ul>
+    </li>
+    <li><a href="#logistic-regression-model">Logistic Regression Model</a></li>
+    <li><a href="#maximum-likelihood-for-logistic-regression">Maximum Likelihood for Logistic Regression</a>
+      <ul>
+        <li><a href="#likelihood-function">Likelihood Function</a></li>
+        <li><a href="#log-likelihood">Log-Likelihood</a></li>
+        <li><a href="#negative-log-likelihood-loss-function">Negative Log-Likelihood (Loss Function)</a></li>
+      </ul>
+    </li>
+    <li><a href="#interpretation-and-decision-boundary">Interpretation and Decision Boundary</a>
+      <ul>
+        <li><a href="#odds-and-odds-ratio">Odds and Odds Ratio</a></li>
+        <li><a href="#decision-boundary">Decision Boundary</a></li>
+      </ul>
+    </li>
+    <li><a href="#model-evaluation-for-logistic-regression">Model Evaluation for Logistic Regression</a>
+      <ul>
+        <li><a href="#deviance">Deviance</a></li>
+        <li><a href="#confusion-matrix-and-metrics">Confusion Matrix and Metrics</a></li>
+        <li><a href="#roc-curve-and-auc">ROC Curve and AUC</a></li>
+      </ul>
+    </li>
+    <li><a href="#regularization-for-logistic-regression">Regularization for Logistic Regression</a>
+      <ul>
+        <li><a href="#l2-regularization-ridge">L2 Regularization (Ridge)</a></li>
+        <li><a href="#l1-regularization-lasso">L1 Regularization (Lasso)</a></li>
+      </ul>
+    </li>
+    <li><a href="#multiclass-logistic-regression">Multiclass Logistic Regression</a></li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#further-reading">Further Reading</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-mathematical-annexes" href="https://jawad.dev/docs/ml/lm/7_mathematical_annexes/">Mathematical Annexes</a></h3>
+        <nav id="toc-mathematical-annexes">
+  <ul>
+    <li><a href="#annex-a-ols-solution-for-simple-linear-regression">Annex A: OLS Solution for Simple Linear Regression</a>
+      <ul>
+        <li><a href="#problem-statement">Problem Statement</a></li>
+        <li><a href="#derivation">Derivation</a></li>
+      </ul>
+    </li>
+    <li><a href="#annex-b-normal-equation-for-multiple-regression">Annex B: Normal Equation for Multiple Regression</a>
+      <ul>
+        <li><a href="#problem-statement-1">Problem Statement</a></li>
+        <li><a href="#derivation-1">Derivation</a></li>
+        <li><a href="#properties-of-the-normal-equation">Properties of the Normal Equation</a></li>
+      </ul>
+    </li>
+    <li><a href="#annex-c-maximum-likelihood-for-logistic-regression">Annex C: Maximum Likelihood for Logistic Regression</a>
+      <ul>
+        <li><a href="#problem-statement-2">Problem Statement</a></li>
+        <li><a href="#likelihood-function">Likelihood Function</a></li>
+        <li><a href="#log-likelihood">Log-Likelihood</a></li>
+        <li><a href="#negative-log-likelihood-loss-function">Negative Log-Likelihood (Loss Function)</a></li>
+        <li><a href="#gradient-of-the-negative-log-likelihood">Gradient of the Negative Log-Likelihood</a></li>
+        <li><a href="#hessian-second-derivative-matrix">Hessian (Second Derivative Matrix)</a></li>
+        <li><a href="#newton-raphson-update">Newton-Raphson Update</a></li>
+      </ul>
+    </li>
+    <li><a href="#annex-d-derivation-of-coefficient-variance">Annex D: Derivation of Coefficient Variance</a>
+      <ul>
+        <li><a href="#distribution-of-the-estimator">Distribution of the Estimator</a></li>
+        <li><a href="#expected-value">Expected Value</a></li>
+        <li><a href="#variance-covariance-matrix">Variance-Covariance Matrix</a></li>
+        <li><a href="#distribution-under-normality">Distribution Under Normality</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
       </section>
   </section>
   <section class="section aside_inner">
-    <h2 class="section_title active"><a  href="http://localhost:1313/docs/ml/tree/" class="group">Decision Trees</a></h2>
+    <h2 class="section_title active"><a  href="https://jawad.dev/docs/ml/tree/" class="group">Decision Trees</a></h2>
+      <section class="" id="docs-decision-trees">
+        <h3 class="section_link"><a id="docs-introduction-and-partitioning" href="https://jawad.dev/docs/ml/tree/1_introduction_and_partitioning/">Introduction and Partitioning</a></h3>
+        <nav id="toc-introduction-and-partitioning">
+  <ul>
+    <li><a href="#why-decision-trees">Why Decision Trees?</a></li>
+    <li><a href="#tree-anatomy">Tree Anatomy</a></li>
+    <li><a href="#how-trees-partition-the-feature-space">How Trees Partition the Feature Space</a></li>
+    <li><a href="#what-a-leaf-predicts">What a Leaf Predicts</a></li>
+    <li><a href="#strengths-and-typical-limits">Strengths and Typical Limits</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-splitting-criteria-and-best-split" href="https://jawad.dev/docs/ml/tree/2_splitting_criteria_and_best_split/">Splitting Criteria and Best Split</a></h3>
+        <nav id="toc-splitting-criteria-and-best-split">
+  <ul>
+    <li><a href="#why-split-quality-matters">Why Split Quality Matters</a></li>
+    <li><a href="#classification-error">Classification Error</a></li>
+    <li><a href="#gini-index">Gini Index</a></li>
+    <li><a href="#entropy">Entropy</a></li>
+    <li><a href="#choosing-the-best-split">Choosing the Best Split</a></li>
+    <li><a href="#handling-categorical-variables">Handling Categorical Variables</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-growth-control-and-pruning" href="https://jawad.dev/docs/ml/tree/3_growth_control_and_pruning/">Growth Control and Pruning</a></h3>
+        <nav id="toc-growth-control-and-pruning">
+  <ul>
+    <li><a href="#why-fully-grown-trees-overfit">Why Fully Grown Trees Overfit</a></li>
+    <li><a href="#common-stopping-conditions">Common Stopping Conditions</a></li>
+    <li><a href="#pre-pruning-and-post-pruning">Pre-Pruning and Post-Pruning</a></li>
+    <li><a href="#cost-complexity-pruning">Cost-Complexity Pruning</a></li>
+    <li><a href="#computational-complexity-and-practical-advice">Computational Complexity and Practical Advice</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/ml/evaluation/" class="group">Model Evaluation and Feature Selection</a></h2>
+      <section class="" id="docs-model-evaluation-and-feature-selection">
+        <h3 class="section_link"><a id="docs-foundations-of-model-evaluation" href="https://jawad.dev/docs/ml/evaluation/1_foundations_of_model_evaluation/">Foundations of Model Evaluation</a></h3>
+        <nav id="toc-foundations-of-model-evaluation">
+  <ul>
+    <li><a href="#why-evaluation-deserves-its-own-lesson">Why Evaluation Deserves Its Own Lesson</a></li>
+    <li><a href="#training-validation-and-test-sets">Training, Validation, and Test Sets</a></li>
+    <li><a href="#bias-variance-and-the-main-trade-off">Bias, Variance, and the Main Trade-off</a></li>
+    <li><a href="#learning-curves">Learning Curves</a>
+      <ul>
+        <li><a href="#1-model-complexity">1. Model Complexity</a></li>
+        <li><a href="#2-training-set-size">2. Training Set Size</a></li>
+        <li><a href="#3-optimization-curves">3. Optimization Curves</a></li>
+      </ul>
+    </li>
+    <li><a href="#avoiding-data-leakage">Avoiding Data Leakage</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-metrics-for-regression-and-classification" href="https://jawad.dev/docs/ml/evaluation/2_metrics_for_regression_and_classification/">Metrics for Regression and Classification</a></h3>
+        <nav id="toc-metrics-for-regression-and-classification">
+  <ul>
+    <li><a href="#regression-metrics">Regression Metrics</a></li>
+    <li><a href="#classification-starts-with-the-confusion-matrix">Classification Starts with the Confusion Matrix</a></li>
+    <li><a href="#threshold-free-and-ranking-metrics">Threshold-Free and Ranking Metrics</a>
+      <ul>
+        <li><a href="#roc-curve-and-auc">ROC Curve and AUC</a></li>
+        <li><a href="#gain-lift-and-ks">Gain, Lift, and KS</a></li>
+      </ul>
+    </li>
+    <li><a href="#domain-specific-metrics">Domain-Specific Metrics</a></li>
+    <li><a href="#best-practices-when-choosing-metrics">Best Practices When Choosing Metrics</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-cross-validation-strategies" href="https://jawad.dev/docs/ml/evaluation/3_cross_validation_strategies/">Cross-Validation Strategies</a></h3>
+        <nav id="toc-cross-validation-strategies">
+  <ul>
+    <li><a href="#why-one-split-is-not-enough">Why One Split Is Not Enough</a></li>
+    <li><a href="#k-fold-cross-validation">k-Fold Cross-Validation</a></li>
+    <li><a href="#leave-one-out-cross-validation">Leave-One-Out Cross-Validation</a></li>
+    <li><a href="#stratified-cross-validation">Stratified Cross-Validation</a></li>
+    <li><a href="#time-series-cross-validation">Time-Series Cross-Validation</a></li>
+    <li><a href="#repeated-k-fold-and-additional-considerations">Repeated k-Fold and Additional Considerations</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-feature-selection-and-preprocessing" href="https://jawad.dev/docs/ml/evaluation/4_feature_selection_and_preprocessing/">Feature Selection and Preprocessing</a></h3>
+        <nav id="toc-feature-selection-and-preprocessing">
+  <ul>
+    <li><a href="#why-select-features">Why Select Features?</a></li>
+    <li><a href="#three-families-of-feature-selection">Three Families of Feature Selection</a></li>
+    <li><a href="#wrapper-methods">Wrapper Methods</a></li>
+    <li><a href="#filter-methods">Filter Methods</a></li>
+    <li><a href="#embedded-methods-and-regularization">Embedded Methods and Regularization</a></li>
+    <li><a href="#preprocessing-before-selection">Preprocessing Before Selection</a></li>
+    <li><a href="#external-validation">External Validation</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-hyperparameter-tuning-and-early-stopping" href="https://jawad.dev/docs/ml/evaluation/5_hyperparameter_tuning_and_early_stopping/">Hyperparameter Tuning and Early Stopping</a></h3>
+        <nav id="toc-hyperparameter-tuning-and-early-stopping">
+  <ul>
+    <li><a href="#parameters-versus-hyperparameters">Parameters Versus Hyperparameters</a></li>
+    <li><a href="#grid-search-and-random-search">Grid Search and Random Search</a></li>
+    <li><a href="#bayesian-optimization-and-automl">Bayesian Optimization and AutoML</a></li>
+    <li><a href="#early-stopping">Early Stopping</a></li>
+    <li><a href="#pruning-as-complexity-control">Pruning as Complexity Control</a></li>
+    <li><a href="#a-reliable-tuning-workflow">A Reliable Tuning Workflow</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-imbalanced-data-and-threshold-selection" href="https://jawad.dev/docs/ml/evaluation/6_imbalanced_data_and_threshold_selection/">Imbalanced Data and Threshold Selection</a></h3>
+        <nav id="toc-imbalanced-data-and-threshold-selection">
+  <ul>
+    <li><a href="#why-imbalance-changes-the-problem">Why Imbalance Changes the Problem</a></li>
+    <li><a href="#resampling-strategies">Resampling Strategies</a></li>
+    <li><a href="#cost-sensitive-and-balanced-models">Cost-Sensitive and Balanced Models</a></li>
+    <li><a href="#threshold-selection">Threshold Selection</a></li>
+    <li><a href="#data-augmentation">Data Augmentation</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/ml/clustering/" class="group">Clustering Techniques</a></h2>
+      <section class="" id="docs-clustering-techniques">
+        <h3 class="section_link"><a id="docs-introduction-and-hierarchical-clustering" href="https://jawad.dev/docs/ml/clustering/1_introduction_and_hierarchical_clustering/">Introduction and Hierarchical Clustering</a></h3>
+        <nav id="toc-introduction-and-hierarchical-clustering">
+  <ul>
+    <li><a href="#what-clustering-tries-to-do">What Clustering Tries to Do</a></li>
+    <li><a href="#common-families-of-clustering">Common Families of Clustering</a></li>
+    <li><a href="#hierarchical-clustering">Hierarchical Clustering</a></li>
+    <li><a href="#distance-measures-and-linkage-criteria">Distance Measures and Linkage Criteria</a></li>
+    <li><a href="#complexity-and-when-to-use-it">Complexity and When to Use It</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-k-means-and-k-medoids" href="https://jawad.dev/docs/ml/clustering/2_kmeans_and_kmedoids/">K-means and K-medoids</a></h3>
+        <nav id="toc-k-means-and-k-medoids">
+  <ul>
+    <li><a href="#k-means-objective">K-means Objective</a></li>
+    <li><a href="#why-k-means-is-popular">Why K-means Is Popular</a></li>
+    <li><a href="#k-medoids-pam">K-medoids (PAM)</a></li>
+    <li><a href="#choosing-the-number-of-clusters">Choosing the Number of Clusters</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-gaussian-mixtures-and-the-em-algorithm" href="https://jawad.dev/docs/ml/clustering/3_gaussian_mixtures_and_em/">Gaussian Mixtures and the EM Algorithm</a></h3>
+        <nav id="toc-gaussian-mixtures-and-the-em-algorithm">
+  <ul>
+    <li><a href="#from-hard-clusters-to-soft-clusters">From Hard Clusters to Soft Clusters</a></li>
+    <li><a href="#the-em-algorithm">The EM Algorithm</a>
+      <ul>
+        <li><a href="#e-step">E-step</a></li>
+        <li><a href="#m-step">M-step</a></li>
+      </ul>
+    </li>
+    <li><a href="#selecting-the-number-of-components">Selecting the Number of Components</a></li>
+    <li><a href="#when-gaussian-mixtures-are-useful">When Gaussian Mixtures Are Useful</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-density-based-clustering-and-practical-guidance" href="https://jawad.dev/docs/ml/clustering/4_density_based_clustering_and_practical_guidance/">Density-Based Clustering and Practical Guidance</a></h3>
+        <nav id="toc-density-based-clustering-and-practical-guidance">
+  <ul>
+    <li><a href="#dbscan">DBSCAN</a></li>
+    <li><a href="#optics">OPTICS</a></li>
+    <li><a href="#practical-guidance">Practical Guidance</a></li>
+    <li><a href="#which-method-should-you-reach-for">Which Method Should You Reach For?</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+      </section>
   </section>
       </section>
   </section>
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/dl/" class="group">Deep Learning</a></h2>
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/dl/" class="group">Deep Learning</a></h2>
       <section class="" id="docs-deep-learning">
-        <h3 class="section_link"><a id="docs-use-tinaio-cms" href="http://localhost:1313/docs/dl/use-tina-cms/">Use Tina.io CMS</a></h3>
-        <nav id="toc-use-tina-io-cms">
+        <h3 class="section_link"><a id="docs-introduction-and-history" href="https://jawad.dev/docs/dl/1_introduction_and_history/">Introduction and History</a></h3>
+        <nav id="toc-introduction-and-history">
   <ul>
-    <li><a href="#prerequisites-">Prerequisites !!</a>
-      <ul>
-        <li><a href="#requirement-1--a-tinaio-account">Requirement 1 : A Tina.io account</a></li>
-        <li><a href="#requirement-2-a-netlify-account-optional">Requirement 2: A Netlify account <em>(optional)</em></a></li>
-        <li><a href="#step-1--fork-or-clone-compose-theme">Step 1 : Fork or Clone Compose theme</a></li>
-        <li><a href="#step-2--add-your-repository-in-tina-cms">Step 2 : Add your repository in Tina CMS</a></li>
-      </ul>
-    </li>
+    <li><a href="#why-deep-learning">Why Deep Learning?</a></li>
+    <li><a href="#a-motivating-example-image-classification">A Motivating Example: Image Classification</a></li>
+    <li><a href="#why-it-works-today">Why It Works Today</a></li>
+    <li><a href="#main-families-of-deep-learning-models">Main Families of Deep Learning Models</a></li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
-        <h3 class="section_link"><a id="docs-shortcodes" href="http://localhost:1313/docs/dl/shortcodes/">Shortcodes</a></h3>
-        <nav id="toc-shortcodes">
+        <h3 class="section_link"><a id="docs-single-neuron-and-loss" href="https://jawad.dev/docs/dl/2_single_neuron_and_loss/">Single Neuron and Loss</a></h3>
+        <nav id="toc-single-neuron-and-loss">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#block">Block</a></li>
-        <li><a href="#column">Column</a></li>
-        <li><a href="#youtube-video">Youtube Video</a>
-          <ul>
-            <li><a href="#lite-youtube">Lite YouTube</a></li>
-          </ul>
-        </li>
-        <li><a href="#button">Button</a></li>
-        <li><a href="#picture">Picture</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#tabs">Tab(s)</a></li>
-        <li><a href="#tip">Tip</a></li>
-      </ul>
-    </li>
+    <li><a href="#the-perceptron-as-a-building-block">The Perceptron as a Building Block</a></li>
+    <li><a href="#perceptron-versus-logistic-regression">Perceptron Versus Logistic Regression</a></li>
+    <li><a href="#loss-cost-and-cross-entropy">Loss, Cost, and Cross-Entropy</a></li>
+    <li><a href="#gradient-descent">Gradient Descent</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-forward-backpropagation-and-activation-functions" href="https://jawad.dev/docs/dl/3_forward_backpropagation_and_activation_functions/">Forward, Backpropagation, and Activation Functions</a></h3>
+        <nav id="toc-forward-backpropagation-and-activation-functions">
+  <ul>
+    <li><a href="#from-one-neuron-to-a-network">From One Neuron to a Network</a></li>
+    <li><a href="#forward-propagation">Forward Propagation</a></li>
+    <li><a href="#backpropagation">Backpropagation</a></li>
+    <li><a href="#activation-functions">Activation Functions</a></li>
+    <li><a href="#best-practices-for-activation-choice">Best Practices for Activation Choice</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-deep-networks-and-optimization" href="https://jawad.dev/docs/dl/4_deep_networks_and_optimization/">Deep Networks and Optimization</a></h3>
+        <nav id="toc-deep-networks-and-optimization">
+  <ul>
+    <li><a href="#l-layer-neural-networks">L-Layer Neural Networks</a></li>
+    <li><a href="#initialization-matters">Initialization Matters</a></li>
+    <li><a href="#sgd-and-mini-batches">SGD and Mini-Batches</a></li>
+    <li><a href="#modern-optimizers">Modern Optimizers</a></li>
+    <li><a href="#hyperparameters-and-bias-variance">Hyperparameters and Bias-Variance</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-regularization-batch-normalization-and-multiclass-outputs" href="https://jawad.dev/docs/dl/5_regularization_batch_norm_and_multiclass/">Regularization, Batch Normalization, and Multiclass Outputs</a></h3>
+        <nav id="toc-regularization-batch-normalization-and-multiclass-outputs">
+  <ul>
+    <li><a href="#managing-variance-in-deep-learning">Managing Variance in Deep Learning</a></li>
+    <li><a href="#l1-and-l2-regularization">L1 and L2 Regularization</a></li>
+    <li><a href="#dropout">Dropout</a></li>
+    <li><a href="#batch-normalization">Batch Normalization</a></li>
+    <li><a href="#multi-class-classification-with-softmax">Multi-Class Classification with Softmax</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-cnn-fundamentals" href="https://jawad.dev/docs/dl/6_cnn_fundamentals/">CNN Fundamentals</a></h3>
+        <nav id="toc-cnn-fundamentals">
+  <ul>
+    <li><a href="#why-fully-connected-nets-struggle-on-images">Why Fully Connected Nets Struggle on Images</a></li>
+    <li><a href="#two-core-cnn-ideas">Two Core CNN Ideas</a></li>
+    <li><a href="#filters-and-feature-detection">Filters and Feature Detection</a></li>
+    <li><a href="#stride-padding-and-output-size">Stride, Padding, and Output Size</a></li>
+    <li><a href="#convolution-over-volume">Convolution Over Volume</a></li>
+    <li><a href="#pooling">Pooling</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-classic-cnn-architectures" href="https://jawad.dev/docs/dl/7_classic_cnn_architectures/">Classic CNN Architectures</a></h3>
+        <nav id="toc-classic-cnn-architectures">
+  <ul>
+    <li><a href="#why-architecture-history-matters">Why Architecture History Matters</a></li>
+    <li><a href="#lenet">LeNet</a></li>
+    <li><a href="#alexnet">AlexNet</a></li>
+    <li><a href="#main-takeaway">Main Takeaway</a></li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
       </section>
   </section>
   <section class="section aside_inner">
-    <h2 class="section_title"><a  href="http://localhost:1313/docs/xai/" class="group">Explainability in AI</a></h2>
+    <h2 class="section_title"><a  href="https://jawad.dev/docs/xai/" class="group">Explainability in AI</a></h2>
       <section class="" id="docs-explainability-in-ai">
-        <h3 class="section_link"><a id="docs-content-organization" href="http://localhost:1313/docs/xai/organize-content/">Content organization</a></h3>
-        <nav id="toc-content-organization">
+        <h3 class="section_link"><a id="docs-introduction-and-motivations" href="https://jawad.dev/docs/xai/1_introduction_and_motivations/">Introduction and Motivations</a></h3>
+        <nav id="toc-introduction-and-motivations">
   <ul>
-    <li>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#documentation">Documentation</a></li>
-            <li><a href="#home-page">Home Page</a></li>
-            <li><a href="#other-pages">Other pages</a></li>
-            <li><a href="#does-this-theme-support-blogging-function">Does this theme support blogging function?</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#why-explainability-matters">Why Explainability Matters</a></li>
+    <li><a href="#trust-fairness-and-compliance">Trust, Fairness, and Compliance</a></li>
+    <li><a href="#real-world-failures">Real-World Failures</a></li>
+    <li><a href="#the-black-box-challenge">The Black-Box Challenge</a></li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
-        <h3 class="section_link"><a id="docs-search-function" href="http://localhost:1313/docs/xai/search/">Search Function</a></h3>
-        <nav id="toc-search-function">
+        <h3 class="section_link"><a id="docs-taxonomy-of-explainability-methods" href="https://jawad.dev/docs/xai/2_taxonomy_of_explainability_methods/">Taxonomy of Explainability Methods</a></h3>
+        <nav id="toc-taxonomy-of-explainability-methods">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#1-passive-search">1. Passive search</a></li>
-        <li><a href="#2-live-search">2. Live search</a></li>
-        <li><a href="#customize-search-feedback-labels">Customize search feedback labels</a></li>
-        <li><a href="#what-is-a-valid-search-query">What is a valid search query</a></li>
-      </ul>
-    </li>
+    <li><a href="#three-useful-axes">Three Useful Axes</a></li>
+    <li><a href="#ante-hoc-vs-post-hoc">Ante Hoc vs Post-Hoc</a></li>
+    <li><a href="#global-vs-local">Global vs Local</a></li>
+    <li><a href="#model-specific-vs-model-agnostic">Model-Specific vs Model-Agnostic</a></li>
+    <li><a href="#typical-examples">Typical Examples</a></li>
+    <li><a href="#choosing-the-right-kind-of-explanation">Choosing the Right Kind of Explanation</a></li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
-        <h3 class="section_link"><a id="docs-customize-layouts--components" href="http://localhost:1313/docs/xai/customize/">Customize layouts &amp; components</a></h3>
-        <nav id="toc-customize-layouts-components">
+        <h3 class="section_link"><a id="docs-ante-hoc-explainability" href="https://jawad.dev/docs/xai/3_ante_hoc_explainability/">Ante Hoc Explainability</a></h3>
+        <nav id="toc-ante-hoc-explainability">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#shortcodes-modifiers">Shortcodes modifiers</a>
-          <ul>
-            <li><a href="#grid">Grid</a></li>
-            <li><a href="#spacing">Spacing</a></li>
-          </ul>
-        </li>
-        <li><a href="#how-do-i-disable-dark-mode">How do I disable dark mode?</a></li>
-        <li><a href="#how-do-i-change-the-theme-color">How do I change the theme color?</a></li>
-        <li><a href="#how-can-i-change-the-address-bar-color-on-mobile-devices">How can I change the address bar color on mobile devices?</a></li>
-        <li><a href="#how-do-i-add-custom-styles-scripts-meta-tags-etc">How do I add custom styles, scripts, meta tags e.t.c</a></li>
-        <li><a href="#i-want-to-add-custom-sass-or-js">I want to add custom SASS or JS</a></li>
-        <li><a href="#how-to-change-site-favicon">How to change site favicon</a></li>
-      </ul>
-    </li>
+    <li><a href="#interpretable-by-design">Interpretable by Design</a></li>
+    <li><a href="#decision-trees">Decision Trees</a></li>
+    <li><a href="#generalized-linear-models">Generalized Linear Models</a></li>
+    <li><a href="#confounding-and-simpsons-paradox">Confounding and Simpson's Paradox</a></li>
+    <li><a href="#when-ante-hoc-models-are-best">When Ante Hoc Models Are Best</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-global-post-hoc-methods" href="https://jawad.dev/docs/xai/4_global_post_hoc_methods/">Global Post-Hoc Methods</a></h3>
+        <nav id="toc-global-post-hoc-methods">
+  <ul>
+    <li><a href="#understanding-the-whole-model">Understanding the Whole Model</a></li>
+    <li><a href="#permutation-importance">Permutation Importance</a></li>
+    <li><a href="#pdp-and-ice">PDP and ICE</a></li>
+    <li><a href="#lofo-interactions-and-surrogates">LOFO, Interactions, and Surrogates</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-local-post-hoc-methods" href="https://jawad.dev/docs/xai/5_local_post_hoc_methods/">Local Post-Hoc Methods</a></h3>
+        <nav id="toc-local-post-hoc-methods">
+  <ul>
+    <li><a href="#explaining-one-prediction-at-a-time">Explaining One Prediction at a Time</a></li>
+    <li><a href="#lime">LIME</a></li>
+    <li><a href="#from-shapley-values-to-shap">From Shapley Values to SHAP</a></li>
+    <li><a href="#beyond-lime-and-shap">Beyond LIME and SHAP</a></li>
+    <li><a href="#reading-local-explanations-carefully">Reading Local Explanations Carefully</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-model-specific-explainability" href="https://jawad.dev/docs/xai/6_model_specific_explainability/">Model-Specific Explainability</a></h3>
+        <nav id="toc-model-specific-explainability">
+  <ul>
+    <li><a href="#when-internal-structure-helps">When Internal Structure Helps</a></li>
+    <li><a href="#tree-based-importance">Tree-Based Importance</a></li>
+    <li><a href="#concept-based-explanations-with-tcav">Concept-Based Explanations with TCAV</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#saliency-maps-and-grad-cam">Saliency Maps and Grad-CAM</a></li>
+    <li><a href="#lrp-and-deeplift">LRP and DeepLIFT</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-credit-risk-case-study" href="https://jawad.dev/docs/xai/7_credit_risk_case_study/">Credit Risk Case Study</a></h3>
+        <nav id="toc-credit-risk-case-study">
+  <ul>
+    <li><a href="#one-model-many-explanations">One Model, Many Explanations</a></li>
+    <li><a href="#start-with-global-importance">Start with Global Importance</a></li>
+    <li><a href="#then-inspect-feature-effects">Then Inspect Feature Effects</a></li>
+    <li><a href="#finally-zoom-in-on-individuals">Finally Zoom In on Individuals</a></li>
+    <li><a href="#a-practical-xai-workflow">A Practical XAI Workflow</a></li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
       </section>
@@ -227,132 +711,37 @@ Students will develop hands-on expertise in building, tuning, and evaluating mod
 </aside>
 
   <main class="content">
-    <h1>Decision Trees</h1><p>This course provides a comprehensive introduction to Machine Learning, covering both theoretical foundations and practical applications. It introduces students to supervised and unsupervised learning, focusing on model evaluation, feature selection, clustering, decision trees, and regression techniques.</p>
-<p>Students will develop hands-on expertise in building, tuning, and evaluating models while understanding the mathematical principles behind them. The course emphasizes best practices in data preprocessing, model selection, and performance optimization, equipping students with the necessary tools to apply Machine Learning in real-world scenarios across various industries.</p>
-<h2 id="linear--logistic-regression" class=link_owner>
-  Linear &amp; Logistic Regression
-  <a href="#linear--logistic-regression" class="link icon">
+    <h1>Decision Trees</h1><h2 id="objectives" class=link_owner>
+  Objectives
+  <a href="#objectives" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>By the end, you'll be able to:</p>
+<ul>
+<li>Explain how a decision tree turns feature tests into predictions.</li>
+<li>Compare the main impurity criteria used to choose a split.</li>
+<li>Control model complexity with stopping rules and pruning.</li>
+</ul>
+<h2 id="concepts-covered" class=link_owner>
+  Concepts Covered
+  <a href="#concepts-covered" class="link icon">
     <svg>
       <use xlink:href="#anchor-link"></use>
     </svg>
   </a>
 </h2>
 <ul>
-<li><strong>Simple vs. Multiple Linear Regression</strong></li>
-<li><strong>Assumptions</strong> (Gauss-Markov Theorem)</li>
-<li><strong>Model Inference &amp; Statistical Testing</strong>
-<ul>
-<li>t-tests</li>
-<li>F-tests</li>
-<li>Confidence Intervals</li>
+<li>Tree anatomy: nodes, branches, and leaves</li>
+<li>Axis-aligned partitions of the feature space</li>
+<li>Classification error, Gini index, and entropy</li>
+<li>Split gain and leaf predictions</li>
+<li>Pre-pruning, post-pruning, and cost-complexity pruning</li>
+<li>Categorical variables and computational considerations</li>
 </ul>
-</li>
-<li><strong>Handling Categorical Variables</strong>
-<ul>
-<li>Dummy Encoding</li>
-<li>Polynomial Regression</li>
-</ul>
-</li>
-<li><strong>Logistic Regression for Classification</strong></li>
-<li><strong>Practical Example</strong>: Predicting house prices with multiple regression</li>
-</ul>
-<h2 id="decision-trees" class=link_owner>
-  Decision Trees
-  <a href="#decision-trees" class="link icon">
-    <svg>
-      <use xlink:href="#anchor-link"></use>
-    </svg>
-  </a>
-</h2>
-<ul>
-<li><strong>Tree-Based Model Structure</strong></li>
-<li><strong>Splitting Criteria</strong>
-<ul>
-<li>Gini Index</li>
-<li>Entropy</li>
-</ul>
-</li>
-<li><strong>Overfitting Prevention</strong>
-<ul>
-<li>Pre-Pruning</li>
-<li>Post-Pruning</li>
-</ul>
-</li>
-<li><strong>Computational Complexity Considerations</strong></li>
-<li><strong>Practical Example</strong>: Decision tree classification on real-world data</li>
-</ul>
-<h2 id="model-evaluation--feature-selection" class=link_owner>
-  Model Evaluation &amp; Feature Selection
-  <a href="#model-evaluation--feature-selection" class="link icon">
-    <svg>
-      <use xlink:href="#anchor-link"></use>
-    </svg>
-  </a>
-</h2>
-<ul>
-<li><strong>Understanding Bias-Variance Trade-off</strong></li>
-<li><strong>Cross-Validation Techniques</strong></li>
-<li><strong>Evaluation Metrics</strong>
-<ul>
-<li>MAE</li>
-<li>RMSE</li>
-<li>R²</li>
-<li>AUC-ROC</li>
-<li>Confusion Matrix</li>
-</ul>
-</li>
-<li><strong>Feature Selection Techniques</strong>
-<ul>
-<li>Wrapper</li>
-<li>Filter</li>
-<li>Regularization</li>
-</ul>
-</li>
-<li><strong>Hyperparameter Tuning</strong>
-<ul>
-<li>Grid Search</li>
-<li>Bayesian Optimization</li>
-<li>AutoML</li>
-</ul>
-</li>
-<li><strong>Practical Example</strong>: Model selection and tuning using Python</li>
-</ul>
-<h2 id="clustering-techniques" class=link_owner>
-  Clustering Techniques
-  <a href="#clustering-techniques" class="link icon">
-    <svg>
-      <use xlink:href="#anchor-link"></use>
-    </svg>
-  </a>
-</h2>
-<ul>
-<li><strong>Introduction to Unsupervised Learning</strong></li>
-<li><strong>Hierarchical Clustering</strong>
-<ul>
-<li>Agglomerative</li>
-<li>Divisive</li>
-</ul>
-</li>
-<li><strong>Partitioning Methods</strong>
-<ul>
-<li>K-Means</li>
-<li>K-Medoids</li>
-</ul>
-</li>
-<li><strong>Density-Based Clustering</strong>
-<ul>
-<li>DBSCAN</li>
-<li>OPTICS</li>
-</ul>
-</li>
-<li><strong>Gaussian Mixture Models</strong>
-<ul>
-<li>Expectation-Maximization</li>
-</ul>
-</li>
-<li><strong>Practical Example</strong>: Clustering customer data for segmentation</li>
-</ul>
-<a href="./mermaid/" class="button">Get started now</a>
+<a href="./1_introduction_and_partitioning/" class="button">Introduction &amp; Partitioning</a>
 
 
     <div class="pager pager_lean">
@@ -379,7 +768,7 @@ const no_matches_found = 'No matches found';
 <footer class="pt-2 pb-2">
   <div class="wrap">
     <p>
-      &copy; <span class="year">2025</span>
+      &copy; <span class="year">2026</span>
     </p>
     <a href="#pagetop" id="toTop" title=Back&#32;to&#32;top></a>
   </div>
@@ -477,7 +866,7 @@ const no_matches_found = 'No matches found';
 </svg>
 
 <script>
-  "use strict";const doc=document.documentElement,toggle_id="toggle",show_id="show",menu="menu",active="active";let site_title=`personal-website`,root_url="/";root_url=root_url.startsWith("http")?root_url:window.location.origin;const go_back_class="button_back",line_class=".line",code_block_config=JSON.parse('{"maximum":10,"show":false}'),iconsPath=`icons/`,shell_based=["sh","shell","zsh","bash"],body=elem("body"),max_lines=code_block_config.maximum,show_lines=code_block_config.show,copy_id="panel_copy",wrap_id="panel_wrap",lines_id="panel_lines",panel_expand="panel_expand",panel_expanded="panel_expanded",panel_box="panel_box",panel_hide="panel_hide",panel_from="panel_from",full_height="initial",highlight="highlight",highlight_wrap="highlight_wrap",hash="#",light="light",dark="dark",storageKey=`${site_title}-color-mode`,mermaidThemeKey=`${site_title}-mermaid`,key="--color-mode",mode_data="data-mode",bank=window.localStorage;function isObj(e){return!!(e&&typeof e=="object"&&e!==null)}function createEl(e="div"){return document.createElement(e)}function emptyEl(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function elem(e,t=document){let n=!!isObj(t)&&t.querySelector(e);return n||!1}function elems(e,t=document){return isObj(t)?t.querySelectorAll(e):[]}function pushClass(e,t){if(isObj(e)&&t){let n=e.classList;!n.contains(t)&&n.add(t)}}function deleteClass(e,t){if(isObj(e)&&t){let n=e.classList;!!n.contains(t)&&n.remove(t)}}function modifyClass(e,t){if(isObj(e)&&t){const n=e.classList;n.contains(t)?n.remove(t):n.add(t)}}function containsClass(e,t){if(isObj(e)&&t&&e!==document)return!!e.classList.contains(t)}function isChild(e,t){let n=isObj(e)&&t&&typeof t=="string";return!!(n&&e.closest(t))}function elemAttribute(e,t,n=null){if(n)e.setAttribute(t,n);else return n=e.getAttribute(t),n||!1}function deleteChars(e,t){let n=e;if(Array.isArray(t))for(let e=0;e<t.length;e++)n=n.replace(t[e],"");else n=n.replace(t,"");return n}function isBlank(e){return!e||e.trim().length===0}function isMatch(e,t){if(isObj(e)){if(t.isArray){let n=t.map(function(t){return e.matches(t)});return n.includes(!0)}return e.matches(t)}}function closestInt(e,t){return t.reduce(function(t,n){return Math.abs(n-e)<Math.abs(t-e)?n:t})}function hasClasses(e){if(isObj(e)){const t=e.classList;return t.length}}function wrapEl(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)}function wrapText(e,t,n="mark"){let s=`<${n}>`,o=`</${n}>`,r=`%3C${n}%3E`,c=`%3C/${n}%3E`;function i(t){let n=t.innerHTML,a=new RegExp(e,"gi"),i=e.length?n.match(a):null;if(i){i.forEach(function(e){n=n.replaceAll(e,`${s}${e}${o}`),t.innerHTML=n});const e=elems("img",t);e&&e.forEach(e=>{e.src=e.src.replaceAll(s,"").replaceAll(o,"").replaceAll(r,"").replaceAll(c,"")})}}const l=["h1","h2","h3","h4","h5","h6","p","code","td"];l.forEach(function(e){const n=elems(e,t);n.length&&n.forEach(function(e){e.children.length>=1?(Array.from(e.children).forEach(function(e){i(e)}),i(e)):i(e)})});const a=elems("a");a&&a.forEach(function(e){e.href=e.href.replaceAll(encodeURI(s),"").replaceAll(encodeURI(o),"")})}function parseBoolean(e=""){switch(e=e.trim().toLowerCase(),e){case"true":return!0;case"false":return!1;default:return void 0}}function loadSvg(e,t){t.innerHTML=`
+  "use strict";const doc=document.documentElement,toggle_id="toggle",show_id="show",menu="menu",active="active";let site_title=`personal-website`,root_url="/";root_url=root_url.startsWith("http")?root_url:window.location.origin;const go_back_class="button_back",line_class=".line",code_block_config=JSON.parse('{"maximum":10,"show":false}'),iconsPath=`icons/`,shell_based=["sh","shell","zsh","bash"],body=elem("body"),max_lines=code_block_config.maximum,show_lines=code_block_config.show,copy_id="panel_copy",wrap_id="panel_wrap",lines_id="panel_lines",panel_expand="panel_expand",panel_expanded="panel_expanded",panel_box="panel_box",panel_hide="panel_hide",panel_from="panel_from",full_height="initial",highlight="highlight",highlight_wrap="highlight_wrap",hash="#",light="light",dark="dark",storageKey=`${site_title}-color-mode`,mermaidThemeKey=`${site_title}-mermaid`,key="--color-mode",mode_data="data-mode",bank=window.localStorage;function isObj(e){return!!(e&&typeof e=="object"&&e!==null)}function createEl(e="div"){return document.createElement(e)}function emptyEl(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function elem(e,t=document){let n=!!isObj(t)&&t.querySelector(e);return n}function elems(e,t=document){return isObj(t)?t.querySelectorAll(e):[]}function pushClass(e,t){if(isObj(e)&&t){let n=e.classList;!n.contains(t)&&n.add(t)}}function deleteClass(e,t){if(isObj(e)&&t){let n=e.classList;!!n.contains(t)&&n.remove(t)}}function modifyClass(e,t){if(isObj(e)&&t){const n=e.classList;n.contains(t)?n.remove(t):n.add(t)}}function containsClass(e,t){if(isObj(e)&&t&&e!==document)return!!e.classList.contains(t)}function isChild(e,t){let n=isObj(e)&&t&&typeof t=="string";return!!(n&&e.closest(t))}function elemAttribute(e,t,n=null){if(n)e.setAttribute(t,n);else return n=e.getAttribute(t),n}function deleteChars(e,t){let n=e;if(Array.isArray(t))for(let e=0;e<t.length;e++)n=n.replace(t[e],"");else n=n.replace(t,"");return n}function isBlank(e){return!e||e.trim().length===0}function isMatch(e,t){if(isObj(e)){if(t.isArray){let n=t.map(function(t){return e.matches(t)});return n.includes(!0)}return e.matches(t)}}function closestInt(e,t){return t.reduce(function(t,n){return Math.abs(n-e)<Math.abs(t-e)?n:t})}function hasClasses(e){if(isObj(e)){const t=e.classList;return t.length}}function wrapEl(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)}function wrapText(e,t,n="mark"){let s=`<${n}>`,o=`</${n}>`,r=`%3C${n}%3E`,c=`%3C/${n}%3E`;function i(t){let n=t.innerHTML,a=new RegExp(e,"gi"),i=e.length?n.match(a):null;if(i){i.forEach(function(e){n=n.replaceAll(e,`${s}${e}${o}`),t.innerHTML=n});const e=elems("img",t);e&&e.forEach(e=>{e.src=e.src.replaceAll(s,"").replaceAll(o,"").replaceAll(r,"").replaceAll(c,"")})}}const l=["h1","h2","h3","h4","h5","h6","p","code","td"];l.forEach(function(e){const n=elems(e,t);n.length&&n.forEach(function(e){e.children.length>=1?(Array.from(e.children).forEach(function(e){i(e)}),i(e)):i(e)})});const a=elems("a");a&&a.forEach(function(e){e.href=e.href.replaceAll(encodeURI(s),"").replaceAll(encodeURI(o),"")})}function parseBoolean(e=""){switch(e=e.trim().toLowerCase(),e){case"true":return!0;case"false":return!1;default:return 0[0]}}function loadSvg(e,t){t.innerHTML=`
   <svg class="icon_${e}">
     <use xlink:href="#${e}"></use>
   </svg>`}function copyToClipboard(e){let t,n,s;t=createEl("textarea"),t.value=e,t.setAttribute("readonly",""),t.style.position="absolute",t.style.left="-9999px",n=document.getSelection(),doc.appendChild(t),s=n.rangeCount>0&&n.getRangeAt(0),t.select(),document.execCommand("copy"),doc.removeChild(t),s&&(n.removeAllRanges(),n.addRange(s))}const snippet_actions=[{icon:"copy",id:"copy",title:copy_text,show:!0},{icon:"order",id:"lines",title:toggle_line_numbers_text,show:!0},{icon:"carly",id:"wrap",title:toggle_line_wrap_text,show:!1},{icon:"expand",id:"expand",title:resize_snippet,show:!1}];function addLines(e){let t=e.textContent;const n=[];t.includes(`
@@ -486,31 +875,8 @@ const no_matches_found = 'No matches found';
         <span class="line line-flex">
           <span class="ln">${s+1}</span>
           <span class="cl">${t.trim()}</span>
-        </span>`.trim();n.push(o),e.closest("pre").className="chroma",pushClass(e,"language-unknown"),e.dataset.lang=not_set}}),e.innerHTML=n.join("").trim(" "))}function wrapOrphanedPreElements(){const e=elems("pre");Array.from(e).forEach(function(e){const t=e.parentNode,n=!containsClass(t,highlight);if(n){const t=createEl();t.className=highlight;const n=createEl();n.className=highlight_wrap,wrapEl(e,t),wrapEl(t,n)}})}wrapOrphanedPreElements();function codeBlocks(){const e=elems("code"),t=Array.from(e).filter(function(e){return addLines(e),e.closest("pre")&&!Array.from(e.classList).includes("noClass")}).map(function(e){return e});return t}function codeBlockFits(e){const t=e.offsetWidth,n=e.closest(`.${highlight}`).offsetWidth;return t<=n}function maxHeightIsSet(e){let t=e.style.maxHeight;return t.includes("px")}function restrainCodeBlockHeight(e){const n=e[max_lines-1];let t=full_height;if(n){const s=n.offsetTop;if(s!==0){t=`${s}px`;const n=e[0].parentNode,o=n.closest(`.${highlight}`),i=containsClass(o,panel_expanded);i||(n.dataset.height=t,n.style.maxHeight=t)}}}const blocks=codeBlocks();function collapseCodeBlock(e){const t=elems(line_class,e),n=t.length;if(n>max_lines){const n=createEl();pushClass(n,panel_expand),pushClass(n,panel_from),n.title="Toggle snippet",n.textContent="...";const s=e.closest(".highlight");window.setTimeout(function(){const e=s.nextElementSibling.lastElementChild;deleteClass(e,panel_hide)},150),restrainCodeBlockHeight(t);const o=e.parentNode.parentNode;o.appendChild(n)}}blocks.forEach(function(e){collapseCodeBlock(e)});function actionPanel(){const e=createEl();return e.className=panel_box,snippet_actions.forEach(function(t){const n=createEl("a");n.href="#",n.title=t.title,n.className=`icon panel_icon panel_${t.id}`,!t.show&&pushClass(n,panel_hide),loadSvg(t.icon,n),e.appendChild(n)}),e}function toggleLineNumbers(e){e&&(e.forEach(e=>modifyClass(e,"pre_nolines")),restrainCodeBlockHeight(e))}function toggleLineWrap(e){modifyClass(e,"pre_wrap");const t=elems(".ln",e);restrainCodeBlockHeight(t)}function copyCode(e){const t=e.parentNode.parentNode.querySelector(`.${copy_id}`),s=t.title;loadSvg("check",t),t.title=copied_text,e=e.cloneNode(!0);const n=elems(".ln",e);!!n.length&&n.forEach(e=>e.remove());let o=elems("span",e);o.forEach(e=>{const t=e.textContent.trim(" ");t.indexOf("$")===0&&(e.textContent=e.textContent.replace("$ ",""))});const i=e.textContent.trim(" ");copyToClipboard(i),setTimeout(function(){t.title=s,loadSvg("copy",t)},2250)}(function(){const n=highlight_wrap;blocks.forEach(function(e){show_lines===!1&&toggleLineNumbers(elems(".ln",e));const o=e.parentNode.parentNode,t=createEl();t.className=n,wrapEl(o,t);const s=actionPanel(),i=elem(`.${wrap_id}`,s);!codeBlockFits(e)&&deleteClass(i,panel_hide),t.appendChild(s)});function t(e,t){return e.matches(`.${t}`)||e.closest(`.${t}`)}function s(e,t){const n=e.matches(`.${t}`)?e:e.closest(`.${t}`);deleteClass(n,active),setTimeout(function(){modifyClass(n,active)},50)}doc.addEventListener("click",function(e){const o=e.target,i=t(o,copy_id),a=t(o,wrap_id),r=t(o,lines_id),c=t(o,panel_expand),l=i||a||r||c;if(l){e.preventDefault(),s(o,"icon");const t=o.closest(`.${n}`).firstElementChild.firstElementChild;let l=elems(".ln",t);if(!!a&&toggleLineWrap(t),!!r&&toggleLineNumbers(l),c){let e=t.firstElementChild;const n=e.closest(".highlight");maxHeightIsSet(e)?(e.style.maxHeight=full_height,pushClass(n,panel_expanded)):(e.style.maxHeight=e.dataset.height,deleteClass(n,panel_expanded))}!!i&&copyCode(t)}}),function(){blocks.forEach(e=>{let t=e.dataset.lang;const n=shell_based.includes(t);if(n){const t=elems(line_class,e);Array.from(t).forEach(e=>{e=e.lastElementChild;let t=e.textContent.trim(" ");!!(t.indexOf("$")!==0&&t.trim(" ").length)&&pushClass(e,"shell")})}if(t=t==="sh"?"shell":t,t!=="fallback"){const n=createEl();n.textContent=t,pushClass(n,"lang"),e.closest(`.${highlight_wrap}`).appendChild(n)}})}()})();function prefersColor(e){return`(prefers-color-scheme: ${e})`}function systemMode(){return window.matchMedia&&window.matchMedia(prefersColor(dark)).matches?dark:light}function currentMode(){let e=light+dark;e=[...e];let t=getComputedStyle(doc).getPropertyValue(key).replace(/"/g,"").trim();return[...t].filter(t=>e.includes(t)).join("")}function changeMode(e){e?(bank.setItem(storageKey,light),elemAttribute(doc,mode_data,light)):(bank.setItem(storageKey,dark),elemAttribute(doc,mode_data,dark))}function pickModePicture(e){elems("picture").forEach(function(t){let o=t.firstElementChild;const n=t.dataset,s=[n.lit,n.dark];o.src=e=="dark"?s[1]:s[0]})}function setMermaidTheme(e){bank.setItem(mermaidThemeKey,e);let t=elem(".color_choice");t.value=e}function setUserColorMode(e=!1){const n=currentMode()==dark,s=bank.getItem(storageKey),o=systemMode();s?e?changeMode(n):elemAttribute(doc,mode_data,s):changeMode(e===!0?n:o!==dark);const t=doc.dataset.mode;doc.dataset.systemmode=o,!!t&&pickModePicture(t),setMermaidTheme(t)}setUserColorMode(),function(){return elem(".nav_header").offsetHeight+25}();function toggleMenu(e){const t=e.target,o=t.matches(`.${toggle_id}`),n=t.closest(`.${toggle_id}`),i=elems(`.${show_id}`)?Array.from(elems(`.${show_id}`)):[],a=t.closest(`.${menu}`);function s(e,t=!1){i.forEach(function(n){!t&&deleteClass(n,show_id),n!==e.closest(`.${menu}`)&&deleteClass(n,show_id)})}if(o||n){const s=n?n.parentNode.parentNode:t.parentNode.parentNode;e.preventDefault(),modifyClass(s,show_id)}else a?s(t,!0):s(t)}(function(){const t=elems("code");t&&t.forEach(function(e){hasClasses(e)||!e.children.length&&pushClass(e,"noClass")})})();function featureHeading(){const t="section_link",n="section_title",e=elem(".aside");if(e){let s=elem(`.${t}.${active}`);s=s||elem(`.${n}.${active}`),e.scroll({top:s.offsetTop,left:0})}}function activeHeading(e,t){let n=Object.create(null);n.active=t.filter(function(e){return containsClass(e,active)})[0],n.new=t[e],n.active!=n.new&&(!!n.active&&deleteClass(n.active,active),pushClass(n.new,active))}setTimeout(()=>{featureHeading()},50);function updateDate(){const t=new Date,e=t.getFullYear().toString,n=elem(".year");!!n&&(e.textContent=e)}function customizeSidebar(){const e="toc_active",n=elem("aside"),t=elems("nav",n);if(t){t.forEach(function(t){if(t.id="",pushClass(t,"toc"),t.children.length>=1){const n=Array.from(t.children[0].children),s=t.previousElementSibling;!!s.matches(`.${active}`)&&pushClass(t,e),n.forEach(function(e){pushClass(e,"toc_item"),pushClass(e.firstElementChild,"toc_link")})}});const n=elem(`.${e}`);if(n){const e=Array.from(elems("a",n)),t=e.map(function(e){return document.getElementById(decodeURIComponent(e.hash.replace("#","")))});window.addEventListener("scroll",function(){let o=window.scrollY+window.innerHeight/2,s=0;for(const[n,e]of t.entries())e.offsetTop<o&&e.offsetTop>t[s].offsetTop&&(s=n);activeHeading(s,e)})}}elems("p").forEach(function(e){const t=elems(".button",e);t.length>1&&pushClass(e,"button_grid")})}function markExternalLinks(){let e=elems("a");e&&Array.from(e).forEach(function(e){let n,o,i,s,a,r,t,c;t=new URL(e.href),c=t.host!==location.host||t.protocol!==location.protocol||t.port!==location.port,c&&(n="target",o="rel",i="_blank",s="noopener",a=elemAttribute(e,n),r=elemAttribute(e,s),!a&&elemAttribute(e,n,i),!r&&elemAttribute(e,o,s))})}function sanitizeURL(e){const t=e.indexOf(hash);if(t>-1){const n=e.substr(t,e.length-1);e=e.replace(n,"")}return e}function copyFeedback(e){const t=document.createElement("div"),n="link_yanked";if(t.classList.add(n),t.innerText=copied_text,!elem(`.${n}`,e)){const n=e.getElementsByTagName("svg")[0],s=n.src;n.src="http://localhost:1313/icons/check.svg",e.appendChild(t),setTimeout(function(){e.removeChild(t),n.src=s},2250)}}function copyHeadingLink(){let t,n,s,o,e;t="link",n=elems(`.${t}`),n&&document.addEventListener("click",function(n){e=n.target,o=e.parentNode,(e&&containsClass(e,t)||containsClass(o,t))&&(n.preventDefault(),s=e.href!=void 0?e.href:e.parentNode.href,copyToClipboard(s),copyFeedback(e.href!=void 0?e:e.parentNode))})}function makeTablesResponsive(){const e=elems("table");e&&e.forEach(function(e){const t=createEl();pushClass(t,"scrollable"),wrapEl(e,t)})}function backToTop(){const e=elem("#toTop");window.addEventListener("scroll",()=>{const t=window.scrollY;t>=200?(e.style.display="flex",pushClass(e,active)):deleteClass(e,active)})}function lazyLoadMedia(e=[]){e.forEach(e=>{let t=elems(e);t&&Array.from(t).forEach(function(e){e.loading="lazy"})})}function loadActions(){updateDate(),customizeSidebar(),markExternalLinks(),copyHeadingLink(),makeTablesResponsive(),backToTop(),lazyLoadMedia(["iframe","img"]),doc.addEventListener("click",e=>{let t=e.target,n="color_choice",s=containsClass(t,n);!!s&&setUserColorMode(!0),toggleMenu(e)})}window.addEventListener("load",loadActions())
+        </span>`.trim();n.push(o),e.closest("pre").className="chroma",pushClass(e,"language-unknown"),e.dataset.lang=not_set}}),e.innerHTML=n.join("").trim(" "))}function wrapOrphanedPreElements(){const e=elems("pre");Array.from(e).forEach(function(e){const t=e.parentNode,n=!containsClass(t,highlight);if(n){const t=createEl();t.className=highlight;const n=createEl();n.className=highlight_wrap,wrapEl(e,t),wrapEl(t,n)}})}wrapOrphanedPreElements();function codeBlocks(){const e=elems("code"),t=Array.from(e).filter(function(e){return addLines(e),e.closest("pre")&&!Array.from(e.classList).includes("noClass")}).map(function(e){return e});return t}function codeBlockFits(e){const t=e.offsetWidth,n=e.closest(`.${highlight}`).offsetWidth;return t<=n}function maxHeightIsSet(e){let t=e.style.maxHeight;return t.includes("px")}function restrainCodeBlockHeight(e){const n=e[max_lines-1];let t=full_height;if(n){const s=n.offsetTop;if(s!==0){t=`${s}px`;const n=e[0].parentNode,o=n.closest(`.${highlight}`),i=containsClass(o,panel_expanded);i||(n.dataset.height=t,n.style.maxHeight=t)}}}const blocks=codeBlocks();function collapseCodeBlock(e){const t=elems(line_class,e),n=t.length;if(n>max_lines){const n=createEl();pushClass(n,panel_expand),pushClass(n,panel_from),n.title="Toggle snippet",n.textContent="...";const s=e.closest(".highlight");window.setTimeout(function(){const e=s.nextElementSibling.lastElementChild;deleteClass(e,panel_hide)},150),restrainCodeBlockHeight(t);const o=e.parentNode.parentNode;o.appendChild(n)}}blocks.forEach(function(e){collapseCodeBlock(e)});function actionPanel(){const e=createEl();return e.className=panel_box,snippet_actions.forEach(function(t){const n=createEl("a");n.href="#",n.title=t.title,n.className=`icon panel_icon panel_${t.id}`,!t.show&&pushClass(n,panel_hide),loadSvg(t.icon,n),e.appendChild(n)}),e}function toggleLineNumbers(e){e&&(e.forEach(e=>modifyClass(e,"pre_nolines")),restrainCodeBlockHeight(e))}function toggleLineWrap(e){modifyClass(e,"pre_wrap");const t=elems(".ln",e);restrainCodeBlockHeight(t)}function copyCode(e){const t=e.parentNode.parentNode.querySelector(`.${copy_id}`),s=t.title;loadSvg("check",t),t.title=copied_text,e=e.cloneNode(!0);const n=elems(".ln",e);!!n.length&&n.forEach(e=>e.remove());let o=elems("span",e);o.forEach(e=>{const t=e.textContent.trim(" ");t.indexOf("$")===0&&(e.textContent=e.textContent.replace("$ ",""))});const i=e.textContent.trim(" ");copyToClipboard(i),setTimeout(function(){t.title=s,loadSvg("copy",t)},2250)}(function(){const n=highlight_wrap;blocks.forEach(function(e){show_lines===!1&&toggleLineNumbers(elems(".ln",e));const o=e.parentNode.parentNode,t=createEl();t.className=n,wrapEl(o,t);const s=actionPanel(),i=elem(`.${wrap_id}`,s);!codeBlockFits(e)&&deleteClass(i,panel_hide),t.appendChild(s)});function t(e,t){return e.matches(`.${t}`)||e.closest(`.${t}`)}function s(e,t){const n=e.matches(`.${t}`)?e:e.closest(`.${t}`);deleteClass(n,active),setTimeout(function(){modifyClass(n,active)},50)}doc.addEventListener("click",function(e){const o=e.target,i=t(o,copy_id),a=t(o,wrap_id),r=t(o,lines_id),c=t(o,panel_expand),l=i||a||r||c;if(l){e.preventDefault(),s(o,"icon");const t=o.closest(`.${n}`).firstElementChild.firstElementChild;let l=elems(".ln",t);if(!!a&&toggleLineWrap(t),!!r&&toggleLineNumbers(l),c){let e=t.firstElementChild;const n=e.closest(".highlight");maxHeightIsSet(e)?(e.style.maxHeight=full_height,pushClass(n,panel_expanded)):(e.style.maxHeight=e.dataset.height,deleteClass(n,panel_expanded))}!!i&&copyCode(t)}}),function(){blocks.forEach(e=>{let t=e.dataset.lang;const n=shell_based.includes(t);if(n){const t=elems(line_class,e);Array.from(t).forEach(e=>{e=e.lastElementChild;let t=e.textContent.trim(" ");!!(t.indexOf("$")!==0&&t.trim(" ").length)&&pushClass(e,"shell")})}if(t=t==="sh"?"shell":t,t!=="fallback"){const n=createEl();n.textContent=t,pushClass(n,"lang"),e.closest(`.${highlight_wrap}`).appendChild(n)}})}()})();function prefersColor(e){return`(prefers-color-scheme: ${e})`}function systemMode(){return window.matchMedia&&window.matchMedia(prefersColor(dark)).matches?dark:light}function currentMode(){let e=light+dark;e=[...e];let t=getComputedStyle(doc).getPropertyValue(key).replace(/"/g,"").trim();return[...t].filter(t=>e.includes(t)).join("")}function changeMode(e){e?(bank.setItem(storageKey,light),elemAttribute(doc,mode_data,light)):(bank.setItem(storageKey,dark),elemAttribute(doc,mode_data,dark))}function pickModePicture(e){elems("picture").forEach(function(t){let o=t.firstElementChild;const n=t.dataset,s=[n.lit,n.dark];o.src=e=="dark"?s[1]:s[0]})}function setMermaidTheme(e){bank.setItem(mermaidThemeKey,e);let t=elem(".color_choice");t.value=e}function setUserColorMode(e=!1){const n=currentMode()==dark,s=bank.getItem(storageKey),o=systemMode();s?e?changeMode(n):elemAttribute(doc,mode_data,s):changeMode(e===!0?n:o!==dark);const t=doc.dataset.mode;doc.dataset.systemmode=o,!!t&&pickModePicture(t),setMermaidTheme(t)}setUserColorMode(),function(){return elem(".nav_header").offsetHeight+25}();function toggleMenu(e){const t=e.target,o=t.matches(`.${toggle_id}`),n=t.closest(`.${toggle_id}`),i=elems(`.${show_id}`)?Array.from(elems(`.${show_id}`)):[],a=t.closest(`.${menu}`);function s(e,t=!1){i.forEach(function(n){!t&&deleteClass(n,show_id),n!==e.closest(`.${menu}`)&&deleteClass(n,show_id)})}if(o||n){const s=n?n.parentNode.parentNode:t.parentNode.parentNode;e.preventDefault(),modifyClass(s,show_id)}else a?s(t,!0):s(t)}(function(){const t=elems("code");t&&t.forEach(function(e){hasClasses(e)||!e.children.length&&pushClass(e,"noClass")})})();function featureHeading(){const t="section_link",n="section_title",e=elem(".aside");if(e){let s=elem(`.${t}.${active}`);s=s||elem(`.${n}.${active}`),e.scroll({top:s.offsetTop,left:0})}}function activeHeading(e,t){let n=Object.create(null);n.active=t.filter(function(e){return containsClass(e,active)})[0],n.new=t[e],n.active!=n.new&&(!!n.active&&deleteClass(n.active,active),pushClass(n.new,active))}setTimeout(()=>{featureHeading()},50);function updateDate(){const t=new Date,e=t.getFullYear().toString,n=elem(".year");!!n&&(e.textContent=e)}function customizeSidebar(){const e="toc_active",n=elem("aside"),t=elems("nav",n);if(t){t.forEach(function(t){if(t.id="",pushClass(t,"toc"),t.children.length>=1){const n=Array.from(t.children[0].children),s=t.previousElementSibling;!!s.matches(`.${active}`)&&pushClass(t,e),n.forEach(function(e){pushClass(e,"toc_item"),pushClass(e.firstElementChild,"toc_link")})}});const n=elem(`.${e}`);if(n){const e=Array.from(elems("a",n)),t=e.map(function(e){return document.getElementById(decodeURIComponent(e.hash.replace("#","")))});window.addEventListener("scroll",function(){let o=window.scrollY+window.innerHeight/2,s=0;for(const[n,e]of t.entries())e.offsetTop<o&&e.offsetTop>t[s].offsetTop&&(s=n);activeHeading(s,e)})}}elems("p").forEach(function(e){const t=elems(".button",e);t.length>1&&pushClass(e,"button_grid")})}function markExternalLinks(){let e=elems("a");e&&Array.from(e).forEach(function(e){let n,o,i,s,a,r,t,c;t=new URL(e.href),c=t.host!==location.host||t.protocol!==location.protocol||t.port!==location.port,c&&(n="target",o="rel",i="_blank",s="noopener",a=elemAttribute(e,n),r=elemAttribute(e,s),!a&&elemAttribute(e,n,i),!r&&elemAttribute(e,o,s))})}function sanitizeURL(e){const t=e.indexOf(hash);if(t>-1){const n=e.substr(t,e.length-1);e=e.replace(n,"")}return e}function copyFeedback(e){const t=document.createElement("div"),n="link_yanked";if(t.classList.add(n),t.innerText=copied_text,!elem(`.${n}`,e)){const n=e.getElementsByTagName("svg")[0],s=n.src;n.src="https://jawad.dev/icons/check.svg",e.appendChild(t),setTimeout(function(){e.removeChild(t),n.src=s},2250)}}function copyHeadingLink(){let t,n,s,o,e;t="link",n=elems(`.${t}`),n&&document.addEventListener("click",function(n){e=n.target,o=e.parentNode,(e&&containsClass(e,t)||containsClass(o,t))&&(n.preventDefault(),s=e.href!=0[0]?e.href:e.parentNode.href,copyToClipboard(s),copyFeedback(e.href!=0[0]?e:e.parentNode))})}function makeTablesResponsive(){const e=elems("table");e&&e.forEach(function(e){const t=createEl();pushClass(t,"scrollable"),wrapEl(e,t)})}function backToTop(){const e=elem("#toTop");window.addEventListener("scroll",()=>{const t=window.scrollY;t>=200?(e.style.display="flex",pushClass(e,active)):deleteClass(e,active)})}function lazyLoadMedia(e=[]){e.forEach(e=>{let t=elems(e);t&&Array.from(t).forEach(function(e){e.loading="lazy"})})}function loadActions(){updateDate(),customizeSidebar(),markExternalLinks(),copyHeadingLink(),makeTablesResponsive(),backToTop(),lazyLoadMedia(["iframe","img"]),doc.addEventListener("click",e=>{let t=e.target,n="color_choice",s=containsClass(t,n);!!s&&setUserColorMode(!0),toggleMenu(e)})}window.addEventListener("load",loadActions())
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  let theme_input = elem('.color_choice');
-  let key = theme_input.value;
-
-  function getTheme(mode) {
-    return key == 'dark' ? 'dark' : 'base';
-  }
-
-  function initializeMermaid(mode) {
-    mermaid.initialize(
-    { startOnLoad: true, theme: getTheme(mode) }
-  );
-  }
-
-  initializeMermaid(key);
-
-  theme_input.addEventListener('change', e => {
-    location.reload();
-    initializeMermaid(e.target.value);
-  });
-</script>
 </body>
 </html>

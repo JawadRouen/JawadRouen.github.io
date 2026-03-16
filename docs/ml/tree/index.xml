@@ -2,10 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Decision Trees on Personal Website</title>
-    <link>http://localhost:1313/docs/ml/tree/</link>
+    <link>https://jawad.dev/docs/ml/tree/</link>
     <description>Recent content in Decision Trees on Personal Website</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/docs/ml/tree/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jawad.dev/docs/ml/tree/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction and Partitioning</title>
+      <link>https://jawad.dev/docs/ml/tree/1_introduction_and_partitioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/docs/ml/tree/1_introduction_and_partitioning/</guid>
+      <description>&lt;h2 id=&#34;why-decision-trees&#34; class=link_owner&gt;&#xA;  Why Decision Trees?&#xA;  &lt;a href=&#34;#why-decision-trees&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Decision trees are supervised learning models used for both &lt;strong&gt;classification&lt;/strong&gt; and &lt;strong&gt;regression&lt;/strong&gt;. They are popular because they are easy to explain, can capture nonlinear behavior, and often need less manual feature engineering than linear models.&lt;/p&gt;&#xA;&lt;p&gt;Three ideas make them especially attractive:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Interpretability&lt;/strong&gt;: a prediction can be read as a sequence of questions.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Flexibility&lt;/strong&gt;: trees can model interactions and nonlinear effects.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Practicality&lt;/strong&gt;: they work directly with mixed feature types and piecewise rules.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tree-anatomy&#34; class=link_owner&gt;&#xA;  Tree Anatomy&#xA;  &lt;a href=&#34;#tree-anatomy&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;A decision tree is built from three basic parts:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Splitting Criteria and Best Split</title>
+      <link>https://jawad.dev/docs/ml/tree/2_splitting_criteria_and_best_split/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/docs/ml/tree/2_splitting_criteria_and_best_split/</guid>
+      <description>&lt;h2 id=&#34;why-split-quality-matters&#34; class=link_owner&gt;&#xA;  Why Split Quality Matters&#xA;  &lt;a href=&#34;#why-split-quality-matters&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;At every internal node, a tree asks the same question:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Which feature and threshold produce the &lt;strong&gt;purest&lt;/strong&gt; child nodes?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;For classification, &amp;quot;pure&amp;quot; means that most observations in a node belong to the same class. A good split makes the left and right children more homogeneous than the parent node.&lt;/p&gt;&#xA;&lt;h2 id=&#34;classification-error&#34; class=link_owner&gt;&#xA;  Classification Error&#xA;  &lt;a href=&#34;#classification-error&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The simplest impurity measure is the &lt;strong&gt;classification error&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Growth Control and Pruning</title>
+      <link>https://jawad.dev/docs/ml/tree/3_growth_control_and_pruning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/docs/ml/tree/3_growth_control_and_pruning/</guid>
+      <description>&lt;h2 id=&#34;why-fully-grown-trees-overfit&#34; class=link_owner&gt;&#xA;  Why Fully Grown Trees Overfit&#xA;  &lt;a href=&#34;#why-fully-grown-trees-overfit&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;If we keep splitting until every leaf is pure, the tree can fit the training data almost perfectly. That usually sounds good, but it often means the model is learning noise rather than structure.&lt;/p&gt;&#xA;&lt;p&gt;A very deep tree tends to have:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;low training error,&lt;/li&gt;&#xA;&lt;li&gt;high sensitivity to small data changes,&lt;/li&gt;&#xA;&lt;li&gt;and weaker generalization on new data.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;common-stopping-conditions&#34; class=link_owner&gt;&#xA;  Common Stopping Conditions&#xA;  &lt;a href=&#34;#common-stopping-conditions&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;To keep a tree under control, we often stop growth when one of the following conditions is reached:&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
