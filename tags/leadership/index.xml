@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leadership on Personal Website</title>
+    <link>https://jawad.dev/tags/leadership/</link>
+    <description>Recent content in Leadership on Personal Website</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Jul 2026 17:22:47 -0400</lastBuildDate>
+    <atom:link href="https://jawad.dev/tags/leadership/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>You Will Not Transform Your Company With Use Cases</title>
+      <link>https://jawad.dev/blog/you-will-not-transform-your-company-with-use-cases/</link>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/blog/you-will-not-transform-your-company-with-use-cases/</guid>
+      <description>&lt;p&gt;&lt;small&gt;Photo by &lt;a href=&#34;https://www.pexels.com/@davit-magaltadze-184863174/&#34;&gt;Davit Magaltadze&lt;/a&gt; on &lt;a href=&#34;https://www.pexels.com/photo/statue-of-kafka-in-czech-republic-9969945/&#34;&gt;Pexels&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;&#xA;&lt;p&gt;Everyone has seen an impressive AI demo.&lt;/p&gt;&#xA;&lt;p&gt;Almost nobody has seen an AI transformation.&lt;/p&gt;&#xA;&lt;p&gt;Those are two very different things. Confusing them is one reason so many AI programs produce plenty of activity without changing how a company actually works.&lt;/p&gt;&#xA;&lt;p&gt;You will not transform your company by building a few use cases and fancy demos.&lt;/p&gt;&#xA;&lt;p&gt;A demo can prove that a technology works. It cannot prove that an organization has changed.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
