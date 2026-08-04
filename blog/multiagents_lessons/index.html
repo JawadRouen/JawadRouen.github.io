@@ -10,14 +10,14 @@
 <link rel="mask-icon" href='https://jawad.dev/favicons/safari-pinned-tab.svg' color="#FFD84D">
 <link rel="shortcut icon" href='https://jawad.dev/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://jawad.dev/favicons/browserconfig.xml'>
-<title>From PoC to Production | Personal Website</title><meta property="og:title" content="From PoC to Production" />
+<title>From PoC to Production | Jawad Alaoui</title><meta property="og:title" content="From PoC to Production" />
 <meta property="og:description" content="Hard-Earned Lessons in Building Real AI Systems" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jawad.dev/blog/multiagents_lessons/" />
 
 
 
-<meta property="og:site_name" content="Personal Website" />
+<meta property="og:site_name" content="Jawad Alaoui" />
 
 <link rel="stylesheet" href="https://jawad.dev/css/styles.07ac19a4c8ada6ffc89a06ee64cea2f6fc8ae1a71e8ae36a2886092a3b807db735519b5aa196fbce78d169a03cfa3026aa5f8f2a1b518bf0c98b3c39ed286f54.css" integrity="sha512-B6wZpMitpv/ImgbuZM6i9vyK4aceiuNqKIYJKjuAfbc1UZtaoZb7znjRaaA8&#43;jAmql&#43;PKhtRi/DJizw57ShvVA==">
 <meta name="description" content="Hard-Earned Lessons in Building Real AI Systems">
@@ -111,13 +111,13 @@
 <p>It's not new. Even back in the classical ML days, I noticed this pattern:<br>
 we stuck to abstract, generic metrics (accuracy, F1-score, etc.) instead of designing domain-specific ones that truly reflect business value.</p>
 <p>Today, I'll go even further:<br>
-👉 𝗕𝘂𝗶𝗹𝗱 𝗰𝗹𝗶𝗲𝗻𝘁-𝘀𝗽𝗲𝗰𝗶𝗳𝗶𝗰 𝗺𝗲𝘁𝗿𝗶𝗰𝘀: metrics that align exactly with your client's goals and values.</p>
-<p>Spoiler: <code>𝘁𝗵𝗲𝘀𝗲 𝗼𝗳𝘁𝗲𝗻 𝗯𝗼𝗶𝗹 𝗱𝗼𝘄𝗻 𝘁𝗼 𝗺𝗼𝗻𝗲𝘆 💲 𝗥𝗢𝗜</code>.</p>
-<img src="/images/multiagent_metrics.jpg" alt="metrics meme" style="width: 500px;">
-<p>Concrete example. 𝗔𝘀𝗸 𝗯𝘂𝘀𝗶𝗻𝗲𝘀𝘀 𝗼𝘄𝗻𝗲𝗿𝘀 𝘄𝗵𝗶𝗰𝗵 𝘀𝗰𝗲𝗻𝗮𝗿𝗶𝗼 𝘁𝗵𝗲𝘆'𝗱 𝗰𝗵𝗼𝗼𝘀𝗲:<br>
+<strong>Build client-specific metrics</strong>: metrics that align exactly with your client's goals and values.</p>
+<p>Spoiler: <strong>these often boil down to money — ROI</strong>.</p>
+<img src="/images/multiagent_metrics.jpg" alt="Meme about teams choosing generic metrics over business metrics" style="width: 500px;">
+<p>Concrete example. <strong>Ask business owners which scenario they'd choose:</strong><br>
 1️⃣ A sales AI that hallucinates 10% of the time, but closes 20% of deals<br>
 2️⃣ A sales AI that hallucinates 1%, but only closes 1%</p>
-<p>The answer isn't obvious right ? it's not that easy since you do not know the real impact in terme of costs and revenues for each scenario...</p>
+<p>The answer isn't obvious, right? It's not that easy, since you do not know the real impact in terms of costs and revenues for each scenario...</p>
 <h3 id="can-llm-as-a-judge-be-considered-a-form-of-evaluation" class=link_owner>
   Can LLM-as-a-judge be considered a form of evaluation?
   <a href="#can-llm-as-a-judge-be-considered-a-form-of-evaluation" class="link icon">
@@ -126,18 +126,18 @@ we stuck to abstract, generic metrics (accuracy, F1-score, etc.) instead of desi
     </svg>
   </a>
 </h3>
-<p>As a data scientist, my answer is NO. at least, not in the strict sense of the word.</p>
+<p>As a data scientist, my answer is NO. At least, not in the strict sense of the word.</p>
 <p>Here's why:<br>
 Evaluation without a gold standard is just another opinion.<br>
-Or if you prefer: it's more of an 𝗮𝗻𝗮𝗹𝘆𝘀𝗶𝘀 𝘁𝗵𝗮𝗻 𝗮𝗻 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻.</p>
-<p>Don't get me wrong! I'm not saying LLM-as-a-judge is useless. It can provide useful signals to improve your system, 𝗲𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗹𝘆 𝘄𝗵𝗲𝗻 𝗵𝘂𝗺𝗮𝗻 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻𝘀 𝗮𝗿𝗲𝗻'𝘁 𝘀𝗰𝗮𝗹𝗮𝗯𝗹𝗲.</p>
-<img src="/images/multiagent_llm_judge.jpg" alt="llm judge meme" style="width: 450px;">
-<p>But calling it evaluation is misleading, because you're 𝗻𝗼𝘁 𝗰𝗼𝗺𝗽𝗮𝗿𝗶𝗻𝗴 𝘁𝗼 𝗮 𝘀𝗼𝘂𝗿𝗰𝗲 𝗼𝗳 𝘁𝗿𝘂𝘁𝗵.</p>
+Or if you prefer: it's more of an <strong>analysis than an evaluation</strong>.</p>
+<p>Don't get me wrong! I'm not saying LLM-as-a-judge is useless. It can provide useful signals to improve your system, <strong>especially when human evaluations aren't scalable</strong>.</p>
+<img src="/images/multiagent_llm_judge.jpg" alt="Meme about LLM-as-a-judge" style="width: 450px;">
+<p>But calling it evaluation is misleading, because you're <strong>not comparing to a source of truth</strong>.</p>
 <p>As a data scientist, I've already seen this kind of confusion, especially when discussing unsupervised learning evaluation.</p>
 <p>If you've worked in data science, you know:<br>
-Evaluation in unsupervised learning is tricky. You often have to 𝘁𝗶𝗲 𝗶𝘁 𝗯𝗮𝗰𝗸 𝘁𝗼 𝗮 𝘀𝘂𝗽𝗲𝗿𝘃𝗶𝘀𝗲𝗱 𝘁𝗮𝘀𝗸 𝗼𝗿 𝗮 𝗯𝘂𝘀𝗶𝗻𝗲𝘀𝘀 𝗼𝘂𝘁𝗰𝗼𝗺𝗲 𝘁𝗼 𝗮𝘀𝘀𝗲𝘀𝘀 𝗶𝘁𝘀 𝘃𝗮𝗹𝘂𝗲.</p>
+Evaluation in unsupervised learning is tricky. You often have to <strong>tie it back to a supervised task or a business outcome to assess its value</strong>.</p>
 <p>Same goes for evaluating text generation.</p>
-<p>𝗦𝗼 𝗵𝗼𝘄 𝗱𝗼 𝘄𝗲 𝗵𝗮𝗻𝗱𝗹𝗲 𝘁𝗵𝗶𝘀 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆?<br>
+<p><strong>So how do we handle this properly?</strong><br>
 ✅ Define expected outputs at the data point level so you can apply real metrics.<br>
 ✅ Don't ask the LLM to reason, ask it to compare your system's output against a reference.<br>
 ✅ Let them help you understand why an output deviated, not just whether it's good or bad.<br>
@@ -151,24 +151,24 @@ Evaluation in unsupervised learning is tricky. You often have to 𝘁𝗶𝗲 �
   </a>
 </h3>
 <p>How do we break it down into multiple steps, and what's the most critical part?</p>
-<p>First, understand that <code>𝗥𝗔𝗚 𝗶𝘀𝗻'𝘁 𝗷𝘂𝘀𝘁 𝗮 𝘁𝗲𝘅𝘁-𝗯𝗮𝘀𝗲𝗱 𝘀𝘆𝘀𝘁𝗲𝗺</code>. It can involve various data types and formats integrated into the LLM's context.<br>
+<p>First, understand that <strong>RAG isn't just a text-based system</strong>. It can involve various data types and formats integrated into the LLM's context.<br>
 RAG can cover API calls, SQL databases, web searches, and of course vector databases.</p>
 <p>To control your agent's output quality, you must ensure quality at every process step.</p>
-<p>𝗜𝗻 𝘁𝗵𝗲 𝗮𝗴𝗲𝗻𝘁 𝘀𝗽𝗮𝗰𝗲, 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹 𝗶𝘀 𝗰𝗿𝗶𝘁𝗶𝗰𝗮𝗹, because it involves multiple sub-steps:</p>
+<p><strong>In the agent space, retrieval is critical</strong>, because it involves multiple sub-steps:</p>
 <ul>
 <li>The agent builds the query itself. You need to assess whether it's doing this correctly. ex: not misusing database tools or accessing unauthorized data.</li>
 <li>Evaluate the real targets (entities, lines, documents, or chunks) that should be retrieved and used as context. Then compute metrics like false positives and false negatives.</li>
 <li>Problems can also come from your knowledge base. You need clean, curated data, especially during the building and testing phases.</li>
 <li>And ensure you're building efficient context retrieval! If the data you're feeding the LLM is too big (and isn't focused on what needs to be shown to the user) you'll lose your LLM's attention, even with models that support large contexts.</li>
 </ul>
-<p>𝗧𝗵𝗲𝗻, 𝗮𝘀𝘀𝗲𝘀𝘀 𝘁𝗵𝗲 𝗴𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 𝗽𝗮𝗿𝘁. 3 key points to evaluate:</p>
+<p><strong>Then, assess the generation part.</strong> 3 key points to evaluate:</p>
 <ul>
-<li>𝗛𝗮𝗹𝗹𝘂𝗰𝗶𝗻𝗮𝘁𝗶𝗼𝗻 and Non-Based Information: Is the output strictly based on your RAG context? Errors here could come from model quality, prompt design, or lack of guidance.</li>
-<li>𝗥𝗲𝗹𝗲𝘃𝗮𝗻𝗰𝘆: Does the generation highlight the right parts of the context? Is it structured as expected, per prompt policy or fine-tuning?</li>
-<li>𝗘𝘅𝗵𝗮𝘂𝘀𝘁𝗶𝘃𝗶𝘁𝘆: Is the generated text exhaustive? Be cautious, some filters in the prompt might deliberately exclude parts of the retrieved data.</li>
+<li><strong>Hallucination</strong> and Non-Based Information: Is the output strictly based on your RAG context? Errors here could come from model quality, prompt design, or lack of guidance.</li>
+<li><strong>Relevancy</strong>: Does the generation highlight the right parts of the context? Is it structured as expected, per prompt policy or fine-tuning?</li>
+<li><strong>Exhaustivity</strong>: Is the generated text exhaustive? Be cautious, some filters in the prompt might deliberately exclude parts of the retrieved data.</li>
 </ul>
-<img src="/images/multiagent_RAG.jpg" alt="llm judge meme" style="width: 450px;">
-<p>𝗥𝗔𝗚 𝗶𝘀 𝘁𝗵𝗲 𝗺𝗼𝘀𝘁 𝗶𝗺𝗽𝗼𝗿𝘁𝗮𝗻𝘁 𝗽𝗮𝗿𝘁 𝘁𝗼 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗲 𝗶𝗻 𝘆𝗼𝘂𝗿 𝘀𝘆𝘀𝘁𝗲𝗺. It's where most issues originate. Break it down and evaluate each part carefully.<br>
+<img src="/images/multiagent_RAG.jpg" alt="Meme about evaluating RAG pipelines" style="width: 450px;">
+<p><strong>RAG is the most important part to evaluate in your system.</strong> It's where most issues originate. Break it down and evaluate each part carefully.<br>
 ✅ Study your errors and keep track of them in neat and well-defined automated tests.<br>
 ✅ Build a robust test framework with a diverse query set and reference answers.<br>
 ✅ Use metrics like precision, recall, and context relevance for retrieval.<br>
@@ -184,10 +184,10 @@ RAG can cover API calls, SQL databases, web searches, and of course vector datab
     </svg>
   </a>
 </h2>
-<img src="/images/multiagent_regression.jpg" alt="metrics meme" style="width: 600px;">
-<h3 id="your-ai-system-just-hit-production-now-comes-a-new-challenge-𝗻𝗼𝘁-𝗯𝗿𝗲𝗮𝗸𝗶𝗻𝗴-𝗶𝘁" class=link_owner>
-  Your AI system just hit production. Now comes a new challenge: 𝗻𝗼𝘁 𝗯𝗿𝗲𝗮𝗸𝗶𝗻𝗴 𝗶𝘁
-  <a href="#your-ai-system-just-hit-production-now-comes-a-new-challenge-%f0%9d%97%bb%f0%9d%97%bc%f0%9d%98%81-%f0%9d%97%af%f0%9d%97%bf%f0%9d%97%b2%f0%9d%97%ae%f0%9d%97%b8%f0%9d%97%b6%f0%9d%97%bb%f0%9d%97%b4-%f0%9d%97%b6%f0%9d%98%81" class="link icon">
+<img src="/images/multiagent_regression.jpg" alt="Meme about regressions appearing in production" style="width: 600px;">
+<h3 id="your-ai-system-just-hit-production-now-comes-a-new-challenge-not-breaking-it" class=link_owner>
+  Your AI system just hit production. Now comes a new challenge: not breaking it
+  <a href="#your-ai-system-just-hit-production-now-comes-a-new-challenge-not-breaking-it" class="link icon">
     <svg>
       <use xlink:href="#anchor-link"></use>
     </svg>
@@ -195,26 +195,26 @@ RAG can cover API calls, SQL databases, web searches, and of course vector datab
 </h3>
 <p>Congratulations! 🎊</p>
 <p>You've shipped your wonderful AI platform to prod, and it's working pretty well for a first version.</p>
-<p>And now comes the hard part: 𝗬𝗼𝘂 𝗻𝗲𝗲𝗱 𝘁𝗼 𝗮𝗱𝗱 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝘁𝗵𝗮𝘁 𝘄𝗲𝗿𝗲𝗻'𝘁 𝗶𝗻 𝘆𝗼𝘂𝗿 𝗠𝗩𝗣, the ones that are crucial to keeping your AI services ahead of the competition.</p>
+<p>And now comes the hard part: <strong>you need to add all the features that weren't in your MVP</strong>, the ones that are crucial to keeping your AI services ahead of the competition.</p>
 <p>And guess what? It's not going to be a small iteration.</p>
-<p>𝗧𝗵𝗲𝘀𝗲 𝗻𝗲𝘄 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝘄𝗶𝗹𝗹 𝗹𝗶𝗸𝗲𝗹𝘆 𝗿𝗲𝗾𝘂𝗶𝗿𝗲 𝗮 𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗮𝗹 𝗿𝗲𝘃𝗶𝗲𝘄 of your agent orchestration, and even a rethink of your entire multi-agent system architecture (Yes, there are multiple architectures with new ones introduced every week.)</p>
-<p>𝗪𝗲 𝗰𝗮𝗻 𝘀𝗮𝘆 𝗶𝘁:<br>
-𝗬𝗼𝘂𝗿 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗶𝘀 𝗹𝗲𝗴𝗮𝗰𝘆 𝗶𝗻 𝗹𝗲𝘀𝘀 𝘁𝗵𝗮𝗻 3 𝗺𝗼𝗻𝘁𝗵𝘀. 😅</p>
+<p><strong>These new features will likely require a structural review</strong> of your agent orchestration, and even a rethink of your entire multi-agent system architecture (Yes, there are multiple architectures with new ones introduced every week.)</p>
+<p>We can say it:<br>
+<strong>Your production is legacy in less than 3 months.</strong> 😅</p>
 <p>This isn't entirely new…<br>
 But two things are probably different from your usual tech stack:<br>
-1- 𝗟𝗲𝗴𝗮𝗰𝘆 𝗵𝗮𝗽𝗽𝗲𝗻𝘀 𝗳𝗮𝘀𝘁 𝗶𝗻 𝗔𝗜.<br>
+1- <strong>Legacy happens fast in AI.</strong><br>
 Some projects become legacy before even hitting production.<br>
 We've experienced this ourselves. When a framework we were using got a major upgrade, we had no choice but to migrate if we wanted to keep building new features.<br>
-2- 𝗠𝗶𝗴𝗿𝗮𝘁𝗶𝗼𝗻 𝗶𝘀 𝗿𝗶𝘀𝗸𝗶𝗲𝗿.<br>
+2- <strong>Migration is riskier.</strong><br>
 You have less control over your AI platform than with a deterministic system.<br>
 Which means even small changes can lead to unexpected behaviors.</p>
-<p>𝗔𝗻𝗱 𝗵𝗲𝗿𝗲 𝗰𝗼𝗺𝗲𝘀 𝗿𝗲𝗴𝗿𝗲𝘀𝘀𝗶𝗼𝗻 𝘁𝗲𝘀𝘁𝗶𝗻𝗴.<br>
+<p><strong>And here comes regression testing.</strong><br>
 Regression tests are your best ally to make sure refactors or architecture changes don't break critical production features.<br>
-✅ Create and maintain <code>dedicated regression scenarios</code>.<br>
+✅ Create and maintain <strong>dedicated regression scenarios</strong>.<br>
 ✅ Define metrics that qualify outputs: since you're working with AI, pass/fail isn't enough.<br>
-✅ Automate these tests or every release 𝘄𝗶𝗹𝗹 𝘁𝘂𝗿𝗻 𝗶𝗻𝘁𝗼 𝗱𝗮𝘆𝘀 𝗼𝗳 𝗺𝗮𝗻𝘂𝗮𝗹 𝗤𝗔 𝗮𝗻𝗱 𝗿𝗲𝘁𝗲𝘀𝘁𝗶𝗻𝗴.</p>
-<p>If you're a startup moving fast in AI with users already rely on your first product:</p>
-<p><code>𝗶𝗻𝘃𝗲𝘀𝘁 𝗶𝗻 𝗿𝗲𝗴𝗿𝗲𝘀𝘀𝗶𝗼𝗻 𝘁𝗲𝘀𝘁𝗶𝗻𝗴 𝗻𝗼𝘄!</code></p>
+✅ Automate these tests or every release <strong>will turn into days of manual QA and retesting</strong>.</p>
+<p>If you're a startup moving fast in AI with users already relying on your first product:</p>
+<p><strong>Invest in regression testing now!</strong></p>
 <p>Otherwise, your roadmap will slow down before it even picks up speed.</p>
 <h3 id="improving-your-ai-system-isnt-just-about-development-time" class=link_owner>
   Improving your AI system isn't just about development time.
@@ -230,7 +230,7 @@ Regression tests are your best ally to make sure refactors or architecture chang
 <p>Here's what we've observed again and again:</p>
 <p>✅ Complex agent tasks can perform flawlessly in dev, but start breaking down under production load or when inputs deviate even slightly from the original distribution.<br>
 ✅ Free text input is unpredictable. No matter how creative your dev team is, users will always surprise you.<br>
-✅ It's not just LLMs : rate limits, data quality issues, and fragile pipelines will all show up once the volume kicks in.<br>
+✅ It's not just LLMs: rate limits, data quality issues, and fragile pipelines will all show up once the volume kicks in.<br>
 ✅ Even your data pipelines need to be stress tested at scale. You'll spot performance cliffs and resilience gaps only under pressure.</p>
 <p>Scaling to production gives your team real signals:</p>
 <ul>
@@ -250,16 +250,16 @@ It's the prerequisite for building reliable and evolving AI systems.</p>
   </a>
 </h3>
 <p>After months running AI systems 24/7, one thing is clear:<br>
-𝗣𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗶𝘀 𝘄𝗵𝗲𝗿𝗲 𝘆𝗼𝘂 𝗯𝘂𝗶𝗹𝗱 𝗿𝗲𝗮𝗹 𝗶𝗻𝘁𝘂𝗶𝘁𝗶𝗼𝗻 𝗳𝗼𝗿 𝘆𝗼𝘂𝗿 𝗻𝗲𝘅𝘁 𝘃𝗲𝗿𝘀𝗶𝗼𝗻.</p>
-<img src="/images/multiagent_production_day.gif" alt="metrics meme" style="width: 500px;">
+<strong>Production is where you build real intuition for your next version.</strong></p>
+<img src="/images/multiagent_production_day.gif" alt="Animated meme about a day in production support" style="width: 500px;">
 <p>Evaluation before prod is critical, but watching real user interactions is what sharpens your instincts and helps prioritize what matters.</p>
-<p>Here's how we 𝘁𝘂𝗿𝗻 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗺𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 𝗶𝗻𝘁𝗼 𝗮 𝘀𝘂𝗽𝗲𝗿𝗽𝗼𝘄𝗲𝗿:</p>
-<p>🔁 Make it a team-wide habit: Everyone in the team should get 𝗮 𝘁𝗮𝘀𝘁𝗲 𝗼𝗳 𝗿𝗲𝗮𝗹 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝗱𝗮𝘁𝗮. It fuels both creativity and clarity.</p>
+<p>Here's how we <strong>turn production monitoring into a superpower</strong>:</p>
+<p>🔁 Make it a team-wide habit: Everyone in the team should get <strong>a taste of real production data</strong>. It fuels both creativity and clarity.</p>
 <p>📈 Use it to tune priorities: Support helps reveal what truly matters for the business and what's just &quot;nice to have.&quot;<br>
-𝗪𝗵𝗲𝗻 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗳𝗮𝘀𝘁, 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁 𝘁𝗼 𝗱𝗲𝗹𝗶𝘃𝗲𝗿 𝘄𝗵𝗮𝘁'𝘀 𝗲𝘀𝘀𝗲𝗻𝘁𝗶𝗮𝗹, and hold off on the rest, especially since priorities often shift between project and production phases.</p>
+<strong>When building fast, you want to deliver what's essential</strong>, and hold off on the rest, especially since priorities often shift between project and production phases.</p>
 <p>💡 Help your team develop good trade-offs: Not every issue needs an immediate fix.<br>
-But sometimes a 𝗾𝘂𝗶𝗰𝗸 𝗽𝗮𝘁𝗰𝗵 𝗰𝗮𝗻 𝗮𝘃𝗼𝗶𝗱 𝘂𝘀𝗲𝗿 𝗳𝗿𝘂𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻, even if it's not perfect.</p>
-<p>📊 Quantify issues: Log incident frequency and business impact. This data will sharpen priorities and guide improvements, 𝗲𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗹𝘆 𝗳𝗼𝗿 𝘆𝗼𝘂𝗿 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹, the most critical component of your system.</p>
+But sometimes a <strong>quick patch can avoid user frustration</strong>, even if it's not perfect.</p>
+<p>📊 Quantify issues: Log incident frequency and business impact. This data will sharpen priorities and guide improvements, <strong>especially for your guardrail</strong>, the most critical component of your system.</p>
 <hr>
 <h2 id="3-regression-testing-and-guardrails-the-hidden-heroes" class=link_owner>
   3. Regression Testing and Guardrails: The Hidden Heroes
@@ -269,36 +269,36 @@ But sometimes a 𝗾𝘂𝗶𝗰𝗸 𝗽𝗮𝘁𝗰𝗵 𝗰𝗮𝗻 𝗮𝘃�
     </svg>
   </a>
 </h2>
-<h3 id="your-𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹-is-the-𝗺𝗼𝘀𝘁-𝗰𝗿𝗶𝘁𝗶𝗰𝗮𝗹-𝗽𝗮𝗿𝘁-of-your-multi-agent-system-its-your-systems-gateway-𝗬𝗼𝘂𝗿-𝗳𝗶𝗿𝘀𝘁-𝗮𝗻𝗱-𝗹𝗮𝘀𝘁-𝗹𝗶𝗻𝗲-𝗼𝗳-𝗱𝗲𝗳𝗲𝗻𝘀𝗲" class=link_owner>
-  Your 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹 is the 𝗺𝗼𝘀𝘁 𝗰𝗿𝗶𝘁𝗶𝗰𝗮𝗹 𝗽𝗮𝗿𝘁 of your multi-agent system. It's your system's gateway. 𝗬𝗼𝘂𝗿 𝗳𝗶𝗿𝘀𝘁 𝗮𝗻𝗱 𝗹𝗮𝘀𝘁 𝗹𝗶𝗻𝗲 𝗼𝗳 𝗱𝗲𝗳𝗲𝗻𝘀𝗲.
-  <a href="#your-%f0%9d%97%b4%f0%9d%98%82%f0%9d%97%ae%f0%9d%97%bf%f0%9d%97%b1%f0%9d%97%bf%f0%9d%97%ae%f0%9d%97%b6%f0%9d%97%b9-is-the-%f0%9d%97%ba%f0%9d%97%bc%f0%9d%98%80%f0%9d%98%81-%f0%9d%97%b0%f0%9d%97%bf%f0%9d%97%b6%f0%9d%98%81%f0%9d%97%b6%f0%9d%97%b0%f0%9d%97%ae%f0%9d%97%b9-%f0%9d%97%bd%f0%9d%97%ae%f0%9d%97%bf%f0%9d%98%81-of-your-multi-agent-system-its-your-systems-gateway-%f0%9d%97%ac%f0%9d%97%bc%f0%9d%98%82%f0%9d%97%bf-%f0%9d%97%b3%f0%9d%97%b6%f0%9d%97%bf%f0%9d%98%80%f0%9d%98%81-%f0%9d%97%ae%f0%9d%97%bb%f0%9d%97%b1-%f0%9d%97%b9%f0%9d%97%ae%f0%9d%98%80%f0%9d%98%81-%f0%9d%97%b9%f0%9d%97%b6%f0%9d%97%bb%f0%9d%97%b2-%f0%9d%97%bc%f0%9d%97%b3-%f0%9d%97%b1%f0%9d%97%b2%f0%9d%97%b3%f0%9d%97%b2%f0%9d%97%bb%f0%9d%98%80%f0%9d%97%b2" class="link icon">
+<h3 id="your-guardrail-is-the-most-critical-part-of-your-multi-agent-system-its-your-systems-gateway-your-first-and-last-line-of-defense" class=link_owner>
+  Your guardrail is the most critical part of your multi-agent system. It's your system's gateway. Your first and last line of defense.
+  <a href="#your-guardrail-is-the-most-critical-part-of-your-multi-agent-system-its-your-systems-gateway-your-first-and-last-line-of-defense" class="link icon">
     <svg>
       <use xlink:href="#anchor-link"></use>
     </svg>
   </a>
 </h3>
-<p>𝗙𝗶𝗿𝘀𝘁 𝗹𝗶𝗻𝗲 (keeps the chaos out) when it's the input guardrail:</p>
+<p><strong>First line</strong> (keeps the chaos out) when it's the input guardrail:</p>
 <ul>
 <li>helps you catch out of scope/unexpected inputs (things your workflows weren't designed to handle). With these kinds of input, you're almost guaranteed to get unreliable, unpredictable results.</li>
 <li>It's also your security guard: detecting jailbreaks, prompt injections, and malicious inputs.</li>
 </ul>
-<p>𝗟𝗮𝘀𝘁 𝗹𝗶𝗻𝗲 (keeps the chaos in) when it's the output guardrail:</p>
+<p><strong>Last line</strong> (keeps the chaos in) when it's the output guardrail:</p>
 <ul>
 <li>It helps drastically reduce hallucinations.</li>
 <li>It can flag out-of-scope topics that slipped past the input guardrail.</li>
 <li>It should also enforce brand moderation, keeping responses aligned with company image and policies.</li>
 </ul>
-<p>Think of building a 𝗿𝗲𝗹𝗶𝗮𝗯𝗹𝗲 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹 as a hard 𝗰𝗹𝗮𝘀𝘀𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗽𝗿𝗼𝗯𝗹𝗲𝗺. Like any classification task, you're tuning the threshold between false positives (blocking good inputs) and false negatives (letting bad ones through).</p>
-<p>𝗧𝗵𝗲 𝗰𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲?<br>
+<p>Think of building a <strong>reliable guardrail</strong> as a hard <strong>classification problem</strong>. Like any classification task, you're tuning the threshold between false positives (blocking good inputs) and false negatives (letting bad ones through).</p>
+<p><strong>The challenge?</strong><br>
 Your input and output is human language: open-ended, messy, context-dependent. The distribution is huge, and the ambiguity is real. There's no perfect line.</p>
-<p>𝗛𝗲𝗿𝗲 𝗮𝗿𝗲 𝘀𝗼𝗺𝗲 𝘁𝗶𝗽𝘀 𝗶𝗳 𝘆𝗼𝘂'𝗿𝗲 𝘁𝗮𝗰𝗸𝗹𝗶𝗻𝗴 𝘁𝗵𝗶𝘀 𝗽𝗿𝗼𝗯𝗹𝗲𝗺:<br>
+<p><strong>Here are some tips if you're tackling this problem:</strong><br>
 ✅ Define clear and concise policies: Set strong guidelines for how your guardrail should behave.<br>
 ✅ Inject necessary information: Feed the guardrail only with data needed to make the right decision.<br>
 ✅ Define good and bad examples: Help it learn what should be let through - and what shouldn't.<br>
 ✅ Test different LLM models: Your guardrail is your most important agent. Pay the necessary price to have best quality.<br>
 ✅ Evaluate performance: Use metrics like accuracy, recall, and precision. Better yet, build custom metrics tied to business impact.</p>
-<img src="/images/multiagent_guardrail.jpg" alt="metrics meme" style="width: 600px;">
-<p>𝗦𝗼𝗹𝗶𝗱 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹𝘀 𝗮𝗿𝗲 𝘄𝗵𝗮𝘁 𝘀𝗲𝗽𝗮𝗿𝗮𝘁𝗲 𝘃𝗮𝗹𝘂𝗮𝗯𝗹𝗲 𝗔𝗜 𝘀𝘆𝘀𝘁𝗲𝗺𝘀 𝗳𝗿𝗼𝗺 𝗰𝗵𝗮𝗼𝘁𝗶𝗰 𝗼𝗻𝗲𝘀.</p>
+<img src="/images/multiagent_guardrail.jpg" alt="Meme about guardrails protecting AI systems" style="width: 600px;">
+<p><strong>Solid guardrails are what separate valuable AI systems from chaotic ones.</strong></p>
 <hr>
 <h2 id="4-evaluation-inside-the-agentic-loop" class=link_owner>
   4. Evaluation inside the Agentic Loop
@@ -316,18 +316,18 @@ Your input and output is human language: open-ended, messy, context-dependent. T
     </svg>
   </a>
 </h3>
-<p>When building an agentic system, it's important to have data points 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝗰𝗵𝗲𝗰𝗸𝗲𝗱 𝗮𝘁 𝘁𝗵𝗲 𝗵𝗲𝗮𝗿𝘁 𝗼𝗳 𝘆𝗼𝘂𝗿 𝗽𝗿𝗼𝗰𝗲𝘀𝘀 𝘁𝗼 𝗲𝗻𝘀𝘂𝗿𝗲 𝘆𝗼𝘂'𝗿𝗲 𝗼𝗻 𝘁𝗵𝗲 𝗿𝗶𝗴𝗵𝘁 𝗽𝗮𝘁𝗵.</p>
+<p>When building an agentic system, it's important to have data points <strong>that can be checked at the heart of your process to ensure you're on the right path</strong>.</p>
 <p>Think of these as intermediary milestones, deliverables you're asking your multi-agent system to produce on its way to the ultimate objective.</p>
 <p>These checkpoints serve a dual purpose:</p>
 <ul>
-<li>𝗧𝗮𝗻𝗴𝗶𝗯𝗹𝗲 𝗠𝗲𝗮𝘀𝘂𝗿𝗲𝗺𝗲𝗻𝘁𝘀: They provide clear metrics that simplify system monitoring and facilitate the evaluation of each agent's performance.</li>
-<li>𝗣𝗿𝗼𝗰𝗲𝘀𝘀 𝗜𝗻𝘀𝗶𝗴𝗵𝘁𝘀: They offer valuable data that can enrich your understanding of the automated process and even serve as a source of structured knowledge about your users.</li>
+<li><strong>Tangible Measurements</strong>: They provide clear metrics that simplify system monitoring and facilitate the evaluation of each agent's performance.</li>
+<li><strong>Process Insights</strong>: They offer valuable data that can enrich your understanding of the automated process and even serve as a source of structured knowledge about your users.</li>
 </ul>
-<img src="/images/multiagent_evaluation_extraction.jpg" alt="metrics meme" style="width: 500px;">
+<img src="/images/multiagent_evaluation_extraction.jpg" alt="Meme about evaluating data extraction checkpoints" style="width: 500px;">
 <p>Moreover, these data points should be used to establish hard controls, dictating actions that agents must or must not take based on the extracted information.</p>
 <p>Additionally, this metadata functions as a form of memory. Ensuring that agents get this information at critical steps of the process and that it's never lost.</p>
-<p>𝗪𝗮𝗻𝘁 𝗺𝗼𝗿𝗲 𝗿𝗲𝗹𝗶𝗮𝗯𝗹𝗲 𝗮𝗴𝗲𝗻𝘁𝘀?<br>
-𝗦𝘁𝗮𝗿𝘁 𝗱𝗲𝘀𝗶𝗴𝗻𝗶𝗻𝗴 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲𝘀𝗲 𝗶𝗻𝘁𝗲𝗿𝗻𝗮𝗹 𝗰𝗵𝗲𝗰𝗸𝗽𝗼𝗶𝗻𝘁𝘀 𝗶𝗻 𝗺𝗶𝗻𝗱.</p>
+<p><strong>Want more reliable agents?</strong><br>
+<strong>Start designing with these internal checkpoints in mind.</strong></p>
 <hr>
 <h2 id="5-building-for-scale-and-automation" class=link_owner>
   5. Building for Scale and Automation
@@ -347,13 +347,13 @@ Your input and output is human language: open-ended, messy, context-dependent. T
 </h3>
 <p>If you want to bring cutting-edge AI systems to production, you'll need to build an R&amp;D mindset into your team and invest in experimentation.</p>
 <p>The challenge?<br>
-Keep experimentation 𝗳𝗮𝘀𝘁 𝗮𝗻𝗱 𝗮𝗳𝗳𝗼𝗿𝗱𝗮𝗯𝗹𝗲.<br>
-You want feedback in 𝗱𝗮𝘆𝘀, 𝗻𝗼𝘁 𝘄𝗲𝗲𝗸𝘀.</p>
+Keep experimentation <strong>fast and affordable</strong>.<br>
+You want feedback in <strong>days, not weeks</strong>.</p>
 <p>And just like any expert team, to move fast you need the right tooling.<br>
 As your production matures and your agent tasks become more complex, your tools need to scale with you.</p>
 <p>At <a href="https://norma.dev">NORMA</a>, when we started building multi-agent systems, we hit a clear bottleneck: Maintaining constant quality was slowing down our shipping velocity.<br>
 So, we built something.</p>
-<p>𝗔 𝘁𝗼𝗼𝗹 𝘁𝗼 𝘁𝗲𝘀𝘁 𝗔𝗜 𝗮𝗴𝗲𝗻𝘁𝘀 𝗲𝗻𝗱 𝘁𝗼 𝗲𝗻𝗱, 𝗮𝘁 𝘀𝗰𝗮𝗹𝗲.<br>
+<p><strong>A tool to test AI agents end to end, at scale.</strong><br>
 It started as an internal utility.<br>
 Today, it's a full platform for teams who need to control agent quality over time and evaluate changes across versions efficiently.</p>
 <h3 id="you-want-reliable-and-efficient-ai" class=link_owner>
@@ -364,9 +364,9 @@ Today, it's a full platform for teams who need to control agent quality over tim
     </svg>
   </a>
 </h3>
-<p>𝗠𝗮𝗸𝗲 𝘁𝗲𝘀𝘁𝗶𝗻𝗴 𝗲𝗮𝘀𝘆 𝗳𝗼𝗿 𝘆𝗼𝘂𝗿 𝘁𝗲𝗮𝗺!</p>
-<img src="/images/multiagent_evaluation.jpg" alt="evaluation meme" style="width: 600px;">
-<p>𝗪𝗵𝘆 𝘁𝗲𝘀𝘁𝗶𝗻𝗴 𝗶𝘀 𝗵𝗮𝗿𝗱𝗲𝗿 𝗶𝗻 𝗔𝗜 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺:</p>
+<p><strong>Make testing easy for your team!</strong></p>
+<img src="/images/multiagent_evaluation.jpg" alt="Meme about making AI testing easy for developers" style="width: 600px;">
+<p><strong>Why testing is harder in AI platforms:</strong></p>
 <ul>
 <li>Your input is challenging to control and fully cover.</li>
 <li>LLMs are everywhere in your pipeline, each bringing potential variance to your process.</li>
@@ -376,7 +376,7 @@ Today, it's a full platform for teams who need to control agent quality over tim
 <li>AI frameworks themselves are still evolving quickly and might introduce instabilities or deprecate parts of your code overnight.</li>
 </ul>
 <p>For all these reasons, developers often struggle to build new features while maintaining high production quality and stability.</p>
-<p>𝗗𝗼𝗻'𝘁 𝗼𝘃𝗲𝗿-𝗽𝗹𝗮𝗻, 𝘀𝘁𝗮𝗿𝘁 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗻𝗴 𝘁𝗲𝘀𝘁𝘀 𝗻𝗼𝘄 𝘁𝗼 𝗿𝗲𝗹𝗶𝗲𝘃𝗲 𝘆𝗼𝘂𝗿 𝗱𝗲𝘃 𝘁𝗲𝗮𝗺.</p>
+<p><strong>Don't over-plan, start automating tests now to relieve your dev team.</strong></p>
 <p>Anything that reduces developer workload is worth pursuing. For example:</p>
 <ul>
 <li>Begin with a simple script that automatically runs tests and saves results to an accessible folder.</li>
@@ -387,7 +387,7 @@ Today, it's a full platform for teams who need to control agent quality over tim
 <p>Start by measuring outputs globally, then prioritize evaluating the most critical sub-steps, usually those handling data manipulation.<br>
 After several iterations, your developers will become comfortable with evaluation processes, naturally integrating these tests to ensure high-quality features.
 At NORMA, we’ve even automated evaluation directly into our CI/CD pipeline for every PR 🔥</p>
-<p><strong>Check our quik demo here:</strong>
+<p><strong>Check our quick demo here:</strong>
 
 <div class="video">
   <iframe src="https://www.youtube.com/embed/TOjGDdpypwc?controls=1&rel=0" loading="lazy"></iframe>
@@ -525,7 +525,7 @@ const no_matches_found = 'No matches found';
 </svg>
 
 <script>
-  "use strict";const doc=document.documentElement,toggle_id="toggle",show_id="show",menu="menu",active="active";let site_title=`personal-website`,root_url="/";root_url=root_url.startsWith("http")?root_url:window.location.origin;const go_back_class="button_back",line_class=".line",code_block_config=JSON.parse('{"maximum":10,"show":false}'),iconsPath=`icons/`,shell_based=["sh","shell","zsh","bash"],body=elem("body"),max_lines=code_block_config.maximum,show_lines=code_block_config.show,copy_id="panel_copy",wrap_id="panel_wrap",lines_id="panel_lines",panel_expand="panel_expand",panel_expanded="panel_expanded",panel_box="panel_box",panel_hide="panel_hide",panel_from="panel_from",full_height="initial",highlight="highlight",highlight_wrap="highlight_wrap",hash="#",light="light",dark="dark",storageKey=`${site_title}-color-mode`,mermaidThemeKey=`${site_title}-mermaid`,key="--color-mode",mode_data="data-mode",bank=window.localStorage;function isObj(e){return!!(e&&typeof e=="object"&&e!==null)}function createEl(e="div"){return document.createElement(e)}function emptyEl(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function elem(e,t=document){let n=!!isObj(t)&&t.querySelector(e);return n}function elems(e,t=document){return isObj(t)?t.querySelectorAll(e):[]}function pushClass(e,t){if(isObj(e)&&t){let n=e.classList;!n.contains(t)&&n.add(t)}}function deleteClass(e,t){if(isObj(e)&&t){let n=e.classList;!!n.contains(t)&&n.remove(t)}}function modifyClass(e,t){if(isObj(e)&&t){const n=e.classList;n.contains(t)?n.remove(t):n.add(t)}}function containsClass(e,t){if(isObj(e)&&t&&e!==document)return!!e.classList.contains(t)}function isChild(e,t){let n=isObj(e)&&t&&typeof t=="string";return!!(n&&e.closest(t))}function elemAttribute(e,t,n=null){if(n)e.setAttribute(t,n);else return n=e.getAttribute(t),n}function deleteChars(e,t){let n=e;if(Array.isArray(t))for(let e=0;e<t.length;e++)n=n.replace(t[e],"");else n=n.replace(t,"");return n}function isBlank(e){return!e||e.trim().length===0}function isMatch(e,t){if(isObj(e)){if(t.isArray){let n=t.map(function(t){return e.matches(t)});return n.includes(!0)}return e.matches(t)}}function closestInt(e,t){return t.reduce(function(t,n){return Math.abs(n-e)<Math.abs(t-e)?n:t})}function hasClasses(e){if(isObj(e)){const t=e.classList;return t.length}}function wrapEl(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)}function wrapText(e,t,n="mark"){let s=`<${n}>`,o=`</${n}>`,r=`%3C${n}%3E`,c=`%3C/${n}%3E`;function i(t){let n=t.innerHTML,a=new RegExp(e,"gi"),i=e.length?n.match(a):null;if(i){i.forEach(function(e){n=n.replaceAll(e,`${s}${e}${o}`),t.innerHTML=n});const e=elems("img",t);e&&e.forEach(e=>{e.src=e.src.replaceAll(s,"").replaceAll(o,"").replaceAll(r,"").replaceAll(c,"")})}}const l=["h1","h2","h3","h4","h5","h6","p","code","td"];l.forEach(function(e){const n=elems(e,t);n.length&&n.forEach(function(e){e.children.length>=1?(Array.from(e.children).forEach(function(e){i(e)}),i(e)):i(e)})});const a=elems("a");a&&a.forEach(function(e){e.href=e.href.replaceAll(encodeURI(s),"").replaceAll(encodeURI(o),"")})}function parseBoolean(e=""){switch(e=e.trim().toLowerCase(),e){case"true":return!0;case"false":return!1;default:return 0[0]}}function loadSvg(e,t){t.innerHTML=`
+  "use strict";const doc=document.documentElement,toggle_id="toggle",show_id="show",menu="menu",active="active";let site_title=`jawad-alaoui`,root_url="/";root_url=root_url.startsWith("http")?root_url:window.location.origin;const go_back_class="button_back",line_class=".line",code_block_config=JSON.parse('{"maximum":10,"show":false}'),iconsPath=`icons/`,shell_based=["sh","shell","zsh","bash"],body=elem("body"),max_lines=code_block_config.maximum,show_lines=code_block_config.show,copy_id="panel_copy",wrap_id="panel_wrap",lines_id="panel_lines",panel_expand="panel_expand",panel_expanded="panel_expanded",panel_box="panel_box",panel_hide="panel_hide",panel_from="panel_from",full_height="initial",highlight="highlight",highlight_wrap="highlight_wrap",hash="#",light="light",dark="dark",storageKey=`${site_title}-color-mode`,mermaidThemeKey=`${site_title}-mermaid`,key="--color-mode",mode_data="data-mode",bank=window.localStorage;function isObj(e){return!!(e&&typeof e=="object"&&e!==null)}function createEl(e="div"){return document.createElement(e)}function emptyEl(e){for(;e.firstChild;)e.removeChild(e.firstChild)}function elem(e,t=document){let n=!!isObj(t)&&t.querySelector(e);return n}function elems(e,t=document){return isObj(t)?t.querySelectorAll(e):[]}function pushClass(e,t){if(isObj(e)&&t){let n=e.classList;!n.contains(t)&&n.add(t)}}function deleteClass(e,t){if(isObj(e)&&t){let n=e.classList;!!n.contains(t)&&n.remove(t)}}function modifyClass(e,t){if(isObj(e)&&t){const n=e.classList;n.contains(t)?n.remove(t):n.add(t)}}function containsClass(e,t){if(isObj(e)&&t&&e!==document)return!!e.classList.contains(t)}function isChild(e,t){let n=isObj(e)&&t&&typeof t=="string";return!!(n&&e.closest(t))}function elemAttribute(e,t,n=null){if(n)e.setAttribute(t,n);else return n=e.getAttribute(t),n}function deleteChars(e,t){let n=e;if(Array.isArray(t))for(let e=0;e<t.length;e++)n=n.replace(t[e],"");else n=n.replace(t,"");return n}function isBlank(e){return!e||e.trim().length===0}function isMatch(e,t){if(isObj(e)){if(t.isArray){let n=t.map(function(t){return e.matches(t)});return n.includes(!0)}return e.matches(t)}}function closestInt(e,t){return t.reduce(function(t,n){return Math.abs(n-e)<Math.abs(t-e)?n:t})}function hasClasses(e){if(isObj(e)){const t=e.classList;return t.length}}function wrapEl(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)}function wrapText(e,t,n="mark"){let s=`<${n}>`,o=`</${n}>`,r=`%3C${n}%3E`,c=`%3C/${n}%3E`;function i(t){let n=t.innerHTML,a=new RegExp(e,"gi"),i=e.length?n.match(a):null;if(i){i.forEach(function(e){n=n.replaceAll(e,`${s}${e}${o}`),t.innerHTML=n});const e=elems("img",t);e&&e.forEach(e=>{e.src=e.src.replaceAll(s,"").replaceAll(o,"").replaceAll(r,"").replaceAll(c,"")})}}const l=["h1","h2","h3","h4","h5","h6","p","code","td"];l.forEach(function(e){const n=elems(e,t);n.length&&n.forEach(function(e){e.children.length>=1?(Array.from(e.children).forEach(function(e){i(e)}),i(e)):i(e)})});const a=elems("a");a&&a.forEach(function(e){e.href=e.href.replaceAll(encodeURI(s),"").replaceAll(encodeURI(o),"")})}function parseBoolean(e=""){switch(e=e.trim().toLowerCase(),e){case"true":return!0;case"false":return!1;default:return 0[0]}}function loadSvg(e,t){t.innerHTML=`
   <svg class="icon_${e}">
     <use xlink:href="#${e}"></use>
   </svg>`}function copyToClipboard(e){let t,n,s;t=createEl("textarea"),t.value=e,t.setAttribute("readonly",""),t.style.position="absolute",t.style.left="-9999px",n=document.getSelection(),doc.appendChild(t),s=n.rangeCount>0&&n.getRangeAt(0),t.select(),document.execCommand("copy"),doc.removeChild(t),s&&(n.removeAllRanges(),n.addRange(s))}const snippet_actions=[{icon:"copy",id:"copy",title:copy_text,show:!0},{icon:"order",id:"lines",title:toggle_line_numbers_text,show:!0},{icon:"carly",id:"wrap",title:toggle_line_wrap_text,show:!1},{icon:"expand",id:"expand",title:resize_snippet,show:!1}];function addLines(e){let t=e.textContent;const n=[];t.includes(`

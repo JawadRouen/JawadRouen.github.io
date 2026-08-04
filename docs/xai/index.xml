@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Explainability in AI on Personal Website</title>
+    <title>Explainability in AI on Jawad Alaoui</title>
     <link>https://jawad.dev/docs/xai/</link>
-    <description>Recent content in Explainability in AI on Personal Website</description>
+    <description>Recent content in Explainability in AI on Jawad Alaoui</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://jawad.dev/docs/xai/index.xml" rel="self" type="application/rss+xml" />
@@ -54,7 +54,7 @@
       <link>https://jawad.dev/docs/xai/7_credit_risk_case_study/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://jawad.dev/docs/xai/7_credit_risk_case_study/</guid>
-      <description>&lt;h2 id=&#34;one-model-many-explanations&#34; class=link_owner&gt;&#xA;  One Model, Many Explanations&#xA;  &lt;a href=&#34;#one-model-many-explanations&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The tutorial notebook in your repository is a nice example of how explainability is used in practice. Instead of jumping between unrelated toy datasets, it keeps one credit-risk model and studies it through several lenses.&lt;/p&gt;&#xA;&lt;p&gt;The pipeline is straightforward:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;load the German credit dataset,&lt;/li&gt;&#xA;&lt;li&gt;encode categorical variables,&lt;/li&gt;&#xA;&lt;li&gt;split train and test sets,&lt;/li&gt;&#xA;&lt;li&gt;fit a LightGBM classifier,&lt;/li&gt;&#xA;&lt;li&gt;explain the fitted model globally and locally.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;That structure is worth remembering because it reflects how explainability is usually used on real projects: after we already have a working predictive model.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;one-model-many-explanations&#34; class=link_owner&gt;&#xA;  One Model, Many Explanations&#xA;  &lt;a href=&#34;#one-model-many-explanations&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This case study is a nice example of how explainability is used in practice. Instead of jumping between unrelated toy datasets, it keeps one credit-risk model and studies it through several lenses.&lt;/p&gt;&#xA;&lt;p&gt;The pipeline is straightforward:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;load the German credit dataset,&lt;/li&gt;&#xA;&lt;li&gt;encode categorical variables,&lt;/li&gt;&#xA;&lt;li&gt;split train and test sets,&lt;/li&gt;&#xA;&lt;li&gt;fit a LightGBM classifier,&lt;/li&gt;&#xA;&lt;li&gt;explain the fitted model globally and locally.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;That structure is worth remembering because it reflects how explainability is usually used on real projects: after we already have a working predictive model.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
