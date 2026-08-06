@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Speaking on Jawad Alaoui</title>
+    <link>https://jawad.dev/speaking/</link>
+    <description>Recent content in Speaking on Jawad Alaoui</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://jawad.dev/speaking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From the VLA to autonomous contributors</title>
+      <link>https://jawad.dev/speaking/hybrid-organizations-ai-agents-as-computational-actors/</link>
+      <pubDate>Tue, 28 Jul 2026 18:45:00 -0400</pubDate>
+      <guid>https://jawad.dev/speaking/hybrid-organizations-ai-agents-as-computational-actors/</guid>
+      <description>&lt;p&gt;I documented DashQ&#39;s progression from AI features to autonomous contributors. The examples included a virtual leasing assistant handling renter conversations, a governed company knowledge system, and operational controls added as more work was delegated to agents.&lt;/p&gt;&#xA;&lt;p&gt;The operating model assigns each agent an identity, responsibility, permissions, context, and an evaluation loop. The organization retains control of policy, authority, tool access, evidence, and accountability. People define outcomes, handle exceptions, and adjust agent autonomy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI as an accelerator for railway deployment</title>
+      <link>https://jawad.dev/speaking/ai-accelerator-railway-deployment/</link>
+      <pubDate>Wed, 10 Dec 2025 11:05:00 +0100</pubDate>
+      <guid>https://jawad.dev/speaking/ai-accelerator-railway-deployment/</guid>
+      <description>&lt;p&gt;I joined a panel on the technological pillars of tomorrow&#39;s railways: interoperability, cybersecurity, and artificial intelligence.&lt;/p&gt;&#xA;&lt;p&gt;I covered access to operational knowledge, support for field agents, and workforce training. Examples included intelligent sensors for predictive maintenance, drones and digital twins for infrastructure inspection, and secure assistants for internal procedures.&lt;/p&gt;&#xA;&lt;p&gt;The closing framework identified four requirements: infrastructure investment, reliable data, workforce training, and continuous measurement.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build trust in your AI agents</title>
+      <link>https://jawad.dev/speaking/build-trust-in-ai-agents/</link>
+      <pubDate>Tue, 25 Nov 2025 11:10:00 +0100</pubDate>
+      <guid>https://jawad.dev/speaking/build-trust-in-ai-agents/</guid>
+      <description>&lt;p&gt;I demonstrated LevelApp, NORMA&#39;s open-source framework for testing agentic AI with multi-turn scenarios. Supported targets include conversational agents, retrieval-augmented generation workflows, metadata extraction, and application-specific agent workflows.&lt;/p&gt;&#xA;&lt;p&gt;I showed how evaluations run in batches or CI/CD pipelines to compare versions, identify failing workflow stages, and detect regressions before release.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sécurité, souveraineté et fiabilité : de l&#39;IA Gen au multi-agents en production</title>
+      <link>https://jawad.dev/speaking/secure-sovereign-reliable-agentic-ai/</link>
+      <pubDate>Thu, 02 Oct 2025 14:00:00 +0200</pubDate>
+      <guid>https://jawad.dev/speaking/secure-sovereign-reliable-agentic-ai/</guid>
+      <description>&lt;p&gt;In a joint demo with IONOS France, I presented a multi-agent architecture using open-source language models, web and document search, tool use, and application-specific processing on European cloud infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;I used LevelApp to test the extraction, classification, and generation stages through batch evaluation and continuous integration. A virtual leasing agent demonstrated end-to-end evaluation and handoffs to human operators.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Industry perspectives on developing European foundation models</title>
+      <link>https://jawad.dev/speaking/industry-perspectives-european-foundation-models/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0100</pubDate>
+      <guid>https://jawad.dev/speaking/industry-perspectives-european-foundation-models/</guid>
+      <description>&lt;p&gt;The French-German Dialogue on Generative AI brought researchers, policymakers, startups, and industry representatives to Nuremberg on November 18–19, 2024. Sessions covered data collection, compute requirements, talent, privacy, sustainability, bias, and regulation in European foundation-model development.&lt;/p&gt;&#xA;&lt;p&gt;I represented NORMA in the panel “Industry Perspectives on Developing European Foundation Models,” moderated by Prof. Dr. Daniel Cremers. My contribution covered evaluation frameworks for deployed generative systems, with an emphasis on behavioral testing in applications rather than isolated model benchmarks.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

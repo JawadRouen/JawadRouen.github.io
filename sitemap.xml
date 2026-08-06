@@ -18,7 +18,7 @@
     <lastmod>2026-07-22T20:12:09-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/xai/</loc>
-    <lastmod>2026-07-22T20:12:09-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/evaluation/</loc>
     <lastmod>2026-03-16T09:47:43-04:00</lastmod>
@@ -36,10 +36,10 @@
     <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/dl/1_introduction_and_history/</loc>
-    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/xai/1_introduction_and_motivations/</loc>
-    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/tree/1_introduction_and_partitioning/</loc>
     <lastmod>2026-03-16T09:47:43-04:00</lastmod>
@@ -69,7 +69,7 @@
     <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/dl/3_forward_backpropagation_and_activation_functions/</loc>
-    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/clustering/3_gaussian_mixtures_and_em/</loc>
     <lastmod>2026-03-16T09:47:43-04:00</lastmod>
@@ -81,7 +81,7 @@
     <lastmod>2026-02-02T07:58:41+01:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/dl/4_deep_networks_and_optimization/</loc>
-    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/clustering/4_density_based_clustering_and_practical_guidance/</loc>
     <lastmod>2026-03-16T09:47:43-04:00</lastmod>
@@ -99,13 +99,13 @@
     <lastmod>2026-03-16T09:47:43-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/xai/5_local_post_hoc_methods/</loc>
-    <lastmod>2026-03-16T18:03:52-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/lm/5_model_selection_and_regularization/</loc>
     <lastmod>2026-02-01T21:05:26+01:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/dl/5_regularization_batch_norm_and_multiclass/</loc>
-    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/dl/6_cnn_fundamentals/</loc>
     <lastmod>2026-03-16T09:47:43-04:00</lastmod>
@@ -120,22 +120,25 @@
     <lastmod>2026-03-16T18:03:52-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/dl/7_classic_cnn_architectures/</loc>
-    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/xai/7_credit_risk_case_study/</loc>
-    <lastmod>2026-03-16T09:47:43-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/docs/ml/lm/7_mathematical_annexes/</loc>
     <lastmod>2026-02-01T21:05:26+01:00</lastmod>
   </url><url>
+    <loc>https://jawad.dev/speaking/hybrid-organizations-ai-agents-as-computational-actors/</loc>
+    <lastmod>2026-08-06T18:23:49-04:00</lastmod>
+  </url><url>
     <loc>https://jawad.dev/tags/ai/</loc>
-    <lastmod>2026-07-26T19:21:00-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/tags/leadership/</loc>
     <lastmod>2026-07-26T19:21:00-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/tags/</loc>
-    <lastmod>2026-07-26T19:21:00-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/tags/transformation/</loc>
     <lastmod>2026-07-26T17:22:47-04:00</lastmod>
@@ -155,23 +158,35 @@
     <loc>https://jawad.dev/blog/agentic-development-part-1-the-bottleneck-is-no-longer-code/</loc>
     <lastmod>2026-07-26T19:21:00-04:00</lastmod>
   </url><url>
+    <loc>https://jawad.dev/speaking/ai-accelerator-railway-deployment/</loc>
+    <lastmod>2026-08-06T18:23:49-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/speaking/build-trust-in-ai-agents/</loc>
+    <lastmod>2026-08-06T18:23:49-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/speaking/secure-sovereign-reliable-agentic-ai/</loc>
+    <lastmod>2026-08-06T18:23:49-04:00</lastmod>
+  </url><url>
     <loc>https://jawad.dev/tags/evaluation/</loc>
-    <lastmod>2026-07-22T20:12:09-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/blog/multiagents_lessons/</loc>
-    <lastmod>2026-07-22T20:12:09-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/tags/production/</loc>
-    <lastmod>2026-07-22T20:12:09-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/tags/entrepreneurship/</loc>
-    <lastmod>2026-07-22T20:12:09-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/blog/5-years-of-norma/</loc>
-    <lastmod>2026-07-22T20:12:09-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/tags/personalgrowth/</loc>
-    <lastmod>2026-07-22T20:12:09-04:00</lastmod>
+    <lastmod>2026-08-04T19:47:51-04:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/speaking/industry-perspectives-european-foundation-models/</loc>
+    <lastmod>2026-08-06T18:23:49-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/blog/</loc>
     <lastmod>2026-07-22T20:12:09-04:00</lastmod>
@@ -179,12 +194,15 @@
     <loc>https://jawad.dev/categories/</loc>
   </url><url>
     <loc>https://jawad.dev/cv/</loc>
-    <lastmod>2026-07-28T12:55:30-04:00</lastmod>
+    <lastmod>2026-08-06T18:23:49-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/</loc>
-    <lastmod>2026-07-22T20:12:09-04:00</lastmod>
+    <lastmod>2026-08-06T18:23:49-04:00</lastmod>
   </url><url>
     <loc>https://jawad.dev/search/</loc>
     <lastmod>2025-05-08T23:05:36+02:00</lastmod>
+  </url><url>
+    <loc>https://jawad.dev/speaking/</loc>
+    <lastmod>2026-08-06T18:23:49-04:00</lastmod>
   </url>
 </urlset>

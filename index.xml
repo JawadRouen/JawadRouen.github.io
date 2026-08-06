@@ -246,6 +246,13 @@
       <description>&lt;p&gt;This annex provides detailed mathematical derivations for the key results in linear models.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;annex-a-ols-solution-for-simple-linear-regression&#34; class=link_owner&gt;&#xA;  Annex A: OLS Solution for Simple Linear Regression&#xA;  &lt;a href=&#34;#annex-a-ols-solution-for-simple-linear-regression&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;problem-statement&#34; class=link_owner&gt;&#xA;  Problem Statement&#xA;  &lt;a href=&#34;#problem-statement&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;For simple linear regression:&lt;/p&gt;&#xA;\[&#xD;&#xA;Y_i = a X_i + b + \varepsilon_i&#xD;&#xA;\]&lt;p&gt;We want to minimize the &lt;strong&gt;sum of squared residuals&lt;/strong&gt;:&lt;/p&gt;&#xA;\[&#xD;&#xA;\text{SSE}(a, b) = \sum_{i=1}^{n} (Y_i - \hat{Y}_i)^2 = \sum_{i=1}^{n} (Y_i - (aX_i + b))^2&#xD;&#xA;\]&lt;h3 id=&#34;derivation&#34; class=link_owner&gt;&#xA;  Derivation&#xA;  &lt;a href=&#34;#derivation&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Step 1: Expand the objective function&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>From the VLA to autonomous contributors</title>
+      <link>https://jawad.dev/speaking/hybrid-organizations-ai-agents-as-computational-actors/</link>
+      <pubDate>Tue, 28 Jul 2026 18:45:00 -0400</pubDate>
+      <guid>https://jawad.dev/speaking/hybrid-organizations-ai-agents-as-computational-actors/</guid>
+      <description>&lt;p&gt;I documented DashQ&#39;s progression from AI features to autonomous contributors. The examples included a virtual leasing assistant handling renter conversations, a governed company knowledge system, and operational controls added as more work was delegated to agents.&lt;/p&gt;&#xA;&lt;p&gt;The operating model assigns each agent an identity, responsibility, permissions, context, and an evaluation loop. The organization retains control of policy, authority, tool access, evidence, and accountability. People define outcomes, handle exceptions, and adjust agent autonomy.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>You Will Not Transform Your Company With Use Cases</title>
       <link>https://jawad.dev/blog/you-will-not-transform-your-company-with-use-cases/</link>
       <pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
@@ -267,6 +274,27 @@
       <description>&lt;p&gt;One developer can now easily produce 100,000 lines of code in a few days.&lt;/p&gt;&#xA;&lt;p&gt;Now put several of them on the same codebase, and you will see a disaster in no time.&lt;/p&gt;&#xA;&lt;p&gt;The main problem is overlap.&lt;/p&gt;&#xA;&lt;p&gt;When several developers work with their own agents, their own context, and their own decisions, the team can move very fast while creating collisions just as fast.&lt;/p&gt;&#xA;&lt;p&gt;There is a serious conflict between speed and safety.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>AI as an accelerator for railway deployment</title>
+      <link>https://jawad.dev/speaking/ai-accelerator-railway-deployment/</link>
+      <pubDate>Wed, 10 Dec 2025 11:05:00 +0100</pubDate>
+      <guid>https://jawad.dev/speaking/ai-accelerator-railway-deployment/</guid>
+      <description>&lt;p&gt;I joined a panel on the technological pillars of tomorrow&#39;s railways: interoperability, cybersecurity, and artificial intelligence.&lt;/p&gt;&#xA;&lt;p&gt;I covered access to operational knowledge, support for field agents, and workforce training. Examples included intelligent sensors for predictive maintenance, drones and digital twins for infrastructure inspection, and secure assistants for internal procedures.&lt;/p&gt;&#xA;&lt;p&gt;The closing framework identified four requirements: infrastructure investment, reliable data, workforce training, and continuous measurement.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build trust in your AI agents</title>
+      <link>https://jawad.dev/speaking/build-trust-in-ai-agents/</link>
+      <pubDate>Tue, 25 Nov 2025 11:10:00 +0100</pubDate>
+      <guid>https://jawad.dev/speaking/build-trust-in-ai-agents/</guid>
+      <description>&lt;p&gt;I demonstrated LevelApp, NORMA&#39;s open-source framework for testing agentic AI with multi-turn scenarios. Supported targets include conversational agents, retrieval-augmented generation workflows, metadata extraction, and application-specific agent workflows.&lt;/p&gt;&#xA;&lt;p&gt;I showed how evaluations run in batches or CI/CD pipelines to compare versions, identify failing workflow stages, and detect regressions before release.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sécurité, souveraineté et fiabilité : de l&#39;IA Gen au multi-agents en production</title>
+      <link>https://jawad.dev/speaking/secure-sovereign-reliable-agentic-ai/</link>
+      <pubDate>Thu, 02 Oct 2025 14:00:00 +0200</pubDate>
+      <guid>https://jawad.dev/speaking/secure-sovereign-reliable-agentic-ai/</guid>
+      <description>&lt;p&gt;In a joint demo with IONOS France, I presented a multi-agent architecture using open-source language models, web and document search, tool use, and application-specific processing on European cloud infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;I used LevelApp to test the extraction, classification, and generation stages through batch evaluation and continuous integration. A virtual leasing agent demonstrated end-to-end evaluation and handoffs to human operators.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>From PoC to Production</title>
       <link>https://jawad.dev/blog/multiagents_lessons/</link>
       <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
@@ -279,6 +307,13 @@
       <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
       <guid>https://jawad.dev/blog/5-years-of-norma/</guid>
       <description>&lt;p&gt;On May 22, 2025, I had the opportunity and privilege to speak in front of a group of selected young students participating in a hackathon organized by &lt;a href=&#34;https://hackai.ma/&#34;&gt;hackai&lt;/a&gt;. My mission was simple yet deeply meaningful to me: to openly share my journey as an entrepreneur who started as a developer, highlighting the lessons learned, the challenges I encountered, and the personal growth opportunities I&#39;ve discovered along the way.&lt;/p&gt;&#xA;&lt;p&gt;Being an introvert myself, I particularly wanted to offer insights and practical advice to those who, like me, dream of achieving greater freedom and self-realization through entrepreneurship, despite (or perhaps even because of) their quieter personalities.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Industry perspectives on developing European foundation models</title>
+      <link>https://jawad.dev/speaking/industry-perspectives-european-foundation-models/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0100</pubDate>
+      <guid>https://jawad.dev/speaking/industry-perspectives-european-foundation-models/</guid>
+      <description>&lt;p&gt;The French-German Dialogue on Generative AI brought researchers, policymakers, startups, and industry representatives to Nuremberg on November 18–19, 2024. Sessions covered data collection, compute requirements, talent, privacy, sustainability, bias, and regulation in European foundation-model development.&lt;/p&gt;&#xA;&lt;p&gt;I represented NORMA in the panel “Industry Perspectives on Developing European Foundation Models,” moderated by Prof. Dr. Daniel Cremers. My contribution covered evaluation frameworks for deployed generative systems, with an emphasis on behavioral testing in applications rather than isolated model benchmarks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Curriculum Vitae</title>
