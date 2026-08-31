@@ -6,8 +6,15 @@
     <description>Recent content in Leadership on Jawad Alaoui</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jul 2026 19:21:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jawad.dev/tags/leadership/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agentic Development, Part 3: The Software Dark Factory</title>
+      <link>https://jawad.dev/blog/agentic-development-part-3-software-dark-factory/</link>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/blog/agentic-development-part-3-software-dark-factory/</guid>
+      <description>&lt;p&gt;In less than two weeks, we built a complete system that would probably have taken a team of five or six developers five or six months.&lt;/p&gt;&#xA;&lt;p&gt;It included the front end, back end, connectivity, authentication, and MCP integration.&lt;/p&gt;&#xA;&lt;p&gt;The estimate is rough. Even the low end of it changed how I think about software production.&lt;/p&gt;&#xA;&lt;p&gt;For the first time, the idea of a software dark factory feels credible to me: specifications enter, working software comes out, and humans no longer handle every implementation step.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>You Will Not Transform Your Company With Use Cases</title>
       <link>https://jawad.dev/blog/you-will-not-transform-your-company-with-use-cases/</link>

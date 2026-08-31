@@ -10,20 +10,22 @@
 <link rel="mask-icon" href='https://jawad.dev/favicons/safari-pinned-tab.svg' color="#FFD84D">
 <link rel="shortcut icon" href='https://jawad.dev/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://jawad.dev/favicons/browserconfig.xml'>
-<title>Agentic Development | Jawad Alaoui</title><meta property="og:title" content="Agentic Development" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://jawad.dev/tags/agentic-development/" />
+<title>Agentic Development, Part 3: The Software Dark Factory | Jawad Alaoui</title><meta property="og:title" content="Agentic Development, Part 3: The Software Dark Factory" />
+<meta property="og:description" content="When agents can execute a complete software specification, developers take responsibility for the factory: intent, boundaries, operations, and quality." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jawad.dev/blog/agentic-development-part-3-software-dark-factory/" />
 
+<meta property="og:image" content="https://jawad.dev/images/agentic-development-part-3-iron-rolling-mill.jpg" />
 
 
 <meta property="og:site_name" content="Jawad Alaoui" />
 
 
 <link rel="stylesheet" href="https://jawad.dev/css/styles.536edfe90de60316c84a631cd897a665f2955ab6a47be3088a3257914cb65f2fb54c8a2578bcfd6b1787f36e636d49342849cd1bce28385bc3dae416dffbb754.css" integrity="sha512-U27f6Q3mAxbISmMc2JemZfKVWrake&#43;MIijJXkUy2Xy&#43;1TIoleLz9axeH825jbUk0KEnNG84oOFvD2uQW3/u3VA==">
+<meta name="description" content="When agents can execute a complete software specification, developers take responsibility for the factory: intent, boundaries, operations, and quality.">
 
 </head>
-<body class="page-term" id="pagetop">
+<body class="page-page" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu" aria-label="Primary navigation">
   <div class="nav_head">
@@ -76,50 +78,151 @@
 </nav>
 
   </header>
-  <div class="main wrap pt-4">
-      <div class="content">
-<div class="wrap pt-2 mt-2">
-  <article class="article mb-2">
-    <a href="https://jawad.dev/blog/agentic-development-part-3-software-dark-factory/"  class=grid-reverse >
-      <div class="article_thumb" style="background-image: url(https://jawad.dev/images/images/agentic-development-part-3-iron-rolling-mill.jpg)"></div>
-      <div class="article_meta  center_y ">
-        <div class="post_date">August 30, 2026</div>
-        <h3 class="article_title">Agentic Development, Part 3: The Software Dark Factory</h3>
-        <div class="article_excerpt  visible ">
-          <p><p>In less than two weeks, we built a complete system that would probably have taken a team of five or …</p></p>
+  <div class="wrap mt post">
+    <div><p class="post_date">30. August 2026</p>
+      <h1 class="post_title">Agentic Development, Part 3: The Software Dark Factory</h1>
+      <div class="post_body">
+        <div class="post_inner">
+          <img src="https://jawad.dev/images/agentic-development-part-3-iron-rolling-mill.jpg" alt="Workers operating an iron rolling mill in Adolph von Menzel&#39;s painting" class="post_thumbnail"><p>In less than two weeks, we built a complete system that would probably have taken a team of five or six developers five or six months.</p>
+<p>It included the front end, back end, connectivity, authentication, and MCP integration.</p>
+<p>The estimate is rough. Even the low end of it changed how I think about software production.</p>
+<p>For the first time, the idea of a software dark factory feels credible to me: specifications enter, working software comes out, and humans no longer handle every implementation step.</p>
+<p>The new limit is our ability to decide what the system should do and make those decisions explicit enough for the agents to execute.</p>
+<p>The bottleneck moved from code to intent.</p>
+<h2 id="the-workshop-is-becoming-a-factory" class=link_owner>
+  The workshop is becoming a factory
+  <a href="#the-workshop-is-becoming-a-factory" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>A physical dark factory can operate with very little direct human intervention. Nobody needs to stand beside every production step, and the machines do not care whether the lights are on.</p>
+<p>Each software run may produce a different feature or application. What repeats is the production system: a specification enters; the system plans the work, builds the software, connects its components, and tests the result.</p>
+<p>At lower levels of autonomy, the developer remains beside every step. They ask an assistant to write code, inspect it, correct it, and decide what happens next. The workshop has a faster tool, with the human still setting the pace.</p>
+<p>The factory starts when the production system can read an explicit specification, plan the intermediate work, build the application, connect its components, test the behavior, and keep moving toward the objective.</p>
+<p>Once that line works, development capacity feels almost absurd. The factory can supply more execution than an organization can productively use.</p>
+<p>That exposes the real constraint: deciding, clarifying, and specifying what should be built.</p>
+<h2 id="the-work-before-the-factory-starts" class=link_owner>
+  The work before the factory starts
+  <a href="#the-work-before-the-factory-starts" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>In <a href="/blog/agentic-development-part-2-making-the-speed-useful/">Part 2</a>, I described the specification as a control surface. In this workflow, it became the input to production.</p>
+<p>Human attention moves to the beginning of each production slice. People work with AI around one shared context, writing and challenging the specification until the behavior, architecture, permissions, and approval points are explicit.</p>
+<p>I currently use <a href="https://github.com/github/spec-kit">Spec Kit</a> to structure this work. The framework can change. The operating principle is the useful part: humans and AI refine the same versioned specification before the run.</p>
+<p>We answer a few questions explicitly:</p>
+<ul>
+<li>What behavior do we expect?</li>
+<li>Which constraints matter?</li>
+<li>Which architectural choices are already settled?</li>
+<li>Which intermediate checkpoints must the system pass?</li>
+<li>Which decisions may the factory make autonomously?</li>
+<li>Which decisions require human approval or an explicit waiver?</li>
+</ul>
+<p>Every ambiguity left in the specification becomes a decision delegated to the machine. That delegation can be intentional, but it has to remain visible.</p>
+<p>A developer can compensate for a vague ticket with years of company and product context. An autonomous run only sees the context that reaches it. The meeting nobody wrote down does not exist for the factory.</p>
+<h2 id="put-developers-over-the-loop" class=link_owner>
+  Put developers over the loop
+  <a href="#put-developers-over-the-loop" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>Once the specification is ready, the agents handle the intermediate steps. The human monitors progress toward the objective, the checkpoints, and the failures.</p>
+<p>Human interventions increasingly look like operations. An agent may reach a protected resource, lack a permission, or lose a connection. The developer inspects the interruption, decides whether the access is appropriate, and restores the line when it is safe to continue.</p>
+<p>I think of the developer as being over the loop. The human remains accountable for the direction, operating conditions, and accepted result without manually controlling every action.</p>
+<p>The physical factory analogy becomes very direct. When the line stops, the developer enters to locate the failure, restore the connection, or clear the equivalent of a paper jam.</p>
+<p>Developers become responsible for the machine that produces the parts.</p>
+<h2 id="juniors-become-factory-technicians" class=link_owner>
+  Juniors become factory technicians
+  <a href="#juniors-become-factory-technicians" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>The traditional career path started with small implementation tasks. Over time, a junior learned to handle larger components, make architectural decisions, lead a team, and eventually become a technical lead or architect.</p>
+<p>The factory changes that starting point. The junior becomes closer to the technician responsible for the production line than the worker manually producing every part.</p>
+<p>During design, a junior can become a context collector. Their job is to identify the intentions held by the company, product team, technical team, and other stakeholders, then help crystallize them into the specification.</p>
+<p>They look for missing constraints, conflicting expectations, undefined behavior, and assumptions that exist only in someone's head.</p>
+<p>During production, juniors can monitor the factory, investigate failures, diagnose interruptions, integrate minor specification updates, and propose improvements to the machine.</p>
+<p>After production, they can verify that the software behaves as expected, adjust the specification, correct localized behavior, and keep the system coherent.</p>
+<p>This may increase the technical knowledge expected from juniors. The worker who produces parts needs to know the operation. The technician responsible for the production line needs to understand the system.</p>
+<p>The future junior may write less code manually while needing a stronger understanding of how software, infrastructure, permissions, data, and agents interact.</p>
+<h2 id="seniors-may-have-the-harder-transition" class=link_owner>
+  Seniors may have the harder transition
+  <a href="#seniors-may-have-the-harder-transition" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>Many experienced developers built their identity around implementation, deep knowledge of the codebase, and control over difficult technical work.</p>
+<p>An agent can change more code than any senior can realistically read. The natural reaction is to recover control through the diff.</p>
+<p>Factory work asks for a different kind of attention:</p>
+<ul>
+<li>Planning and systems architecture.</li>
+<li>Detailed specification.</li>
+<li>Anticipating failures and collisions.</li>
+<li>Designing safe boundaries and acceptance gates.</li>
+<li>Delegating to systems when not every local decision can be inspected.</li>
+</ul>
+<p>Those are technical responsibilities, although they may be far from the work that made someone love development in the first place.</p>
+<p>The control problem becomes unavoidable at machine speed. If a senior insists on reading every line and reconstructing every local decision, their attention sets the maximum throughput of the factory.</p>
+<p>Micromanagement is already expensive with human teams. Here it defeats the production model.</p>
+<p>Senior value moves toward the system around the code: setting boundaries, detecting risk across the system, deciding which outcomes deserve deeper inspection, and knowing when to stop the line.</p>
+<p>The hard skill is operating several loops without losing sight of their objectives.</p>
+<h2 id="the-factory-still-needs-a-finishing-line" class=link_owner>
+  The factory still needs a finishing line
+  <a href="#the-factory-still-needs-a-finishing-line" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>The first output can be technically functional and still have rough seams.</p>
+<p>The output may need a usability adjustment, expose an inconsistency between services, or satisfy the written requirement while missing the intended experience.</p>
+<p>Some of this work will become automated. A human pass for integration, quality review, and final adjustment remains valuable while these factories are immature.</p>
+<p>Every repair should improve the factory.</p>
+<h2 id="we-are-still-learning-how-to-operate-the-factory" class=link_owner>
+  We are still learning how to operate the factory
+  <a href="#we-are-still-learning-how-to-operate-the-factory" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>We are early, and this model does not fit every software project today.</p>
+<p>The model works best when the objective is clear, the environment is isolated, and success can be tested. The tools still change quickly, and autonomous execution remains uneven.</p>
+<p>Legacy systems, safety-critical environments, and highly ambiguous product work need much tighter human control. Different components of the same product may also deserve different levels of autonomy.</p>
+<p>The direction is already visible. The specification becomes the main control surface. Agents perform more of the production. Humans define the intent, establish the boundaries, monitor the system, manage exceptions, and improve the line.</p>
+<p>More engineering work will move toward the factory itself: the specifications, permissions, scenarios, and recovery mechanisms that let agents keep producing.</p>
+<p>The application becomes one output of that system.</p>
+<p>That is where I see the developer's job going.</p>
+<p><a href="/blog/agentic-development-part-1-the-bottleneck-is-no-longer-code/">Read Part 1: The Bottleneck Is No Longer Code</a></p>
+<p><a href="/blog/agentic-development-part-2-making-the-speed-useful/">Read Part 2: Making the Speed Useful</a></p>
+<p class="image_credit">Cover: Adolph von Menzel's <em>The Iron Rolling Mill (Modern Cyclopes)</em>, 1872–1875. <a href="https://commons.wikimedia.org/wiki/File:Adolph_Menzel_-_Eisenwalzwerk_-_Google_Art_Project.jpg">Public domain image</a>.</p>
+
         </div>
-      </div>
-    </a>
-  </article><div class="grid-2 article_showcase">
-  <article class="article mb-2">
-    <a href="https://jawad.dev/blog/agentic-development-part-2-making-the-speed-useful/" >
-      <div class="article_thumb" style="background-image: url(https://jawad.dev/images/images/agentic-development-part-2-michelangelo-study.jpg)"></div>
-      <div class="article_meta ">
-        <div class="post_date">May 03, 2026</div>
-        <h3 class="article_title">Agentic Development, Part 2: Making the Speed Useful</h3>
-        <div class="article_excerpt ">
-          <p><p>Making the sprint shorter is the obvious answer to AI speed.</p>
-<p>Improving the technical specifications …</p></p>
-        </div>
-      </div>
-    </a>
-  </article>
-  <article class="article mb-2">
-    <a href="https://jawad.dev/blog/agentic-development-part-1-the-bottleneck-is-no-longer-code/" >
-      <div class="article_thumb" style="background-image: url(https://jawad.dev/images/images/agentic-development-part-1-critical-distance.jpg)"></div>
-      <div class="article_meta ">
-        <div class="post_date">April 26, 2026</div>
-        <h3 class="article_title">Agentic Development, Part 1: The Bottleneck Is No Longer Code</h3>
-        <div class="article_excerpt ">
-          <p><p>One developer can now easily produce 100,000 lines of code in a few days.</p>
-<p>Now put several of them on …</p></p>
-        </div>
-      </div>
-    </a>
-  </article>
+        <div class="post_extra mb-2">
+<div class="copy" data-before="Share this story" data-after="Link copied">
+  <svg class="icon">
+    <use href="#copy"></use>
+  </svg>
 </div>
-</div>
-      </div></div><script>
+        </div>
+        <div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
 
 const copy_text = 'Copy';
 const copied_text = 'Copied';
