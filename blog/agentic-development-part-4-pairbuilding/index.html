@@ -10,20 +10,22 @@
 <link rel="mask-icon" href='https://jawad.dev/favicons/safari-pinned-tab.svg' color="#FFD84D">
 <link rel="shortcut icon" href='https://jawad.dev/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://jawad.dev/favicons/browserconfig.xml'>
-<title>Software Engineering | Jawad Alaoui</title><meta property="og:title" content="Software Engineering" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://jawad.dev/tags/software-engineering/" />
+<title>Agentic Development, Part 4: Intent Harvesting and Pairbuilding | Jawad Alaoui</title><meta property="og:title" content="Agentic Development, Part 4: Intent Harvesting and Pairbuilding" />
+<meta property="og:description" content="Intent harvesting: bringing AI into the living context of the company, where people and agents clarify what to build together." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jawad.dev/blog/agentic-development-part-4-pairbuilding/" />
 
+<meta property="og:image" content="https://jawad.dev/images/agentic-development-part-4-ales-golem.jpg" />
 
 
 <meta property="og:site_name" content="Jawad Alaoui" />
 
 
 <link rel="stylesheet" href="https://jawad.dev/css/styles.536edfe90de60316c84a631cd897a665f2955ab6a47be3088a3257914cb65f2fb54c8a2578bcfd6b1787f36e636d49342849cd1bce28385bc3dae416dffbb754.css" integrity="sha512-U27f6Q3mAxbISmMc2JemZfKVWrake&#43;MIijJXkUy2Xy&#43;1TIoleLz9axeH825jbUk0KEnNG84oOFvD2uQW3/u3VA==">
+<meta name="description" content="Intent harvesting: bringing AI into the living context of the company, where people and agents clarify what to build together.">
 
 </head>
-<body class="page-term" id="pagetop">
+<body class="page-page" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu" aria-label="Primary navigation">
   <div class="nav_head">
@@ -76,62 +78,168 @@
 </nav>
 
   </header>
-  <div class="main wrap pt-4">
-      <div class="content">
-<div class="wrap pt-2 mt-2">
-  <article class="article mb-2">
-    <a href="https://jawad.dev/blog/agentic-development-part-4-pairbuilding/"  class=grid-reverse >
-      <div class="article_thumb" style="background-image: url(https://jawad.dev/images/images/agentic-development-part-4-ales-golem.jpg)"></div>
-      <div class="article_meta  center_y ">
-        <div class="post_date">September 05, 2026</div>
-        <h3 class="article_title">Agentic Development, Part 4: Intent Harvesting and Pairbuilding</h3>
-        <div class="article_excerpt  visible ">
-          <p><p>This post is about addressing the new bottleneck of software: intent clarification. We can also call …</p></p>
+  <div class="wrap mt post">
+    <div><p class="post_date">05. September 2026</p>
+      <h1 class="post_title">Agentic Development, Part 4: Intent Harvesting and Pairbuilding</h1>
+      <div class="post_body">
+        <div class="post_inner">
+          <img src="https://jawad.dev/images/agentic-development-part-4-ales-golem.jpg" alt="Mikoláš Aleš&#39;s illustration of the Maharal of Prague and the Golem" class="post_thumbnail"><p>This post is about addressing the new bottleneck of software: intent clarification. We can also call it specification or alignment. In the <a href="/blog/agentic-development-part-3-software-dark-factory/">dark factory post</a>, I described what happens when agents can handle most of the production. The question now is how we collect and clarify the intent that will guide that production. I think of this as intent harvesting.</p>
+<h2 id="from-1-to-many-to-many-to-many" class=link_owner>
+  From 1-to-many to many-to-many
+  <a href="#from-1-to-many-to-many-to-many" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>We have passed another step in AI transformation. Agents are now part of the living context. We are moving from a vertical organization of humans, AI, and context, in a 1-to-many relationship, toward groups of humans and AI working together in a many-to-many relationship.</p>
+<p>The first time I worked in a common group of humans and AI, I had the same positive feeling as when I discovered pair programming and the level of creativity it unlocked at that time. I had that feeling again, with the same intensity, and this time I felt I was connecting with more people than only developers. I was pairbuilding with business people in a live Slack channel.</p>
+<p>AI killed pair programming, but it has created pairbuilding.</p>
+<h2 id="bring-ai-to-the-context" class=link_owner>
+  Bring AI to the context
+  <a href="#bring-ai-to-the-context" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>The idea is pretty simple, and it has several components. Instead of bringing the context to AI, we should bring AI to the context. The context of the company is already digital, and this is good news. The challenge is to capture it where it lives.</p>
+<p>The other good news is that most companies are used to remote work. The better a team knows how to work remotely and asynchronously, the easier the agents' context harvesting mission becomes. The agents can participate where people are already discussing the work, asking questions, and clarifying what they want to achieve.</p>
+<h2 id="start-with-a-seed" class=link_owner>
+  Start with a seed
+  <a href="#start-with-a-seed" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>The process of building is radically changing and is increasingly based on prototyping on the business analyst's side. The BA formulates an intent, usually after a long interaction with AI. Sometimes the AI itself suggests a radical improvement to an existing process. Together, they make a first artifact that we can consider a seed.</p>
+<p>This seed is submitted in Slack. Based on the impact and size of the requirements, it can be processed directly by AI, as with bugs and reports, or challenged with the relevant contributors. Bigger requirements are added to the general roadmap following clarification.</p>
+<p>During this process, the AI is public in the channel, challenging the specification and pinging coworkers to make sure nothing is missing. Everyone contributes to the same discussion. We have gone through that clarification in under an hour, for a process that would previously have taken days.</p>
+<p>At the end, the quality is much higher than what we used to obtain with human specifications. The result usually contains a small prototype that will be used in the next step for design validation and workflow inference.</p>
+<p>The dashboard example below shows how people and AI share the work. Names have been replaced with roles.</p>
+<figure class="pairbuilding-flow" aria-label="How a dashboard gets built">
+  <div class="pb-heading"><strong>How a dashboard gets built</strong><span>One shared Slack thread</span></div>
+  <ol class="pb-steps">
+    <li class="pb-step">
+      <span class="pb-number" aria-hidden="true">1</span>
+      <div class="pb-stage"><strong>Scope</strong><span class="pb-role">Requester</span></div>
+      <div class="pb-work">Posts the specification and mockup; records the request.<small>Slack · Asana</small></div>
+    </li>
+    <li class="pb-step">
+      <span class="pb-number" aria-hidden="true">2</span>
+      <div class="pb-stage"><strong>Assign</strong><span class="pb-role">Engineering lead</span></div>
+      <div class="pb-work">Routes to metric owners and tags the AI agent on the pull request.<small>Slack · GitHub</small></div>
+    </li>
+    <li class="pb-step pb-ai">
+      <span class="pb-number" aria-hidden="true">3</span>
+      <div class="pb-stage"><strong>Review</strong><span class="pb-role">AI agent</span></div>
+      <div class="pb-work">Reads the code, runs tests, and checks numbers against the data.<small>GitHub · Toolbox</small></div>
+    </li>
+    <li class="pb-step">
+      <span class="pb-number" aria-hidden="true">4</span>
+      <div class="pb-stage"><strong>Split the work</strong><span class="pb-role">Engineering lead</span></div>
+      <div class="pb-work">Assigns plumbing, architecture, and security to AI; metric definitions to their owners.<small>Slack</small></div>
+    </li>
+    <li class="pb-step">
+      <span class="pb-number" aria-hidden="true">5</span>
+      <div class="pb-stage"><strong>Decide</strong><span class="pb-role pb-role-ai">AI + metric owners</span></div>
+      <div class="pb-work">AI turns each disagreement into a question with one owner. Owners answer in the thread.<span class="pb-gate">Human gate 1 · Define what each metric means</span></div>
+    </li>
+    <li class="pb-step">
+      <span class="pb-number" aria-hidden="true">6</span>
+      <div class="pb-stage"><strong>Build</strong><span class="pb-role pb-role-ai">AI + reviewers</span></div>
+      <div class="pb-work">AI commits to a branch and opens a pull request. Automated checks run; people review.<small>GitHub Actions · dbt</small><span class="pb-gate">Human gate 2 · Approve the change</span><span class="pb-gate">Human gate 3 · Merge to dev</span></div>
+    </li>
+    <li class="pb-step">
+      <span class="pb-number" aria-hidden="true">7</span>
+      <div class="pb-stage"><strong>Promote</strong><span class="pb-role">Engineering lead</span></div>
+      <div class="pb-work">Opens the dev-to-main promotion request. The deployment pipeline runs.<small>GitHub → Cloud Run</small><span class="pb-gate">Human gate 4 · Promote to production</span></div>
+    </li>
+    <li class="pb-step pb-ai">
+      <span class="pb-number" aria-hidden="true">8</span>
+      <div class="pb-stage"><strong>Verify</strong><span class="pb-role">AI agent</span></div>
+      <div class="pb-work">Checks the deployment and queries production to document each number.<small>GitHub · BigQuery</small></div>
+    </li>
+  </ol>
+  <figcaption>Follow the steps from top to bottom. AI and people share the work; the four human gates remain with people.</figcaption>
+</figure>
+<style>
+  .post_inner .pairbuilding-flow {
+    --pb-line: #cbd5d7; --pb-surface: #f7f9f9; --pb-ink: #233338;
+    --pb-muted: #52646b; --pb-ai: #08616b; --pb-ai-bg: #e4f2f1;
+    --pb-gate: #79440b; --pb-gate-bg: #fff1df;
+    max-width: 840px; margin: 1.6rem auto; color: var(--pb-ink);
+    border: 1px solid var(--pb-line); border-radius: 8px; overflow: hidden;
+    background: var(--pb-surface); font-size: 15px; line-height: 1.45;
+  }
+  .pairbuilding-flow .pb-heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding: 16px 18px; border-bottom: 1px solid var(--pb-line); }
+  .pairbuilding-flow .pb-heading strong { font-size: 17px; font-weight: 600; }
+  .pairbuilding-flow .pb-heading span { font-size: 13px; color: var(--pb-muted); align-self: center; }
+  .post_inner .pairbuilding-flow .pb-steps { list-style: none; padding: 0; margin: 0; max-width: none !important; }
+  .post_inner .pairbuilding-flow .pb-step { position: relative; display: grid; grid-template-columns: 28px 150px minmax(0, 1fr); gap: 12px; padding: 13px 18px; margin: 0; border-bottom: 1px solid var(--pb-line); }
+  .pairbuilding-flow .pb-number { display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid var(--pb-line); border-radius: 50%; background: var(--pb-surface); font-size: 13px; font-weight: 600; z-index: 1; }
+  .pairbuilding-flow .pb-step:not(:last-child)::after { content: ""; position: absolute; left: 31px; top: 41px; bottom: -13px; border-left: 1px solid var(--pb-line); }
+  .pairbuilding-flow .pb-stage strong { display: block; font-weight: 600; }
+  .pairbuilding-flow .pb-role { display: block; font-size: 12px; color: var(--pb-muted); margin-top: 2px; }
+  .pairbuilding-flow .pb-ai .pb-role, .pairbuilding-flow .pb-role-ai { color: var(--pb-ai); }
+  .pairbuilding-flow .pb-ai .pb-number { background: var(--pb-ai-bg); color: var(--pb-ai); border-color: var(--pb-ai); }
+  .pairbuilding-flow .pb-work { min-width: 0; }
+  .pairbuilding-flow .pb-work small { display: block; font-size: 11px; color: var(--pb-muted); margin-top: 3px; }
+  .pairbuilding-flow .pb-gate { display: block; width: fit-content; max-width: 100%; margin-top: 6px; padding: 3px 7px; border-left: 3px solid var(--pb-gate); background: var(--pb-gate-bg); color: var(--pb-gate); font-size: 12px; }
+  .post_inner .pairbuilding-flow figcaption { padding: 11px 18px; font-size: 12px; color: var(--pb-muted); line-height: 1.5; }
+  html[data-mode="dark"] .post_inner .pairbuilding-flow { --pb-line: #405157; --pb-surface: #202a2e; --pb-ink: #e5edef; --pb-muted: #b5c4c9; --pb-ai: #88d8d1; --pb-ai-bg: #213f40; --pb-gate: #ffd19a; --pb-gate-bg: #423326; }
+  @media (prefers-color-scheme: dark) {
+    html[data-mode="auto"] .post_inner .pairbuilding-flow { --pb-line: #405157; --pb-surface: #202a2e; --pb-ink: #e5edef; --pb-muted: #b5c4c9; --pb-ai: #88d8d1; --pb-ai-bg: #213f40; --pb-gate: #ffd19a; --pb-gate-bg: #423326; }
+  }
+  @media (max-width: 600px) {
+    .post_inner .pairbuilding-flow .pb-step { grid-template-columns: 26px minmax(0, 1fr); gap: 5px 10px; padding: 12px; }
+    .pairbuilding-flow .pb-number { grid-row: 1 / 3; width: 26px; height: 26px; }
+    .pairbuilding-flow .pb-stage { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 9px; }
+    .pairbuilding-flow .pb-work { grid-column: 2; }
+    .pairbuilding-flow .pb-step:not(:last-child)::after { left: 24px; top: 38px; bottom: -12px; }
+    .pairbuilding-flow .pb-heading { padding: 12px; }
+    .post_inner .pairbuilding-flow figcaption { padding: 10px 12px; }
+  }
+</style>
+
+<h2 id="then-the-factory-runs" class=link_owner>
+  Then the factory runs
+  <a href="#then-the-factory-runs" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>After that, most of the work is done by agents behind the scenes, following the strict process I described in the <a href="/blog/agentic-development-part-3-software-dark-factory/">dark factory post</a>. During this work, engineers intervene to check quality and ensure the architectural backbone is safe. The agents notify the requester and stakeholders and ask for their validation before requesting promotion and delivery to production.</p>
+<p>The power comes from keeping the context in one place and making sure AI has safe and complete access to the relevant sources and tools. Together, these make the whole process shrink from days to hours.</p>
+<h2 id="the-habits-this-requires" class=link_owner>
+  The habits this requires
+  <a href="#the-habits-this-requires" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>This transformation comes, of course, with constraints and requirements. But I feel most remote, asynchronous teams are already used to them: documentation and explicit communication, even when that can be considered verbosity; transparency and clean context, keeping work discussions out of private conversations and avoiding mixing topics.</p>
+<p>These are the conditions that let agents capture the context where it lives, and let us clarify intent together.</p>
+<p class="image_credit">Cover: Mikoláš Aleš, <em>The Maharal of Prague and the Golem</em>, 1899. Public domain image via <a href="https://commons.wikimedia.org/wiki/File:Mikol%C3%A1%C5%A1_Ale%C5%A1_-_The_Maharal_of_Prague_and_the_Golem_(1899).jpg">Wikimedia Commons</a>.</p>
+
         </div>
-      </div>
-    </a>
-  </article><div class="grid-2 article_showcase">
-  <article class="article mb-2">
-    <a href="https://jawad.dev/blog/agentic-development-part-3-software-dark-factory/" >
-      <div class="article_thumb" style="background-image: url(https://jawad.dev/images/images/agentic-development-part-3-iron-rolling-mill.jpg)"></div>
-      <div class="article_meta ">
-        <div class="post_date">August 30, 2026</div>
-        <h3 class="article_title">Agentic Development, Part 3: The Software Dark Factory</h3>
-        <div class="article_excerpt ">
-          <p><p>In less than two weeks, we built a complete system that would probably have taken a team of five or …</p></p>
-        </div>
-      </div>
-    </a>
-  </article>
-  <article class="article mb-2">
-    <a href="https://jawad.dev/blog/agentic-development-part-2-making-the-speed-useful/" >
-      <div class="article_thumb" style="background-image: url(https://jawad.dev/images/images/agentic-development-part-2-michelangelo-study.jpg)"></div>
-      <div class="article_meta ">
-        <div class="post_date">May 03, 2026</div>
-        <h3 class="article_title">Agentic Development, Part 2: Making the Speed Useful</h3>
-        <div class="article_excerpt ">
-          <p><p>Making the sprint shorter is the obvious answer to AI speed.</p>
-<p>Improving the technical specifications …</p></p>
-        </div>
-      </div>
-    </a>
-  </article>
-  <article class="article mb-2">
-    <a href="https://jawad.dev/blog/agentic-development-part-1-the-bottleneck-is-no-longer-code/" >
-      <div class="article_thumb" style="background-image: url(https://jawad.dev/images/images/agentic-development-part-1-critical-distance.jpg)"></div>
-      <div class="article_meta ">
-        <div class="post_date">April 26, 2026</div>
-        <h3 class="article_title">Agentic Development, Part 1: The Bottleneck Is No Longer Code</h3>
-        <div class="article_excerpt ">
-          <p><p>One developer can now easily produce 100,000 lines of code in a few days.</p>
-<p>Now put several of them on …</p></p>
-        </div>
-      </div>
-    </a>
-  </article>
+        <div class="post_extra mb-2">
+<div class="copy" data-before="Share this story" data-after="Link copied">
+  <svg class="icon">
+    <use href="#copy"></use>
+  </svg>
 </div>
-</div>
-      </div></div><script>
+        </div>
+        <div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
 
 const copy_text = 'Copy';
 const copied_text = 'Copied';

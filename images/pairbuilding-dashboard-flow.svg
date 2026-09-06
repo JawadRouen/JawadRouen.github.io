@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="flow" viewBox="0 0 1104 712" role="img" aria-label="Flow chart of the eight steps of a dashboard build, showing which steps AI agent does and which a person does, the systems each step touches, and four numbered gates that only a person can pass: deciding what a metric means, approving the change, merging to the dev branch, and promoting to production.">
+        <title>How a dashboard gets built</title>
+<desc>Eight steps from scope to verification. AI and people work in the same Slack thread. People decide metric definitions, approve changes, merge to development, and promote to production. Names have been replaced with roles.</desc>
+<style>:root{--surface:#FBFCFC;--ink:#151A1F;--ink-2:#4B585F;--line:#D2DAD9;--line-strong:#7A888C;--accent:#0B6E77;--accent-ink:#075158;--accent-soft:#DBEAEA;--gate:#A2560B;--gate-ink:#FFFFFF;}svg{background:#EFF2F1}
+  .b-claude{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.2}
+  .b-person{fill:var(--surface);stroke:var(--line-strong);stroke-width:1.2}
+  .hdr{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;font-weight:600;letter-spacing:.13em;fill:var(--ink)}
+  .lane{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;font-weight:500;letter-spacing:.14em;fill:var(--ink-2)}
+  .actor{font-family:Archivo,Arial,sans-serif;font-size:12.5px;font-weight:600;fill:var(--ink)}
+  .actor-c{fill:var(--accent-ink)}
+  .desc{font-family:"Source Serif 4",Georgia,serif;font-size:11.5px;fill:var(--ink-2)}
+  .sys{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:9.5px;font-weight:500;letter-spacing:.07em;fill:var(--accent)}
+  .edge{stroke:var(--line-strong);stroke-width:1.4;fill:none}
+  .ahead{fill:var(--line-strong)}
+  .elab{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;font-weight:500;letter-spacing:.03em;fill:var(--ink-2)}
+  .rule{stroke:var(--line);stroke-width:1}
+  .gate{fill:var(--gate)}
+  .gnum{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:9px;font-weight:700;fill:var(--gate-ink)}
+  .glegend{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;font-weight:500;letter-spacing:.03em;fill:var(--ink)}
+  .blocked{stroke:var(--gate);stroke-width:1.4;fill:none;stroke-dasharray:5 4}
+  .bx{stroke:var(--gate);stroke-width:2}
+  .btext{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;font-weight:600;letter-spacing:.04em;fill:var(--gate)}
+  .node-title{font-family:Archivo,Arial,sans-serif;font-size:12.5px;font-weight:600;fill:var(--ink)}
+  .node-sub{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;letter-spacing:.04em;fill:var(--ink-2)}
+</style>
+<defs>
+          <marker id="ah" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6.4" orient="auto-start-reverse">
+            <polygon class="ahead" points="0,0 10,4 0,8"></polygon>
+          </marker>
+        </defs>
+
+        
+        <text class="hdr" x="110" y="36">1 · SCOPE</text>
+        <line class="rule" x1="110" y1="44" x2="290" y2="44"></line>
+        <text class="hdr" x="360" y="36">2 · ASSIGN</text>
+        <line class="rule" x1="360" y1="44" x2="540" y2="44"></line>
+        <text class="hdr" x="610" y="36">3 · REVIEW</text>
+        <line class="rule" x1="610" y1="44" x2="790" y2="44"></line>
+        <text class="hdr" x="860" y="36">4 · SPLIT THE WORK</text>
+        <line class="rule" x1="860" y1="44" x2="1040" y2="44"></line>
+
+        
+        <text class="lane" x="92" y="111" text-anchor="end">AI</text>
+        <text class="lane" x="92" y="245" text-anchor="end">PEOPLE</text>
+        <text class="lane" x="92" y="451" text-anchor="end">AI</text>
+        <text class="lane" x="92" y="585" text-anchor="end">PEOPLE</text>
+
+        
+        <rect class="b-person" x="110" y="190" width="180" height="102" rx="2"></rect>
+        <text class="actor" x="123" y="212">Requester</text>
+        <text class="desc" x="123" y="232">Posts the spec and the</text>
+        <text class="desc" x="123" y="246">mockup, and writes the</text>
+        <text class="desc" x="123" y="260">request down formally.</text>
+        <text class="sys" x="123" y="280">SLACK · ASANA</text>
+
+        
+        <rect class="b-person" x="360" y="190" width="180" height="102" rx="2"></rect>
+        <text class="actor" x="373" y="212">Engineering lead</text>
+        <text class="desc" x="373" y="232">Routes it to the metric</text>
+        <text class="desc" x="373" y="246">owners and tags AI agent</text>
+        <text class="desc" x="373" y="260">on the pull request.</text>
+        <text class="sys" x="373" y="280">SLACK · GITHUB</text>
+
+        
+        <rect class="b-claude" x="610" y="56" width="180" height="102" rx="2"></rect>
+        <text class="actor actor-c" x="623" y="78">AI agent</text>
+        <text class="desc" x="623" y="98">Reads the proposed code,</text>
+        <text class="desc" x="623" y="112">runs its tests, checks each</text>
+        <text class="desc" x="623" y="126">number against the data.</text>
+        <text class="sys" x="623" y="146">GITHUB · TOOLBOX</text>
+
+        
+        <rect class="b-person" x="860" y="190" width="180" height="102" rx="2"></rect>
+        <text class="actor" x="873" y="212">Engineering lead</text>
+        <text class="desc" x="873" y="232">Plumbing, architecture and</text>
+        <text class="desc" x="873" y="246">security to AI agent; metric</text>
+        <text class="desc" x="873" y="260">definitions to their owners.</text>
+        <text class="sys" x="873" y="280">SLACK</text>
+
+        
+        <path class="edge" marker-end="url(#ah)" d="M 294 241 H 354"></path>
+        <text class="elab" x="324" y="232" text-anchor="middle">routed</text>
+        <path class="edge" marker-end="url(#ah)" d="M 544 241 H 575 V 107 H 604"></path>
+        <text class="elab" x="575" y="98" text-anchor="middle">tagged in</text>
+        <path class="edge" marker-end="url(#ah)" d="M 794 107 H 825 V 241 H 854"></path>
+        <text class="elab" x="822" y="230" text-anchor="middle">findings</text>
+
+        
+        <path class="edge" marker-end="url(#ah)" d="M 950 296 V 340 H 218 V 392"></path>
+        <text class="elab" x="584" y="332" text-anchor="middle">same Slack thread, next question</text>
+
+        
+        <text class="hdr" x="110" y="376">5 · DECIDE</text>
+        <line class="rule" x1="110" y1="384" x2="290" y2="384"></line>
+        <text class="hdr" x="360" y="376">6 · BUILD</text>
+        <line class="rule" x1="360" y1="384" x2="540" y2="384"></line>
+        <text class="hdr" x="610" y="376">7 · PROMOTE</text>
+        <line class="rule" x1="610" y1="384" x2="790" y2="384"></line>
+        <text class="hdr" x="860" y="376">8 · VERIFY</text>
+        <line class="rule" x1="860" y1="384" x2="1040" y2="384"></line>
+
+        
+        <rect class="b-claude" x="110" y="396" width="180" height="102" rx="2"></rect>
+        <text class="actor actor-c" x="123" y="418">AI agent</text>
+        <text class="desc" x="123" y="438">Turns each disagreement</text>
+        <text class="desc" x="123" y="452">into one question with</text>
+        <text class="desc" x="123" y="466">one named owner.</text>
+        <text class="sys" x="123" y="486">SLACK</text>
+
+        
+        <rect class="b-person" x="110" y="530" width="180" height="102" rx="2"></rect>
+        <text class="actor" x="123" y="550">Metric owners</text>
+        <text class="actor" x="123" y="565"></text>
+        <text class="desc" x="123" y="585">Answer in the thread and</text>
+        <text class="desc" x="123" y="599">fix what each number</text>
+        <text class="desc" x="123" y="613">is allowed to mean.</text>
+
+        
+        <rect class="b-claude" x="360" y="396" width="180" height="102" rx="2"></rect>
+        <text class="actor actor-c" x="373" y="418">AI agent</text>
+        <text class="desc" x="373" y="438">Commits to a branch and</text>
+        <text class="desc" x="373" y="452">opens a pull request.</text>
+        <text class="desc" x="373" y="466">The CI checks run.</text>
+        <text class="sys" x="373" y="486">GITHUB ACTIONS · DBT</text>
+
+        
+        <rect class="b-person" x="360" y="530" width="180" height="102" rx="2"></rect>
+        <text class="actor" x="373" y="552">Lead &amp; reviewers</text>
+        <text class="desc" x="373" y="572">Read the change, approve</text>
+        <text class="desc" x="373" y="586">it, and merge it to dev,</text>
+        <text class="desc" x="373" y="600">the test branch.</text>
+        <text class="sys" x="373" y="620">GITHUB</text>
+
+        
+        <rect class="b-person" x="610" y="530" width="180" height="102" rx="2"></rect>
+        <text class="actor" x="623" y="552">Engineering lead</text>
+        <text class="desc" x="623" y="572">Opens the dev to main</text>
+        <text class="desc" x="623" y="586">promotion request; the</text>
+        <text class="desc" x="623" y="600">deploy pipeline runs.</text>
+        <text class="sys" x="623" y="620">GITHUB → CLOUD RUN</text>
+
+        
+        <rect class="b-claude" x="860" y="396" width="180" height="102" rx="2"></rect>
+        <text class="actor actor-c" x="873" y="418">AI agent</text>
+        <text class="desc" x="873" y="438">Reads the deploy run and</text>
+        <text class="desc" x="873" y="452">queries production to</text>
+        <text class="desc" x="873" y="466">document each number.</text>
+        <text class="sys" x="873" y="486">GITHUB · BIGQUERY</text>
+
+        
+        <path class="edge" marker-end="url(#ah)" d="M 200 502 V 526"></path>
+        <text class="elab" x="212" y="518">one owner each</text>
+
+        <path class="edge" marker-end="url(#ah)" d="M 294 581 H 325 V 447 H 354"></path>
+        <path class="edge" marker-end="url(#ah)" d="M 450 502 V 526"></path>
+        <path class="edge" marker-end="url(#ah)" d="M 544 581 H 604"></path>
+        <path class="edge" marker-end="url(#ah)" d="M 794 581 H 825 V 447 H 854"></path>
+
+        
+        <polygon class="gate" points="325,505 334,514 325,523 316,514"></polygon>
+        <text class="gnum" x="325" y="517.5" text-anchor="middle">1</text>
+        <polygon class="gate" points="450,505 459,514 450,523 441,514"></polygon>
+        <text class="gnum" x="450" y="517.5" text-anchor="middle">2</text>
+        <polygon class="gate" points="574,572 583,581 574,590 565,581"></polygon>
+        <text class="gnum" x="574" y="584.5" text-anchor="middle">3</text>
+        <polygon class="gate" points="825,505 834,514 825,523 816,514"></polygon>
+        <text class="gnum" x="825" y="517.5" text-anchor="middle">4</text>
+
+        
+        <line class="rule" x1="110" y1="654" x2="1040" y2="654"></line>
+        <rect class="b-claude" x="110" y="666" width="14" height="14" rx="2"></rect>
+        <text class="glegend" x="132" y="677">AI agent does this</text>
+        <rect class="b-person" x="266" y="666" width="14" height="14" rx="2"></rect>
+        <text class="glegend" x="288" y="677">a person does this</text>
+        <polygon class="gate" points="440,664 450,674 440,684 430,674"></polygon>
+        <text class="gnum" x="440" y="677.5" text-anchor="middle">#</text>
+        <text class="glegend" x="458" y="677">gate only a person can pass</text>
+        <text class="elab" x="110" y="700">1 what a metric means &#160;·&#160; 2 approving the change &#160;·&#160; 3 merging to dev &#160;·&#160; 4 promoting to production</text>
+      </svg>

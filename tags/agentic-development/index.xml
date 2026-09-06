@@ -6,8 +6,15 @@
     <description>Recent content in Agentic Development on Jawad Alaoui</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jawad.dev/tags/agentic-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agentic Development, Part 4: Intent Harvesting and Pairbuilding</title>
+      <link>https://jawad.dev/blog/agentic-development-part-4-pairbuilding/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/blog/agentic-development-part-4-pairbuilding/</guid>
+      <description>&lt;p&gt;This post is about addressing the new bottleneck of software: intent clarification. We can also call it specification or alignment. In the &lt;a href=&#34;https://jawad.dev/blog/agentic-development-part-3-software-dark-factory/&#34;&gt;dark factory post&lt;/a&gt;, I described what happens when agents can handle most of the production. The question now is how we collect and clarify the intent that will guide that production. I think of this as intent harvesting.&lt;/p&gt;&#xA;&lt;h2 id=&#34;from-1-to-many-to-many-to-many&#34; class=link_owner&gt;&#xA;  From 1-to-many to many-to-many&#xA;  &lt;a href=&#34;#from-1-to-many-to-many-to-many&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;We have passed another step in AI transformation. Agents are now part of the living context. We are moving from a vertical organization of humans, AI, and context, in a 1-to-many relationship, toward groups of humans and AI working together in a many-to-many relationship.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Agentic Development, Part 3: The Software Dark Factory</title>
       <link>https://jawad.dev/blog/agentic-development-part-3-software-dark-factory/</link>
