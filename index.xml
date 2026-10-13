@@ -246,6 +246,20 @@
       <description>&lt;p&gt;This annex provides detailed mathematical derivations for the key results in linear models.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;annex-a-ols-solution-for-simple-linear-regression&#34; class=link_owner&gt;&#xA;  Annex A: OLS Solution for Simple Linear Regression&#xA;  &lt;a href=&#34;#annex-a-ols-solution-for-simple-linear-regression&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;problem-statement&#34; class=link_owner&gt;&#xA;  Problem Statement&#xA;  &lt;a href=&#34;#problem-statement&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;For simple linear regression:&lt;/p&gt;&#xA;\[&#xD;&#xA;Y_i = a X_i + b + \varepsilon_i&#xD;&#xA;\]&lt;p&gt;We want to minimize the &lt;strong&gt;sum of squared residuals&lt;/strong&gt;:&lt;/p&gt;&#xA;\[&#xD;&#xA;\text{SSE}(a, b) = \sum_{i=1}^{n} (Y_i - \hat{Y}_i)^2 = \sum_{i=1}^{n} (Y_i - (aX_i + b))^2&#xD;&#xA;\]&lt;h3 id=&#34;derivation&#34; class=link_owner&gt;&#xA;  Derivation&#xA;  &lt;a href=&#34;#derivation&#34; class=&#34;link icon&#34;&gt;&#xA;    &lt;svg&gt;&#xA;      &lt;use xlink:href=&#34;#anchor-link&#34;&gt;&lt;/use&gt;&#xA;    &lt;/svg&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Step 1: Expand the objective function&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Agentic Development, Part 6: The Factory as a Living Contract</title>
+      <link>https://jawad.dev/blog/agentic-development-part-6-factory-living-contract/</link>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/blog/agentic-development-part-6-factory-living-contract/</guid>
+      <description>&lt;p&gt;The image I have in mind for the factory comes from Arthur C. Clarke&#39;s &lt;em&gt;Rendezvous with Rama&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;What interests me in Rama is the level of automation. The human visitors encounter a world whose systems and biological robots operate around them. They are trying to understand a place that does not need them to direct its activity. &lt;a href=&#34;https://en.wikipedia.org/wiki/Rendezvous_with_Rama&#34;&gt;About the novel&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;For me, the powerful idea is that the builders&#39; intention can remain present in the behavior of a system, even when the builders are absent.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Agentic Development, Part 5: From Seeds to Candidates</title>
+      <link>https://jawad.dev/blog/agentic-development-part-5-agents-and-candidates/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/blog/agentic-development-part-5-agents-and-candidates/</guid>
+      <description>&lt;p&gt;Looking at Michelangelo&#39;s plan for the Sistine Chapel, I imagine him alone with the scale of the work ahead of him, deciding that he will finish it alone.&lt;/p&gt;&#xA;&lt;p&gt;In that imagined scene, the ambition comes with a decision to exclude others. The whole project stays in one person&#39;s hands. I call this the &lt;strong&gt;Michelangelo temptation&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I think every senior developer can feel that temptation today. You have the experience, you can see the architecture, and AI gives you the capacity to carry much more of the execution yourself. Work that used to require a team starts to look possible alone. Involving others can begin to feel like something that slows you down.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Agentic Development, Part 4: Intent Harvesting and Pairbuilding</title>
       <link>https://jawad.dev/blog/agentic-development-part-4-pairbuilding/</link>
       <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
