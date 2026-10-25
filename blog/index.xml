@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="https://jawad.dev/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Agentic Development, Part 7: Connecting the AI Organisation</title>
+      <link>https://jawad.dev/blog/agentic-development-part-7-connecting-the-ai-organisation/</link>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://jawad.dev/blog/agentic-development-part-7-connecting-the-ai-organisation/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;https://jawad.dev/speaking/hybrid-organizations-ai-agents-as-computational-actors/&#34;&gt;my July talk&lt;/a&gt;, I described AI working as members of an organisation. Each would have its own identity, assigned work, and permissions. People would check the results, step in when needed, and gradually delegate more.&lt;/p&gt;&#xA;&lt;p&gt;We have been building that organisation throughout this series. Our software factory builds and tests applications. In shared conversations, people and AI work out what to build and review prototypes together.&lt;/p&gt;&#xA;&lt;p&gt;Personal assistants now help each person take part in that work. They follow projects, identify what needs attention, and take on tasks for their user.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Agentic Development, Part 6: The Factory as a Living Contract</title>
       <link>https://jawad.dev/blog/agentic-development-part-6-factory-living-contract/</link>
       <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>

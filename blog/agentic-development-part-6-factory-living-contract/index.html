@@ -21,7 +21,7 @@
 <meta property="og:site_name" content="Jawad Alaoui" />
 
 
-<link rel="stylesheet" href="https://jawad.dev/css/styles.a09be04c8c6c87074eb08938135d1c3e9c0831b1856cfc0e0fe3a72d90ea5090b790c89770f9610202523ceae4a4a5f88ca47700b13da12f271cb51718b811b8.css" integrity="sha512-oJvgTIxshwdOsIk4E10cPpwIMbGFbPwOD&#43;OnLZDqUJC3kMiXcPlhAgJSPOrkpKX4jKR3ALE9oS8nHLUXGLgRuA==">
+<link rel="stylesheet" href="https://jawad.dev/css/styles.913482eaefd88a1a7bdfd5f62117d05a65d2b4e73487bcd3d357ae718cf4d91e7502a809c38f4d3491ff97eb7157eb2a2115c8afb7b803665b5211fbc2dd8e38.css" integrity="sha512-kTSC6u/Yihp739X2IRfQWmXStOc0h7zT01eucYz02R51AqgJw49NNJH/l&#43;txV&#43;sqIRXIr7e4A2ZbUhH7wt2OOA==">
 <meta name="description" content="Our factory is becoming an operating system for human and AI work. Its next challenge is to connect that intelligence to the signals and actions of the real business.">
 
 </head>
@@ -125,13 +125,30 @@
 
 
 <figure class="essay_figure essay_mode_graph" aria-label="Progressive Feedback validation and repair loops">
-  <figcaption><strong>Progressive Feedback</strong><span>Default development method</span></figcaption>
+  <figcaption>
+<strong>Progressive Feedback</strong>
+<span>Default development method</span>
+</figcaption>
   <ol class="factory_flow">
   
-    <li><strong>Implement a bounded change</strong><span>Respect ownership and dependencies; parallelise independent work</span></li>
-    <li><strong>Widen the local feedback</strong><span>Static / types &rarr; unit / contract &rarr; emulator integration + isolation</span><small>&#8634; At each failed boundary: repair &rarr; rerun affected checks before advancing</small></li>
-    <li><strong>Run complete affected-repository gates</strong><span>Then build the immutable candidate in the governed delivery sequence</span><small>&#8634; Failed gate &rarr; repair source &rarr; revalidate the changed candidate</small></li>
-    <li><strong>Preview, environment checks, independent verification</strong><span>Under the selected environment's authority; retain candidate-specific evidence</span></li>
+    <li>
+<strong>Implement a bounded change</strong>
+<span>Respect ownership and dependencies; parallelise independent work</span>
+</li>
+    <li>
+<strong>Widen the local feedback</strong>
+<span>Static / types &rarr; unit / contract &rarr; emulator integration + isolation</span>
+<small>&#8634; At each failed boundary: repair &rarr; rerun affected checks before advancing</small>
+</li>
+    <li>
+<strong>Run complete affected-repository gates</strong>
+<span>Then build the immutable candidate in the governed delivery sequence</span>
+<small>&#8634; Failed gate &rarr; repair source &rarr; revalidate the changed candidate</small>
+</li>
+    <li>
+<strong>Preview, environment checks, independent verification</strong>
+<span>Under the selected environment's authority; retain candidate-specific evidence</span>
+</li>
   
   </ol>
   <p class="mode_exit">The governed sequence. The current web delivery split is shown below; preview availability alone is not acceptance.</p>
@@ -153,13 +170,30 @@
 
 
 <figure class="essay_figure essay_mode_graph" aria-label="Build Fast validation and repair loops">
-  <figcaption><strong>Build Fast</strong><span>Bounded non-production batch</span></figcaption>
+  <figcaption>
+<strong>Build Fast</strong>
+<span>Bounded non-production batch</span>
+</figcaption>
   <ol class="factory_flow">
   
-    <li><strong>Record the batch contract</strong><span>Scope, authority, completion condition, final gates and reviewer</span></li>
-    <li><strong>Connect the complete vertical path</strong><span>Source parity &rarr; database / owner &rarr; service / API &rarr; screen</span><small>&#8634; During implementation: cheap checks &rarr; local correction &rarr; continue building</small></li>
-    <li><strong>Coherent checkpoint &rarr; consolidated validation</strong><span>Reviewable integration; required local, CI and hosted coverage</span><small>&#8634; Failures &rarr; grouped repair &rarr; focused recheck + required final full gate</small></li>
-    <li><strong>Verify the real development chain</strong><span>Authoritative data path, source-bound evidence and independent review</span></li>
+    <li>
+<strong>Record the batch contract</strong>
+<span>Scope, authority, completion condition, final gates and reviewer</span>
+</li>
+    <li>
+<strong>Connect the complete vertical path</strong>
+<span>Source parity &rarr; database / owner &rarr; service / API &rarr; screen</span>
+<small>&#8634; During implementation: cheap checks &rarr; local correction &rarr; continue building</small>
+</li>
+    <li>
+<strong>Coherent checkpoint &rarr; consolidated validation</strong>
+<span>Reviewable integration; required local, CI and hosted coverage</span>
+<small>&#8634; Failures &rarr; grouped repair &rarr; focused recheck + required final full gate</small>
+</li>
+    <li>
+<strong>Verify the real development chain</strong>
+<span>Authoritative data path, source-bound evidence and independent review</span>
+</li>
   
   </ol>
   <p class="mode_exit">A completed batch enters the normal release controls. Production effects or scope/authority violations stop the run.</p>
@@ -195,18 +229,36 @@
 <p>Our current web workflow separates routine development and staging delivery from full acceptance. On a routine change, critical checks run alongside deployment. Deployment does not wait for their result. Firebase App Hosting performs the frontend build; routine CI avoids building the same application again just to repeat that work.</p>
 
 <figure class="essay_figure essay_mode_graph factory_ci" aria-label="Current web workflow: routine delivery and quality run in parallel; full acceptance is separately dispatched">
-  <figcaption><strong>Two CI rhythms</strong><span>Current web workflow configuration</span></figcaption>
+  <figcaption>
+<strong>Two CI rhythms</strong>
+<span>Current web workflow configuration</span>
+</figcaption>
   <div class="ci_trigger">Routine development / staging change</div>
   <div class="ci_parallel">
-    <div><strong>Quality lane</strong><span>Isolation checks<br>Type checks<br>Critical unit tests</span><small>Failure &rarr; repair &rarr; new source revision</small></div>
-    <div><strong>Delivery lane</strong><span>Verify source + target<br>Firebase build<br>Non-production rollout</span><small>Runs without waiting for quality</small></div>
+    <div>
+<strong>Quality lane</strong>
+<span>Isolation checks<br>Type checks<br>Critical unit tests</span>
+<small>Failure &rarr; repair &rarr; new source revision</small>
+</div>
+    <div>
+<strong>Delivery lane</strong>
+<span>Verify source + target<br>Firebase build<br>Non-production rollout</span>
+<small>Runs without waiting for quality</small>
+</div>
   </div>
   <p class="mode_exit">These lanes run in parallel. A rollout is availability, not production acceptance.</p>
   <div class="ci_acceptance">
     <div class="ci_trigger">Separate explicit acceptance run from main</div>
     <ol class="factory_flow">
-      <li><strong>Export protected specification contracts</strong><span>Only immutable authority artifacts reach product test jobs</span></li>
-      <li><strong>Full suite + four parallel UI shards</strong><span>Contract, unit, integration and browser checks; production-build test harnesses</span><small>&#8634; Findings &rarr; repair &rarr; affected checks + required final validation</small></li>
+      <li>
+<strong>Export protected specification contracts</strong>
+<span>Only immutable authority artifacts reach product test jobs</span>
+</li>
+      <li>
+<strong>Full suite + four parallel UI shards</strong>
+<span>Contract, unit, integration and browser checks; production-build test harnesses</span>
+<small>&#8634; Findings &rarr; repair &rarr; affected checks + required final validation</small>
+</li>
     </ol>
   </div>
   <p class="mode_exit">Outstanding failures remain production-readiness gaps. Independent acceptance and production activation are still required.</p>
@@ -252,10 +304,32 @@
     <path class="essay_signal_line" d="M100 48h188"/>
     <path class="essay_future" d="M364 48h209"/>
     <path class="essay_wave" d="M20 48h10l6-13 7 29 7-47 8 63 8-45 7 23 6-10h20"/>
-    <g class="essay_constellation"><path d="M298 31l31-15 24 28-25 28-30-41 30 41 1-56 M298 31l55 13"/><circle cx="298" cy="31" r="5"/><circle cx="329" cy="16" r="5"/><circle cx="353" cy="44" r="5"/><circle cx="328" cy="72" r="5"/></g>
-    <g class="essay_door"><path d="M578 78h51 M586 78V17h34v61 M591 78V24l23-7v61"/><circle cx="608" cy="50" r="1.5"/></g>
+    <g class="essay_constellation">
+<path d="M298 31l31-15 24 28-25 28-30-41 30 41 1-56 M298 31l55 13"/>
+<circle cx="298" cy="31" r="5"/>
+<circle cx="329" cy="16" r="5"/>
+<circle cx="353" cy="44" r="5"/>
+<circle cx="328" cy="72" r="5"/>
+</g>
+    <g class="essay_door">
+<path d="M578 78h51 M586 78V17h34v61 M591 78V24l23-7v61"/>
+<circle cx="608" cy="50" r="1.5"/>
+</g>
   </svg>
-  <div class="essay_signal_labels"><div><strong>Signals</strong><span>What happened</span></div><div><strong>Context</strong><span>What it means</span></div><div><strong>Action</strong><span>The next step</span></div></div>
+  <div class="essay_signal_labels">
+<div>
+<strong>Signals</strong>
+<span>What happened</span>
+</div>
+<div>
+<strong>Context</strong>
+<span>What it means</span>
+</div>
+<div>
+<strong>Action</strong>
+<span>The next step</span>
+</div>
+</div>
   <figcaption>From field experiments to a future physical action. The missing connection is more than a tool call: it needs identity, permission, and confirmation.</figcaption>
 </figure>
 
